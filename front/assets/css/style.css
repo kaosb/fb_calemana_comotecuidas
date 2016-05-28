@@ -6730,3 +6730,7 @@ button.close {
     display: none !important;
   }
 }
+body {
+  background-color: #00837c;
+  color: #ffffff;
+}
