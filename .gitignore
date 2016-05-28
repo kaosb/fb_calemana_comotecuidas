@@ -1,1 +1,8 @@
 .DS_Store
+*.sublime-workspace
+*.log
+.htaccess
+sitemap.xml
+sitemap.xml.gz
+node_modules/
+wp-cli.local.yml
