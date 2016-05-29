@@ -6730,13 +6730,27 @@ button.close {
     display: none !important;
   }
 }
+.form-control {
+  border: none;
+  border-radius: 0;
+  margin-bottom: 30px;
+}
+.btn.btn-default {
+  border: none;
+  background-color: #499091;
+  font-family: 'Lobster', cursive;
+  font-size: 33px;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 30px;
+}
 body {
   background-color: #00837c;
   color: #ffffff;
 }
 .app-bg {
   position: relative;
-  padding: 50px 0;
+  padding: 50px 0 120px;
 }
 .square-bg {
   background-image: url('../img/square-bg.png');
@@ -6746,21 +6760,21 @@ body {
 }
 .square-bg.top-left {
   top: 0;
-  left: 0;
+  left: -20px;
 }
 .square-bg.bottom-left {
   bottom: 0;
-  left: 0;
+  left: -20px;
   background-position: bottom left;
 }
 .square-bg.bottom-right {
   bottom: 0;
-  right: 0;
+  right: -20px;
   background-position: bottom right;
 }
 .square-bg.top-right {
   top: 0;
-  right: 0;
+  right: -20px;
   background-position: top right;
 }
 .feat-image {
@@ -6768,6 +6782,66 @@ body {
   margin: 0 auto;
   border-bottom: 3px solid #ffe9b7;
 }
+@media (max-width: 480px) {
+  .feat-image {
+    width: 100%;
+    height: auto;
+  }
+}
 .content-message {
-  margin: 50px 0;
+  margin: 50px 30px;
+}
+.advice-msg {
+  font-family: 'Lobster', cursive;
+  font-size: 28px;
+  font-weight: normal;
+}
+.logo-clinica {
+  position: absolute;
+  right: 70px;
+  bottom: 55px;
+}
+.hashtag-10-p {
+  position: absolute;
+  left: 70px;
+  bottom: 55px;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'PT Sans', sans-serif;
+  width: 297px;
+  height: 66px;
+}
+.hashtag-10-p:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.hashtag-10-p .hash-display {
+  position: relative;
+  width: 297px;
+  height: 66px;
+}
+.hashtag-10-p .hashtag {
+  font-size: 100px;
+  font-weight: bold;
+  font-style: italic;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -32px;
+}
+.hashtag-10-p .hashtag-line-1 {
+  top: -7px;
+  display: block;
+  position: absolute;
+  font-weight: bold;
+  left: 65px;
+  font-size: 34px;
+}
+.hashtag-10-p .hashtag-line-2 {
+  bottom: -11px;
+  display: block;
+  position: absolute;
+  font-weight: bold;
+  left: 65px;
+  font-size: 34px;
 }

@@ -1,0 +1,14 @@
+.form-control {
+  border: none;
+  border-radius: 0;
+  margin-bottom: 30px;
+}
+.btn.btn-default {
+  border: none;
+  background-color: #499091;
+  font-family: 'Lobster', cursive;
+  font-size: 33px;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 30px;
+}

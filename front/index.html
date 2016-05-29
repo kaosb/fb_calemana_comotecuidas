@@ -7,6 +7,10 @@
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 		<title>App</title>
 
+		<!-- Fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
 		<!-- Bootstrap -->
 		<link href="assets/css/style.css" rel="stylesheet">
 
@@ -21,7 +25,7 @@
 		
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-8 col-sm-offset-2">
+				<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
 					<div class="app-bg">
 						<span class="square-bg top-left"></span>
 						<span class="square-bg bottom-left"></span>
@@ -29,7 +33,27 @@
 						<span class="square-bg bottom-right"></span>
 						<img class="feat-image" src="assets/img/llamado-copia.png">
 						<div class="content-message text-center">
-							<p>Escribe tu mejor consejo de salud usando entre 7 y 10 palabras</p>
+							<p class="advice-msg">Escribe tu mejor consejo de salud usando entre 7 y 10 palabras</p>
+							<form>
+								<textarea class="form-control input-lg" rows="5">
+Riéndome disfrutando y regaloneando con mi linda familia cada día
+								</textarea>
+								<div class="form-group">
+									<div class="text-center">
+										<button type="submit" class="btn btn-lg btn-default">Siguiente</button>
+									</div>
+								</div>
+							</form>
+							<a href="#" class="hashtag-10-p">
+								
+									<span class="hashtag">#</span>
+									<span class="hashtag-line-1">CómoTeCuidas</span>
+									<span class="hashtag-line-2">en10Palabras</span>
+								
+							</a>
+							<a class="logo-clinica" href="https://portal.alemana.cl/wps/wcm/connect/internet/home">
+								<img src="assets/img/logo-alemana.png">
+							</a>
 						</div>
 					</div>
 				</div>
