@@ -4,7 +4,12 @@ body {
 }
 .app-bg {
   position: relative;
-  padding: 50px 0 140px;
+  padding: 50px 0 20px;
+}
+@media (max-width: 480px) {
+  .app-bg {
+    padding-bottom: 80px;
+  }
 }
 .square-bg {
   background-image: url('../img/square-bg.png');
@@ -50,52 +55,38 @@ body {
   font-size: 28px;
   font-weight: normal;
 }
-.logo-clinica {
+.logo-clinica img,
+.hashtag-10-p img {
   position: absolute;
-  right: 70px;
-  bottom: 55px;
+  bottom: 0;
 }
-.hashtag-10-p {
-  position: absolute;
-  left: 70px;
-  bottom: 55px;
-  color: #fff;
-  text-decoration: none;
-  font-family: 'PT Sans', sans-serif;
-  width: 297px;
-  height: 66px;
+@media (max-width: 780px) {
+  .logo-clinica img,
+  .hashtag-10-p img {
+    -ms-transform: scale(0.7);
+    /* IE 9 */
+    -webkit-transform: scale(0.7);
+    /* Safari */
+    transform: scale(0.7);
+  }
 }
-.hashtag-10-p:hover {
-  color: #fff;
-  text-decoration: none;
+@media (max-width: 480px) {
+  .logo-clinica img,
+  .hashtag-10-p img {
+    position: relative;
+    bottom: auto;
+    margin: 20px auto;
+    display: block;
+  }
 }
-.hashtag-10-p .hash-display {
-  position: relative;
-  width: 297px;
-  height: 66px;
+.logo-clinica img {
+  right: 0;
 }
-.hashtag-10-p .hashtag {
-  font-size: 100px;
-  font-weight: bold;
-  font-style: italic;
-  display: block;
-  position: absolute;
+.hashtag-10-p img {
   left: 0;
-  top: -32px;
 }
-.hashtag-10-p .hashtag-line-1 {
-  top: -7px;
-  display: block;
-  position: absolute;
-  font-weight: bold;
-  left: 65px;
-  font-size: 34px;
-}
-.hashtag-10-p .hashtag-line-2 {
-  bottom: -11px;
-  display: block;
-  position: absolute;
-  font-weight: bold;
-  left: 65px;
-  font-size: 34px;
+.logos-footer {
+  height: 120px;
+  position: relative;
+  margin-bottom: 50px;
 }
