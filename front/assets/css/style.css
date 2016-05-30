@@ -6836,3 +6836,49 @@ body {
   position: relative;
   margin: 0 40px 50px;
 }
+.bg-lightbox {
+  background-color: rgba(61, 74, 75, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+}
+.box-alert {
+  background-color: #ffe9b7;
+  font-family: 'Lobster', cursive;
+  font-size: 33px;
+  color: #1d6465;
+  width: 540px;
+  height: 115px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -57px;
+  margin-left: -270px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  display: table;
+}
+.box-alert .close-alert {
+  position: absolute;
+  height: 54px;
+  width: 54px;
+  text-align: center;
+  top: -27px;
+  right: -27px;
+  background-color: #84b7b8;
+  border-radius: 30px;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+.box-alert .close-alert .glyphicon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.inner-alert {
+  display: table-cell;
+  vertical-align: middle;
+}
