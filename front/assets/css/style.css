@@ -6765,21 +6765,21 @@ body {
 }
 .square-bg.top-left {
   top: 0;
-  left: -20px;
+  left: -15px;
 }
 .square-bg.bottom-left {
   bottom: 0;
-  left: -20px;
+  left: -15px;
   background-position: bottom left;
 }
 .square-bg.bottom-right {
   bottom: 0;
-  right: -20px;
+  right: -15px;
   background-position: bottom right;
 }
 .square-bg.top-right {
   top: 0;
-  right: -20px;
+  right: -15px;
   background-position: top right;
 }
 .feat-image {
@@ -6834,5 +6834,5 @@ body {
 .logos-footer {
   height: 120px;
   position: relative;
-  margin-bottom: 50px;
+  margin: 0 40px 50px;
 }
