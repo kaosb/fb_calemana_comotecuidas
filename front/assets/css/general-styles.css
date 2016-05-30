@@ -55,6 +55,12 @@ body {
   font-size: 28px;
   font-weight: normal;
 }
+.title-advice-msg {
+  font-family: 'Lobster', cursive;
+  font-size: 47px;
+  font-weight: normal;
+  margin: 0 0 30px;
+}
 .logo-clinica img,
 .hashtag-10-p img {
   position: absolute;

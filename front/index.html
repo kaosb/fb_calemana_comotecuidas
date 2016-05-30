@@ -23,7 +23,7 @@
 	</head>
 	<body>
 		<!-- BG LIGHTBOX (ALERTA) -->
-		<div class="bg-lightbox">
+		<div class="bg-lightbox" style="display: none">
 			<!-- alerta -->
 			<div class="box-alert">
 				<div class="inner-alert text-center">
@@ -48,7 +48,8 @@
 						<!-- LOGO CONCURSO -->
 						<img class="feat-image" src="assets/img/llamado-copia.png">
 						<!-- contenedor mensaje -->
-						<div class="content-message text-center">
+						<!-- PASO 1 -->
+						<div id="step_1" class="content-message text-center" style="display: none;">
 							<p class="advice-msg">Escribe tu mejor consejo de salud usando entre 7 y 10 palabras</p>
 							<form>
 								<textarea class="form-control input-lg" rows="5">
@@ -61,6 +62,16 @@ Riéndome disfrutando y regaloneando con mi linda familia cada día
 								</div>
 							</form>
 						</div>
+						<!-- FIN PASO 1 -->
+						<!-- PASO 3 -->
+						<div id="step_3" class="content-message text-center">
+							<h1 class="title-advice-msg">¡Listo!</h1>
+							<p class="advice-msg">Compartiste tu consejo de salud y ya estás participando 
+							<br>por una de las 6 gift card de $50.000 
+							<br>con Clínica Alemana en Facebook.
+							<br><br>Recuerda hacer “me gusta” en nuestro fanpage para participar.</p>
+						</div>
+						<!-- FIN PASO 3 -->
 						<!-- fin contendor mensaje -->
 						<!-- LOGOS FOOTER -->
 						<div class="logos-footer cf clearfix">
