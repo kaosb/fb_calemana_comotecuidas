@@ -6990,7 +6990,12 @@ body {
 }
 .boxes-style-color .box-msg-1 .line-span1 {
   font-family: 'Quicksand', sans-serif;
-  font-size: 45px;
+  font-size: 30px;
+  background-color: #ddc4c1;
+  color: #e33836;
+  width: 60%;
+  margin: 0 auto;
+  top: 70px;
 }
 .boxes-style-color .box-msg-1 .line-span2 {
   font-family: 'Great Vibes', cursive;
