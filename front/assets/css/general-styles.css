@@ -182,6 +182,7 @@ body {
   color: #fff;
   text-decoration: none;
   overflow: hidden;
+  position: relative;
 }
 .boxes-style-color .box-msg-1 .line-span1,
 .boxes-style-color .box-msg-2 .line-span1,
@@ -220,6 +221,23 @@ body {
 .boxes-style-color a .box-msg-5 .line-span3,
 .boxes-style-color a .box-msg-6 .line-span3 {
   display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.boxes-style-color .box-msg-1.box-mini,
+.boxes-style-color .box-msg-2.box-mini,
+.boxes-style-color .box-msg-3.box-mini,
+.boxes-style-color .box-msg-4.box-mini,
+.boxes-style-color .box-msg-5.box-mini,
+.boxes-style-color .box-msg-6.box-mini,
+.boxes-style-color a .box-msg-1.box-mini,
+.boxes-style-color a .box-msg-2.box-mini,
+.boxes-style-color a .box-msg-3.box-mini,
+.boxes-style-color a .box-msg-4.box-mini,
+.boxes-style-color a .box-msg-5.box-mini,
+.boxes-style-color a .box-msg-6.box-mini {
+  height: 100px;
 }
 .boxes-style-color .box-msg-1 {
   background-color: #e33836;
@@ -230,12 +248,21 @@ body {
 }
 .boxes-style-color .box-msg-1 .line-span2 {
   font-family: 'Great Vibes', cursive;
-  font-size: 110px;
+  font-size: 105px;
+  color: #fae045;
+  top: 160px;
 }
 .boxes-style-color .box-msg-1 .line-span3 {
   font-family: 'BenchNine', sans-serif;
-  font-size: 55px;
+  font-size: 35px;
+  line-height: 40px;
   text-transform: uppercase;
+  top: 295px;
+  width: 60%;
+  margin: 0 auto;
+  padding: 3px 20px 0;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
 }
 .boxes-style-color .box-msg-2 {
   background-color: #804ba1;

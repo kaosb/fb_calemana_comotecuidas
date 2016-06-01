@@ -177,8 +177,15 @@ body {
 		color: #fff;
 		text-decoration: none;
 		overflow: hidden;
+		position: relative;
 		.line-span1, .line-span2, .line-span3 {
 			display: block;
+			position: absolute;
+			left: 0;
+			right: 0;
+		}
+		&.box-mini {
+			height: 100px;
 		}
 	}
 	.box-msg-1 {
@@ -189,12 +196,21 @@ body {
 		}
 		.line-span2 {
 			font-family: 'Great Vibes', cursive;
-			font-size: 110px; //187px;
+			font-size: 105px; //187px;
+			color: #fae045;
+			top: 160px;
 		}
 		.line-span3 {
 			font-family: 'BenchNine', sans-serif;
-			font-size: 55px;
+			font-size: 35px;
+			line-height: 40px;
 			text-transform: uppercase;
+			top: 295px;
+			width: 60%;
+			margin: 0 auto;
+			padding: 3px 20px 0;
+			border-top: 2px solid #fff;
+			border-bottom: 2px solid #fff;
 		}
 		&.box-mini {
 
