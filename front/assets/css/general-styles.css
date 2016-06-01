@@ -169,10 +169,19 @@ body {
 .boxes-style-color .box-msg-3,
 .boxes-style-color .box-msg-4,
 .boxes-style-color .box-msg-5,
-.boxes-style-color .box-msg-6 {
+.boxes-style-color .box-msg-6,
+.boxes-style-color a .box-msg-1,
+.boxes-style-color a .box-msg-2,
+.boxes-style-color a .box-msg-3,
+.boxes-style-color a .box-msg-4,
+.boxes-style-color a .box-msg-5,
+.boxes-style-color a .box-msg-6 {
   border: 3px solid #61bfb7;
   display: block;
   text-align: center;
+  color: #fff;
+  text-decoration: none;
+  overflow: hidden;
 }
 .boxes-style-color .box-msg-1 .line-span1,
 .boxes-style-color .box-msg-2 .line-span1,
@@ -180,18 +189,36 @@ body {
 .boxes-style-color .box-msg-4 .line-span1,
 .boxes-style-color .box-msg-5 .line-span1,
 .boxes-style-color .box-msg-6 .line-span1,
+.boxes-style-color a .box-msg-1 .line-span1,
+.boxes-style-color a .box-msg-2 .line-span1,
+.boxes-style-color a .box-msg-3 .line-span1,
+.boxes-style-color a .box-msg-4 .line-span1,
+.boxes-style-color a .box-msg-5 .line-span1,
+.boxes-style-color a .box-msg-6 .line-span1,
 .boxes-style-color .box-msg-1 .line-span2,
 .boxes-style-color .box-msg-2 .line-span2,
 .boxes-style-color .box-msg-3 .line-span2,
 .boxes-style-color .box-msg-4 .line-span2,
 .boxes-style-color .box-msg-5 .line-span2,
 .boxes-style-color .box-msg-6 .line-span2,
+.boxes-style-color a .box-msg-1 .line-span2,
+.boxes-style-color a .box-msg-2 .line-span2,
+.boxes-style-color a .box-msg-3 .line-span2,
+.boxes-style-color a .box-msg-4 .line-span2,
+.boxes-style-color a .box-msg-5 .line-span2,
+.boxes-style-color a .box-msg-6 .line-span2,
 .boxes-style-color .box-msg-1 .line-span3,
 .boxes-style-color .box-msg-2 .line-span3,
 .boxes-style-color .box-msg-3 .line-span3,
 .boxes-style-color .box-msg-4 .line-span3,
 .boxes-style-color .box-msg-5 .line-span3,
-.boxes-style-color .box-msg-6 .line-span3 {
+.boxes-style-color .box-msg-6 .line-span3,
+.boxes-style-color a .box-msg-1 .line-span3,
+.boxes-style-color a .box-msg-2 .line-span3,
+.boxes-style-color a .box-msg-3 .line-span3,
+.boxes-style-color a .box-msg-4 .line-span3,
+.boxes-style-color a .box-msg-5 .line-span3,
+.boxes-style-color a .box-msg-6 .line-span3 {
   display: block;
 }
 .boxes-style-color .box-msg-1 {
@@ -208,19 +235,109 @@ body {
 .boxes-style-color .box-msg-1 .line-span3 {
   font-family: 'BenchNine', sans-serif;
   font-size: 55px;
+  text-transform: uppercase;
 }
 .boxes-style-color .box-msg-2 {
   background-color: #804ba1;
 }
+.boxes-style-color .box-msg-2 .line-span1 {
+  font-family: 'Lobster Two', cursive;
+  font-size: 104px;
+}
+.boxes-style-color .box-msg-2 .line-span2 {
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 112px;
+  text-transform: uppercase;
+}
+.boxes-style-color .box-msg-2 .line-span3 {
+  font-family: 'Cinzel', serif;
+  font-size: 50px;
+}
+.boxes-style-color .box-msg-2 .line-span3 .last-word-line {
+  display: block;
+  font-family: 'Lobster', cursive;
+}
 .boxes-style-color .box-msg-3 {
   background-color: #ed6600;
+}
+.boxes-style-color .box-msg-3 .line-span1 {
+  font-family: 'Nixie One', cursive;
+  font-size: 49px;
+}
+.boxes-style-color .box-msg-3 .line-span2 {
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 150px;
+  text-transform: uppercase;
+}
+.boxes-style-color .box-msg-3 .line-span3 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 55px;
+}
+.boxes-style-color .box-msg-3 .line-span3 .last-word-line {
+  display: block;
+  font-family: 'Cookie', cursive;
+  font-size: 130px;
 }
 .boxes-style-color .box-msg-4 {
   background-color: #2aa5ad;
 }
+.boxes-style-color .box-msg-4 .line-span1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 104px;
+}
+.boxes-style-color .box-msg-4 .line-span2 {
+  font-family: 'Six Caps', sans-serif;
+  font-size: 172px;
+  text-transform: uppercase;
+}
+.boxes-style-color .box-msg-4 .line-span3 {
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 55px;
+}
+.boxes-style-color .box-msg-4 .line-span3 .last-word-line {
+  display: block;
+  font-family: 'Lobster', cursive;
+  font-size: 66px;
+}
 .boxes-style-color .box-msg-5 {
   background-color: #65bd5c;
 }
+.boxes-style-color .box-msg-5 .line-span1 {
+  font-family: 'Cinzel', serif;
+  font-size: 56px;
+}
+.boxes-style-color .box-msg-5 .line-span2 {
+  font-family: 'Cookie', cursive;
+  font-size: 110px;
+}
+.boxes-style-color .box-msg-5 .line-span3 {
+  font-family: 'BenchNine', sans-serif;
+  font-size: 55px;
+}
+.boxes-style-color .box-msg-5 .line-span3 .last-word-line {
+  display: block;
+  font-family: 'Six Caps', sans-serif;
+  font-size: 86px;
+  text-transform: uppercase;
+}
 .boxes-style-color .box-msg-6 {
   background-color: #00837c;
+}
+.boxes-style-color .box-msg-6 .line-span1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 79px;
+}
+.boxes-style-color .box-msg-6 .line-span2 {
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 172px;
+  text-transform: uppercase;
+}
+.boxes-style-color .box-msg-6 .line-span3 {
+  font-family: 'Pacifico', cursive;
+  font-size: 79px;
+}
+.boxes-style-color .box-msg-6 .line-span3 .last-word-line {
+  display: block;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 50px;
 }
