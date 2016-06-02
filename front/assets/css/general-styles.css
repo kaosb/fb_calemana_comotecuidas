@@ -505,6 +505,30 @@ body {
 .boxes-style-color .box-msg-3 {
   background-color: #ed6600;
 }
+.boxes-style-color .box-msg-3 .line-span1 {
+  font-family: 'Lobster Two', cursive;
+  font-size: 57px;
+  top: 30px;
+  color: #ffda30;
+  left: 60px;
+  right: 60px;
+  padding-bottom: 10px;
+  border-bottom: 4px solid #ffda30;
+  text-shadow: -2px 2px 0 #ed2d00;
+}
+.boxes-style-color .box-msg-3 .line-span2 {
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 112px;
+  text-transform: uppercase;
+}
+.boxes-style-color .box-msg-3 .line-span3 {
+  font-family: 'Cinzel', serif;
+  font-size: 50px;
+}
+.boxes-style-color .box-msg-3 .line-span3 .last-word-line {
+  display: block;
+  font-family: 'Lobster', cursive;
+}
 .boxes-style-color .box-msg-4 {
   background-color: #2aa5ad;
 }
