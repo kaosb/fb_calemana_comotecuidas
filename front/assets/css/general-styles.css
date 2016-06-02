@@ -274,19 +274,21 @@ body {
   top: -70px;
   position: absolute;
 }
-.boxes-style-color .box-msg-1.box-mini,
-.boxes-style-color .box-msg-2.box-mini,
-.boxes-style-color .box-msg-3.box-mini,
-.boxes-style-color .box-msg-4.box-mini,
-.boxes-style-color .box-msg-5.box-mini,
-.boxes-style-color .box-msg-6.box-mini,
-.boxes-style-color a .box-msg-1.box-mini,
-.boxes-style-color a .box-msg-2.box-mini,
-.boxes-style-color a .box-msg-3.box-mini,
-.boxes-style-color a .box-msg-4.box-mini,
-.boxes-style-color a .box-msg-5.box-mini,
-.boxes-style-color a .box-msg-6.box-mini {
-  height: 100px;
+.boxes-style-color .box-msg-1.box-mini img,
+.boxes-style-color .box-msg-2.box-mini img,
+.boxes-style-color .box-msg-3.box-mini img,
+.boxes-style-color .box-msg-4.box-mini img,
+.boxes-style-color .box-msg-5.box-mini img,
+.boxes-style-color .box-msg-6.box-mini img,
+.boxes-style-color a .box-msg-1.box-mini img,
+.boxes-style-color a .box-msg-2.box-mini img,
+.boxes-style-color a .box-msg-3.box-mini img,
+.boxes-style-color a .box-msg-4.box-mini img,
+.boxes-style-color a .box-msg-5.box-mini img,
+.boxes-style-color a .box-msg-6.box-mini img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 .boxes-style-color .box-msg-1 {
   background-color: #e33836;
