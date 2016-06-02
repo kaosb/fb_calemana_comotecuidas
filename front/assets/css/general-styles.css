@@ -475,6 +475,33 @@ body {
   background-position: bottom;
   height: 75px;
 }
+.boxes-style-color .box-msg-2 .c-top-left,
+.boxes-style-color .box-msg-2 .c-top-right,
+.boxes-style-color .box-msg-2 .c-bottom-left,
+.boxes-style-color .box-msg-2 .c-bottom-right {
+  height: 20px;
+  width: 20px;
+}
+.boxes-style-color .box-msg-2 .c-top-left {
+  background-image: url('../img/post-image-bg/square-bg-post-2.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.boxes-style-color .box-msg-2 .c-top-right {
+  background-image: url('../img/post-image-bg/square-bg-post-2.png');
+  background-repeat: no-repeat;
+  background-position: -60px 0;
+}
+.boxes-style-color .box-msg-2 .c-bottom-left {
+  background-image: url('../img/post-image-bg/square-bg-post-2.png');
+  background-repeat: no-repeat;
+  background-position: 0 -60px;
+}
+.boxes-style-color .box-msg-2 .c-bottom-right {
+  background-image: url('../img/post-image-bg/square-bg-post-2.png');
+  background-repeat: no-repeat;
+  background-position: -60px -60px;
+}
 .boxes-style-color .box-msg-3 {
   background-color: #ed6600;
 }
