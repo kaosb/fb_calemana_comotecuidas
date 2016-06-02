@@ -7162,42 +7162,53 @@ body {
   background-color: #804ba1;
 }
 .boxes-style-color .box-msg-2 .line-span1 {
-  font-family: 'Lobster Two', cursive;
-  font-size: 104px;
+  font-family: 'Nixie One', cursive;
+  font-size: 27px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #4cbeb4;
+  top: 50px;
+  width: 60%;
+  margin: 0 auto;
+  z-index: 2;
+}
+.boxes-style-color .box-msg-2 .line-span1 .span-title-1 {
+  position: absolute;
+  width: 61px;
+  height: 58px;
+  background-image: url('../img/post-image-bg/cinta-titulo-post-2-izq.png');
+  left: -50px;
+  display: block;
+  top: 0;
+  z-index: 1;
+}
+.boxes-style-color .box-msg-2 .line-span1 .span-title-2 {
+  position: absolute;
+  width: 61px;
+  height: 58px;
+  background-image: url('../img/post-image-bg/cinta-titulo-post-2-der.png');
+  right: -50px;
+  display: block;
+  top: -20px;
+  z-index: 1;
 }
 .boxes-style-color .box-msg-2 .line-span2 {
   font-family: 'Pathway Gothic One', sans-serif;
-  font-size: 112px;
-  text-transform: uppercase;
-}
-.boxes-style-color .box-msg-2 .line-span3 {
-  font-family: 'Cinzel', serif;
-  font-size: 50px;
-}
-.boxes-style-color .box-msg-2 .line-span3 .last-word-line {
-  display: block;
-  font-family: 'Lobster', cursive;
-}
-.boxes-style-color .box-msg-3 {
-  background-color: #ed6600;
-}
-.boxes-style-color .box-msg-3 .line-span1 {
-  font-family: 'Nixie One', cursive;
-  font-size: 49px;
-}
-.boxes-style-color .box-msg-3 .line-span2 {
-  font-family: 'Pathway Gothic One', sans-serif;
   font-size: 150px;
   text-transform: uppercase;
+  color: #8bd46b;
 }
-.boxes-style-color .box-msg-3 .line-span3 {
+.boxes-style-color .box-msg-2 .line-span3 {
   font-family: 'Great Vibes', cursive;
   font-size: 55px;
 }
-.boxes-style-color .box-msg-3 .line-span3 .last-word-line {
+.boxes-style-color .box-msg-2 .line-span3 .last-word-line {
   display: block;
   font-family: 'Cookie', cursive;
   font-size: 130px;
+}
+.boxes-style-color .box-msg-3 {
+  background-color: #ed6600;
 }
 .boxes-style-color .box-msg-4 {
   background-color: #2aa5ad;

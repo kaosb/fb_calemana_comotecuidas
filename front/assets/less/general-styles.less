@@ -41,7 +41,7 @@ body {
 	@media (max-width: 480px) {
 		width: 100%;
 		height: auto;
-	} 
+	}
 }
 .content-message {
 	margin: 50px 30px;
@@ -148,7 +148,7 @@ body {
 	display: table-cell;
 	vertical-align: middle;
 }
-// Cajas de colores 
+// Cajas de colores
 .boxes-style-color {
 	position: relative;
 	margin-top: -510px;
@@ -258,6 +258,7 @@ body {
 			}
 		}
 	}
+	// BOX ROJO
 	.box-msg-1 {
 		background-color: #e33836;
 		.line-span1 {
@@ -332,39 +333,45 @@ body {
 			background-position: -52px -50px;
 		}
 	}
+	// BOX MORADO
 	.box-msg-2 {
 		background-color: #804ba1;
 		.line-span1 {
-			font-family: 'Lobster Two', cursive;
-			font-size: 104px;
-		}
-		.line-span2 {
-			font-family: 'Pathway Gothic One', sans-serif;
-			font-size: 112px; //187px;
-			text-transform: uppercase;
-		}
-		.line-span3 {
-			font-family: 'Cinzel', serif;
-			font-size: 50px;
-			.last-word-line {
-				display: block;
-				font-family: 'Lobster', cursive;
-			}
-		}
-		&.box-mini {
-			
-		}
-	}
-	.box-msg-3 {
-		background-color: #ed6600;
-		.line-span1 {
 			font-family: 'Nixie One', cursive;
-			font-size: 49px;
+			font-size: 27px;
+			color: #fff;
+			text-transform: uppercase;
+			background-color: #4cbeb4;
+			top: 50px;
+			width: 60%;
+			margin: 0 auto;
+			z-index: 2;
+			.span-title-1 {
+				position: absolute;
+				width: 61px;
+				height: 58px;
+				background-image: url('../img/post-image-bg/cinta-titulo-post-2-izq.png');
+				left: -50px;
+				display: block;
+				top: 0;
+				z-index: 1;
+			}
+			.span-title-2 {
+				position: absolute;
+				width: 61px;
+				height: 58px;
+				background-image: url('../img/post-image-bg/cinta-titulo-post-2-der.png');
+				right: -50px;
+				display: block;
+				top: -20px;
+				z-index: 1;
+			}
 		}
 		.line-span2 {
 			font-family: 'Pathway Gothic One', sans-serif;
 			font-size: 150px; //187px;
 			text-transform: uppercase;
+			color: #8bd46b;
 		}
 		.line-span3 {
 			font-family: 'Great Vibes', cursive;
@@ -375,8 +382,53 @@ body {
 				font-size: 130px;
 			}
 		}
+
+		// .line-span1 {
+		// 	font-family: 'Lobster Two', cursive;
+		// 	font-size: 104px;
+
+		// }
+		// .line-span2 {
+		// 	font-family: 'Pathway Gothic One', sans-serif;
+		// 	font-size: 112px; //187px;
+		// 	text-transform: uppercase;
+		// }
+		// .line-span3 {
+		// 	font-family: 'Cinzel', serif;
+		// 	font-size: 50px;
+		// 	.last-word-line {
+		// 		display: block;
+		// 		font-family: 'Lobster', cursive;
+		// 	}
+		// }
 		&.box-mini {
-			
+
+		}
+	}
+	// BOX NARANJO
+	.box-msg-3 {
+		background-color: #ed6600;
+		// .line-span1 {
+		// 	font-family: 'Nixie One', cursive;
+		// 	font-size: 49px;
+		// 	color: #ffda30;
+		// }
+		// .line-span2 {
+		// 	font-family: 'Pathway Gothic One', sans-serif;
+		// 	font-size: 150px; //187px;
+		// 	text-transform: uppercase;
+		// }
+		// .line-span3 {
+		// 	font-family: 'Great Vibes', cursive;
+		// 	font-size: 55px;
+		// 	.last-word-line {
+		// 		display: block;
+		// 		font-family: 'Cookie', cursive;
+		// 		font-size: 130px;
+		// 	}
+		// }
+		&.box-mini {
+
 		}
 	}
 	.box-msg-4 {
@@ -400,7 +452,7 @@ body {
 			}
 		}
 		&.box-mini {
-			
+
 		}
 	}
 	.box-msg-5 {
@@ -424,7 +476,7 @@ body {
 			}
 		}
 		&.box-mini {
-			
+
 		}
 	}
 	.box-msg-6 {
@@ -448,7 +500,7 @@ body {
 			}
 		}
 		&.box-mini {
-			
+
 		}
 	}
 }
