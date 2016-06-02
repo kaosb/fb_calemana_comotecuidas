@@ -6892,6 +6892,23 @@ body {
   position: relative;
   margin-top: -510px;
 }
+.boxes-style-color .select-design {
+  text-align: center;
+  display: block;
+  font-family: 'Lobster', cursive;
+  font-size: 28px;
+  font-weight: normal;
+}
+.boxes-style-color .button-select {
+  text-align: center;
+  display: block;
+}
+.boxes-style-color .button-select .btn {
+  font-size: 28px;
+  padding: 5px 30px;
+  width: 180px;
+  margin: 30px 10px 20px;
+}
 .boxes-style-color .box-featured {
   height: 510px;
   width: 460px;
@@ -6929,6 +6946,7 @@ body {
   text-decoration: none;
   overflow: hidden;
   position: relative;
+  border-radius: 4px;
 }
 .boxes-style-color .box-msg-1 .line-span1,
 .boxes-style-color .box-msg-2 .line-span1,
