@@ -608,7 +608,7 @@ body {
 			border-top: 2px solid #f6f0d0;
 			border-bottom: 2px solid #f6f0d0;
 			margin: 0 auto;
-			top: 50px;
+			top: 70px;
 		}
 		.line-span2 {
 			font-family: 'Cookie', cursive;
@@ -654,10 +654,56 @@ body {
 				left: 0;
 				right: 0;
 				top: 35px;
+				&:before {
+					content: '';
+					display: inline-block;
+					height: 12px;
+					width: 12px;
+					border-radius: 12px;
+					position: relative;
+					left: -10px;
+					z-index: 10;
+					background-color: #fff;
+					zoom: 1;
+					top: -20px;
+				}
+				&:after {
+					content: '';
+					display: inline-block;
+					height: 12px;
+					width: 12px;
+					border-radius: 12px;
+					position: relative;
+					right: -10px;
+					z-index: 10;
+					background-color: #fff;
+					zoom: 1;
+					top: -20px;
+				}
 			}
 		}
 		&.box-mini {
 
+		}
+		.c-top-left {
+			background-image: url('../img/post-image-bg/square-bg-post-5.png');
+			background-repeat: no-repeat;
+			background-position: 0 0;
+		}
+		.c-top-right {
+			background-image: url('../img/post-image-bg/square-bg-post-5.png');
+			background-repeat: no-repeat;
+			background-position: -52px 0;
+		}
+		.c-bottom-left {
+			background-image: url('../img/post-image-bg/square-bg-post-5.png');
+			background-repeat: no-repeat;
+			background-position: 0 -50px;
+		}
+		.c-bottom-right {
+			background-image: url('../img/post-image-bg/square-bg-post-5.png');
+			background-repeat: no-repeat;
+			background-position: -52px -50px;
 		}
 	}
 	// BOX CELESTE
