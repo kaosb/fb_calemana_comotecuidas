@@ -558,13 +558,33 @@ body {
   font-size: 40px;
   position: absolute;
   display: block;
-  top: 30px;
+  top: 40px;
   left: 90px;
   right: 90px;
   height: 75px;
   color: #ffda30;
   text-shadow: -2px 2px 0 #ed2d00;
   background-color: transparent;
+}
+.boxes-style-color .box-msg-3 .c-top-left {
+  background-image: url('../img/post-image-bg/square-bg-post-3.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.boxes-style-color .box-msg-3 .c-top-right {
+  background-image: url('../img/post-image-bg/square-bg-post-3.png');
+  background-repeat: no-repeat;
+  background-position: -52px 0;
+}
+.boxes-style-color .box-msg-3 .c-bottom-left {
+  background-image: url('../img/post-image-bg/square-bg-post-3.png');
+  background-repeat: no-repeat;
+  background-position: 0 -50px;
+}
+.boxes-style-color .box-msg-3 .c-bottom-right {
+  background-image: url('../img/post-image-bg/square-bg-post-3.png');
+  background-repeat: no-repeat;
+  background-position: -52px -50px;
 }
 .boxes-style-color .box-msg-4 {
   background-color: #2aa5ad;
