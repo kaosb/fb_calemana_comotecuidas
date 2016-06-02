@@ -229,12 +229,13 @@ Riéndome disfrutando y regaloneando con mi linda familia cada día
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
 		<script type="text/javascript">
 			$(function(){
+				// Test bind for step 1 button.
 				$('#btnstep1').click(function(event){
 					event.preventDefault();
 					$('#step_1').fadeOut();
 					$('#step_3').fadeIn();
 				});
-
+				// Export html as image.
 				$('#btnstep2_share').click(function(){
 					html2canvas($('#big_box_msg_1'), {
 						onrendered: function(canvas){
