@@ -669,21 +669,59 @@ body {
 }
 .boxes-style-color .box-msg-5 .line-span1 {
   font-family: 'Cinzel', serif;
-  font-size: 56px;
+  font-size: 24px;
+  width: 80%;
+  color: #f6f0d0;
+  border-top: 2px solid #f6f0d0;
+  border-bottom: 2px solid #f6f0d0;
+  margin: 0 auto;
+  top: 50px;
 }
 .boxes-style-color .box-msg-5 .line-span2 {
   font-family: 'Cookie', cursive;
   font-size: 110px;
+  color: #ffdc48;
+  top: 110px;
+  text-shadow: -5px 5px 0 #1f4766;
 }
 .boxes-style-color .box-msg-5 .line-span3 {
-  font-family: 'BenchNine', sans-serif;
-  font-size: 55px;
+  font-family: 'Cinzel', serif;
+  font-size: 18px;
+  background-color: #1f4766;
+  top: 270px;
+  width: 60%;
+  margin: 0 auto;
+  padding: 5px 0;
+}
+.boxes-style-color .box-msg-5 .line-span3 .span-title-1 {
+  position: absolute;
+  width: 41px;
+  height: 25px;
+  background-image: url('../img/post-image-bg/cinta-titulo-post-5-izq.png');
+  left: -18px;
+  display: block;
+  top: -12px;
+  z-index: 1;
+}
+.boxes-style-color .box-msg-5 .line-span3 .span-title-2 {
+  position: absolute;
+  width: 41px;
+  height: 25px;
+  background-image: url('../img/post-image-bg/cinta-titulo-post-5-der.png');
+  right: -18px;
+  display: block;
+  bottom: -12px;
+  z-index: 1;
 }
 .boxes-style-color .box-msg-5 .line-span3 .last-word-line {
   display: block;
   font-family: 'Six Caps', sans-serif;
-  font-size: 86px;
+  font-size: 60px;
   text-transform: uppercase;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 35px;
 }
 .boxes-style-color .box-msg-6 {
   background-color: #2aa5ad;
