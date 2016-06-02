@@ -6911,11 +6911,43 @@ body {
 }
 .boxes-style-color .box-featured {
   height: 510px;
-  width: 460px;
+  width: 480px;
   z-index: 1;
   background-color: #fff;
   margin: 0 auto;
   margin-bottom: 20px;
+}
+.boxes-style-color .corners {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+}
+.boxes-style-color .corners .c-top-left,
+.boxes-style-color .corners .c-top-right,
+.boxes-style-color .corners .c-bottom-left,
+.boxes-style-color .corners .c-bottom-right {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+}
+.boxes-style-color .corners .c-top-left {
+  top: 3px;
+  left: 3px;
+}
+.boxes-style-color .corners .c-top-right {
+  top: 3px;
+  right: 3px;
+}
+.boxes-style-color .corners .c-bottom-left {
+  bottom: 3px;
+  left: 3px;
+}
+.boxes-style-color .corners .c-bottom-right {
+  bottom: 3px;
+  right: 3px;
 }
 .boxes-style-color .row {
   width: 90%;
@@ -6988,6 +7020,7 @@ body {
   position: absolute;
   left: 0;
   right: 0;
+  z-index: 1;
 }
 .boxes-style-color .box-msg-1 .logos-box-min,
 .boxes-style-color .box-msg-2 .logos-box-min,
@@ -7002,9 +7035,10 @@ body {
 .boxes-style-color a .box-msg-5 .logos-box-min,
 .boxes-style-color a .box-msg-6 .logos-box-min {
   position: absolute;
-  bottom: 30px;
+  bottom: 40px;
   left: 0;
   right: 0;
+  z-index: 1;
 }
 .boxes-style-color .box-msg-1 .logos-box-min .hashtag-10-p-min,
 .boxes-style-color .box-msg-2 .logos-box-min .hashtag-10-p-min,
@@ -7018,7 +7052,7 @@ body {
 .boxes-style-color a .box-msg-4 .logos-box-min .hashtag-10-p-min,
 .boxes-style-color a .box-msg-5 .logos-box-min .hashtag-10-p-min,
 .boxes-style-color a .box-msg-6 .logos-box-min .hashtag-10-p-min {
-  left: 30px;
+  left: 40px;
   top: -46px;
   position: absolute;
 }
@@ -7034,7 +7068,7 @@ body {
 .boxes-style-color a .box-msg-4 .logos-box-min .logo-clinica-min,
 .boxes-style-color a .box-msg-5 .logos-box-min .logo-clinica-min,
 .boxes-style-color a .box-msg-6 .logos-box-min .logo-clinica-min {
-  right: 30px;
+  right: 40px;
   top: -70px;
   position: absolute;
 }
@@ -7097,12 +7131,32 @@ body {
   font-size: 35px;
   line-height: 40px;
   text-transform: uppercase;
-  top: 285px;
+  top: 275px;
   width: 60%;
   margin: 0 auto;
   padding: 3px 20px 0;
   border-top: 2px solid #fff;
   border-bottom: 2px solid #fff;
+}
+.boxes-style-color .box-msg-1 .c-top-left {
+  background-image: url('../img/post-image-bg/square-bg-post-1.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.boxes-style-color .box-msg-1 .c-top-right {
+  background-image: url('../img/post-image-bg/square-bg-post-1.png');
+  background-repeat: no-repeat;
+  background-position: -52px 0;
+}
+.boxes-style-color .box-msg-1 .c-bottom-left {
+  background-image: url('../img/post-image-bg/square-bg-post-1.png');
+  background-repeat: no-repeat;
+  background-position: 0 -50px;
+}
+.boxes-style-color .box-msg-1 .c-bottom-right {
+  background-image: url('../img/post-image-bg/square-bg-post-1.png');
+  background-repeat: no-repeat;
+  background-position: -52px -50px;
 }
 .boxes-style-color .box-msg-2 {
   background-color: #804ba1;
