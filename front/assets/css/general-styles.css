@@ -416,87 +416,361 @@ body {
   background-color: #804ba1;
 }
 .boxes-style-color .box-msg-2 .line-span1 {
-  font-family: 'Lobster Two', cursive;
-  font-size: 104px;
+  font-family: 'Nixie One', cursive;
+  font-size: 27px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #4cbeb4;
+  top: 60px;
+  width: 60%;
+  margin: 0 auto;
+  z-index: 2;
+}
+.boxes-style-color .box-msg-2 .line-span1 .span-title-1 {
+  position: absolute;
+  width: 61px;
+  height: 58px;
+  background-image: url('../img/post-image-bg/cinta-titulo-post-2-izq.png');
+  left: -50px;
+  display: block;
+  top: 0;
+  z-index: 1;
+}
+.boxes-style-color .box-msg-2 .line-span1 .span-title-2 {
+  position: absolute;
+  width: 61px;
+  height: 58px;
+  background-image: url('../img/post-image-bg/cinta-titulo-post-2-der.png');
+  right: -50px;
+  display: block;
+  top: -20px;
+  z-index: 1;
 }
 .boxes-style-color .box-msg-2 .line-span2 {
   font-family: 'Pathway Gothic One', sans-serif;
-  font-size: 112px;
+  font-size: 105px;
   text-transform: uppercase;
+  color: #8bd46b;
+  top: 105px;
+  letter-spacing: -8px;
+  text-shadow: -5px 5px 0 #5f0077, -10px 10px 0 #9664b5;
 }
 .boxes-style-color .box-msg-2 .line-span3 {
-  font-family: 'Cinzel', serif;
-  font-size: 50px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 35px;
+  top: 235px;
 }
 .boxes-style-color .box-msg-2 .line-span3 .last-word-line {
+  font-family: 'Cookie', cursive;
+  font-size: 60px;
+  position: absolute;
   display: block;
-  font-family: 'Lobster', cursive;
+  top: 30px;
+  left: 90px;
+  right: 90px;
+  color: #4cbeb4;
+  text-shadow: -2px 2px 0 #5f0077;
+  background-image: url('../img/post-image-bg/borde-last-word-post-2.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 75px;
+}
+.boxes-style-color .box-msg-2 .c-top-left,
+.boxes-style-color .box-msg-2 .c-top-right,
+.boxes-style-color .box-msg-2 .c-bottom-left,
+.boxes-style-color .box-msg-2 .c-bottom-right {
+  height: 20px;
+  width: 20px;
+}
+.boxes-style-color .box-msg-2 .c-top-left {
+  background-image: url('../img/post-image-bg/square-bg-post-2.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.boxes-style-color .box-msg-2 .c-top-right {
+  background-image: url('../img/post-image-bg/square-bg-post-2.png');
+  background-repeat: no-repeat;
+  background-position: -60px 0;
+}
+.boxes-style-color .box-msg-2 .c-bottom-left {
+  background-image: url('../img/post-image-bg/square-bg-post-2.png');
+  background-repeat: no-repeat;
+  background-position: 0 -60px;
+}
+.boxes-style-color .box-msg-2 .c-bottom-right {
+  background-image: url('../img/post-image-bg/square-bg-post-2.png');
+  background-repeat: no-repeat;
+  background-position: -60px -60px;
 }
 .boxes-style-color .box-msg-3 {
   background-color: #ed6600;
 }
 .boxes-style-color .box-msg-3 .line-span1 {
-  font-family: 'Nixie One', cursive;
-  font-size: 49px;
+  font-family: 'Lobster Two', cursive;
+  font-size: 57px;
+  top: 30px;
+  color: #ffda30;
+  left: 60px;
+  right: 60px;
+  border-bottom: 4px solid #ffda30;
+  text-shadow: -2px 2px 0 #ed2d00;
 }
 .boxes-style-color .box-msg-3 .line-span2 {
   font-family: 'Pathway Gothic One', sans-serif;
-  font-size: 150px;
+  font-size: 105px;
   text-transform: uppercase;
+  top: 105px;
+  letter-spacing: -8px;
+  text-shadow: -5px 5px 0 #3f9166;
 }
 .boxes-style-color .box-msg-3 .line-span3 {
-  font-family: 'Great Vibes', cursive;
-  font-size: 55px;
+  font-family: 'Cinzel', serif;
+  font-size: 18px;
+  top: 275px;
+  background-color: #4cbe82;
+  width: 70%;
+  margin: 0 auto;
+  z-index: 2;
+  padding: 5px 0;
+}
+.boxes-style-color .box-msg-3 .line-span3 .span-title-1 {
+  position: absolute;
+  width: 89px;
+  height: 54px;
+  background-image: url('../img/post-image-bg/cinta-titulo-post-3-izq.png');
+  left: -50px;
+  display: block;
+  top: -19px;
+  z-index: 1;
+}
+.boxes-style-color .box-msg-3 .line-span3 .span-title-2 {
+  position: absolute;
+  width: 89px;
+  height: 54px;
+  background-image: url('../img/post-image-bg/cinta-titulo-post-3-der.png');
+  right: -50px;
+  display: block;
+  top: -19px;
+  z-index: 1;
 }
 .boxes-style-color .box-msg-3 .line-span3 .last-word-line {
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+  position: absolute;
   display: block;
-  font-family: 'Cookie', cursive;
-  font-size: 130px;
+  top: 40px;
+  left: 90px;
+  right: 90px;
+  height: 75px;
+  color: #ffda30;
+  text-shadow: -2px 2px 0 #ed2d00;
+  background-color: transparent;
+}
+.boxes-style-color .box-msg-3 .c-top-left {
+  background-image: url('../img/post-image-bg/square-bg-post-3.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.boxes-style-color .box-msg-3 .c-top-right {
+  background-image: url('../img/post-image-bg/square-bg-post-3.png');
+  background-repeat: no-repeat;
+  background-position: -52px 0;
+}
+.boxes-style-color .box-msg-3 .c-bottom-left {
+  background-image: url('../img/post-image-bg/square-bg-post-3.png');
+  background-repeat: no-repeat;
+  background-position: 0 -50px;
+}
+.boxes-style-color .box-msg-3 .c-bottom-right {
+  background-image: url('../img/post-image-bg/square-bg-post-3.png');
+  background-repeat: no-repeat;
+  background-position: -52px -50px;
 }
 .boxes-style-color .box-msg-4 {
-  background-color: #2aa5ad;
+  background-color: #00837c;
 }
 .boxes-style-color .box-msg-4 .line-span1 {
   font-family: 'Dancing Script', cursive;
-  font-size: 104px;
+  font-size: 54px;
+  color: #c9c8c4;
+  top: 60px;
 }
 .boxes-style-color .box-msg-4 .line-span2 {
   font-family: 'Six Caps', sans-serif;
-  font-size: 172px;
+  font-size: 102px;
   text-transform: uppercase;
+  color: #ffdc48;
+  top: 105px;
+  text-shadow: -3px 3px 0 #1f4766;
 }
 .boxes-style-color .box-msg-4 .line-span3 {
   font-family: 'Pathway Gothic One', sans-serif;
-  font-size: 55px;
+  font-size: 35px;
+  background-color: #ffac4d;
+  color: #00837c;
+  display: block;
+  top: 245px;
+  width: 80%;
+  margin: 0 auto;
+}
+.boxes-style-color .box-msg-4 .line-span3 .span-title-1 {
+  position: absolute;
+  width: 60px;
+  height: 12px;
+  background-image: url('../img/post-image-bg/cinta-titulo-post-4-izq.png');
+  left: 0px;
+  display: block;
+  top: -12px;
+  z-index: 1;
+}
+.boxes-style-color .box-msg-4 .line-span3 .span-title-2 {
+  position: absolute;
+  width: 60px;
+  height: 12px;
+  background-image: url('../img/post-image-bg/cinta-titulo-post-4-der.png');
+  right: 0px;
+  display: block;
+  bottom: -12px;
+  z-index: 1;
 }
 .boxes-style-color .box-msg-4 .line-span3 .last-word-line {
   display: block;
   font-family: 'Lobster', cursive;
-  font-size: 66px;
+  font-size: 45px;
+  color: #c9c8c4;
+  position: absolute;
+  background-color: transparent;
+  left: 0;
+  right: 0;
+  top: 50px;
+}
+.boxes-style-color .box-msg-4 .c-top-left {
+  background-image: url('../img/post-image-bg/square-bg-post-4.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.boxes-style-color .box-msg-4 .c-top-right {
+  background-image: url('../img/post-image-bg/square-bg-post-4.png');
+  background-repeat: no-repeat;
+  background-position: -52px 0;
+}
+.boxes-style-color .box-msg-4 .c-bottom-left {
+  background-image: url('../img/post-image-bg/square-bg-post-4.png');
+  background-repeat: no-repeat;
+  background-position: 0 -50px;
+}
+.boxes-style-color .box-msg-4 .c-bottom-right {
+  background-image: url('../img/post-image-bg/square-bg-post-4.png');
+  background-repeat: no-repeat;
+  background-position: -52px -50px;
 }
 .boxes-style-color .box-msg-5 {
   background-color: #65bd5c;
 }
 .boxes-style-color .box-msg-5 .line-span1 {
   font-family: 'Cinzel', serif;
-  font-size: 56px;
+  font-size: 24px;
+  width: 80%;
+  color: #f6f0d0;
+  border-top: 2px solid #f6f0d0;
+  border-bottom: 2px solid #f6f0d0;
+  margin: 0 auto;
+  top: 70px;
 }
 .boxes-style-color .box-msg-5 .line-span2 {
   font-family: 'Cookie', cursive;
   font-size: 110px;
+  color: #ffdc48;
+  top: 110px;
+  text-shadow: -5px 5px 0 #1f4766;
 }
 .boxes-style-color .box-msg-5 .line-span3 {
-  font-family: 'BenchNine', sans-serif;
-  font-size: 55px;
+  font-family: 'Cinzel', serif;
+  font-size: 18px;
+  background-color: #1f4766;
+  top: 270px;
+  width: 60%;
+  margin: 0 auto;
+  padding: 5px 0;
+}
+.boxes-style-color .box-msg-5 .line-span3 .span-title-1 {
+  position: absolute;
+  width: 41px;
+  height: 25px;
+  background-image: url('../img/post-image-bg/cinta-titulo-post-5-izq.png');
+  left: -18px;
+  display: block;
+  top: -12px;
+  z-index: 1;
+}
+.boxes-style-color .box-msg-5 .line-span3 .span-title-2 {
+  position: absolute;
+  width: 41px;
+  height: 25px;
+  background-image: url('../img/post-image-bg/cinta-titulo-post-5-der.png');
+  right: -18px;
+  display: block;
+  bottom: -12px;
+  z-index: 1;
 }
 .boxes-style-color .box-msg-5 .line-span3 .last-word-line {
   display: block;
   font-family: 'Six Caps', sans-serif;
-  font-size: 86px;
+  font-size: 60px;
   text-transform: uppercase;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 35px;
+}
+.boxes-style-color .box-msg-5 .line-span3 .last-word-line:before {
+  content: '';
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  border-radius: 12px;
+  position: relative;
+  left: -10px;
+  z-index: 10;
+  background-color: #fff;
+  zoom: 1;
+  top: -20px;
+}
+.boxes-style-color .box-msg-5 .line-span3 .last-word-line:after {
+  content: '';
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  border-radius: 12px;
+  position: relative;
+  right: -10px;
+  z-index: 10;
+  background-color: #fff;
+  zoom: 1;
+  top: -20px;
+}
+.boxes-style-color .box-msg-5 .c-top-left {
+  background-image: url('../img/post-image-bg/square-bg-post-5.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.boxes-style-color .box-msg-5 .c-top-right {
+  background-image: url('../img/post-image-bg/square-bg-post-5.png');
+  background-repeat: no-repeat;
+  background-position: -52px 0;
+}
+.boxes-style-color .box-msg-5 .c-bottom-left {
+  background-image: url('../img/post-image-bg/square-bg-post-5.png');
+  background-repeat: no-repeat;
+  background-position: 0 -50px;
+}
+.boxes-style-color .box-msg-5 .c-bottom-right {
+  background-image: url('../img/post-image-bg/square-bg-post-5.png');
+  background-repeat: no-repeat;
+  background-position: -52px -50px;
 }
 .boxes-style-color .box-msg-6 {
-  background-color: #00837c;
+  background-color: #2aa5ad;
 }
 .boxes-style-color .box-msg-6 .line-span1 {
   font-family: 'Pacifico', cursive;
