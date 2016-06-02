@@ -7194,9 +7194,12 @@ body {
 }
 .boxes-style-color .box-msg-2 .line-span2 {
   font-family: 'Pathway Gothic One', sans-serif;
-  font-size: 150px;
+  font-size: 105px;
   text-transform: uppercase;
   color: #8bd46b;
+  top: 125px;
+  letter-spacing: -8px;
+  text-shadow: -5px 5px 0 #5f0077, -10px 10px 0 #9664b5;
 }
 .boxes-style-color .box-msg-2 .line-span3 {
   font-family: 'Great Vibes', cursive;
