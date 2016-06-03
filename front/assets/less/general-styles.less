@@ -767,24 +767,115 @@ body {
 		background-color: #2aa5ad;
 		.line-span1 {
 			font-family: 'Pacifico', cursive;
-			font-size: 79px;
+			font-size: 50px;
+			color: #e6ca50;
+			top: 50px;
 		}
 		.line-span2 {
 			font-family: 'Pathway Gothic One', sans-serif;
-			font-size: 172px;
+			font-size: 102px;
 			text-transform: uppercase;
+			top: 110px;
+			letter-spacing: -5px;
+			text-shadow: -5px 5px 0 #05364a;
+			&:before {
+				content: '';
+				display: inline-block;
+				height: 12px;
+				width: 12px;
+				border-radius: 12px;
+				position: relative;
+				left: -10px;
+				z-index: 10;
+				background-color: #fff;
+				zoom: 1;
+				top: -20px;
+				box-shadow: -3px 3px 0 #05364a;
+			}
+			&:after {
+				content: '';
+				display: inline-block;
+				height: 12px;
+				width: 12px;
+				border-radius: 12px;
+				position: relative;
+				right: -10px;
+				z-index: 10;
+				background-color: #fff;
+				zoom: 1;
+				top: -20px;
+				box-shadow: -3px 3px 0 #05364a;
+			}
 		}
 		.line-span3 {
 			font-family: 'Pacifico', cursive;
-			font-size: 79px;
+			font-size: 40px;
+			color: #e6ca50;
+			top: 235px;
 			.last-word-line {
 				display: block;
 				font-family: 'Pathway Gothic One', sans-serif;
-				font-size: 50px;
+				font-size: 30px;
+				color: #fff;
+				background-color: #2f7489;
+				position: absolute;
+				//width: 80%;
+				//margin: 0 auto;
+				left: 20%;
+				right: 20%;
+				top: 100px;
+				.span-title-1 {
+					position: absolute;
+					width: 48px;
+					height: 63px;
+					background-image: url('../img/post-image-bg/cinta-titulo-post-6-izq.png');
+					left: -32px;
+					display: block;
+					top: -20px;
+					z-index: 1;
+				}
+				.span-title-2 {
+					position: absolute;
+					width: 48px;
+					height: 63px;
+					background-image: url('../img/post-image-bg/cinta-titulo-post-6-der.png');
+					right: -32px;
+					display: block;
+					top: -20px;
+					z-index: 1;
+				}
 			}
 		}
 		&.box-mini {
 
+		}
+		.c-top-left {
+			background-image: url('../img/post-image-bg/square-bg-post-6.png');
+			background-repeat: repeat;
+			height: 11px;
+			width: 100%;
+		}
+		.c-top-right {
+			background-image: url('../img/post-image-bg/square-bg-post-6.png');
+			background-repeat: repeat;
+			top: 11px;
+			bottom: 11px;
+			width: 12px;
+			height: auto;
+		}
+		.c-bottom-left {
+			background-image: url('../img/post-image-bg/square-bg-post-6.png');
+			background-repeat: repeat;
+			top: 11px;
+			bottom: 11px;
+			width: 12px;
+			height: auto;
+		}
+		.c-bottom-right {
+			background-image: url('../img/post-image-bg/square-bg-post-6.png');
+			background-repeat: repeat;
+			height: 11px;
+			width: 100%;
 		}
 	}
 }
