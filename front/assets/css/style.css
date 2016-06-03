@@ -7276,6 +7276,41 @@ body {
   background-repeat: no-repeat;
   background-position: -60px -60px;
 }
+.boxes-style-color .box-msg-2 .c-top-left-line {
+  position: absolute;
+  top: 2px;
+  background-image: url('../img/post-image-bg/square-bg-post-2-line.png');
+  background-repeat: repeat;
+  height: 19px;
+  left: 20px;
+  right: 20px;
+  opacity: 0.5;
+}
+.boxes-style-color .box-msg-2 .c-bottom-left-line {
+  position: absolute;
+  bottom: 4px;
+  background-image: url('../img/post-image-bg/square-bg-post-2-line.png');
+  background-repeat: repeat;
+  height: 19px;
+  left: 20px;
+  right: 20px;
+  opacity: 0.5;
+}
+.boxes-style-color .box-msg-2 .c-bottom-right-line {
+  position: absolute;
+  left: 4px;
+  background-image: url('../img/post-image-bg/square-bg-post-2-line.png');
+  background-repeat: repeat;
+  height: 19px;
+  top: 20px;
+  bottom: 20px;
+  opacity: 0.5;
+  -ms-transform: rotate(7deg);
+  /* IE 9 */
+  -webkit-transform: rotate(7deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(7deg);
+}
 .boxes-style-color .box-msg-3 {
   background-color: #ed6600;
 }
