@@ -26,7 +26,7 @@
 		<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 
 		<!-- Bootstrap -->
-		<link href="../front/assets/css/style.css" rel="stylesheet">
+		<link href="assets/css/style.css" rel="stylesheet">
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -36,6 +36,7 @@
 		<![endif]-->
 	</head>
 	<body>
+		<h1 id="fb-welcome"></h1>
 		<!-- BG LIGHTBOX (ALERTA) -->
 		<div class="bg-lightbox" style="display: none">
 			<!-- alerta -->
@@ -61,7 +62,7 @@
 						<span class="square-bg top-right"></span>
 						<span class="square-bg bottom-right"></span>
 						<!-- LOGO CONCURSO -->
-						<img class="feat-image" src="../front/assets/img/llamado-copia.png">
+						<img class="feat-image" src="assets/img/llamado-copia.png">
 						<!-- contenedor mensaje -->
 
 						<!-- PASO 0 -->
@@ -105,8 +106,8 @@ Riéndome disfrutando y regaloneando con mi linda familia cada día
 									<span id="big_line_03_01" class="line-span3">y regaloneando con mi <span id="big_last_word_03_01" class="last-word-line">familia</span></span>
 
 									<span class="logos-box-min">
-										<img class="hashtag-10-p-min" src="../front/assets/img/post-image-bg/como-te-cuidas-min.png">
-										<img class="logo-clinica-min" src="../front/assets/img/post-image-bg/logo-alemana-min.png">
+										<img class="hashtag-10-p-min" src="assets/img/post-image-bg/como-te-cuidas-min.png">
+										<img class="logo-clinica-min" src="assets/img/post-image-bg/logo-alemana-min.png">
 									</span>
 
 									<span class="corners">
@@ -128,8 +129,8 @@ Riéndome disfrutando y regaloneando con mi linda familia cada día
 
 
 									<span class="logos-box-min">
-										<img class="hashtag-10-p-min" src="../front/assets/img/post-image-bg/como-te-cuidas-min.png">
-										<img class="logo-clinica-min" src="../front/assets/img/post-image-bg/logo-alemana-min.png">
+										<img class="hashtag-10-p-min" src="assets/img/post-image-bg/como-te-cuidas-min.png">
+										<img class="logo-clinica-min" src="assets/img/post-image-bg/logo-alemana-min.png">
 									</span>
 
 									<span class="corners">
@@ -153,8 +154,8 @@ Riéndome disfrutando y regaloneando con mi linda familia cada día
 
 
 									<span class="logos-box-min">
-										<img class="hashtag-10-p-min" src="../front/assets/img/post-image-bg/como-te-cuidas-min.png">
-										<img class="logo-clinica-min" src="../front/assets/img/post-image-bg/logo-alemana-min.png">
+										<img class="hashtag-10-p-min" src="assets/img/post-image-bg/como-te-cuidas-min.png">
+										<img class="logo-clinica-min" src="assets/img/post-image-bg/logo-alemana-min.png">
 									</span>
 
 									<span class="corners">
@@ -349,7 +350,47 @@ Riéndome disfrutando y regaloneando con mi linda familia cada día
 				</div>
 			</div>
 		</div>
+		<script>
+			window.fbAsyncInit = function() {
+				FB.init({
+					appId      : '287403201596704',
+					xfbml      : true,
+					version    : 'v2.6'
+				});
 
+				// ADD ADDITIONAL FACEBOOK CODE HERE
+				// Place following code after FB.init call.
+				
+				function onLogin(response) {
+					if (response.status == 'connected') {
+						FB.api('/me?fields=first_name', function(data) {
+							var welcomeBlock = document.getElementById('fb-welcome');
+							welcomeBlock.innerHTML = 'Hello, ' + data.first_name + '!';
+						});
+					}
+				}
+
+				FB.getLoginStatus(function(response) {
+					// Check login status on load, and if the user is
+					// already logged in, go directly to the welcome message.
+					if(response.status == 'connected'){
+						onLogin(response);
+					}else{
+						// Otherwise, show Login dialog first.
+						FB.login(function(response) {
+							onLogin(response);
+						}, {scope: 'user_friends, email'});
+					}
+				});
+			};
+			(function(d, s, id){
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) {return;}
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/en_US/sdk.js";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
@@ -373,60 +414,6 @@ Riéndome disfrutando y regaloneando con mi linda familia cada día
 			});
 		</script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 	</body>
-</html>
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Como te cuidas</title>
-</head>
-<body>
-	<h1 id="fb-welcome"></h1>
-</body>
-<script>
-	window.fbAsyncInit = function() {
-		FB.init({
-			appId      : '287403201596704',
-			xfbml      : true,
-			version    : 'v2.6'
-		});
-
-    // ADD ADDITIONAL FACEBOOK CODE HERE
-// Place following code after FB.init call.
-
-function onLogin(response) {
-  if (response.status == 'connected') {
-    FB.api('/me?fields=first_name', function(data) {
-      var welcomeBlock = document.getElementById('fb-welcome');
-      welcomeBlock.innerHTML = 'Hello, ' + data.first_name + '!';
-    });
-  }
-}
-
-FB.getLoginStatus(function(response) {
-  // Check login status on load, and if the user is
-  // already logged in, go directly to the welcome message.
-  if (response.status == 'connected') {
-    onLogin(response);
-  } else {
-    // Otherwise, show Login dialog first.
-    FB.login(function(response) {
-      onLogin(response);
-    }, {scope: 'user_friends, email'});
-  }
-});
-};
-(function(d, s, id){
-	var js, fjs = d.getElementsByTagName(s)[0];
-	if (d.getElementById(id)) {return;}
-	js = d.createElement(s); js.id = id;
-	js.src = "//connect.facebook.net/en_US/sdk.js";
-	fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-</script>
 </html>

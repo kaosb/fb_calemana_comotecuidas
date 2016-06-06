@@ -1,0 +1,939 @@
+body {
+	background-color: #00837c;
+	color: #ffffff;
+}
+.app-bg {
+	position: relative;
+	padding: 50px 0 20px;
+	@media (max-width: 480px) {
+		padding-bottom: 80px;
+	}
+}
+.square-bg {
+	background-image: url('../img/square-bg.png');
+	position: absolute;
+	height: 85px;
+	width: 85px;
+	&.top-left {
+		top: 0;
+		left: -15px;
+	}
+	&.bottom-left {
+		bottom: 0;
+		left: -15px;
+		background-position: bottom left;
+	}
+	&.bottom-right {
+		bottom: 0;
+		right: -15px;
+		background-position: bottom right;
+	}
+	&.top-right {
+		top: 0;
+		right: -15px;
+		background-position: top right;
+	}
+}
+.feat-image {
+	display: block;
+	margin: 0 auto;
+	border-bottom: 3px solid #ffe9b7;
+	@media (max-width: 480px) {
+		width: 100%;
+		height: auto;
+	}
+}
+.content-message {
+	margin: 50px 30px;
+}
+.advice-msg {
+	font-family: 'Lobster', cursive;
+	font-size: 28px;
+	font-weight: normal;
+}
+.title-advice-msg {
+	font-family: 'Lobster', cursive;
+	font-size: 47px;
+	font-weight: normal;
+	margin: 0 0 30px;
+}
+.logo-clinica {
+	img {
+
+	}
+}
+.hashtag-10-p {
+
+}
+.logo-clinica, .hashtag-10-p {
+	img {
+		position: absolute;
+		bottom: 0;
+	}
+	@media (max-width: 780px) {
+		img {
+			-ms-transform: scale(0.7); /* IE 9 */
+			-webkit-transform: scale(0.7); /* Safari */
+			transform: scale(0.7);
+		}
+	}
+	@media (max-width: 480px) {
+		img {
+			position: relative;
+			bottom: auto;
+			margin: 20px auto;
+			display: block;
+		}
+	}
+}
+.logo-clinica {
+	img {
+		right: 0;
+	}
+}
+.hashtag-10-p {
+	img {
+		left: 0;
+	}
+}
+.logos-footer {
+	//padding: 50px 0;
+	height: 120px;
+	position: relative;
+	margin: 0 40px 50px;
+}
+.bg-lightbox {
+	background-color: rgba(61, 74, 75, .5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 100;
+}
+.box-alert {
+	background-color: #ffe9b7;
+	font-family: 'Lobster', cursive;
+	font-size: 33px;
+	color: #1d6465;
+	width: 540px;
+	height: 115px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -57px;
+	margin-left: -270px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+	display: table;
+	.close-alert {
+		position: absolute;
+		height: 54px;
+		width: 54px;
+		text-align: center;
+		top: -27px;
+		right: -27px;
+		background-color: #84b7b8;
+		border-radius: 30px;
+		color: #fff;
+		text-decoration: none;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+		.glyphicon {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+		}
+	}
+}
+.inner-alert {
+	display: table-cell;
+	vertical-align: middle;
+}
+// Cajas de colores
+.boxes-style-color {
+	position: relative;
+	margin-top: -510px;
+	.select-design {
+		text-align: center;
+		display: block;
+		font-family: 'Lobster', cursive;
+		font-size: 28px;
+		font-weight: normal;
+	}
+	.button-select {
+		text-align: center;
+		display: block;
+		.btn {
+			font-size: 28px;
+			padding: 5px 30px;
+			width: 180px;
+			margin: 30px 10px 20px;
+		}
+	}
+	.box-featured {
+		//position: absolute;
+		height: 510px;
+		width: 480px;
+		//top: -510px;
+		z-index: 1;
+		background-color: #fff;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+	.corners {
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		z-index: 0;
+		.c-top-left, .c-top-right, .c-bottom-left, .c-bottom-right {
+			position: absolute;
+			height: 50px;
+			width: 50px;
+		}
+		.c-top-left {
+			top: 3px;
+			left: 3px;
+		}
+		.c-top-right {
+			top: 3px;
+			right: 3px;
+		}
+		.c-bottom-left {
+			bottom: 3px;
+			left: 3px;
+		}
+		.c-bottom-right {
+			bottom: 3px;
+			right: 3px;
+		}
+	}
+	.row {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.col-md-2, .col-sm-4, .col-xs-6 {
+		padding-right: 1px;
+		padding-left: 1px;
+	}
+	.box-msg-1, .box-msg-2, .box-msg-3, .box-msg-4, .box-msg-5, .box-msg-6, a .box-msg-1, a .box-msg-2, a .box-msg-3, a .box-msg-4, a .box-msg-5, a .box-msg-6 {
+		border: 3px solid #61bfb7;
+		display: block;
+		text-align: center;
+		color: #fff;
+		text-decoration: none;
+		overflow: hidden;
+		position: relative;
+		border-radius: 4px;
+		.line-span1, .line-span2, .line-span3 {
+			display: block;
+			position: absolute;
+			left: 0;
+			right: 0;
+			z-index: 1;
+		}
+		.logos-box-min {
+			position: absolute;
+			bottom: 40px;
+			left: 0;
+			right: 0;
+			z-index: 1;
+			.hashtag-10-p-min {
+				left: 40px;
+				top: -46px;
+				position: absolute;
+			}
+			.logo-clinica-min {
+				right: 40px;
+				top: -70px;
+				position: absolute;
+			}
+		}
+		&.box-mini {
+			//height: 100px;
+			img {
+				width: 100%;
+				height: auto;
+				display: block;
+			}
+		}
+	}
+	// BOX ROJO
+	.box-msg-1 {
+		background-color: #e33836;
+		.line-span1 {
+			font-family: 'Quicksand', sans-serif;
+			font-size: 27px;
+			//background-color: #ddc4c1;
+			color: #e33836;
+			width: 60%;
+			margin: 0 auto;
+			background-image: url('../img/post-image-bg/cinta-bg.png');
+			top: 50px;
+			background-repeat: repeat-x;
+			height: 72px;
+			.span-title-1 {
+				position: absolute;
+				width: 109px;
+				height: 72px;
+				background-image: url('../img/post-image-bg/cinta-titulo-post-1-izq.png');
+				left: -50px;
+				display: block;
+				top: 0;
+			}
+			.span-title-2 {
+				position: absolute;
+				width: 109px;
+				height: 71px;
+				background-image: url('../img/post-image-bg/cinta-titulo-post-1-der.png');
+				right: -50px;
+				display: block;
+				top: 0;
+			}
+		}
+		.line-span2 {
+			font-family: 'Great Vibes', cursive;
+			font-size: 105px; //187px;
+			color: #fae045;
+			top: 125px;
+		}
+		.line-span3 {
+			font-family: 'BenchNine', sans-serif;
+			font-size: 35px;
+			line-height: 40px;
+			text-transform: uppercase;
+			top: 275px;
+			width: 60%;
+			margin: 0 auto;
+			padding: 3px 20px 0;
+			border-top: 2px solid #fff;
+			border-bottom: 2px solid #fff;
+		}
+		&.box-mini {
+
+		}
+		.c-top-left {
+			background-image: url('../img/post-image-bg/square-bg-post-1.png');
+			background-repeat: no-repeat;
+			background-position: 0 0;
+		}
+		.c-top-right {
+			background-image: url('../img/post-image-bg/square-bg-post-1.png');
+			background-repeat: no-repeat;
+			background-position: -52px 0;
+		}
+		.c-bottom-left {
+			background-image: url('../img/post-image-bg/square-bg-post-1.png');
+			background-repeat: no-repeat;
+			background-position: 0 -50px;
+		}
+		.c-bottom-right {
+			background-image: url('../img/post-image-bg/square-bg-post-1.png');
+			background-repeat: no-repeat;
+			background-position: -52px -50px;
+		}
+	}
+	// BOX MORADO
+	.box-msg-2 {
+		background-color: #804ba1;
+		.line-span1 {
+			font-family: 'Nixie One', cursive;
+			font-size: 27px;
+			color: #fff;
+			text-transform: uppercase;
+			background-color: #4cbeb4;
+			top: 60px;
+			width: 60%;
+			margin: 0 auto;
+			z-index: 2;
+			.span-title-1 {
+				position: absolute;
+				width: 61px;
+				height: 58px;
+				background-image: url('../img/post-image-bg/cinta-titulo-post-2-izq.png');
+				left: -50px;
+				display: block;
+				top: 0;
+				z-index: 1;
+			}
+			.span-title-2 {
+				position: absolute;
+				width: 61px;
+				height: 58px;
+				background-image: url('../img/post-image-bg/cinta-titulo-post-2-der.png');
+				right: -50px;
+				display: block;
+				top: -20px;
+				z-index: 1;
+			}
+		}
+		.line-span2 {
+			font-family: 'Pathway Gothic One', sans-serif;
+			font-size: 105px; //187px;
+			text-transform: uppercase;
+			color: #8bd46b;
+			top: 105px;
+			letter-spacing: -8px;
+			text-shadow: -5px 5px 0 #5f0077, -10px 10px 0 #9664b5;
+			&:before {
+				content: '';
+				display: inline-block;
+				height: 18px;
+				width: 18px;
+				border-radius: 18px;
+				position: relative;
+				left: -15px;
+				z-index: 10;
+				background-color: #8bd46b;
+				zoom: 1;
+				top: -25px;
+				box-shadow: -3px 3px 0 #5f0077;
+			}
+			&:after {
+				content: '';
+				display: inline-block;
+				height: 18px;
+				width: 18px;
+				border-radius: 18px;
+				position: relative;
+				right: -15px;
+				z-index: 10;
+				background-color: #8bd46b;
+				zoom: 1;
+				top: -25px;
+				box-shadow: -3px 3px 0 #5f0077;
+			}
+		}
+		.line-span3 {
+			font-family: 'Great Vibes', cursive;
+			font-size: 35px;
+			top: 235px;
+			.last-word-line {
+				display: block;
+				font-family: 'Cookie', cursive;
+				font-size: 60px;
+				position: absolute;
+				display: block;
+				top: 30px;
+				left: 90px;
+				right: 90px;
+				color: #4cbeb4;
+				text-shadow: -2px 2px 0 #5f0077;
+				background-image: url('../img/post-image-bg/borde-last-word-post-2.png');
+				background-repeat: no-repeat;
+				background-position: bottom;
+				height: 75px;
+			}
+		}
+		.c-top-left, .c-top-right, .c-bottom-left, .c-bottom-right {
+			height: 20px;
+			width: 20px;
+		}
+		.c-top-left {
+			background-image: url('../img/post-image-bg/square-bg-post-2.png');
+			background-repeat: no-repeat;
+			background-position: 0 0;
+		}
+		.c-top-right {
+			background-image: url('../img/post-image-bg/square-bg-post-2.png');
+			background-repeat: no-repeat;
+			background-position: -60px 0;
+		}
+		.c-bottom-left {
+			background-image: url('../img/post-image-bg/square-bg-post-2.png');
+			background-repeat: no-repeat;
+			background-position: 0 -60px;
+		}
+		.c-bottom-right {
+			background-image: url('../img/post-image-bg/square-bg-post-2.png');
+			background-repeat: no-repeat;
+			background-position: -60px -60px;
+		}
+		.c-top-left-line {
+			position: absolute;
+			top: 2px;
+			background-image: url('../img/post-image-bg/square-bg-post-2-line.png');
+			background-repeat: repeat;
+			height: 19px;
+    		left: 20px;
+    		right: 20px;
+    		opacity: 0.5;
+		}
+		.c-bottom-left-line {
+			position: absolute;
+			bottom: 4px;
+			background-image: url('../img/post-image-bg/square-bg-post-2-line.png');
+			background-repeat: repeat;
+			height: 19px;
+    		left: 20px;
+    		right: 20px;
+    		opacity: 0.5;
+		}
+		.c-bottom-right-line {
+			position: absolute;
+			left: 4px;
+			background-image: url('../img/post-image-bg/square-bg-post-2-line.png');
+			background-repeat: repeat;
+			height: 19px;
+    		top: 20px;
+    		bottom: 20px;
+    		opacity: 0.5;
+    		-ms-transform: rotate(7deg); /* IE 9 */
+		    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+		    transform: rotate(7deg);
+		}
+		// .c-top-right:after {
+		// 	position: absolute;
+		// 	background-image: url('../img/post-image-bg/square-bg-post-6.png');
+		// 	background-repeat: repeat;
+		// 	top: 11px;
+		// 	bottom: 11px;
+		// 	width: 12px;
+		// 	height: auto;
+		// }
+		// .c-bottom-left:after {
+		// 	position: absolute;
+		// 	background-image: url('../img/post-image-bg/square-bg-post-6.png');
+		// 	background-repeat: repeat;
+		// 	top: 11px;
+		// 	bottom: 11px;
+		// 	width: 12px;
+		// 	height: auto;
+		// }
+		// .c-bottom-right:after {
+		// 	position: absolute;
+		// 	background-image: url('../img/post-image-bg/square-bg-post-6.png');
+		// 	background-repeat: repeat;
+		// 	height: 11px;
+		// 	width: 100%;
+		// }
+		&.box-mini {
+
+		}
+	}
+	// BOX NARANJO
+	.box-msg-3 {
+		background-color: #ed6600;
+		.line-span1 {
+			font-family: 'Lobster Two', cursive;
+			font-size: 57px;
+			top: 30px;
+			color: #ffda30;
+			left: 60px;
+			right: 60px;
+			//padding-bottom: 10px;
+			border-bottom: 4px solid #ffda30;
+			text-shadow: -2px 2px 0 #ed2d00;
+		}
+		.line-span2 {
+			font-family: 'Pathway Gothic One', sans-serif;
+			font-size: 105px; //187px;
+			text-transform: uppercase;
+			top: 105px;
+			letter-spacing: -8px;
+			text-shadow: -5px 5px 0 #3f9166;
+			&:before {
+				content: '';
+				display: inline-block;
+				height: 18px;
+				width: 18px;
+				border-radius: 18px;
+				position: relative;
+				left: -15px;
+				z-index: 10;
+				background-color: #3f9166;
+				zoom: 1;
+				top: -25px;
+				box-shadow: -3px 3px 0 rgba(0, 0, 0, 0.5);
+			}
+			&:after {
+				content: '';
+				display: inline-block;
+				height: 18px;
+				width: 18px;
+				border-radius: 18px;
+				position: relative;
+				right: -15px;
+				z-index: 10;
+				background-color: #3f9166;
+				zoom: 1;
+				top: -25px;
+				box-shadow: -3px 3px 0 rgba(0, 0, 0, 0.5);
+			}
+		}
+		.line-span3 {
+			font-family: 'Cinzel', serif;
+			font-size: 18px;
+			top: 275px;
+			background-color: #4cbe82;
+			width: 70%;
+			margin: 0 auto;
+			z-index: 2;
+			padding: 5px 0;
+			.span-title-1 {
+				position: absolute;
+				width: 89px;
+				height: 54px;
+				background-image: url('../img/post-image-bg/cinta-titulo-post-3-izq.png');
+				left: -50px;
+				display: block;
+				top: -19px;
+				z-index: 1;
+			}
+			.span-title-2 {
+				position: absolute;
+				width: 89px;
+				height: 54px;
+				background-image: url('../img/post-image-bg/cinta-titulo-post-3-der.png');
+				right: -50px;
+				display: block;
+				top: -19px;
+				z-index: 1;
+			}
+			.last-word-line {
+				display: block;
+				font-family: 'Lobster', cursive;
+				font-size: 40px;
+				position: absolute;
+				display: block;
+				top: 40px;
+				left: 90px;
+				right: 90px;
+				height: 75px;
+				color: #ffda30;
+				text-shadow: -2px 2px 0 #ed2d00;
+				background-color: transparent;
+			}
+		}
+		&.box-mini {
+
+		}
+		.c-top-left {
+			background-image: url('../img/post-image-bg/square-bg-post-3.png');
+			background-repeat: no-repeat;
+			background-position: 0 0;
+		}
+		.c-top-right {
+			background-image: url('../img/post-image-bg/square-bg-post-3.png');
+			background-repeat: no-repeat;
+			background-position: -52px 0;
+		}
+		.c-bottom-left {
+			background-image: url('../img/post-image-bg/square-bg-post-3.png');
+			background-repeat: no-repeat;
+			background-position: 0 -50px;
+		}
+		.c-bottom-right {
+			background-image: url('../img/post-image-bg/square-bg-post-3.png');
+			background-repeat: no-repeat;
+			background-position: -52px -50px;
+		}
+	}
+	// BOX VERDE AGUA
+	.box-msg-4 {
+		background-color: #00837c;
+		.line-span1 {
+			font-family: 'Dancing Script', cursive;
+			font-size: 54px;
+			color: #c9c8c4;
+			top: 60px;
+		}
+		.line-span2 {
+			font-family: 'Six Caps', sans-serif;
+			font-size: 102px; //187px;
+			text-transform: uppercase;
+			color: #ffdc48;
+			top: 105px;
+			text-shadow: -3px 3px 0 #1f4766;
+		}
+		.line-span3 {
+			font-family: 'Pathway Gothic One', sans-serif;
+			font-size: 35px;
+			background-color: #ffac4d;
+			color: #00837c;
+			display: block;
+			top: 245px;
+			width: 80%;
+			margin: 0 auto;
+			.span-title-1 {
+				position: absolute;
+				width: 60px;
+				height: 12px;
+				background-image: url('../img/post-image-bg/cinta-titulo-post-4-izq.png');
+				left: 0px;
+				display: block;
+				top: -12px;
+				z-index: 1;
+			}
+			.span-title-2 {
+				position: absolute;
+				width: 60px;
+				height: 12px;
+				background-image: url('../img/post-image-bg/cinta-titulo-post-4-der.png');
+				right: 0px;
+				display: block;
+				bottom: -12px;
+				z-index: 1;
+			}
+			.last-word-line {
+				display: block;
+				font-family: 'Lobster', cursive;
+				font-size: 45px;
+				color: #c9c8c4;
+				position: absolute;
+				background-color: transparent;
+				left: 0;
+				right: 0;
+				top: 50px;
+			}
+		}
+		&.box-mini {
+
+		}
+		.c-top-left {
+			background-image: url('../img/post-image-bg/square-bg-post-4.png');
+			background-repeat: no-repeat;
+			background-position: 0 0;
+		}
+		.c-top-right {
+			background-image: url('../img/post-image-bg/square-bg-post-4.png');
+			background-repeat: no-repeat;
+			background-position: -52px 0;
+		}
+		.c-bottom-left {
+			background-image: url('../img/post-image-bg/square-bg-post-4.png');
+			background-repeat: no-repeat;
+			background-position: 0 -50px;
+		}
+		.c-bottom-right {
+			background-image: url('../img/post-image-bg/square-bg-post-4.png');
+			background-repeat: no-repeat;
+			background-position: -52px -50px;
+		}
+	}
+	// BOX VERDE LIMON
+	.box-msg-5 {
+		background-color: #65bd5c;
+		.line-span1 {
+			font-family: 'Cinzel', serif;
+			font-size: 24px;
+			width: 80%;
+			color: #f6f0d0;
+			border-top: 2px solid #f6f0d0;
+			border-bottom: 2px solid #f6f0d0;
+			margin: 0 auto;
+			top: 70px;
+		}
+		.line-span2 {
+			font-family: 'Cookie', cursive;
+			font-size: 110px; //182px;
+			color: #ffdc48;
+			top: 110px;
+			text-shadow: -5px 5px 0 #1f4766;
+		}
+		.line-span3 {
+			font-family: 'Cinzel', serif; //'BenchNine', sans-serif;
+			font-size: 18px;
+			background-color: #1f4766;
+			top: 270px;
+			width: 60%;
+			margin: 0 auto;
+			padding: 5px 0;
+			.span-title-1 {
+				position: absolute;
+				width: 41px;
+				height: 25px;
+				background-image: url('../img/post-image-bg/cinta-titulo-post-5-izq.png');
+				left: -18px;
+				display: block;
+				top: -12px;
+				z-index: 1;
+			}
+			.span-title-2 {
+				position: absolute;
+				width: 41px;
+				height: 25px;
+				background-image: url('../img/post-image-bg/cinta-titulo-post-5-der.png');
+				right: -18px;
+				display: block;
+				bottom: -12px;
+				z-index: 1;
+			}
+			.last-word-line {
+				display: block;
+				font-family: 'Six Caps', sans-serif;
+				font-size: 60px;
+				text-transform: uppercase;
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 35px;
+				&:before {
+					content: '';
+					display: inline-block;
+					height: 12px;
+					width: 12px;
+					border-radius: 12px;
+					position: relative;
+					left: -10px;
+					z-index: 10;
+					background-color: #fff;
+					zoom: 1;
+					top: -20px;
+				}
+				&:after {
+					content: '';
+					display: inline-block;
+					height: 12px;
+					width: 12px;
+					border-radius: 12px;
+					position: relative;
+					right: -10px;
+					z-index: 10;
+					background-color: #fff;
+					zoom: 1;
+					top: -20px;
+				}
+			}
+		}
+		&.box-mini {
+
+		}
+		.c-top-left {
+			background-image: url('../img/post-image-bg/square-bg-post-5.png');
+			background-repeat: no-repeat;
+			background-position: 0 0;
+		}
+		.c-top-right {
+			background-image: url('../img/post-image-bg/square-bg-post-5.png');
+			background-repeat: no-repeat;
+			background-position: -52px 0;
+		}
+		.c-bottom-left {
+			background-image: url('../img/post-image-bg/square-bg-post-5.png');
+			background-repeat: no-repeat;
+			background-position: 0 -50px;
+		}
+		.c-bottom-right {
+			background-image: url('../img/post-image-bg/square-bg-post-5.png');
+			background-repeat: no-repeat;
+			background-position: -52px -50px;
+		}
+	}
+	// BOX CELESTE
+	.box-msg-6 {
+		background-color: #2aa5ad;
+		.line-span1 {
+			font-family: 'Pacifico', cursive;
+			font-size: 50px;
+			color: #e6ca50;
+			top: 50px;
+		}
+		.line-span2 {
+			font-family: 'Pathway Gothic One', sans-serif;
+			font-size: 102px;
+			text-transform: uppercase;
+			top: 110px;
+			letter-spacing: -5px;
+			text-shadow: -5px 5px 0 #05364a;
+			&:before {
+				content: '';
+				display: inline-block;
+				height: 12px;
+				width: 12px;
+				border-radius: 12px;
+				position: relative;
+				left: -10px;
+				z-index: 10;
+				background-color: #fff;
+				zoom: 1;
+				top: -20px;
+				box-shadow: -3px 3px 0 #05364a;
+			}
+			&:after {
+				content: '';
+				display: inline-block;
+				height: 12px;
+				width: 12px;
+				border-radius: 12px;
+				position: relative;
+				right: -10px;
+				z-index: 10;
+				background-color: #fff;
+				zoom: 1;
+				top: -20px;
+				box-shadow: -3px 3px 0 #05364a;
+			}
+		}
+		.line-span3 {
+			font-family: 'Pacifico', cursive;
+			font-size: 40px;
+			color: #e6ca50;
+			top: 235px;
+			.last-word-line {
+				display: block;
+				font-family: 'Pathway Gothic One', sans-serif;
+				font-size: 30px;
+				color: #fff;
+				background-color: #2f7489;
+				position: absolute;
+				//width: 80%;
+				//margin: 0 auto;
+				left: 20%;
+				right: 20%;
+				top: 100px;
+				.span-title-1 {
+					position: absolute;
+					width: 48px;
+					height: 63px;
+					background-image: url('../img/post-image-bg/cinta-titulo-post-6-izq.png');
+					left: -32px;
+					display: block;
+					top: -20px;
+					z-index: 1;
+				}
+				.span-title-2 {
+					position: absolute;
+					width: 48px;
+					height: 63px;
+					background-image: url('../img/post-image-bg/cinta-titulo-post-6-der.png');
+					right: -32px;
+					display: block;
+					top: -20px;
+					z-index: 1;
+				}
+			}
+		}
+		&.box-mini {
+
+		}
+		.c-top-left {
+			background-image: url('../img/post-image-bg/square-bg-post-6.png');
+			background-repeat: repeat;
+			height: 11px;
+			width: 100%;
+		}
+		.c-top-right {
+			background-image: url('../img/post-image-bg/square-bg-post-6.png');
+			background-repeat: repeat;
+			top: 11px;
+			bottom: 11px;
+			width: 12px;
+			height: auto;
+		}
+		.c-bottom-left {
+			background-image: url('../img/post-image-bg/square-bg-post-6.png');
+			background-repeat: repeat;
+			top: 11px;
+			bottom: 11px;
+			width: 12px;
+			height: auto;
+		}
+		.c-bottom-right {
+			background-image: url('../img/post-image-bg/square-bg-post-6.png');
+			background-repeat: repeat;
+			height: 11px;
+			width: 100%;
+		}
+	}
+}
