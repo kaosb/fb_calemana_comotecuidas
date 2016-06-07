@@ -157,6 +157,9 @@ body {
 .boxes-style-color {
 	position: relative;
 	margin-top: -510px;
+	@media (max-width: 480px) {
+		margin-top: -440px;
+	}
 	.select-design {
 		text-align: center;
 		display: block;
@@ -183,6 +186,10 @@ body {
 		background-color: #fff;
 		margin: 0 auto;
 		margin-bottom: 20px;
+		@media (max-width: 480px) {
+			width: 380px;
+			height: 440px;
+		}
 	}
 	.corners {
 		position: absolute;
@@ -243,15 +250,26 @@ body {
 			left: 0;
 			right: 0;
 			z-index: 1;
+			@media (max-width: 480px) {
+				-ms-transform: scale(0.7); /* IE 9 */
+				-webkit-transform: scale(0.7); /* Safari */
+				transform: scale(0.7);
+			}
 			.hashtag-10-p-min {
 				left: 40px;
 				top: -46px;
 				position: absolute;
+				@media (max-width: 480px) {
+					left: -24px;
+				}
 			}
 			.logo-clinica-min {
 				right: 40px;
 				top: -70px;
 				position: absolute;
+				@media (max-width: 480px) {
+					right: -25px;
+				}
 			}
 		}
 		&.box-mini {
@@ -487,31 +505,6 @@ body {
 		    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
 		    transform: rotate(7deg);
 		}
-		// .c-top-right:after {
-		// 	position: absolute;
-		// 	background-image: url('../img/post-image-bg/square-bg-post-6.png');
-		// 	background-repeat: repeat;
-		// 	top: 11px;
-		// 	bottom: 11px;
-		// 	width: 12px;
-		// 	height: auto;
-		// }
-		// .c-bottom-left:after {
-		// 	position: absolute;
-		// 	background-image: url('../img/post-image-bg/square-bg-post-6.png');
-		// 	background-repeat: repeat;
-		// 	top: 11px;
-		// 	bottom: 11px;
-		// 	width: 12px;
-		// 	height: auto;
-		// }
-		// .c-bottom-right:after {
-		// 	position: absolute;
-		// 	background-image: url('../img/post-image-bg/square-bg-post-6.png');
-		// 	background-repeat: repeat;
-		// 	height: 11px;
-		// 	width: 100%;
-		// }
 		&.box-mini {
 
 		}
@@ -833,6 +826,9 @@ body {
 			font-size: 50px;
 			color: #e6ca50;
 			top: 50px;
+			@media (max-width: 480px) {
+				font-size: 25px;
+			}
 		}
 		.line-span2 {
 			font-family: 'Pathway Gothic One', sans-serif;
@@ -841,6 +837,10 @@ body {
 			top: 110px;
 			letter-spacing: -5px;
 			text-shadow: -5px 5px 0 #05364a;
+			@media (max-width: 480px) {
+				font-size: 65px;
+				top: 80px;
+			}
 			&:before {
 				content: '';
 				display: inline-block;
@@ -875,6 +875,10 @@ body {
 			font-size: 40px;
 			color: #e6ca50;
 			top: 235px;
+			@media (max-width: 480px) {
+				font-size: 30px;
+				top: 170px;
+			}
 			.last-word-line {
 				display: block;
 				font-family: 'Pathway Gothic One', sans-serif;
@@ -887,6 +891,10 @@ body {
 				left: 20%;
 				right: 20%;
 				top: 100px;
+				@media (max-width: 480px) {
+					font-size: 24px;
+					top: 80px;
+				}
 				.span-title-1 {
 					position: absolute;
 					width: 48px;
