@@ -428,6 +428,14 @@ body.step-2-bg .feat-image {
   background-repeat: repeat-x;
   height: 72px;
 }
+@media (max-width: 480px) {
+  .boxes-style-color .box-msg-1 .line-span1 {
+    font-size: 20px;
+    width: 70%;
+    top: 40px;
+    padding: 5px 0;
+  }
+}
 .boxes-style-color .box-msg-1 .line-span1 .span-title-1 {
   position: absolute;
   width: 109px;
@@ -452,6 +460,12 @@ body.step-2-bg .feat-image {
   color: #fae045;
   top: 125px;
 }
+@media (max-width: 480px) {
+  .boxes-style-color .box-msg-1 .line-span2 {
+    font-size: 70px;
+    top: 110px;
+  }
+}
 .boxes-style-color .box-msg-1 .line-span3 {
   font-family: 'BenchNine', sans-serif;
   font-size: 35px;
@@ -463,6 +477,13 @@ body.step-2-bg .feat-image {
   padding: 3px 20px 0;
   border-top: 2px solid #fff;
   border-bottom: 2px solid #fff;
+}
+@media (max-width: 480px) {
+  .boxes-style-color .box-msg-1 .line-span3 {
+    font-size: 24px;
+    top: 210px;
+    line-height: 30px;
+  }
 }
 .boxes-style-color .box-msg-1 .c-top-left {
   background-image: url('../img/post-image-bg/square-bg-post-1.png');
