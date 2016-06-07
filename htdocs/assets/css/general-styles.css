@@ -1,6 +1,11 @@
+/* new styles */
 body {
   background-color: #00837c;
   color: #ffffff;
+}
+#fb-welcome {
+  display: none !important;
+  visibility: hidden;
 }
 .app-bg {
   position: relative;

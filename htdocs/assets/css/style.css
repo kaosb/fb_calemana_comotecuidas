@@ -6744,9 +6744,14 @@ button.close {
   border-radius: 10px;
   padding: 10px 30px;
 }
+/* new styles */
 body {
   background-color: #00837c;
   color: #ffffff;
+}
+#fb-welcome {
+  display: none !important;
+  visibility: hidden;
 }
 .app-bg {
   position: relative;
