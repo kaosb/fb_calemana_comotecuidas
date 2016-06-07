@@ -758,6 +758,12 @@ body.step-2-bg .feat-image {
   color: #c9c8c4;
   top: 60px;
 }
+@media (max-width: 480px) {
+  .boxes-style-color .box-msg-4 .line-span1 {
+    font-size: 40px;
+    top: 35px;
+  }
+}
 .boxes-style-color .box-msg-4 .line-span2 {
   font-family: 'Six Caps', sans-serif;
   font-size: 102px;
@@ -765,6 +771,12 @@ body.step-2-bg .feat-image {
   color: #ffdc48;
   top: 105px;
   text-shadow: -3px 3px 0 #1f4766;
+}
+@media (max-width: 480px) {
+  .boxes-style-color .box-msg-4 .line-span2 {
+    font-size: 95px;
+    top: 70px;
+  }
 }
 .boxes-style-color .box-msg-4 .line-span3 {
   font-family: 'Pathway Gothic One', sans-serif;
@@ -775,6 +787,12 @@ body.step-2-bg .feat-image {
   top: 245px;
   width: 80%;
   margin: 0 auto;
+}
+@media (max-width: 480px) {
+  .boxes-style-color .box-msg-4 .line-span3 {
+    font-size: 30px;
+    top: 205px;
+  }
 }
 .boxes-style-color .box-msg-4 .line-span3 .span-title-1 {
   position: absolute;
@@ -806,6 +824,12 @@ body.step-2-bg .feat-image {
   left: 0;
   right: 0;
   top: 50px;
+}
+@media (max-width: 480px) {
+  .boxes-style-color .box-msg-4 .line-span3 .last-word-line {
+    font-size: 40px;
+    top: 45px;
+  }
 }
 .boxes-style-color .box-msg-4 .c-top-left {
   background-image: url('../img/post-image-bg/square-bg-post-4.png');
