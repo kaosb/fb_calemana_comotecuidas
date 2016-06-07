@@ -6929,8 +6929,8 @@ body {
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-featured {
-    width: 380px;
-    height: 440px;
+    width: 320px;
+    height: 410px;
   }
 }
 .boxes-style-color .corners {
