@@ -319,25 +319,6 @@ Riéndome disfrutando y regaloneando con mi linda familia cada día
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
-		<script type="text/javascript">
-			$(function(){
-				// Test bind for step 1 button.
-				$('#btnstep1').click(function(event){
-					event.preventDefault();
-					$('#step_1').fadeOut();
-					$('#step_3').fadeIn();
-				});
-				// Export html as image.
-				$('#btnstep2_share').click(function(){
-					html2canvas($('#big_box_msg_1'), {
-						onrendered: function(canvas){
-							var myImage = canvas.toDataURL("image/png");
-							window.open(myImage);
-						}
-					});
-				});
-			});
-		</script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="js/bootstrap.min.js"></script>
 		<script type="text/javascript">
@@ -365,6 +346,24 @@ Riéndome disfrutando y regaloneando con mi linda familia cada día
 					$('body').removeClass("step-2-bg");
 					$('#step_1').show();
 				});
+
+				$('#btnstep2_share').click(function(event){
+					event.preventDefault();
+					html2canvas($(".box-featured:visible"), {
+						onrendered: function(canvas){
+							var myImage = canvas.toDataURL("image/png");
+							// window.open(myImage);
+							window.open(myImage, '_blank');
+						}
+					});
+
+					$('#step_2').hide();
+					$('body').removeClass("step-2-bg");
+					$('#step_3').show();
+
+				});
+
+				btnstep2_share
 			});
 		</script>
 	</body>
