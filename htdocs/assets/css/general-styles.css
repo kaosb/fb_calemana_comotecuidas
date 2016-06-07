@@ -501,7 +501,7 @@ body.step-2-bg .feat-image {
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-2 .line-span1 {
     font-size: 21px;
-    padding: 5px 0;
+    padding: 4px 0;
     top: 50px;
   }
 }
