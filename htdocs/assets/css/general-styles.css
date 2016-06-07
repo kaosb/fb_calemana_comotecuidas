@@ -498,6 +498,13 @@ body.step-2-bg .feat-image {
   margin: 0 auto;
   z-index: 2;
 }
+@media (max-width: 480px) {
+  .boxes-style-color .box-msg-2 .line-span1 {
+    font-size: 21px;
+    padding: 5px 0;
+    top: 50px;
+  }
+}
 .boxes-style-color .box-msg-2 .line-span1 .span-title-1 {
   position: absolute;
   width: 61px;
@@ -526,6 +533,12 @@ body.step-2-bg .feat-image {
   top: 105px;
   letter-spacing: -8px;
   text-shadow: -5px 5px 0 #5f0077, -10px 10px 0 #9664b5;
+}
+@media (max-width: 480px) {
+  .boxes-style-color .box-msg-2 .line-span2 {
+    font-size: 75px;
+    top: 95px;
+  }
 }
 .boxes-style-color .box-msg-2 .line-span2:before {
   content: '';
@@ -560,6 +573,11 @@ body.step-2-bg .feat-image {
   font-size: 35px;
   top: 235px;
 }
+@media (max-width: 480px) {
+  .boxes-style-color .box-msg-2 .line-span3 {
+    top: 200px;
+  }
+}
 .boxes-style-color .box-msg-2 .line-span3 .last-word-line {
   font-family: 'Cookie', cursive;
   font-size: 60px;
@@ -574,6 +592,13 @@ body.step-2-bg .feat-image {
   background-repeat: no-repeat;
   background-position: bottom;
   height: 75px;
+}
+@media (max-width: 480px) {
+  .boxes-style-color .box-msg-2 .line-span3 .last-word-line {
+    font-size: 50px;
+    top: 35px;
+    height: 65px;
+  }
 }
 .boxes-style-color .box-msg-2 .c-top-left,
 .boxes-style-color .box-msg-2 .c-top-right,
