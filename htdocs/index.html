@@ -323,12 +323,27 @@
 		<script src="js/countable.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
+				/******************************************** Objeto Global para almacenar la seleccion */
+				$.userdata = {};
+				/******************************************** Funcion que despliega el documento con las bases */
+				$('#btnbases').bind('click', function(event){
+					verBases();
+				});
+				/******************* Funcion que permite abrir las bases del concurso */
+				function verBases(){
+					var WindowObjectReference = window.open("bases.pdf", "bases_concurso", "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes");
+				}
+
+
 				$('#txtarea').focus(function() {
 					$(this).val('');
 					$(this).css( "background-color", "white" );
 					// bind counter
 					var area = document.getElementById('txtarea')
 					Countable.live(area, function(counter){
+						// console.log(counter);
+						$.userdata.words_counter = counter;
+						console.log($.userdata);
 						if(counter.words == 10){
 							$('#txtarea').css( "background-color", "palegreen" );
 						}
@@ -365,11 +380,14 @@
 				// Bindeo boton share paso 2.
 				$('#btnstep2_share').click(function(event){
 					event.preventDefault();
-					html2canvas($(".box-featured:visible"), {
+					html2canvas($("body"), {
 						onrendered: function(canvas){
 							var myImage = canvas.toDataURL("image/png");
+							console.log(myImage);
+							console.log($(".box-featured:visible"));
 							// window.open(myImage);
-							window.open(myImage, '_blank');
+							// window.open(myImage, '_blank');
+							var WindowObjectReference = window.open(myImage, "share_img", '_blank');
 						}
 					});
 					$('#step_2').hide();
