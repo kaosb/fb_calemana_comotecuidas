@@ -329,9 +329,7 @@ Riéndome disfrutando y regaloneando con mi linda familia cada día
 					$('#step_1').hide();
 					$('body').addClass("step-2-bg");
 					$('#step_2').show();
-
 					// Bindeo el selector de themas
-					// 
 					$('.box-mini').click(function(event){
 						event.preventDefault();
 						// Ocultamos los preview
@@ -339,14 +337,14 @@ Riéndome disfrutando y regaloneando con mi linda familia cada día
 						$('#big_'+$(this).attr('id')).show();
 					});
 				});
-
+				// Bindeo boton volver paso 2.
 				$('#btnstep2_back').click(function(event){
 					event.preventDefault();
 					$('#step_2').hide();
 					$('body').removeClass("step-2-bg");
 					$('#step_1').show();
 				});
-
+				// Bindeo boton share paso 2.
 				$('#btnstep2_share').click(function(event){
 					event.preventDefault();
 					html2canvas($(".box-featured:visible"), {
@@ -356,11 +354,9 @@ Riéndome disfrutando y regaloneando con mi linda familia cada día
 							window.open(myImage, '_blank');
 						}
 					});
-
 					$('#step_2').hide();
 					$('body').removeClass("step-2-bg");
 					$('#step_3').show();
-
 				});
 			});
 		</script>
