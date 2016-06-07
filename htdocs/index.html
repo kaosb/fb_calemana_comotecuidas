@@ -348,6 +348,15 @@ Riéndome disfrutando y regaloneando con mi linda familia cada día
 					$('#step_1').hide();
 					$('body').addClass("step-2-bg");
 					$('#step_2').show();
+
+					// Bindeo el selector de themas
+					// 
+					$('.box-mini').click(function(event){
+						event.preventDefault();
+						// Ocultamos los preview
+						$('.box-featured').hide();
+						$('#big_'+$(this).attr('id')).show();
+					});
 				});
 			});
 		</script>
