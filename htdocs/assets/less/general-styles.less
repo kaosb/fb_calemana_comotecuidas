@@ -528,6 +528,10 @@ body {
 			//padding-bottom: 10px;
 			border-bottom: 4px solid #ffda30;
 			text-shadow: -2px 2px 0 #ed2d00;
+			@media (max-width: 480px) {
+				font-size: 35px;
+				top: 25px;
+			}
 		}
 		.line-span2 {
 			font-family: 'Pathway Gothic One', sans-serif;
@@ -536,6 +540,11 @@ body {
 			top: 105px;
 			letter-spacing: -8px;
 			text-shadow: -5px 5px 0 #3f9166;
+			@media (max-width: 480px) {
+				font-size: 70px;
+				top: 85px;
+				letter-spacing: -7px;
+			}
 			&:before {
 				content: '';
 				display: inline-block;
@@ -574,6 +583,12 @@ body {
 			margin: 0 auto;
 			z-index: 2;
 			padding: 5px 0;
+			@media (max-width: 480px) {
+				font-size: 16px; //35px;
+				top: 195px;
+				width: 75%;
+				padding: 7px 0 6px;
+			}
 			.span-title-1 {
 				position: absolute;
 				width: 89px;
@@ -583,6 +598,9 @@ body {
 				display: block;
 				top: -19px;
 				z-index: 1;
+				@media (max-width: 480px) {
+					left: -85px;
+				}
 			}
 			.span-title-2 {
 				position: absolute;
@@ -593,6 +611,9 @@ body {
 				display: block;
 				top: -19px;
 				z-index: 1;
+				@media (max-width: 480px) {
+					right: -85px;
+				}
 			}
 			.last-word-line {
 				display: block;
@@ -607,6 +628,11 @@ body {
 				color: #ffda30;
 				text-shadow: -2px 2px 0 #ed2d00;
 				background-color: transparent;
+				@media (max-width: 480px) {
+					font-size: 30px;
+					left: 0;
+					right: 0;
+				}
 			}
 		}
 		&.box-mini {

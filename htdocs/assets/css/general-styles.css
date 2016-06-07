@@ -650,6 +650,12 @@ body.step-2-bg .feat-image {
   border-bottom: 4px solid #ffda30;
   text-shadow: -2px 2px 0 #ed2d00;
 }
+@media (max-width: 480px) {
+  .boxes-style-color .box-msg-3 .line-span1 {
+    font-size: 35px;
+    top: 25px;
+  }
+}
 .boxes-style-color .box-msg-3 .line-span2 {
   font-family: 'Pathway Gothic One', sans-serif;
   font-size: 105px;
@@ -657,6 +663,13 @@ body.step-2-bg .feat-image {
   top: 105px;
   letter-spacing: -8px;
   text-shadow: -5px 5px 0 #3f9166;
+}
+@media (max-width: 480px) {
+  .boxes-style-color .box-msg-3 .line-span2 {
+    font-size: 70px;
+    top: 85px;
+    letter-spacing: -7px;
+  }
 }
 .boxes-style-color .box-msg-3 .line-span2:before {
   content: '';
@@ -696,6 +709,14 @@ body.step-2-bg .feat-image {
   z-index: 2;
   padding: 5px 0;
 }
+@media (max-width: 480px) {
+  .boxes-style-color .box-msg-3 .line-span3 {
+    font-size: 16px;
+    top: 195px;
+    width: 75%;
+    padding: 7px 0 6px;
+  }
+}
 .boxes-style-color .box-msg-3 .line-span3 .span-title-1 {
   position: absolute;
   width: 89px;
@@ -706,6 +727,11 @@ body.step-2-bg .feat-image {
   top: -19px;
   z-index: 1;
 }
+@media (max-width: 480px) {
+  .boxes-style-color .box-msg-3 .line-span3 .span-title-1 {
+    left: -85px;
+  }
+}
 .boxes-style-color .box-msg-3 .line-span3 .span-title-2 {
   position: absolute;
   width: 89px;
@@ -715,6 +741,11 @@ body.step-2-bg .feat-image {
   display: block;
   top: -19px;
   z-index: 1;
+}
+@media (max-width: 480px) {
+  .boxes-style-color .box-msg-3 .line-span3 .span-title-2 {
+    right: -85px;
+  }
 }
 .boxes-style-color .box-msg-3 .line-span3 .last-word-line {
   font-family: 'Lobster', cursive;
@@ -728,6 +759,13 @@ body.step-2-bg .feat-image {
   color: #ffda30;
   text-shadow: -2px 2px 0 #ed2d00;
   background-color: transparent;
+}
+@media (max-width: 480px) {
+  .boxes-style-color .box-msg-3 .line-span3 .last-word-line {
+    font-size: 30px;
+    left: 0;
+    right: 0;
+  }
 }
 .boxes-style-color .box-msg-3 .c-top-left {
   background-image: url('../img/post-image-bg/square-bg-post-3.png');
