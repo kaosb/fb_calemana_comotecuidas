@@ -2,6 +2,12 @@
 body {
 	background-color: #00837c;
 	color: #ffffff;
+	&.step-2-bg {
+		.feat-image {
+			display: none !important;
+			visibility: hidden;
+		}
+	}
 }
 #fb-welcome {
 	display: none !important;
@@ -156,9 +162,9 @@ body {
 // Cajas de colores
 .boxes-style-color {
 	position: relative;
-	margin-top: -510px;
+	margin-top: 0; //-510px;
 	@media (max-width: 480px) {
-		margin-top: -440px;
+		margin-top: 0; //-440px;
 	}
 	.select-design {
 		text-align: center;
@@ -721,6 +727,10 @@ body {
 			border-bottom: 2px solid #f6f0d0;
 			margin: 0 auto;
 			top: 70px;
+			@media (max-width: 480px) {
+				font-size: 16px;
+				top: 40px;
+			}
 		}
 		.line-span2 {
 			font-family: 'Cookie', cursive;
@@ -728,6 +738,10 @@ body {
 			color: #ffdc48;
 			top: 110px;
 			text-shadow: -5px 5px 0 #1f4766;
+			@media (max-width: 480px) {
+				font-size: 70px;
+				top: 70px;
+			}
 		}
 		.line-span3 {
 			font-family: 'Cinzel', serif; //'BenchNine', sans-serif;
@@ -737,6 +751,10 @@ body {
 			width: 60%;
 			margin: 0 auto;
 			padding: 5px 0;
+			@media (max-width: 480px) {
+				//font-size: 70px;
+				top: 180px;
+			}
 			.span-title-1 {
 				position: absolute;
 				width: 41px;
@@ -766,6 +784,10 @@ body {
 				left: 0;
 				right: 0;
 				top: 35px;
+				@media (max-width: 480px) {
+					font-size: 45px;
+					top: 64px;
+				}
 				&:before {
 					content: '';
 					display: inline-block;

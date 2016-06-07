@@ -3,6 +3,10 @@ body {
   background-color: #00837c;
   color: #ffffff;
 }
+body.step-2-bg .feat-image {
+  display: none !important;
+  visibility: hidden;
+}
 #fb-welcome {
   display: none !important;
   visibility: hidden;
@@ -149,11 +153,11 @@ body {
 }
 .boxes-style-color {
   position: relative;
-  margin-top: -510px;
+  margin-top: 0;
 }
 @media (max-width: 480px) {
   .boxes-style-color {
-    margin-top: -440px;
+    margin-top: 0;
   }
 }
 .boxes-style-color .select-design {
@@ -836,12 +840,24 @@ body {
   margin: 0 auto;
   top: 70px;
 }
+@media (max-width: 480px) {
+  .boxes-style-color .box-msg-5 .line-span1 {
+    font-size: 16px;
+    top: 40px;
+  }
+}
 .boxes-style-color .box-msg-5 .line-span2 {
   font-family: 'Cookie', cursive;
   font-size: 110px;
   color: #ffdc48;
   top: 110px;
   text-shadow: -5px 5px 0 #1f4766;
+}
+@media (max-width: 480px) {
+  .boxes-style-color .box-msg-5 .line-span2 {
+    font-size: 70px;
+    top: 70px;
+  }
 }
 .boxes-style-color .box-msg-5 .line-span3 {
   font-family: 'Cinzel', serif;
@@ -851,6 +867,11 @@ body {
   width: 60%;
   margin: 0 auto;
   padding: 5px 0;
+}
+@media (max-width: 480px) {
+  .boxes-style-color .box-msg-5 .line-span3 {
+    top: 180px;
+  }
 }
 .boxes-style-color .box-msg-5 .line-span3 .span-title-1 {
   position: absolute;
@@ -881,6 +902,12 @@ body {
   left: 0;
   right: 0;
   top: 35px;
+}
+@media (max-width: 480px) {
+  .boxes-style-color .box-msg-5 .line-span3 .last-word-line {
+    font-size: 45px;
+    top: 64px;
+  }
 }
 .boxes-style-color .box-msg-5 .line-span3 .last-word-line:before {
   content: '';
