@@ -67,7 +67,7 @@
 						<!-- contenedor mensaje -->
 
 						<!-- PASO 0 -->
-						<div id="step_1" class="content-message text-center" style="display: none;">
+						<div id="step_0" class="content-message text-center" style="display: none;">
 							<p class="advice-msg">Hazte fan de la Clínica Alemana en Facebook,
 							<br>
 							comparte tu mejor consejo de salud
@@ -78,7 +78,7 @@
 						<!-- FIN PASO 0 -->
 
 						<!-- PASO 1 -->
-						<div id="step_1" class="content-message text-center" style="display: none;">
+						<div id="step_1" class="content-message text-center" style="">
 							<p class="advice-msg">Escribe tu mejor consejo de salud usando entre 7 y 10 palabras</p>
 							<form>
 								<textarea class="form-control input-lg" rows="5">
@@ -94,7 +94,7 @@ Riéndome disfrutando y regaloneando con mi linda familia cada día
 						<!-- FIN PASO 1 -->
 
 						<!-- PASO 2 -->
-						<div id="step_2"  style="">
+						<div id="step_2"  style="display: none;">
 							<div class="boxes-style-color">
 								<!-- caja principal elegida -->
 
@@ -418,5 +418,16 @@ Riéndome disfrutando y regaloneando con mi linda familia cada día
 		</script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				// Bind boton step 1
+				$('#btnstep1').click(function(event){
+					event.preventDefault();
+					$('#step_1').hide();
+					$('body').addClass("step-2-bg");
+					$('#step_2').show();
+				});
+			});
+		</script>
 	</body>
 </html>
