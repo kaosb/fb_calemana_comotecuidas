@@ -346,7 +346,7 @@
 						// Guardo el array de palabras en el objeto global.
 						$.userdata.palabras = $('#text_post_content').val().split(' ');;
 						// Guardo el identificador del tema por defecto.
-						$.userdata.default_template = 1
+						$.userdata.template = 1
 						// Construyo el cartel.
 						buildCartel($.userdata.palabras);
 					}else{
@@ -367,46 +367,17 @@
 				/******************* PASO 3 */
 				$('#btnstep2_share').click(function(event){
 					event.preventDefault();
-					// var node = document.getElementById($('.box-featured:visible').attr('id'));
-					// html2canvas(node, {
-					// 	onrendered: function(canvas){
-					// 		console.log(canvas);
-					// 		var myImage = canvas.toDataURL("image/png");
-					// 		console.log(myImage);
-					// 		// console.log($(".box-featured:visible"));
-					// 		// window.open(myImage);
-					// 		// window.open(myImage, '_blank');
-					// 		var WindowObjectReference = window.open(myImage, "share_img", '_blank');
-					// 	}
-					// });
-
-					// html2canvas([document.getElementById('mydiv')], {
-					// 	onrendered: function(canvas){
-					// 		var data = canvas.toDataURL('image/png');
-					// 		// AJAX call to send `data` to a PHP file that creates an image from the dataURI string and saves it to a directory on the server
-					// 		}
-					// });
-					console.log('#big_box_msg_'+$.userdata.default_template);
-					html2canvas($('#big_box_msg_'+$.userdata.default_template), {
+					console.log('#big_box_msg_'+$.userdata.template);
+					html2canvas($('#big_box_msg_'+$.userdata.template), {
 						onrendered: function(canvas) {
 							var myImage = canvas.toDataURL("image/png");
-							window.open(myImage, '_blank');
+							// window.open(myImage, '_blank');
+							var WindowObjectReference = window.open(myImage, "share_img", '_blank');
 							$('#step_2').hide();
 							$('body').removeClass("step-2-bg");
 							$('#step_3').show();
 						}
 					});
-
-					// var node = document.getElementById($('.box-featured:visible').attr('id'));
-					// domtoimage.toJpeg(node, { quality: 0.95 })
-					// .then(function (dataUrl) {
-					// 	var WindowObjectReference = window.open(dataUrl, "share_img", '_blank');
-					// 	// var link = document.createElement('a');
-					// 	// link.download = 'my-image-name.jpeg';
-					// 	// link.href = dataUrl;
-					// 	// link.click();
-					// });
-
 				});
 			});
 			/******************* HELPERS */
@@ -417,8 +388,9 @@
 			function buildCartel(palabras){
 				var cartel = $('.box-featured:visible');
 				// detectamos que de que plantilla se trata
-				// console.log(cartel);
-				// console.log(cartel.attr('template'));
+				// Cargamos el template seleccionado.
+				$.userdata.template = cartel.attr('template');
+				// Acorde a lo seleccionado desplegamos.
 				switch(cartel.attr('template')){
 					case "1":
 						cartel.find(".span-title-text").html(palabras[0]);
