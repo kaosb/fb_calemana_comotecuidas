@@ -9,6 +9,10 @@ body {
 		}
 	}
 }
+.square-content-app {
+	height: 760px;
+	overflow: hidden;
+}
 #fb-welcome {
 	display: none !important;
 	visibility: hidden;
@@ -50,16 +54,19 @@ body {
 	margin: 0 auto;
 	border-bottom: 3px solid #ffe9b7;
 	@media (max-width: 480px) {
-		width: 100%;
-		height: auto;
+		//width: 100%;
+		//height: auto;
 	}
 }
 .content-message {
-	margin: 50px 30px;
+	margin: 30px; //50px 30px;
+	.btn.btn-lg {
+		font-size: 28px;
+	}
 }
 .advice-msg {
 	font-family: 'Lobster', cursive;
-	font-size: 28px;
+	font-size: 24px; //28px;
 	font-weight: normal;
 }
 .title-advice-msg {
@@ -83,9 +90,9 @@ body {
 	}
 	@media (max-width: 780px) {
 		img {
-			-ms-transform: scale(0.7); /* IE 9 */
-			-webkit-transform: scale(0.7); /* Safari */
-			transform: scale(0.7);
+			//-ms-transform: scale(0.7); /* IE 9 */
+			//-webkit-transform: scale(0.7); /* Safari */
+			//transform: scale(0.7);
 		}
 	}
 	@media (max-width: 480px) {
@@ -109,7 +116,7 @@ body {
 }
 .logos-footer {
 	//padding: 50px 0;
-	height: 120px;
+	height: 80px;
 	position: relative;
 	margin: 0 40px 50px;
 }

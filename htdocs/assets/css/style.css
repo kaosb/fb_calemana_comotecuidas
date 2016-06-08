@@ -6753,6 +6753,10 @@ body.step-2-bg .feat-image {
   display: none !important;
   visibility: hidden;
 }
+.square-content-app {
+  height: 760px;
+  overflow: hidden;
+}
 #fb-welcome {
   display: none !important;
   visibility: hidden;
@@ -6796,18 +6800,15 @@ body.step-2-bg .feat-image {
   margin: 0 auto;
   border-bottom: 3px solid #ffe9b7;
 }
-@media (max-width: 480px) {
-  .feat-image {
-    width: 100%;
-    height: auto;
-  }
-}
 .content-message {
-  margin: 50px 30px;
+  margin: 30px;
+}
+.content-message .btn.btn-lg {
+  font-size: 28px;
 }
 .advice-msg {
   font-family: 'Lobster', cursive;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: normal;
 }
 .title-advice-msg {
@@ -6820,16 +6821,6 @@ body.step-2-bg .feat-image {
 .hashtag-10-p img {
   position: absolute;
   bottom: 0;
-}
-@media (max-width: 780px) {
-  .logo-clinica img,
-  .hashtag-10-p img {
-    -ms-transform: scale(0.7);
-    /* IE 9 */
-    -webkit-transform: scale(0.7);
-    /* Safari */
-    transform: scale(0.7);
-  }
 }
 @media (max-width: 480px) {
   .logo-clinica img,
@@ -6847,7 +6838,7 @@ body.step-2-bg .feat-image {
   left: 0;
 }
 .logos-footer {
-  height: 120px;
+  height: 80px;
   position: relative;
   margin: 0 40px 50px;
 }
