@@ -367,7 +367,6 @@
 				/******************* PASO 3 */
 				$('#btnstep2_share').click(function(event){
 					event.preventDefault();
-					console.log('#big_box_msg_'+$.userdata.template);
 					html2canvas($('#big_box_msg_'+$.userdata.template), {
 						onrendered: function(canvas) {
 							var myImage = canvas.toDataURL("image/png");
