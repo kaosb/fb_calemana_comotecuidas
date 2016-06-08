@@ -35,14 +35,14 @@
 	<!-- se agrega esta clase en el paso 2 para esconder la imagen de la app solo en ese paso -->
 		<h1 id="fb-welcome" style="display: none;"></h1>
 		<!-- BG LIGHTBOX (ALERTA) -->
-		<div class="bg-lightbox" style="display: none;">
+		<div id="alert" class="bg-lightbox" style="display: none;">
 			<!-- alerta -->
 			<div class="box-alert">
 				<div class="inner-alert text-center">
 					<a class="close-alert" href="#">
 						<span class="glyphicon glyphicon-remove"></span>
 					</a>
-					<p>Debes usar entre 7 y 10 palabras</p>
+					<p class="message">Debes usar entre 7 y 10 palabras</p>
 				</div>
 			</div>
 			<!-- fin alerta -->
@@ -330,19 +330,27 @@
 				$('#btnstep1').click(function(event){
 					event.preventDefault();
 					// Verifico que la cantidad de palabras sea entre 7 y 10 palabras.
-					$('#step_1').hide();
-					$('body').addClass("step-2-bg");
-					$('#step_2').show();
-					var palabras = $('#text_post_content').val().split(' ');
-					buildCartel(palabras);
-					// Bindeo el selector de themas
-					$('.box-mini').click(function(event){
-						event.preventDefault();
-						// Ocultamos los preview
-						$('.box-featured').hide();
-						$('#big_'+$(this).attr('id')).show();
+					if($.userdata.hasOwnProperty("words_counter") && $.userdata.words_counter.words >= 7 && $.userdata.words_counter.words <= 10){
+						$('#step_1').hide();
+						$('body').addClass("step-2-bg");
+						$('#step_2').show();
+						var palabras = $('#text_post_content').val().split(' ');
 						buildCartel(palabras);
-					});
+						// Bindeo el selector de themas
+						$('.box-mini').click(function(event){
+							event.preventDefault();
+							// Ocultamos los preview
+							$('.box-featured').hide();
+							$('#big_'+$(this).attr('id')).show();
+							buildCartel(palabras);
+						});
+					}else{
+						$('#alert').fadeIn();
+						$('a.close-alert').click(function(event){
+							event.preventDefault();
+							$('#alert').fadeOut();
+						});
+					}
 				});
 				/******************* PASO 2 */
 				$('#btnstep2_back').click(function(event){
