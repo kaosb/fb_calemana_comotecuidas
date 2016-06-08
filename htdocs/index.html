@@ -386,11 +386,14 @@
 					// 		// AJAX call to send `data` to a PHP file that creates an image from the dataURI string and saves it to a directory on the server
 					// 		}
 					// });
-
+					console.log('#big_box_msg_'+$.userdata.default_template);
 					html2canvas($('#big_box_msg_'+$.userdata.default_template), {
 						onrendered: function(canvas) {
 							var myImage = canvas.toDataURL("image/png");
-							window.open(myImage);
+							window.open(myImage, '_blank');
+							$('#step_2').hide();
+							$('body').removeClass("step-2-bg");
+							$('#step_3').show();
 						}
 					});
 
@@ -403,9 +406,7 @@
 					// 	// link.href = dataUrl;
 					// 	// link.click();
 					// });
-					$('#step_2').hide();
-					$('body').removeClass("step-2-bg");
-					$('#step_3').show();
+
 				});
 			});
 			/******************* HELPERS */
