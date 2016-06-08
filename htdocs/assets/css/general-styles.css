@@ -8,7 +8,7 @@ body.step-2-bg .feat-image {
   visibility: hidden;
 }
 .square-content-app {
-  height: 760px;
+  height: 600px;
   overflow: hidden;
 }
 #fb-welcome {
@@ -17,7 +17,7 @@ body.step-2-bg .feat-image {
 }
 .app-bg {
   position: relative;
-  padding: 50px 0 20px;
+  padding: 35px 0 20px;
 }
 @media (max-width: 480px) {
   .app-bg {
@@ -58,11 +58,11 @@ body.step-2-bg .feat-image {
   margin: 30px;
 }
 .content-message .btn.btn-lg {
-  font-size: 28px;
+  font-size: 24px;
 }
 .advice-msg {
   font-family: 'Lobster', cursive;
-  font-size: 24px;
+  font-size: 21px;
   font-weight: normal;
 }
 .title-advice-msg {
@@ -70,6 +70,9 @@ body.step-2-bg .feat-image {
   font-size: 47px;
   font-weight: normal;
   margin: 0 0 30px;
+}
+.form-control {
+  margin-bottom: 20px;
 }
 .logo-clinica img,
 .hashtag-10-p img {
@@ -92,9 +95,9 @@ body.step-2-bg .feat-image {
   left: 0;
 }
 .logos-footer {
-  height: 80px;
+  height: 50px;
   position: relative;
-  margin: 0 40px 50px;
+  margin: 0 40px 30px;
 }
 .bg-lightbox {
   background-color: rgba(61, 74, 75, 0.5);
