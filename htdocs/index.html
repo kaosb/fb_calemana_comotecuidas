@@ -319,10 +319,10 @@
 					Countable.live(area, function(counter){
 						$.userdata.words_counter = counter;
 						if(counter.words >= 7 || counter.words == 10){
-							$('#txtarea').css( "background-color", "palegreen" );
+							$('#text_post_content').css( "background-color", "palegreen" );
 						}
 						if(counter.words > 10){
-							$('#txtarea').css( "background-color", "pink" );
+							$('#text_post_content').css( "background-color", "pink" );
 						}
 					});
 				});
@@ -333,7 +333,7 @@
 					$('#step_1').hide();
 					$('body').addClass("step-2-bg");
 					$('#step_2').show();
-					var palabras = $('#txtarea').val().split(' ');
+					var palabras = $('#text_post_content').val().split(' ');
 					buildCartel(palabras);
 					// Bindeo el selector de themas
 					$('.box-mini').click(function(event){
