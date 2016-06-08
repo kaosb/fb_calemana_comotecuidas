@@ -185,7 +185,7 @@ body.step-2-bg .logos-footer {
   width: 375px;
   z-index: 1;
   background-color: #fff;
-  margin: -20px auto;
+/*  margin: -20px auto;*/
   margin-bottom: 5px;
 }
 @media (max-width: 480px) {
@@ -232,7 +232,7 @@ body.step-2-bg .logos-footer {
 }
 .boxes-style-color .row.row-little-boxes {
   width: 55%;
-  margin: -5px auto;
+/*  margin: -5px auto;*/
 }
 .boxes-style-color .col-md-2,
 .boxes-style-color .col-sm-4,
@@ -358,8 +358,8 @@ body.step-2-bg .logos-footer {
 .boxes-style-color a .box-msg-4 .logos-box-min .hashtag-10-p-min,
 .boxes-style-color a .box-msg-5 .logos-box-min .hashtag-10-p-min,
 .boxes-style-color a .box-msg-6 .logos-box-min .hashtag-10-p-min {
-  left: -24px;
-  top: -46px;
+/*  left: -24px;
+  top: -46px;*/
   position: absolute;
 }
 @media (max-width: 480px) {
@@ -375,7 +375,7 @@ body.step-2-bg .logos-footer {
   .boxes-style-color a .box-msg-4 .logos-box-min .hashtag-10-p-min,
   .boxes-style-color a .box-msg-5 .logos-box-min .hashtag-10-p-min,
   .boxes-style-color a .box-msg-6 .logos-box-min .hashtag-10-p-min {
-    left: -24px;
+/*    left: -24px;*/
   }
 }
 .boxes-style-color .box-msg-1 .logos-box-min .logo-clinica-min,
@@ -390,8 +390,8 @@ body.step-2-bg .logos-footer {
 .boxes-style-color a .box-msg-4 .logos-box-min .logo-clinica-min,
 .boxes-style-color a .box-msg-5 .logos-box-min .logo-clinica-min,
 .boxes-style-color a .box-msg-6 .logos-box-min .logo-clinica-min {
-  right: -25px;
-  top: -70px;
+/*  right: -25px;
+  top: -70px;*/
   position: absolute;
 }
 @media (max-width: 480px) {
@@ -407,7 +407,7 @@ body.step-2-bg .logos-footer {
   .boxes-style-color a .box-msg-4 .logos-box-min .logo-clinica-min,
   .boxes-style-color a .box-msg-5 .logos-box-min .logo-clinica-min,
   .boxes-style-color a .box-msg-6 .logos-box-min .logo-clinica-min {
-    right: -25px;
+/*    right: -25px;*/
   }
 }
 .boxes-style-color .box-msg-1.box-mini img,
@@ -457,7 +457,7 @@ body.step-2-bg .logos-footer {
   width: 109px;
   height: 72px;
   background-image: url('../img/post-image-bg/cinta-titulo-post-1-izq.png');
-  left: -50px;
+/*  left: -50px;*/
   display: block;
   top: 0;
 }
@@ -466,7 +466,7 @@ body.step-2-bg .logos-footer {
   width: 109px;
   height: 71px;
   background-image: url('../img/post-image-bg/cinta-titulo-post-1-der.png');
-  right: -50px;
+/*  right: -50px;*/
   display: block;
   top: 0;
 }
