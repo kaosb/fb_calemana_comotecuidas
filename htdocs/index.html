@@ -52,7 +52,7 @@
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 col-sm-12 square-content-app">
 					<!-- CONTENEDOR APP -->
-					<div class="app-bg">
+					<div id="app-bg" class="app-bg">
 						<span class="square-bg top-left"></span>
 						<span class="square-bg bottom-left"></span>
 						<span class="square-bg top-right"></span>
@@ -329,21 +329,26 @@
 				/******************* PASO 1 */
 				$('#btnstep1').click(function(event){
 					event.preventDefault();
+					// Bindeo el selector de themas
+					$('.box-mini').click(function(event){
+						event.preventDefault();
+						// Ocultamos los preview
+						$('.box-featured').hide();
+						$('#big_'+$(this).attr('id')).show();
+						// Construyo el cartel.
+						buildCartel($.userdata.palabras);
+					});
 					// Verifico que la cantidad de palabras sea entre 7 y 10 palabras.
 					if($.userdata.hasOwnProperty("words_counter") && $.userdata.words_counter.words >= 7 && $.userdata.words_counter.words <= 10){
 						$('#step_1').hide();
 						$('body').addClass("step-2-bg");
 						$('#step_2').show();
-						var palabras = $('#text_post_content').val().split(' ');
-						buildCartel(palabras);
-						// Bindeo el selector de themas
-						$('.box-mini').click(function(event){
-							event.preventDefault();
-							// Ocultamos los preview
-							$('.box-featured').hide();
-							$('#big_'+$(this).attr('id')).show();
-							buildCartel(palabras);
-						});
+						// Guardo el array de palabras en el objeto global.
+						$.userdata.palabras = $('#text_post_content').val().split(' ');;
+						// Guardo el identificador del tema por defecto.
+						$.userdata.default_template = 1
+						// Construyo el cartel.
+						buildCartel($.userdata.palabras);
 					}else{
 						$('#alert').fadeIn();
 						$('a.close-alert').click(function(event){
@@ -382,12 +387,11 @@
 					// 		}
 					// });
 
-					html2canvas($('#big_box_msg_1'), {
+					html2canvas($('#big_box_msg_'+$.userdata.default_template), {
 						onrendered: function(canvas) {
 							var myImage = canvas.toDataURL("image/png");
 							window.open(myImage);
 						}
-
 					});
 
 					// var node = document.getElementById($('.box-featured:visible').attr('id'));
