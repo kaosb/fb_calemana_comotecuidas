@@ -382,11 +382,12 @@
 					// 		}
 					// });
 
-					html2canvas($('body'), {
+					html2canvas($('#big_box_msg_1'), {
 						onrendered: function(canvas) {
 							var myImage = canvas.toDataURL("image/png");
 							window.open(myImage);
 						}
+
 					});
 
 					// var node = document.getElementById($('.box-featured:visible').attr('id'));
