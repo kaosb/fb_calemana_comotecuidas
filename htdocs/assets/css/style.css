@@ -6757,6 +6757,11 @@ body.step-2-bg .feat-image {
   height: 600px;
   overflow: hidden;
 }
+@media (max-width: 600px) {
+  .square-content-app {
+    height: auto;
+  }
+}
 #fb-welcome {
   display: none !important;
   visibility: hidden;
@@ -6819,6 +6824,9 @@ body.step-2-bg .feat-image {
 }
 .form-control {
   margin-bottom: 20px;
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
 }
 .logo-clinica img,
 .hashtag-10-p img {
@@ -6904,7 +6912,7 @@ body.step-2-bg .feat-image {
   text-align: center;
   display: block;
   font-family: 'Lobster', cursive;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: normal;
 }
 .boxes-style-color .button-select {
@@ -6918,8 +6926,8 @@ body.step-2-bg .feat-image {
   margin: 30px 10px 20px;
 }
 .boxes-style-color .box-featured {
-  height: 510px;
-  width: 480px;
+  height: 400px;
+  width: 375px;
   z-index: 1;
   background-color: #fff;
   margin: 0 auto;
@@ -6966,6 +6974,9 @@ body.step-2-bg .feat-image {
 .boxes-style-color .row {
   width: 90%;
   margin: 0 auto;
+}
+.boxes-style-color .row.row-little-boxes {
+  width: 50%;
 }
 .boxes-style-color .col-md-2,
 .boxes-style-color .col-sm-4,
@@ -7053,6 +7064,11 @@ body.step-2-bg .feat-image {
   left: 0;
   right: 0;
   z-index: 1;
+  -ms-transform: scale(0.7);
+  /* IE 9 */
+  -webkit-transform: scale(0.7);
+  /* Safari */
+  transform: scale(0.7);
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-1 .logos-box-min,
@@ -7086,7 +7102,7 @@ body.step-2-bg .feat-image {
 .boxes-style-color a .box-msg-4 .logos-box-min .hashtag-10-p-min,
 .boxes-style-color a .box-msg-5 .logos-box-min .hashtag-10-p-min,
 .boxes-style-color a .box-msg-6 .logos-box-min .hashtag-10-p-min {
-  left: 40px;
+  left: -24px;
   top: -46px;
   position: absolute;
 }
@@ -7118,7 +7134,7 @@ body.step-2-bg .feat-image {
 .boxes-style-color a .box-msg-4 .logos-box-min .logo-clinica-min,
 .boxes-style-color a .box-msg-5 .logos-box-min .logo-clinica-min,
 .boxes-style-color a .box-msg-6 .logos-box-min .logo-clinica-min {
-  right: 40px;
+  right: -25px;
   top: -70px;
   position: absolute;
 }
@@ -7167,6 +7183,10 @@ body.step-2-bg .feat-image {
   top: 50px;
   background-repeat: repeat-x;
   height: 72px;
+  font-size: 20px;
+  width: 70%;
+  top: 40px;
+  padding: 5px 0;
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-1 .line-span1 {
@@ -7199,6 +7219,8 @@ body.step-2-bg .feat-image {
   font-size: 105px;
   color: #fae045;
   top: 125px;
+  font-size: 70px;
+  top: 110px;
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-1 .line-span2 {
@@ -7217,6 +7239,9 @@ body.step-2-bg .feat-image {
   padding: 3px 20px 0;
   border-top: 2px solid #fff;
   border-bottom: 2px solid #fff;
+  font-size: 24px;
+  top: 210px;
+  line-height: 30px;
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-1 .line-span3 {
@@ -7258,6 +7283,9 @@ body.step-2-bg .feat-image {
   width: 60%;
   margin: 0 auto;
   z-index: 2;
+  font-size: 21px;
+  padding: 4px 0;
+  top: 50px;
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-2 .line-span1 {
@@ -7294,6 +7322,8 @@ body.step-2-bg .feat-image {
   top: 105px;
   letter-spacing: -8px;
   text-shadow: -5px 5px 0 #5f0077, -10px 10px 0 #9664b5;
+  font-size: 75px;
+  top: 95px;
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-2 .line-span2 {
@@ -7332,7 +7362,7 @@ body.step-2-bg .feat-image {
 .boxes-style-color .box-msg-2 .line-span3 {
   font-family: 'Great Vibes', cursive;
   font-size: 35px;
-  top: 235px;
+  top: 200px;
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-2 .line-span3 {
@@ -7353,6 +7383,8 @@ body.step-2-bg .feat-image {
   background-position: bottom;
   height: 75px;
   margin-top: -15px;
+  font-size: 50px;
+  height: 65px;
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-2 .line-span3 .last-word-line {
@@ -7434,6 +7466,8 @@ body.step-2-bg .feat-image {
   right: 60px;
   border-bottom: 4px solid #ffda30;
   text-shadow: -2px 2px 0 #ed2d00;
+  font-size: 35px;
+  top: 25px;
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-3 .line-span1 {
@@ -7448,6 +7482,9 @@ body.step-2-bg .feat-image {
   top: 105px;
   letter-spacing: -8px;
   text-shadow: -5px 5px 0 #3f9166;
+  font-size: 70px;
+  top: 85px;
+  letter-spacing: -7px;
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-3 .line-span2 {
@@ -7493,6 +7530,10 @@ body.step-2-bg .feat-image {
   margin: 0 auto;
   z-index: 2;
   padding: 5px 0;
+  font-size: 16px;
+  top: 195px;
+  width: 75%;
+  padding: 7px 0 6px;
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-3 .line-span3 {
@@ -7507,7 +7548,7 @@ body.step-2-bg .feat-image {
   width: 89px;
   height: 54px;
   background-image: url('../img/post-image-bg/cinta-titulo-post-3-izq.png');
-  left: -50px;
+  left: -85px;
   display: block;
   top: -19px;
   z-index: 1;
@@ -7522,7 +7563,7 @@ body.step-2-bg .feat-image {
   width: 89px;
   height: 54px;
   background-image: url('../img/post-image-bg/cinta-titulo-post-3-der.png');
-  right: -50px;
+  right: -85px;
   display: block;
   top: -19px;
   z-index: 1;
@@ -7538,13 +7579,14 @@ body.step-2-bg .feat-image {
   position: absolute;
   display: block;
   top: auto;
-  left: 0;
-  right: 0;
   height: 75px;
   color: #ffda30;
   text-shadow: -2px 2px 0 #ed2d00;
   background-color: transparent;
   margin-top: 12px;
+  font-size: 30px;
+  left: 0;
+  right: 0;
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-3 .line-span3 .last-word-line {
@@ -7581,6 +7623,8 @@ body.step-2-bg .feat-image {
   font-size: 54px;
   color: #c9c8c4;
   top: 60px;
+  font-size: 40px;
+  top: 35px;
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-4 .line-span1 {
@@ -7595,6 +7639,8 @@ body.step-2-bg .feat-image {
   color: #ffdc48;
   top: 105px;
   text-shadow: -3px 3px 0 #1f4766;
+  font-size: 95px;
+  top: 70px;
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-4 .line-span2 {
@@ -7611,6 +7657,8 @@ body.step-2-bg .feat-image {
   top: 245px;
   width: 80%;
   margin: 0 auto;
+  font-size: 30px;
+  top: 205px;
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-4 .line-span3 {
@@ -7647,6 +7695,8 @@ body.step-2-bg .feat-image {
   background-color: transparent;
   left: 0;
   right: 0;
+  font-size: 40px;
+  top: 45px;
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-4 .line-span3 .last-word-line {
@@ -7686,6 +7736,8 @@ body.step-2-bg .feat-image {
   border-bottom: 2px solid #f6f0d0;
   margin: 0 auto;
   top: 70px;
+  font-size: 16px;
+  top: 40px;
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-5 .line-span1 {
@@ -7699,6 +7751,8 @@ body.step-2-bg .feat-image {
   color: #ffdc48;
   top: 110px;
   text-shadow: -5px 5px 0 #1f4766;
+  font-size: 70px;
+  top: 70px;
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-5 .line-span2 {
@@ -7710,7 +7764,7 @@ body.step-2-bg .feat-image {
   font-family: 'Cinzel', serif;
   font-size: 18px;
   background-color: #1f4766;
-  top: 270px;
+  top: 180px;
   width: 65%;
   margin: 0 auto;
   padding: 5px 0;
@@ -7743,7 +7797,7 @@ body.step-2-bg .feat-image {
 .boxes-style-color .box-msg-5 .line-span3 .last-word-line {
   display: block;
   font-family: 'Six Caps', sans-serif;
-  font-size: 60px;
+  font-size: 45px;
   text-transform: uppercase;
   position: absolute;
   left: 0;
@@ -7806,7 +7860,7 @@ body.step-2-bg .feat-image {
 }
 .boxes-style-color .box-msg-6 .line-span1 {
   font-family: 'Pacifico', cursive;
-  font-size: 50px;
+  font-size: 25px;
   color: #e6ca50;
   top: 50px;
 }
@@ -7822,6 +7876,8 @@ body.step-2-bg .feat-image {
   top: 110px;
   letter-spacing: -5px;
   text-shadow: -5px 5px 0 #05364a;
+  font-size: 65px;
+  top: 80px;
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-6 .line-span2 {
@@ -7862,6 +7918,8 @@ body.step-2-bg .feat-image {
   font-size: 40px;
   color: #e6ca50;
   top: 235px;
+  font-size: 30px;
+  top: 170px;
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-6 .line-span3 {
@@ -7872,7 +7930,7 @@ body.step-2-bg .feat-image {
 .boxes-style-color .box-msg-6 .line-span3 .last-word-line {
   display: block;
   font-family: 'Pathway Gothic One', sans-serif;
-  font-size: 30px;
+  font-size: 24px;
   color: #fff;
   background-color: #2f7489;
   position: absolute;
