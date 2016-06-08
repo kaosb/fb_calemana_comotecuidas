@@ -321,30 +321,25 @@
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/countable.js"></script>
+		<!-- <script src="js/dom-to-image.min.js"></script> -->
 		<script type="text/javascript">
 			$(document).ready(function(){
-				/******************************************** Objeto Global para almacenar la seleccion */
+				/******************************************** Objeto Global para almacenar informacion del usuario */
 				$.userdata = {};
-				/******************************************** Funcion que despliega el documento con las bases */
-				$('#btnbases').bind('click', function(event){
+				/******************* Bindeo permanente de actividad en el elementos de la interfaz */
+				// Bind boton ver bases.
+				$('.btnbases').bind('click', function(event){
 					verBases();
 				});
-				/******************* Funcion que permite abrir las bases del concurso */
-				function verBases(){
-					var WindowObjectReference = window.open("bases.pdf", "bases_concurso", "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes");
-				}
-
-
+				// Bind textarea activity.
 				$('#txtarea').focus(function() {
 					$(this).val('');
 					$(this).css( "background-color", "white" );
 					// bind counter
 					var area = document.getElementById('txtarea')
 					Countable.live(area, function(counter){
-						// console.log(counter);
 						$.userdata.words_counter = counter;
-						console.log($.userdata);
-						if(counter.words == 10){
+						if(counter.words >= 7 || counter.words == 10){
 							$('#txtarea').css( "background-color", "palegreen" );
 						}
 						if(counter.words > 10){
@@ -352,10 +347,10 @@
 						}
 					});
 				});
-
-				// Bind boton step 1
+				/******************* PASO 1 */
 				$('#btnstep1').click(function(event){
 					event.preventDefault();
+					// Verifico que la cantidad de palabras sea entre 7 y 10 palabras.
 					$('#step_1').hide();
 					$('body').addClass("step-2-bg");
 					$('#step_2').show();
@@ -370,38 +365,52 @@
 						buildCartel(palabras);
 					});
 				});
-				// Bindeo boton volver paso 2.
+				/******************* PASO 2 */
 				$('#btnstep2_back').click(function(event){
 					event.preventDefault();
 					$('#step_2').hide();
 					$('body').removeClass("step-2-bg");
 					$('#step_1').show();
 				});
-				// Bindeo boton share paso 2.
+				/******************* PASO 3 */
 				$('#btnstep2_share').click(function(event){
 					event.preventDefault();
-					html2canvas($("body"), {
+					var node = document.getElementById($('.box-featured:visible').attr('id'));
+					html2canvas(node, {
 						onrendered: function(canvas){
+							console.log(canvas);
 							var myImage = canvas.toDataURL("image/png");
 							console.log(myImage);
-							console.log($(".box-featured:visible"));
+							// console.log($(".box-featured:visible"));
 							// window.open(myImage);
 							// window.open(myImage, '_blank');
 							var WindowObjectReference = window.open(myImage, "share_img", '_blank');
 						}
 					});
+					// var node = document.getElementById($('.box-featured:visible').attr('id'));
+					// domtoimage.toJpeg(node, { quality: 0.95 })
+					// .then(function (dataUrl) {
+					// 	var WindowObjectReference = window.open(dataUrl, "share_img", '_blank');
+					// 	// var link = document.createElement('a');
+					// 	// link.download = 'my-image-name.jpeg';
+					// 	// link.href = dataUrl;
+					// 	// link.click();
+					// });
 					$('#step_2').hide();
 					$('body').removeClass("step-2-bg");
 					$('#step_3').show();
 				});
 			});
-
+			/******************* HELPERS */
+			function verBases(){
+				var WindowObjectReference = window.open("bases.pdf", "bases_concurso", "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes");
+			}
 
 			function buildCartel(palabras){
 				var cartel = $('.box-featured:visible');
 				// detectamos que de que plantilla se trata
-				console.log(cartel);
-				console.log(cartel.attr('template'));
+				// console.log(cartel);
+				// console.log(cartel.attr('template'));
 				switch(cartel.attr('template')){
 					case "1":
 						cartel.find(".span-title-text").html(palabras[0]);
