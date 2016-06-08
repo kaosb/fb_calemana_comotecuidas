@@ -3,9 +3,12 @@ body {
 	background-color: #00837c;
 	color: #ffffff;
 	&.step-2-bg {
-		.feat-image {
+		.feat-image, .logos-footer {
 			display: none !important;
 			visibility: hidden;
+		}
+		.logos-footer {
+			//height: 0;
 		}
 	}
 }
@@ -74,9 +77,9 @@ body {
 }
 .title-advice-msg {
 	font-family: 'Lobster', cursive;
-	font-size: 47px;
+	font-size: 30px; //47px;
 	font-weight: normal;
-	margin: 0 0 30px;
+	margin: -15px 0 15px;
 }
 .logo-clinica {
 	img {
@@ -193,10 +196,10 @@ body {
 		text-align: center;
 		display: block;
 		.btn {
-			font-size: 28px;
+			font-size: 21px; //28px;
 			padding: 5px 30px;
 			width: 180px;
-			margin: 30px 10px 20px;
+			margin: 10px 10px 10px;
 		}
 	}
 	.box-featured {
@@ -206,8 +209,8 @@ body {
 		//top: -510px;
 		z-index: 1;
 		background-color: #fff;
-		margin: 0 auto;
-		margin-bottom: 20px;
+		margin: -20px auto;
+		margin-bottom: 5px; //20px;
 		@media (max-width: 480px) {
 			width: 320px;
 			height: 410px;
@@ -246,7 +249,12 @@ body {
 		width: 90%;
 		margin: 0 auto;
 		&.row-little-boxes {
-			width: 50%;
+			width: 55%;
+			margin: -5px auto;
+			// position: absolute;
+			// .col-md-2, .col-sm-4, .col-xs-6 {
+			// 	clear: both;
+			// }
 		}
 	}
 	.col-md-2, .col-sm-4, .col-xs-6 {

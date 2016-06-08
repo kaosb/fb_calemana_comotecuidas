@@ -6749,7 +6749,8 @@ body {
   background-color: #00837c;
   color: #ffffff;
 }
-body.step-2-bg .feat-image {
+body.step-2-bg .feat-image,
+body.step-2-bg .logos-footer {
   display: none !important;
   visibility: hidden;
 }
@@ -6818,9 +6819,9 @@ body.step-2-bg .feat-image {
 }
 .title-advice-msg {
   font-family: 'Lobster', cursive;
-  font-size: 47px;
+  font-size: 30px;
   font-weight: normal;
-  margin: 0 0 30px;
+  margin: -15px 0 15px;
 }
 .form-control {
   margin-bottom: 20px;
@@ -6920,18 +6921,18 @@ body.step-2-bg .feat-image {
   display: block;
 }
 .boxes-style-color .button-select .btn {
-  font-size: 28px;
+  font-size: 21px;
   padding: 5px 30px;
   width: 180px;
-  margin: 30px 10px 20px;
+  margin: 10px 10px 10px;
 }
 .boxes-style-color .box-featured {
   height: 400px;
   width: 375px;
   z-index: 1;
   background-color: #fff;
-  margin: 0 auto;
-  margin-bottom: 20px;
+  margin: -20px auto;
+  margin-bottom: 5px;
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-featured {
@@ -6976,7 +6977,8 @@ body.step-2-bg .feat-image {
   margin: 0 auto;
 }
 .boxes-style-color .row.row-little-boxes {
-  width: 50%;
+  width: 55%;
+  margin: -5px auto;
 }
 .boxes-style-color .col-md-2,
 .boxes-style-color .col-sm-4,
