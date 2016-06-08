@@ -52,7 +52,7 @@
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 col-sm-12 square-content-app">
 					<!-- CONTENEDOR APP -->
-					<div class="app-bg">
+					<div id="app-bg" class="app-bg">
 						<span class="square-bg top-left"></span>
 						<span class="square-bg bottom-left"></span>
 						<span class="square-bg top-right"></span>
@@ -382,7 +382,7 @@
 					// 		}
 					// });
 
-					html2canvas($('#big_box_msg_1'), {
+					html2canvas($('.box-featured:visible'), {
 						onrendered: function(canvas) {
 							var myImage = canvas.toDataURL("image/png");
 							window.open(myImage);
