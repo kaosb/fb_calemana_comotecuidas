@@ -6902,11 +6902,11 @@ body.step-2-bg .logos-footer {
 }
 .boxes-style-color {
   position: relative;
-  margin-top: 0;
+  margin-top: 10px;
 }
 @media (max-width: 480px) {
   .boxes-style-color {
-    margin-top: 0;
+    margin-top: 20px;
   }
 }
 .boxes-style-color .select-design {
@@ -6924,7 +6924,7 @@ body.step-2-bg .logos-footer {
   font-size: 21px;
   padding: 5px 30px;
   width: 180px;
-  margin: 10px 10px 10px;
+  margin: 10px 10px 0;
 }
 .boxes-style-color .box-featured {
   height: 400px;
