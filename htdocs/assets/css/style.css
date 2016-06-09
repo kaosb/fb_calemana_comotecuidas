@@ -6902,11 +6902,11 @@ body.step-2-bg .logos-footer {
 }
 .boxes-style-color {
   position: relative;
-  margin-top: 0;
+  margin-top: 10px;
 }
 @media (max-width: 480px) {
   .boxes-style-color {
-    margin-top: 0;
+    margin-top: 20px;
   }
 }
 .boxes-style-color .select-design {
@@ -6924,7 +6924,7 @@ body.step-2-bg .logos-footer {
   font-size: 21px;
   padding: 5px 30px;
   width: 180px;
-  margin: 10px 10px 10px;
+  margin: 10px 10px 0;
 }
 .boxes-style-color .box-featured {
   height: 400px;
@@ -7066,31 +7066,6 @@ body.step-2-bg .logos-footer {
   left: 0;
   right: 0;
   z-index: 1;
-  -ms-transform: scale(0.7);
-  /* IE 9 */
-  -webkit-transform: scale(0.7);
-  /* Safari */
-  transform: scale(0.7);
-}
-@media (max-width: 480px) {
-  .boxes-style-color .box-msg-1 .logos-box-min,
-  .boxes-style-color .box-msg-2 .logos-box-min,
-  .boxes-style-color .box-msg-3 .logos-box-min,
-  .boxes-style-color .box-msg-4 .logos-box-min,
-  .boxes-style-color .box-msg-5 .logos-box-min,
-  .boxes-style-color .box-msg-6 .logos-box-min,
-  .boxes-style-color a .box-msg-1 .logos-box-min,
-  .boxes-style-color a .box-msg-2 .logos-box-min,
-  .boxes-style-color a .box-msg-3 .logos-box-min,
-  .boxes-style-color a .box-msg-4 .logos-box-min,
-  .boxes-style-color a .box-msg-5 .logos-box-min,
-  .boxes-style-color a .box-msg-6 .logos-box-min {
-    -ms-transform: scale(0.7);
-    /* IE 9 */
-    -webkit-transform: scale(0.7);
-    /* Safari */
-    transform: scale(0.7);
-  }
 }
 .boxes-style-color .box-msg-1 .logos-box-min .hashtag-10-p-min,
 .boxes-style-color .box-msg-2 .logos-box-min .hashtag-10-p-min,
@@ -7104,25 +7079,9 @@ body.step-2-bg .logos-footer {
 .boxes-style-color a .box-msg-4 .logos-box-min .hashtag-10-p-min,
 .boxes-style-color a .box-msg-5 .logos-box-min .hashtag-10-p-min,
 .boxes-style-color a .box-msg-6 .logos-box-min .hashtag-10-p-min {
-  left: -24px;
-  top: -46px;
+  left: 35px;
+  top: -30px;
   position: absolute;
-}
-@media (max-width: 480px) {
-  .boxes-style-color .box-msg-1 .logos-box-min .hashtag-10-p-min,
-  .boxes-style-color .box-msg-2 .logos-box-min .hashtag-10-p-min,
-  .boxes-style-color .box-msg-3 .logos-box-min .hashtag-10-p-min,
-  .boxes-style-color .box-msg-4 .logos-box-min .hashtag-10-p-min,
-  .boxes-style-color .box-msg-5 .logos-box-min .hashtag-10-p-min,
-  .boxes-style-color .box-msg-6 .logos-box-min .hashtag-10-p-min,
-  .boxes-style-color a .box-msg-1 .logos-box-min .hashtag-10-p-min,
-  .boxes-style-color a .box-msg-2 .logos-box-min .hashtag-10-p-min,
-  .boxes-style-color a .box-msg-3 .logos-box-min .hashtag-10-p-min,
-  .boxes-style-color a .box-msg-4 .logos-box-min .hashtag-10-p-min,
-  .boxes-style-color a .box-msg-5 .logos-box-min .hashtag-10-p-min,
-  .boxes-style-color a .box-msg-6 .logos-box-min .hashtag-10-p-min {
-    left: -24px;
-  }
 }
 .boxes-style-color .box-msg-1 .logos-box-min .logo-clinica-min,
 .boxes-style-color .box-msg-2 .logos-box-min .logo-clinica-min,
@@ -7136,8 +7095,8 @@ body.step-2-bg .logos-footer {
 .boxes-style-color a .box-msg-4 .logos-box-min .logo-clinica-min,
 .boxes-style-color a .box-msg-5 .logos-box-min .logo-clinica-min,
 .boxes-style-color a .box-msg-6 .logos-box-min .logo-clinica-min {
-  right: -25px;
-  top: -70px;
+  right: 35px;
+  top: -45px;
   position: absolute;
 }
 @media (max-width: 480px) {
@@ -7236,7 +7195,7 @@ body.step-2-bg .logos-footer {
   line-height: 40px;
   text-transform: uppercase;
   top: 275px;
-  width: 60%;
+  width: 75%;
   margin: 0 auto;
   padding: 3px 20px 0;
   border-top: 2px solid #fff;
@@ -7528,22 +7487,13 @@ body.step-2-bg .logos-footer {
   font-size: 18px;
   top: 275px;
   background-color: #4cbe82;
-  width: 70%;
+  width: 50%;
   margin: 0 auto;
   z-index: 2;
   padding: 5px 0;
   font-size: 16px;
   top: 195px;
-  width: 75%;
   padding: 7px 0 6px;
-}
-@media (max-width: 480px) {
-  .boxes-style-color .box-msg-3 .line-span3 {
-    font-size: 16px;
-    top: 195px;
-    width: 75%;
-    padding: 7px 0 6px;
-  }
 }
 .boxes-style-color .box-msg-3 .line-span3 .span-title-1 {
   position: absolute;
