@@ -7856,6 +7856,8 @@ body.step-2-bg .logos-footer {
   top: 235px;
   font-size: 30px;
   top: 170px;
+  right: 20px;
+  left: 20px;
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-6 .line-span3 {
@@ -7870,8 +7872,8 @@ body.step-2-bg .logos-footer {
   color: #fff;
   background-color: #2f7489;
   position: absolute;
-  left: 20%;
-  right: 20%;
+  left: 12%;
+  right: 12%;
   margin-top: 25px;
 }
 @media (max-width: 480px) {
