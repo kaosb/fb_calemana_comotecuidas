@@ -262,7 +262,10 @@
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/countable.js"></script>
 		<!-- <script src="js/dom-to-image.min.js"></script> -->
-		<script>
+		<script type="text/javascript">
+			/******************************************** Objeto Global para almacenar informacion del usuario */
+			$.userdata = {};
+			// Scripts de Facebook.
 			window.fbAsyncInit = function() {
 				FB.init({
 					appId      : '287403201596704',
@@ -279,19 +282,34 @@
 						});
 					}
 				}
-				// Get estado login.
-				FB.getLoginStatus(function(response) {
-					// Check login status on load, and if the user is
-					// already logged in, go directly to the welcome message.
-					if(response.status == 'connected'){
-						onLogin(response);
+				// // Get estado login.
+				// FB.getLoginStatus(function(response) {
+				// 	// Check login status on load, and if the user is
+				// 	// already logged in, go directly to the welcome message.
+				// 	if(response.status == 'connected'){
+				// 		onLogin(response);
+				// 	}else{
+				// 		// Otherwise, show Login dialog first.
+				// 		FB.login(function(response) {
+				// 			onLogin(response);
+				// 		}, {scope: 'user_friends, email'});
+				// 	}
+				// });
+				/******** Al ingresar verificamos si ya inicio sesion o la iniciamos. */
+				FB.getLoginStatus(function(response){
+					if(response.status === 'connected'){
+						$.userdata.userID = response.authResponse.userID;
+					}else if (response.status === 'not_authorized'){
+						// Logeado pero no autorizo a la app.
+						console.log("No dio permiso.");
+						// getLogin();
 					}else{
-						// Otherwise, show Login dialog first.
-						FB.login(function(response) {
-							onLogin(response);
-						}, {scope: 'user_friends, email'});
+						// No logeado
+						console.log("No logeado.");
+						// getLogin();
 					}
-				});
+				},{scope: 'email, publish_stream'});
+
 			};
 			(function(d, s, id){
 				var js, fjs = d.getElementsByTagName(s)[0];
@@ -300,25 +318,10 @@
 				js.src = "//connect.facebook.net/es_ES/sdk.js";
 				fjs.parentNode.insertBefore(js, fjs);
 			}(document, 'script', 'facebook-jssdk'));
-		</script>
-		<script type="text/javascript">
+
+			// cuando se termina de cargar el DOM
 			$(document).ready(function(){
-				/******************************************** Objeto Global para almacenar informacion del usuario */
-				$.userdata = {};
-				/******** Al ingresar verificamos si ya inicio sesion o la iniciamos. */
-				FB.getLoginStatus(function(response){
-					if(response.status === 'connected'){
-						$.userdata.userID = response.authResponse.userID;
-					}else if (response.status === 'not_authorized'){
-						// Logeado pero no autorizo a la app.
-						console.log("No dio permiso.");
-						getLogin();
-					}else{
-						// No logeado
-						console.log("No logeado.");
-						getLogin();
-					}
-				},{scope: 'email, publish_stream'});
+				console.log($.userdata);
 				/******************* Bindeo permanente de actividad en el elementos de la interfaz */
 				// Bind boton ver bases.
 				$('.btnbases').bind('click', function(event){
