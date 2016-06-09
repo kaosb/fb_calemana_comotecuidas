@@ -12,9 +12,10 @@ if(isset($_POST['userID'])){
 	$flavor2 = $_POST['flavor2'];
 	$flavor3 = $_POST['flavor3'];
 	$topping = $_POST['topping'];
-	$recipesrc = $_POST['recipesrc'];
-	$queryInsert = "INSERT INTO participantes (userID, accessToken, first_name, last_name, name, email, terms, flavor1, flavor2, flavor3, topping, recipesrc)
-					VALUES ('$userID', '$accessToken', '$first_name', '$last_name', '$name', '$email', '$terms', '$flavor1', '$flavor2', '$flavor3', '$topping', '$recipesrc')";
+	$ref = (isset($_POST['ref']) && $_POST['ref'] != 'undefined' && !empty($_POST['ref'])) ? $_POST['ref'] : NULL;
+	$queryInsert = "INSERT INTO participantes (userID, accessToken, first_name, last_name, name, email, terms, flavor1, flavor2, flavor3, topping, ref)
+					VALUES ('$userID', '$accessToken', '$first_name', '$last_name', '$name', '$email', '$terms', '$flavor1', '$flavor2', '$flavor3', '$topping', '$ref')";
+	$queryInsert = utf8_decode($queryInsert);				
 	if(mysql_query($queryInsert,$link)){
 		// insert exitoso
 		echo json_encode(array("msj" => "Se guardaron los datos de forma exitosa.", "cod" => "1"));

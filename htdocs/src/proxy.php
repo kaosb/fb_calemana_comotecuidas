@@ -1,8 +1,4 @@
 <?php
-// ini_set('display_errors',1);
-// ini_set('display_startup_errors',1);
-// error_reporting(-1);
-
 header('Access-Control-Max-Age:' . 5 * 60 * 1000);
 header("Access-Control-Allow-Origin: *");
 header('Access-Control-Request-Method: *');
