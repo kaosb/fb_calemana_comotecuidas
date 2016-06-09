@@ -741,22 +741,13 @@ body.step-2-bg .logos-footer {
   font-size: 18px;
   top: 275px;
   background-color: #4cbe82;
-  width: 70%;
+  width: 50%;
   margin: 0 auto;
   z-index: 2;
   padding: 5px 0;
   font-size: 16px;
   top: 195px;
-  width: 75%;
   padding: 7px 0 6px;
-}
-@media (max-width: 480px) {
-  .boxes-style-color .box-msg-3 .line-span3 {
-    font-size: 16px;
-    top: 195px;
-    width: 75%;
-    padding: 7px 0 6px;
-  }
 }
 .boxes-style-color .box-msg-3 .line-span3 .span-title-1 {
   position: absolute;
