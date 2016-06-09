@@ -6946,7 +6946,7 @@ body.step-2-bg .logos-footer {
   right: 0;
   left: 0;
   bottom: 0;
-  z-index: 0;
+  z-index: 10;
 }
 .boxes-style-color .corners .c-top-left,
 .boxes-style-color .corners .c-top-right,
@@ -7080,7 +7080,7 @@ body.step-2-bg .logos-footer {
 .boxes-style-color a .box-msg-5 .logos-box-min .hashtag-10-p-min,
 .boxes-style-color a .box-msg-6 .logos-box-min .hashtag-10-p-min {
   left: 35px;
-  top: -30px;
+  top: -25px;
   position: absolute;
 }
 .boxes-style-color .box-msg-1 .logos-box-min .logo-clinica-min,
@@ -7096,24 +7096,8 @@ body.step-2-bg .logos-footer {
 .boxes-style-color a .box-msg-5 .logos-box-min .logo-clinica-min,
 .boxes-style-color a .box-msg-6 .logos-box-min .logo-clinica-min {
   right: 35px;
-  top: -45px;
+  top: -42px;
   position: absolute;
-}
-@media (max-width: 480px) {
-  .boxes-style-color .box-msg-1 .logos-box-min .logo-clinica-min,
-  .boxes-style-color .box-msg-2 .logos-box-min .logo-clinica-min,
-  .boxes-style-color .box-msg-3 .logos-box-min .logo-clinica-min,
-  .boxes-style-color .box-msg-4 .logos-box-min .logo-clinica-min,
-  .boxes-style-color .box-msg-5 .logos-box-min .logo-clinica-min,
-  .boxes-style-color .box-msg-6 .logos-box-min .logo-clinica-min,
-  .boxes-style-color a .box-msg-1 .logos-box-min .logo-clinica-min,
-  .boxes-style-color a .box-msg-2 .logos-box-min .logo-clinica-min,
-  .boxes-style-color a .box-msg-3 .logos-box-min .logo-clinica-min,
-  .boxes-style-color a .box-msg-4 .logos-box-min .logo-clinica-min,
-  .boxes-style-color a .box-msg-5 .logos-box-min .logo-clinica-min,
-  .boxes-style-color a .box-msg-6 .logos-box-min .logo-clinica-min {
-    right: -25px;
-  }
 }
 .boxes-style-color .box-msg-1.box-mini img,
 .boxes-style-color .box-msg-2.box-mini img,
