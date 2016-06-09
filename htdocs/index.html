@@ -311,19 +311,10 @@
 					verBases();
 				});
 				// Bind textarea activity.
-				$('#text_post_content').focus(function() {
-					$(this).val('');
-					$(this).css( "background-color", "white" );
+				$('#text_post_content').focus(function(){
 					// bind counter
-					var area = document.getElementById('text_post_content')
-					Countable.live(area, function(counter){
+					Countable.live(document.getElementById('text_post_content'), function(counter){
 						$.userdata.words_counter = counter;
-						if(counter.words >= 7 || counter.words == 10){
-							$('#text_post_content').css( "background-color", "palegreen" );
-						}
-						if(counter.words > 10){
-							$('#text_post_content').css( "background-color", "pink" );
-						}
 					});
 				});
 				/******************* PASO 1 */
@@ -387,46 +378,53 @@
 			// construye el cartel.
 			function buildCartel(palabras){
 				var cartel = $('.box-featured:visible');
+				// obtengo el array y la cantidad de palabras entre de 7 a 10.
+				var length = palabras.length
 				// detectamos que de que plantilla se trata
 				// Cargamos el template seleccionado.
 				$.userdata.template = cartel.attr('template');
+				// Concateno acorde al largo maximo de palabras y las palabras aportadas para evitar los textos undefined.
+				var bigtext = "";
+				for(i = 2;(i < length-1) && (palabras[i] !== undefined);i++){
+					bigtext += palabras[i]+" ";
+				}
 				// Acorde a lo seleccionado desplegamos.
 				switch(cartel.attr('template')){
 					case "1":
 						cartel.find(".span-title-text").html(palabras[0]);
 						cartel.find(".line-span2").html(palabras[1]);
-						var bigword = '<span id="big_last_word_03_01" class="last-word-line">'+ palabras[9] +'</span>';
-						cartel.find(".line-span3").html(palabras[2]+" "+palabras[3]+" "+palabras[4]+" "+palabras[5]+" "+palabras[6]+" "+palabras[7]+" "+palabras[8]+" "+bigword);
+						var bigword = '<span id="big_last_word_03_01" class="last-word-line">'+ palabras[length-1] +'</span>';
+						cartel.find(".line-span3").html(bigtext+" "+bigword);
 					break;
 					case "2":
 						cartel.find(".span-title-text").html(palabras[0]);
 						cartel.find(".line-span2").html(palabras[1]);
-						var bigword = '<span id="big_last_word_03_02" class="last-word-line">'+ palabras[9] +'</span>';
-						cartel.find(".line-span3").html(palabras[2]+" "+palabras[3]+" "+palabras[4]+" "+palabras[5]+" "+palabras[6]+" "+palabras[7]+" "+palabras[8]+" "+bigword);
+						var bigword = '<span id="big_last_word_03_02" class="last-word-line">'+ palabras[length-1] +'</span>';
+						cartel.find(".line-span3").html(bigtext+" "+bigword);
 					break;
 					case "3":
 						cartel.find(".line-span1").html(palabras[0]);
 						cartel.find(".line-span2").html(palabras[1]);
-						cartel.find(".span-title-text").html(palabras[2]+" "+palabras[3]+" "+palabras[4]+" "+palabras[5]+" "+palabras[6]+" "+palabras[7]+" "+palabras[8]);
-						cartel.find(".last-word-line").html(palabras[9]);
+						cartel.find(".span-title-text").html(bigtext);
+						cartel.find(".last-word-line").html(palabras[length-1]);
 					break;
 					case "4":
 						cartel.find(".line-span1").html(palabras[0]);
 						cartel.find(".line-span2").html(palabras[1]);
-						cartel.find(".span-title-text").html(palabras[2]+" "+palabras[3]+" "+palabras[4]+" "+palabras[5]+" "+palabras[6]+" "+palabras[7]+" "+palabras[8]);
-						cartel.find(".last-word-line").html(palabras[9]);
+						cartel.find(".span-title-text").html(bigtext);
+						cartel.find(".last-word-line").html(palabras[length-1]);
 					break;
 					case "5":
 						cartel.find(".line-span1").html(palabras[0]);
 						cartel.find(".line-span2").html(palabras[1]);
-						cartel.find(".span-title-text").html(palabras[2]+" "+palabras[3]+" "+palabras[4]+" "+palabras[5]+" "+palabras[6]+" "+palabras[7]+" "+palabras[8]);
-						cartel.find(".last-word-line").html(palabras[9]);
+						cartel.find(".span-title-text").html(bigtext);
+						cartel.find(".last-word-line").html(palabras[length-1]);
 					break;
 					case "6":
 						cartel.find(".line-span1").html(palabras[0]);
 						cartel.find(".line-span2").html(palabras[1]);
-						var bigword = '<span id="big_last_word_03_06" class="last-word-line"><span class="span-title-1"></span>'+palabras[9]+'<span class="span-title-2"></span></span>';
-						cartel.find(".line-span3").html(palabras[2]+" "+palabras[3]+" "+palabras[4]+" "+palabras[5]+" "+palabras[6]+" "+palabras[7]+" "+palabras[8]+" "+bigword);
+						var bigword = '<span id="big_last_word_03_06" class="last-word-line"><span class="span-title-1"></span>'+palabras[length-1]+'<span class="span-title-2"></span></span>';
+						cartel.find(".line-span3").html(bigtext+" "+bigword);
 					break;
 				}
 			}
