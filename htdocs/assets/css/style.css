@@ -6866,15 +6866,15 @@ body.step-2-bg .logos-footer {
 .box-alert {
   background-color: #ffe9b7;
   font-family: 'Lobster', cursive;
-  font-size: 33px;
+  font-size: 28px;
   color: #1d6465;
-  width: 540px;
+  width: 80%;
   height: 115px;
   position: absolute;
   top: 50%;
   left: 50%;
   margin-top: -57px;
-  margin-left: -270px;
+  margin-left: -40%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
   display: table;
 }
@@ -6893,12 +6893,13 @@ body.step-2-bg .logos-footer {
 }
 .box-alert .close-alert .glyphicon {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 15px;
+  right: 13px;
 }
 .inner-alert {
   display: table-cell;
   vertical-align: middle;
+  padding: 20px;
 }
 .boxes-style-color {
   position: relative;
