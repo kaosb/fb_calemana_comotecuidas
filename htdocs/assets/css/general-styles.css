@@ -320,31 +320,6 @@ body.step-2-bg .logos-footer {
   left: 0;
   right: 0;
   z-index: 1;
-  -ms-transform: scale(0.7);
-  /* IE 9 */
-  -webkit-transform: scale(0.7);
-  /* Safari */
-  transform: scale(0.7);
-}
-@media (max-width: 480px) {
-  .boxes-style-color .box-msg-1 .logos-box-min,
-  .boxes-style-color .box-msg-2 .logos-box-min,
-  .boxes-style-color .box-msg-3 .logos-box-min,
-  .boxes-style-color .box-msg-4 .logos-box-min,
-  .boxes-style-color .box-msg-5 .logos-box-min,
-  .boxes-style-color .box-msg-6 .logos-box-min,
-  .boxes-style-color a .box-msg-1 .logos-box-min,
-  .boxes-style-color a .box-msg-2 .logos-box-min,
-  .boxes-style-color a .box-msg-3 .logos-box-min,
-  .boxes-style-color a .box-msg-4 .logos-box-min,
-  .boxes-style-color a .box-msg-5 .logos-box-min,
-  .boxes-style-color a .box-msg-6 .logos-box-min {
-    -ms-transform: scale(0.7);
-    /* IE 9 */
-    -webkit-transform: scale(0.7);
-    /* Safari */
-    transform: scale(0.7);
-  }
 }
 .boxes-style-color .box-msg-1 .logos-box-min .hashtag-10-p-min,
 .boxes-style-color .box-msg-2 .logos-box-min .hashtag-10-p-min,
@@ -358,25 +333,9 @@ body.step-2-bg .logos-footer {
 .boxes-style-color a .box-msg-4 .logos-box-min .hashtag-10-p-min,
 .boxes-style-color a .box-msg-5 .logos-box-min .hashtag-10-p-min,
 .boxes-style-color a .box-msg-6 .logos-box-min .hashtag-10-p-min {
-  left: -24px;
-  top: -46px;
+  left: 35px;
+  top: -30px;
   position: absolute;
-}
-@media (max-width: 480px) {
-  .boxes-style-color .box-msg-1 .logos-box-min .hashtag-10-p-min,
-  .boxes-style-color .box-msg-2 .logos-box-min .hashtag-10-p-min,
-  .boxes-style-color .box-msg-3 .logos-box-min .hashtag-10-p-min,
-  .boxes-style-color .box-msg-4 .logos-box-min .hashtag-10-p-min,
-  .boxes-style-color .box-msg-5 .logos-box-min .hashtag-10-p-min,
-  .boxes-style-color .box-msg-6 .logos-box-min .hashtag-10-p-min,
-  .boxes-style-color a .box-msg-1 .logos-box-min .hashtag-10-p-min,
-  .boxes-style-color a .box-msg-2 .logos-box-min .hashtag-10-p-min,
-  .boxes-style-color a .box-msg-3 .logos-box-min .hashtag-10-p-min,
-  .boxes-style-color a .box-msg-4 .logos-box-min .hashtag-10-p-min,
-  .boxes-style-color a .box-msg-5 .logos-box-min .hashtag-10-p-min,
-  .boxes-style-color a .box-msg-6 .logos-box-min .hashtag-10-p-min {
-    left: -24px;
-  }
 }
 .boxes-style-color .box-msg-1 .logos-box-min .logo-clinica-min,
 .boxes-style-color .box-msg-2 .logos-box-min .logo-clinica-min,
@@ -390,8 +349,8 @@ body.step-2-bg .logos-footer {
 .boxes-style-color a .box-msg-4 .logos-box-min .logo-clinica-min,
 .boxes-style-color a .box-msg-5 .logos-box-min .logo-clinica-min,
 .boxes-style-color a .box-msg-6 .logos-box-min .logo-clinica-min {
-  right: -25px;
-  top: -70px;
+  right: 35px;
+  top: -45px;
   position: absolute;
 }
 @media (max-width: 480px) {
@@ -490,7 +449,7 @@ body.step-2-bg .logos-footer {
   line-height: 40px;
   text-transform: uppercase;
   top: 275px;
-  width: 60%;
+  width: 75%;
   margin: 0 auto;
   padding: 3px 20px 0;
   border-top: 2px solid #fff;
