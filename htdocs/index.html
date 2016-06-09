@@ -308,7 +308,18 @@
 				/******************* Bindeo permanente de actividad en el elementos de la interfaz */
 				// Bind boton ver bases.
 				$('.btnbases').bind('click', function(event){
+					event.preventDefault();
 					verBases();
+				});
+				// Bind boton hashtag.
+				$('.hashtag-10-p').click(function(event){
+					event.preventDefault();
+					verHashtag();
+				});
+				// Bind boton logo alemana.
+				$('.logo-clinica').click(function(event){
+					event.preventDefault();
+					verCAlemana();
 				});
 				// Bind textarea activity.
 				$('#text_post_content').focus(function(){
@@ -373,6 +384,14 @@
 			// despiela las bases.
 			function verBases(){
 				var WindowObjectReference = window.open("bases.pdf", "bases_concurso", "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes");
+			}
+			// despiela pagina clinica alemana.
+			function verCAlemana(){
+				var WindowObjectReference = window.open("https://www.facebook.com/Clinicaalemanadesantiago/", "clinica_alemana", "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes");
+			}
+			// despiela pagina clinica alemana.
+			function verHashtag(){
+				var WindowObjectReference = window.open("https://www.facebook.com/hashtag/comotecuidasen10palabras", "ver_hashtag", "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes");
 			}
 			// construye el cartel.
 			function buildCartel(palabras){
