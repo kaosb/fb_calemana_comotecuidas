@@ -46,13 +46,11 @@
 					// Check login status on load, and if the user is
 					// already logged in, go directly to the welcome message.
 					if(response.status == 'connected'){
-						console.log(response);
 						$.userdata.userID = response.authResponse.userID;
 						$.userdata.accessToken = response.authResponse.accessToken;
 					}else{
 						// Otherwise, show Login dialog first.
-						FB.login(function(response) {
-							console.log(response);
+						FB.login(function(response){
 							$.userdata.userID = response.authResponse.userID;
 							$.userdata.accessToken = response.authResponse.accessToken;
 						}, {scope: 'publish_actions, email'});

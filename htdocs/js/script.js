@@ -81,6 +81,8 @@ $(document).ready(function(){
 							function(response){
 								if(response && !response.error){
 									/* Continuamos con el flujo y mostramos el mensaje final */
+									console.log("Se subio la imagen a FB.");
+									console.log(response);
 									$('#step_2').hide();
 									$('body').removeClass("step-2-bg");
 									$('#step_3').show();
@@ -378,9 +380,6 @@ function buildCartel(palabras){
 		// 	var porcentaje_tamaño_fit = (22*100)/largetext.length;
 		// 	var fontdefaultsize = cartel.find(".line-span3").css("font-size").replace("px", "");
 		// 	var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
-		// 	console.log(porcentaje_tamaño_fit);
-		// 	console.log(fontdefaultsize);
-		// 	console.log(fontfinalsieze);
 		// 	//cartel.find(".line-span3").css("font-size", fontfinalsieze);
 		// }
 		break;
