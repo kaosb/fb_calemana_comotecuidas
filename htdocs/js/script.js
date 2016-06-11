@@ -62,6 +62,7 @@ $(document).ready(function(){
 	/******************* PASO 3 */
 	$('#btnstep2_share').click(function(event){
 		event.preventDefault();
+		$('#loader').show();
 		html2canvas($('#big_box_msg_'+$.userdata.template), {
 			onrendered: function(canvas){
 				var dataURL = canvas.toDataURL('image/png');
@@ -90,6 +91,7 @@ $(document).ready(function(){
 									console.log('Ocurrio un error.');
 									console.log(response.error);
 								}
+								$('#loader').hide();
 							}
 						);
 					}
