@@ -31,7 +31,7 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 	</head>
-	<body> 
+	<body>
 	<!-- se agrega esta clase en el paso 2 para esconder la imagen de la app solo en ese paso -->
 		<h1 id="fb-welcome" style="display: none;"></h1>
 		<!-- BG LIGHTBOX (ALERTA) -->
@@ -185,7 +185,7 @@
 										<span class="c-bottom-left"></span>
 										<span class="c-bottom-right"></span>
 									</span>
-								</div>					
+								</div>
 								<!-- fin caja principal elegida -->
 								<p class="select-design">Selecciona un diseño</p>
 								<div class="row row-little-boxes">
@@ -387,8 +387,31 @@
 					event.preventDefault();
 					html2canvas($('#big_box_msg_'+$.userdata.template), {
 						onrendered: function(canvas) {
-							var myImage = canvas.toDataURL("image/png");
-							var WindowObjectReference = window.open(myImage, "share_img", '_blank');
+							var dataURL = canvas.toDataURL("image/png");
+							//var WindowObjectReference = window.open(dataURL, "share_img", '_blank');
+/* Curso normal */
+				var onlyData = dataURL.substring(dataURL.indexOf(',')+1);
+				var decoded = atob(onlyData);
+				var dl = decoded.length;
+				var buffer = new Uint8Array(dl);
+				for (var i = 0; i < dl; i++) {
+					buffer[i] = decoded.charCodeAt(i);
+				};
+				var blob = new Blob([buffer], {type: 'image/png'});
+				var formData = new FormData();
+				formData.append('source', blob);
+				formData.append('message', 'Whatever message we decide #ble');
+				FB.api('/me/photos', 'POST', formData, function(resp) {
+					console.log('into function');
+					if (resp && !resp.error) {
+						console.log('uploaded');
+						console.log(resp);
+					} else {
+						console.log('some error');
+						console.log(resp.error);
+					};
+				});
+/* Curso normal */
 							$('#step_2').hide();
 							$('body').removeClass("step-2-bg");
 							$('#step_3').show();
@@ -397,6 +420,33 @@
 				});
 			});
 			/******************* HELPERS */
+
+			function publishFacebook(){
+				console.log('dentro publish');
+				var dataURL = canvas.toDataURL('image/png');
+				var onlyData = dataURL.substring(dataURL.indexOf(',')+1);
+				var decoded = atob(onlyData);
+				var dl = decoded.length;
+				var buffer = new Uint8Array(dl);
+				for (var i = 0; i < dl; i++) {
+					buffer[i] = decoded.charCodeAt(i);
+				};
+				var blob = new Blob([buffer], {type: 'image/png'});
+				var formData = new FormData();
+				formData.append('source', blob);
+				formData.append('message', 'Whatever message we decide');
+				FB.api('/me/photos', 'POST', formData, function(resp) {
+					console.log('into function');
+					if (resp && !resp.error) {
+						console.log('uploaded');
+						console.log(resp);
+					} else {
+						console.log('some error');
+						console.log(resp.error);
+					};
+				});
+			};
+
 			// despiela las bases.
 			function verBases(){
 				var WindowObjectReference = window.open("bases.pdf", "bases_concurso", "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes");
