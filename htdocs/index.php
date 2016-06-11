@@ -48,11 +48,27 @@
 					if(response.status == 'connected'){
 						$.userdata.userID = response.authResponse.userID;
 						$.userdata.accessToken = response.authResponse.accessToken;
+						// Obtengo informacion del perfil.
+						FB.api('/me', function(data){
+							console.log(data);
+							$.userdata.name = data.name;
+							$.userdata.first_name = data.first_name;
+							$.userdata.last_name = data.last_name;
+							$.userdata.email = data.email;
+						});
 					}else{
 						// Otherwise, show Login dialog first.
 						FB.login(function(response){
 							$.userdata.userID = response.authResponse.userID;
 							$.userdata.accessToken = response.authResponse.accessToken;
+							// Obtengo informacion del perfil.
+							FB.api('/me', function(data){
+								console.log(data);
+								$.userdata.name = data.name;
+								$.userdata.first_name = data.first_name;
+								$.userdata.last_name = data.last_name;
+								$.userdata.email = data.email;
+							});
 						}, {scope: 'publish_actions, email'});
 					}
 				});
