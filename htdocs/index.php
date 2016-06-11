@@ -372,7 +372,7 @@
 							// 
 							$.ajax({
 								data: {img : dataURL, uid : "kaosbkaosbkaosb"},
-								type: "GET",
+								type: "POST",
 								dataType: "json",
 								url: "src/saveImage.php",
 							})
