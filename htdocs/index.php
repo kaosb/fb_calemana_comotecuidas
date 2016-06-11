@@ -271,11 +271,6 @@
 					xfbml      : true,
 					version    : 'v2.6'
 				});
-
-						FB.login(function(response) {
-							console.log(response);
-						}, {scope: 'publish_actions, email'});
-
 				// Get estado login.
 				FB.getLoginStatus(function(response) {
 					// Check login status on load, and if the user is
@@ -283,29 +278,16 @@
 					if(response.status == 'connected'){
 						console.log(response);
 						$.userdata.userID = response.authResponse.userID;
+						$.userdata.accessToken = response.authResponse.accessToken;
 					}else{
 						// Otherwise, show Login dialog first.
 						FB.login(function(response) {
 							console.log(response);
+							$.userdata.userID = response.authResponse.userID;
+							$.userdata.accessToken = response.authResponse.accessToken;
 						}, {scope: 'publish_actions, email'});
 					}
 				});
-				/******** Al ingresar verificamos si ya inicio sesion o la iniciamos. */
-				// FB.getLoginStatus(function(response){
-				// 	if(response.status === 'connected'){
-						
-				// 	}else if (response.status === 'not_authorized'){
-				// 		console.log("not_authorized");
-				// 		// Logeado pero no autorizo a la app.
-				// 		console.log("No dio permiso.");
-				// 		// getLogin();
-				// 	}else{
-				// 		// No logeado
-				// 		console.log("No logeado.");
-				// 		// getLogin();
-				// 	}
-				// },{scope: 'email, publish_actions'});
-
 			};
 			(function(d, s, id){
 				var js, fjs = d.getElementsByTagName(s)[0];
@@ -385,29 +367,29 @@
 					html2canvas($('#big_box_msg_'+$.userdata.template), {
 						onrendered: function(canvas) {
 							var dataURL = canvas.toDataURL("image/png");
-							//var WindowObjectReference = window.open(dataURL, "share_img", '_blank');
+							var WindowObjectReference = window.open(dataURL, "share_img", '_blank');
 /* Curso normal */
-				var onlyData = dataURL.substring(dataURL.indexOf(',')+1);
-				var decoded = atob(onlyData);
-				var dl = decoded.length;
-				var buffer = new Uint8Array(dl);
-				for (var i = 0; i < dl; i++) {
-					buffer[i] = decoded.charCodeAt(i);
-				};
-				var blob = new Blob([buffer], {type: 'image/png'});
-				var formData = new FormData();
-				formData.append('source', blob);
-				formData.append('caption', 'Comparte tu consejo de salud y participa por una de las 6 gift card de $50.000 con Clínica Alemana. #ble');
-				FB.api('/me/photos', 'POST', formData, function(resp) {
-					console.log('into function');
-					if (resp && !resp.error) {
-						console.log('uploaded');
-						console.log(resp);
-					} else {
-						console.log('some error');
-						console.log(resp.error);
-					};
-				});
+				// var onlyData = dataURL.substring(dataURL.indexOf(',')+1);
+				// var decoded = atob(onlyData);
+				// var dl = decoded.length;
+				// var buffer = new Uint8Array(dl);
+				// for (var i = 0; i < dl; i++) {
+				// 	buffer[i] = decoded.charCodeAt(i);
+				// };
+				// var blob = new Blob([buffer], {type: 'image/png'});
+				// var formData = new FormData();
+				// formData.append('source', blob);
+				// formData.append('caption', 'Comparte tu consejo de salud y participa por una de las 6 gift card de $50.000 con Clínica Alemana. #ble');
+				// FB.api('/me/photos', 'POST', formData, function(resp) {
+				// 	console.log('into function');
+				// 	if (resp && !resp.error) {
+				// 		console.log('uploaded');
+				// 		console.log(resp);
+				// 	} else {
+				// 		console.log('some error');
+				// 		console.log(resp.error);
+				// 	};
+				// });
 /* Curso normal */
 							$('#step_2').hide();
 							$('body').removeClass("step-2-bg");
