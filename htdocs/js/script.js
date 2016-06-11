@@ -72,6 +72,7 @@ $(document).ready(function(){
 					dataType: 'json',
 					url: 'src/saveImage.php',
 					success: function(data){
+						console.log($.userdata);
 						FB.api(
 							'/me/photos',
 							'POST',

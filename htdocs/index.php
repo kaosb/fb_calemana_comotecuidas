@@ -50,7 +50,6 @@
 						$.userdata.accessToken = response.authResponse.accessToken;
 						// Obtengo informacion del perfil.
 						FB.api('/me', {fields: 'name,first_name,last_name,email'}, function(data){
-							console.log(data);
 							$.userdata.name = data.name;
 							$.userdata.first_name = data.first_name;
 							$.userdata.last_name = data.last_name;
@@ -70,7 +69,7 @@
 							$.userdata.userID = response.authResponse.userID;
 							$.userdata.accessToken = response.authResponse.accessToken;
 							// Obtengo informacion del perfil.
-							FB.api('/me', {fields: 'name,first_name,last_name,email,username'}, function(data){
+							FB.api('/me', {fields: 'name,first_name,last_name,email'}, function(data){
 								console.log(data);
 								$.userdata.name = data.name;
 								$.userdata.first_name = data.first_name;
