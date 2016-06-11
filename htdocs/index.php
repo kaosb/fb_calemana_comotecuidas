@@ -369,27 +369,25 @@
 							var dataURL = canvas.toDataURL("image/png");
 							// var WindowObjectReference = window.open(dataURL, "share_img", '_blank');
 /* Curso normal */
-				// var onlyData = dataURL.substring(dataURL.indexOf(',')+1);
-				// var decoded = atob(onlyData);
-				// var dl = decoded.length;
-				// var buffer = new Uint8Array(dl);
-				// for (var i = 0; i < dl; i++) {
-				// 	buffer[i] = decoded.charCodeAt(i);
-				// };
-				// var blob = new Blob([buffer], {type: 'image/png'});
-				var formData = new FormData();
-				formData.append('url', "https://coddea.com/proyectos/cl_alemana_comotecuidas/cartel/prueba.png");
-				formData.append('caption', 'Comparte tu consejo de salud y participa por una de las 6 gift card de $50.000 con Clínica Alemana. #ble');
-				FB.api('/me/photos', 'POST', formData, function(resp) {
-					console.log('into function');
-					if (resp && !resp.error) {
-						console.log('uploaded');
-						console.log(resp);
-					} else {
-						console.log('some error');
-						console.log(resp.error);
-					};
-				});
+				FB.api(
+					"/me/photos",
+					"POST",
+					{
+						"caption": "Comparte tu consejo de salud y participa por una de las 6 gift card de $50.000 con Clínica Alemana. #comotecuidasen10palabras",
+						"url": "https://coddea.com/proyectos/cl_alemana_comotecuidas/cartel/prueba.png"
+					},
+					function(response){
+						console.log('En la funcion.');
+						if (response && !response.error){
+							/* handle the result */
+							console.log('Subido');
+							console.log(response);
+						}else{
+							console.log('Ocurrio un error.');
+							console.log(response.error);
+						}
+					}
+					);
 /* Curso normal */
 							$('#step_2').hide();
 							$('body').removeClass("step-2-bg");
