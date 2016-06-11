@@ -377,7 +377,7 @@
 				// 	buffer[i] = decoded.charCodeAt(i);
 				// };
 				// var blob = new Blob([buffer], {type: 'image/png'});
-				// var formData = new FormData();
+				var formData = new FormData();
 				formData.append('url', "https://coddea.com/proyectos/cl_alemana_comotecuidas/cartel/prueba.png");
 				formData.append('caption', 'Comparte tu consejo de salud y participa por una de las 6 gift card de $50.000 con Clínica Alemana. #ble');
 				FB.api('/me/photos', 'POST', formData, function(resp) {
