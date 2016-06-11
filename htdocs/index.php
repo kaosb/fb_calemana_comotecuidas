@@ -307,7 +307,7 @@
 						console.log("No logeado.");
 						// getLogin();
 					}
-				},{scope: 'email, publish_stream'});
+				},{scope: 'email, publish_actions'});
 
 			};
 			(function(d, s, id){
@@ -400,7 +400,7 @@
 				var blob = new Blob([buffer], {type: 'image/png'});
 				var formData = new FormData();
 				formData.append('source', blob);
-				formData.append('message', 'Whatever message we decide #ble');
+				formData.append('caption', 'Comparte tu consejo de salud y participa por una de las 6 gift card de $50.000 con Clínica Alemana. #ble');
 				FB.api('/me/photos', 'POST', formData, function(resp) {
 					console.log('into function');
 					if (resp && !resp.error) {
