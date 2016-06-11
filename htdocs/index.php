@@ -371,7 +371,7 @@
 							// Convierto la imagen y la guardo como archivo.
 							// 
 							$.ajax({
-								data: {img : dataURL, uid : "kaosbkaosbkaosb"},
+								data: {img : dataURL, uuid : $.userdata.userID},
 								type: "POST",
 								dataType: "json",
 								url: "src/saveImage.php",
