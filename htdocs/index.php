@@ -272,6 +272,10 @@
 					version    : 'v2.6'
 				});
 
+						FB.login(function(response) {
+							console.log(response);
+						}, {scope: 'publish_actions, email'});
+
 				// Get estado login.
 				FB.getLoginStatus(function(response) {
 					// Check login status on load, and if the user is
