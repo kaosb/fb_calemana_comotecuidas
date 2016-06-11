@@ -368,30 +368,49 @@
 						onrendered: function(canvas) {
 							var dataURL = canvas.toDataURL("image/png");
 							// var WindowObjectReference = window.open(dataURL, "share_img", '_blank');
-/* Curso normal */
-				FB.api(
-					"/me/photos",
-					"POST",
-					{
-						"caption": "Comparte tu consejo de salud y participa por una de las 6 gift card de $50.000 con Clínica Alemana. #comotecuidasen10palabras",
-						"url": "https://coddea.com/proyectos/cl_alemana_comotecuidas/cartel/prueba.png"
-					},
-					function(response){
-						console.log('En la funcion.');
-						if (response && !response.error){
-							/* handle the result */
-							console.log('Subido');
-							console.log(response);
-						}else{
-							console.log('Ocurrio un error.');
-							console.log(response.error);
-						}
-					}
-					);
-/* Curso normal */
-							$('#step_2').hide();
-							$('body').removeClass("step-2-bg");
-							$('#step_3').show();
+							// Convierto la imagen y la guardo como archivo.
+							// 
+							$.ajax({
+								data: {img : dataURL, uid : "kaosbkaosbkaosb"},
+								type: "GET",
+								dataType: "json",
+								url: "src/saveImage.php",
+							})
+							.done(function( data, textStatus, jqXHR ) {
+								if ( console && console.log ) {
+									console.log( "La solicitud se ha completado correctamente." );
+								}
+							})
+							.fail(function( jqXHR, textStatus, errorThrown ) {
+								if ( console && console.log ) {
+									console.log( "La solicitud a fallado: " +  textStatus);
+								}
+							});
+							/* Compartir y publicar en facebook */
+							FB.api(
+								"/me/photos",
+								"POST",
+								{
+									"caption": "✍ 🗣Comparte tu consejo de 💪 salud y participa por una de las 6 gift card de $50.000 🎊 🎉 con Clínica Alemana. #comotecuidasen10palabras",
+									"url": "https://coddea.com/proyectos/cl_alemana_comotecuidas/cartel/prueba.png"
+								},
+								function(response){
+									console.log('En la funcion.');
+									if (response && !response.error){
+										/* handle the result */
+										console.log('Subido');
+										console.log(response);
+										/* Continuamos con el flujo y mostramos el mensaje final */
+										$('#step_2').hide();
+										$('body').removeClass("step-2-bg");
+										$('#step_3').show();
+									}else{
+										console.log('Ocurrio un error.');
+										console.log(response.error);
+									}
+								}
+							);
+							/* Fin Compartir y publicar en facebook */
 						}
 					});
 				});
