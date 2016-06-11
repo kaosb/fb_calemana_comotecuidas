@@ -277,12 +277,12 @@
 					// Check login status on load, and if the user is
 					// already logged in, go directly to the welcome message.
 					if(response.status == 'connected'){
-						onLogin(response);
+						console.log(response);
 						$.userdata.userID = response.authResponse.userID;
 					}else{
 						// Otherwise, show Login dialog first.
 						FB.login(function(response) {
-							onLogin(response);
+							console.log(response);
 						}, {scope: 'publish_actions, email'});
 					}
 				});
@@ -307,7 +307,7 @@
 				var js, fjs = d.getElementsByTagName(s)[0];
 				if (d.getElementById(id)) {return;}
 				js = d.createElement(s); js.id = id;
-				js.src = "//connect.facebook.net/en_US/sdk.js";
+				js.src = "//connect.facebook.net/es_ES/sdk.js";
 				fjs.parentNode.insertBefore(js, fjs);
 			}(document, 'script', 'facebook-jssdk'));
 
