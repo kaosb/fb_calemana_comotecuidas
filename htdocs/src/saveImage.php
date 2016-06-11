@@ -1,10 +1,10 @@
 <?php	
-	if(isset($_POST['img']) && isset($_POST['uid'])){
-		$uid = $_POST['uid'];
+	if(isset($_POST['img']) && isset($_POST['userID'])){
+		$userID = $_POST['userID'];
 		$data = $_POST['img'];
 		$data = substr($data,strpos($data,",")+1);
 		$data = base64_decode($data);
-		$file = '../cartel/'.$uid.'.png';
+		$file = '../cartel/'.$userID.'.png';
 		if(file_put_contents($file, $data)){
 			$file_name_array = explode("/", $file);
 			$file_name = $file_name_array[2];
