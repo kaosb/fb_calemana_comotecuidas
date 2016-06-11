@@ -49,12 +49,20 @@
 						$.userdata.userID = response.authResponse.userID;
 						$.userdata.accessToken = response.authResponse.accessToken;
 						// Obtengo informacion del perfil.
-						FB.api('/me', function(data){
+						FB.api('/me', , {fields: 'name,first_name,last_name,email'}, function(data){
 							console.log(data);
 							$.userdata.name = data.name;
 							$.userdata.first_name = data.first_name;
 							$.userdata.last_name = data.last_name;
 							$.userdata.email = data.email;
+							FB.api(
+								"/"+data.id,
+								function (response){
+									if (response && !response.error){
+										console.log(response);
+									}
+								}
+							);
 						});
 					}else{
 						// Otherwise, show Login dialog first.
@@ -62,14 +70,22 @@
 							$.userdata.userID = response.authResponse.userID;
 							$.userdata.accessToken = response.authResponse.accessToken;
 							// Obtengo informacion del perfil.
-							FB.api('/me', function(data){
+							FB.api('/me', , {fields: 'name,first_name,last_name,email'}, function(data){
 								console.log(data);
 								$.userdata.name = data.name;
 								$.userdata.first_name = data.first_name;
 								$.userdata.last_name = data.last_name;
 								$.userdata.email = data.email;
+								FB.api(
+									"/"+data.id,
+									function (response){
+										if (response && !response.error){
+											console.log(response);
+										}
+									}
+								);
 							});
-						}, {scope: 'publish_actions, email'});
+						}, {scope: 'publish_actions, email, public_profile, user_likes'});
 					}
 				});
 			};
