@@ -382,7 +382,7 @@
 								}
 								/* Compartir y publicar en facebook */
 								FB.api(
-									"/me/photos",
+									"/me/photos?fields=picture.height(961)",
 									"POST",
 									{
 										"caption": "✍ 🗣Comparte tu consejo de 💪 salud y participa por una de las 6 gift card de $50.000 🎊 🎉 con Clínica Alemana. #comotecuidasen10palabras",
