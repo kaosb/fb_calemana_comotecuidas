@@ -271,43 +271,36 @@
 					xfbml      : true,
 					version    : 'v2.6'
 				});
-				// ADD ADDITIONAL FACEBOOK CODE HERE
-				// Place following code after FB.init call.
-				function onLogin(response) {
-					if (response.status == 'connected') {
-						FB.api('/me?fields=first_name', function(data) {
-							var welcomeBlock = document.getElementById('fb-welcome');
-							welcomeBlock.innerHTML = 'Hello, ' + data.first_name + '!';
-						});
-					}
-				}
-				// // Get estado login.
-				// FB.getLoginStatus(function(response) {
-				// 	// Check login status on load, and if the user is
-				// 	// already logged in, go directly to the welcome message.
-				// 	if(response.status == 'connected'){
-				// 		onLogin(response);
-				// 	}else{
-				// 		// Otherwise, show Login dialog first.
-				// 		FB.login(function(response) {
-				// 			onLogin(response);
-				// 		}, {scope: 'user_friends, email'});
-				// 	}
-				// });
-				/******** Al ingresar verificamos si ya inicio sesion o la iniciamos. */
-				FB.getLoginStatus(function(response){
-					if(response.status === 'connected'){
+
+				// Get estado login.
+				FB.getLoginStatus(function(response) {
+					// Check login status on load, and if the user is
+					// already logged in, go directly to the welcome message.
+					if(response.status == 'connected'){
+						onLogin(response);
 						$.userdata.userID = response.authResponse.userID;
-					}else if (response.status === 'not_authorized'){
-						// Logeado pero no autorizo a la app.
-						console.log("No dio permiso.");
-						// getLogin();
 					}else{
-						// No logeado
-						console.log("No logeado.");
-						// getLogin();
+						// Otherwise, show Login dialog first.
+						FB.login(function(response) {
+							onLogin(response);
+						}, {scope: 'publish_actions, email'});
 					}
-				},{scope: 'email, publish_actions'});
+				});
+				/******** Al ingresar verificamos si ya inicio sesion o la iniciamos. */
+				// FB.getLoginStatus(function(response){
+				// 	if(response.status === 'connected'){
+						
+				// 	}else if (response.status === 'not_authorized'){
+				// 		console.log("not_authorized");
+				// 		// Logeado pero no autorizo a la app.
+				// 		console.log("No dio permiso.");
+				// 		// getLogin();
+				// 	}else{
+				// 		// No logeado
+				// 		console.log("No logeado.");
+				// 		// getLogin();
+				// 	}
+				// },{scope: 'email, publish_actions'});
 
 			};
 			(function(d, s, id){
