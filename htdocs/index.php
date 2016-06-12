@@ -6,6 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 		<title>Clínica Alemana - ¿Como te cuidas?</title>
+		<!-- FavIcon -->
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 		<!-- Fonts -->
 		<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
@@ -54,14 +56,6 @@
 							$.userdata.first_name = data.first_name;
 							$.userdata.last_name = data.last_name;
 							$.userdata.email = data.email;
-							FB.api(
-								"/"+data.id,
-								function (response){
-									if (response && !response.error){
-										console.log(response);
-									}
-								}
-							);
 						});
 					}else{
 						// Otherwise, show Login dialog first.
@@ -70,19 +64,10 @@
 							$.userdata.accessToken = response.authResponse.accessToken;
 							// Obtengo informacion del perfil.
 							FB.api('/me', {fields: 'name,first_name,last_name,email'}, function(data){
-								console.log(data);
 								$.userdata.name = data.name;
 								$.userdata.first_name = data.first_name;
 								$.userdata.last_name = data.last_name;
 								$.userdata.email = data.email;
-								FB.api(
-									"/"+data.id,
-									function (response){
-										if (response && !response.error){
-											console.log(response);
-										}
-									}
-								);
 							});
 						}, {scope: 'publish_actions, email, public_profile, user_likes'});
 					}
