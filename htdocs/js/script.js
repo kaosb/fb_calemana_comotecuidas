@@ -86,7 +86,8 @@ $(document).ready(function(){
 									/* Continuamos con el flujo y mostramos el mensaje final */
 									console.log("Se subio la imagen a FB.");
 									console.log(response);
-									$.userdata.post_id = response.post_id
+									$.userdata.post_id = response.post_id;
+									$.userdata.origin = "desktop";
 									/* Guardamos al participante */
 									$.ajax({
 										data: {
