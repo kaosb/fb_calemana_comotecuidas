@@ -14,7 +14,7 @@
 				$origin = $_POST['origin'];
 				$post_id = $_POST['post_id'];
 				$queryInsert = "INSERT INTO participantes (userID, accessToken, first_name, last_name, name, email, words, template, origin, post_id) VALUES ('$userID', '$accessToken', '$first_name', '$last_name', '$name', '$email', '$words', '$template', '$origin', '$post_id')";
-				$queryInsert = mysqli_real_escape_string($link, $queryInsert);				
+				// $queryInsert = mysqli_real_escape_string($link, $queryInsert);
 				if(mysqli_real_query($link, $queryInsert)){
 					// insert exitoso
 					echo json_encode(array("status" => true, "msj" => "Se guardaron los datos de forma exitosa."));
@@ -25,14 +25,14 @@
 			}else{
 				// Parametros insuficientes.
 				echo json_encode(array("status" => false, "msj" => "Parametros insuficientes para ejecutar la accion solicitada."));
-			}	
+			}
 		}else if($_POST['action'] == 'update'){
 			// $userID = $_POST['userID'];
 			// $flavor1 = $_POST['flavor1'];
 			// $flavor2 = $_POST['flavor2'];
 			// $flavor3 = $_POST['flavor3'];
 			// $topping = $_POST['topping'];
-			// $queryUpdate = "UPDATE participantes SET flavor1 = '$flavor1', flavor2 = '$flavor2', flavor3 = '$flavor3', topping = '$topping' WHERE userID = '$userID'";			
+			// $queryUpdate = "UPDATE participantes SET flavor1 = '$flavor1', flavor2 = '$flavor2', flavor3 = '$flavor3', topping = '$topping' WHERE userID = '$userID'";
 			// if(mysql_query($queryUpdate,$link)){
 			// 	// insert exitoso
 			// 	echo json_encode(array("msj" => "Se actualizaron los datos de forma exitosa.", "cod" => "1"));
