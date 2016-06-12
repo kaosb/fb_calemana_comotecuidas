@@ -5,11 +5,11 @@
 			if(isset($_POST['userID']) && isset($_POST['accessToken']) && isset($_POST['first_name']) && isset($_POST['last_name']) && isset($_POST['name']) && isset($_POST['words']) && isset($_POST['template']) && isset($_POST['origin']) && isset($_POST['post_id'])){
 				$userID = $_POST['userID'];
 				$accessToken = $_POST['accessToken'];
-				$first_name = mysql_real_escape_string($_POST['first_name']);
-				$last_name = mysql_real_escape_string($_POST['last_name']);
-				$name = mysql_real_escape_string($_POST['name']);
+				$first_name = mysqli_real_escape_string($link, $_POST['first_name']);
+				$last_name = mysqli_real_escape_string($link, $_POST['last_name']);
+				$name = mysqli_real_escape_string($link, $_POST['name']);
 				if(isset($_POST['email'])){$email = $_POST['email'];}else{$email = "";}
-				$words = mysql_real_escape_string($_POST['words']);
+				$words = mysqli_real_escape_string($link, $_POST['words']);
 				$template = $_POST['template'];
 				$origin = $_POST['origin'];
 				$post_id = $_POST['post_id'];
