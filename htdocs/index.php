@@ -33,58 +33,55 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 		<script src="js/jquery.min.js"></script>
-		<script type="text/javascript">
-			/* Objeto Global para almacenar informacion del usuario */
+	</head>
+	<body>
+		<script>
+			// Objeto Global para almacenar informacion del usuario
 			$.userdata = {};
-			// Scripts de Facebook.
+			// fb snippet
 			window.fbAsyncInit = function() {
+				// Inicializamos
 				FB.init({
 					appId      : '287403201596704',
 					xfbml      : true,
 					version    : 'v2.6'
 				});
-				// Get estado login.
+				// Funcion
+				function onLogin(response){
+					$.userdata.userID = response.authResponse.userID;
+					$.userdata.accessToken = response.authResponse.accessToken;
+					// Obtengo informacion del perfil.
+					FB.api('/me', {fields: 'name,first_name,last_name,email'}, function(data){
+						$.userdata.name = data.name;
+						$.userdata.first_name = data.first_name;
+						$.userdata.last_name = data.last_name;
+						$.userdata.email = data.email;
+					});
+					return true;
+				}
+				// Verificamos el estado del login.
 				FB.getLoginStatus(function(response) {
 					// Check login status on load, and if the user is
 					// already logged in, go directly to the welcome message.
 					if(response.status == 'connected'){
-						$.userdata.userID = response.authResponse.userID;
-						$.userdata.accessToken = response.authResponse.accessToken;
-						// Obtengo informacion del perfil.
-						FB.api('/me', {fields: 'name,first_name,last_name,email'}, function(data){
-							$.userdata.name = data.name;
-							$.userdata.first_name = data.first_name;
-							$.userdata.last_name = data.last_name;
-							$.userdata.email = data.email;
-						});
+						onLogin(response);
 					}else{
 						// Otherwise, show Login dialog first.
 						FB.login(function(response){
-							$.userdata.userID = response.authResponse.userID;
-							$.userdata.accessToken = response.authResponse.accessToken;
-							// Obtengo informacion del perfil.
-							FB.api('/me', {fields: 'name,first_name,last_name,email'}, function(data){
-								$.userdata.name = data.name;
-								$.userdata.first_name = data.first_name;
-								$.userdata.last_name = data.last_name;
-								$.userdata.email = data.email;
-							});
-						}, {scope: 'publish_actions, email, public_profile, user_likes'});
+							onLogin(response);
+						}, {scope: 'publish_actions, email, public_profile'});
 					}
 				});
+				// ADDITIONAL FACEBOOK CODE END
 			};
 			(function(d, s, id){
 				var js, fjs = d.getElementsByTagName(s)[0];
 				if (d.getElementById(id)) {return;}
 				js = d.createElement(s); js.id = id;
-				js.src = "//connect.facebook.net/es_ES/sdk.js";
+				js.src = "//connect.facebook.net/es_LA/sdk.js";
 				fjs.parentNode.insertBefore(js, fjs);
 			}(document, 'script', 'facebook-jssdk'));
 		</script>
-	</head>
-	<body>
-	<!-- se agrega esta clase en el paso 2 para esconder la imagen de la app solo en ese paso -->
-		<h1 id="fb-welcome" style="display: none;"></h1>
 		<!-- BG LIGHTBOX (ALERTA) -->
 		<div id="alert" class="bg-lightbox" style="display: none;">
 			<!-- alerta -->
