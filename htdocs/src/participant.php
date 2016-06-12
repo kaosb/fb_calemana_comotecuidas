@@ -15,7 +15,7 @@
 				$post_id = $_POST['post_id'];
 				$queryInsert = "INSERT INTO participantes (userID, accessToken, first_name, last_name, name, email, words, template, origin, post_id)
 								VALUES ('$userID', '$accessToken', '$first_name', '$last_name', '$name', '$email', '$words', '$template', '$origin', '$post_id')";
-				$queryInsert = utf8_decode($queryInsert);				
+				$queryInsert = mysqli_real_escape_string($link, $queryInsert);				
 				if(mysqli_real_query($link, $queryInsert)){
 					// insert exitoso
 					echo json_encode(array("status" => true, "msj" => "Se guardaron los datos de forma exitosa."));
