@@ -31,7 +31,7 @@ $(document).ready(function(){
 			$('.box-featured').hide();
 			$('#big_'+$(this).attr('id')).show();
 			// Construyo el cartel.
-			buildCartel($.userdata.palabras);
+			buildCartel($.userdata.words);
 		});
 		// Verifico que la cantidad de palabras sea entre 7 y 10 palabras.
 		if($.userdata.hasOwnProperty("words_counter") && $.userdata.words_counter.words >= 7 && $.userdata.words_counter.words <= 10){
@@ -39,11 +39,12 @@ $(document).ready(function(){
 			$('body').addClass("step-2-bg");
 			$('#step_2').show();
 			// Guardo el array de palabras en el objeto global.
-			$.userdata.palabras = $('#text_post_content').val().split(' ');;
+			$.userdata.words = $('#text_post_content').val().split(' ');
+			$.userdata.txt = $('#text_post_content').val();
 			// Guardo el identificador del tema por defecto.
 			$.userdata.template = 1
 			// Construyo el cartel.
-			buildCartel($.userdata.palabras);
+			buildCartel($.userdata.words);
 		}else{
 			$('#alert').fadeIn();
 			$('a.close-alert').click(function(event){
@@ -77,7 +78,7 @@ $(document).ready(function(){
 							'/me/photos',
 							'POST',
 							{
-								caption: '✍ 🗣Comparte tu consejo de 💪 salud y participa por una de las 6 gift card de $50.000 🎊 🎉 con Clínica Alemana. #comotecuidasen10palabras',
+								caption: "✍ 🗣Comparte tu consejo de 💪 salud y participa por una de las 6 gift card de $50.000 🎊 🎉 con Clínica Alemana. #comotecuidasen10palabras",
 								url: data.file_url
 							},
 							function(response){
@@ -85,9 +86,20 @@ $(document).ready(function(){
 									/* Continuamos con el flujo y mostramos el mensaje final */
 									console.log("Se subio la imagen a FB.");
 									console.log(response);
-									$('#step_2').hide();
-									$('body').removeClass("step-2-bg");
-									$('#step_3').show();
+									/* Guardamos al participante */
+									$.ajax({
+										data: {},
+										type: "POST",
+										dataType: 'json',
+										url: 'src/participant.php',
+										success: function(data){
+											console.log("Se guardaro al participante");
+											console.log(data);
+											$('#step_2').hide();
+											$('body').removeClass("step-2-bg");
+											$('#step_3').show();
+										}
+									});
 								}else{
 									console.log('Ocurrio un error.');
 									console.log(response.error);
