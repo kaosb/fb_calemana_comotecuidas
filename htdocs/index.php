@@ -115,7 +115,7 @@
 		</div>
 		<!-- fin BG LIGHTBOX -->
 		<div id="loader" style="position:absolute;top:0px;left:0px;width:100%;height:100%;background:rgba(0, 0, 0, 0.5);z-index:9;display: none;">
-			<img src="hourglass.svg" alt="loader" style="position:absolute;top:50%;margin-top:-100px;left:50%;margin-left:-100px;z-index:10;" />
+			<img src="assets/img/hourglass.svg" alt="loader" style="position:absolute;top:50%;margin-top:-100px;left:50%;margin-left:-100px;z-index:10;" />
 		</div>
 		<div class="container">
 			<div class="row">
