@@ -8,7 +8,7 @@
 		if(file_put_contents($file, $data)){
 			$file_name_array = explode("/", $file);
 			$file_name = $file_name_array[2];
-			$file_url = "https://coddea.com/proyectos/cl_alemana_comotecuidas/cartel/".$file_name;
+			$file_url = "https://coddea.com/proyectos/fb_calemana_comotecuidas/cartel/".$file_name;
 			echo json_encode(array("status" => true, "msj" => "Se guardo la imagen.", "file_name" => $file_name, "file_url" => $file_url));
 		}else{
 			echo json_encode(array("status" => false, "msj" => "No fue posible guardar la imagen."));
