@@ -73,7 +73,7 @@ $(document).ready(function(){
 					dataType: 'json',
 					url: 'src/saveImage.php',
 					success: function(data){
-						console.log($.userdata);
+						// console.log($.userdata);
 						FB.api(
 							'/me/photos',
 							'POST',
@@ -84,8 +84,8 @@ $(document).ready(function(){
 							function(response){
 								if(response && !response.error){
 									/* Continuamos con el flujo y mostramos el mensaje final */
-									console.log("Se subio la imagen a FB.");
-									console.log(response);
+									// console.log("Se subio la imagen a FB.");
+									// console.log(response);
 									$.userdata.post_id = response.post_id;
 									$.userdata.origin = "desktop";
 									/* Guardamos al participante */
@@ -107,8 +107,8 @@ $(document).ready(function(){
 										dataType: 'json',
 										url: 'src/participant.php',
 										success: function(data){
-											console.log("Se guardaro al participante");
-											console.log(data);
+											// console.log("Se guardaro al participante");
+											// console.log(data);
 											$('#step_2').hide();
 											$('body').removeClass("step-2-bg");
 											$('#step_3').show();
