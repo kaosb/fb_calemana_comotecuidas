@@ -16,7 +16,7 @@
 				$queryInsert = "INSERT INTO participantes (userID, accessToken, first_name, last_name, name, email, words, template, origin, post_id)
 								VALUES ('$userID', '$accessToken', '$first_name', '$last_name', '$name', '$email', '$words', '$template', '$origin', '$post_id')";
 				$queryInsert = utf8_decode($queryInsert);				
-				if(mysqli_query($queryInsert,$link)){
+				if(mysqli_query($link, $queryInsert)){
 					// insert exitoso
 					echo json_encode(array("status" => true, "msj" => "Se guardaron los datos de forma exitosa."));
 				}else{
