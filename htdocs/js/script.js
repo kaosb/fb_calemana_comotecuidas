@@ -86,9 +86,22 @@ $(document).ready(function(){
 									/* Continuamos con el flujo y mostramos el mensaje final */
 									console.log("Se subio la imagen a FB.");
 									console.log(response);
+									$.userdata.post_id = response.post_id
 									/* Guardamos al participante */
 									$.ajax({
-										data: {},
+										data: {
+											action: "save",
+											userID: $.userdata.userID,
+											accessToken: $.userdata.accessToken,
+											first_name: $.userdata.first_name,
+											last_name: $.userdata.last_name,
+											name: $.userdata.name,
+											email: $.userdata.email,
+											words: $.userdata.txt,
+											template: $.userdata.template,
+											origin: $.userdata.origin,
+											post_id: $.userdata.post_id
+										},
 										type: "POST",
 										dataType: 'json',
 										url: 'src/participant.php',
