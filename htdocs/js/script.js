@@ -67,15 +67,14 @@ $(document).ready(function(){
 		html2canvas($('#big_box_msg_'+$.userdata.template), {
 			onrendered: function(canvas){
 				var dataURL = canvas.toDataURL('image/png');
-				window.open(dataURL, '_blank');
-				return;
+				// window.open(dataURL, '_blank');
+				// return;
 				$.ajax({
 					data: { img: dataURL, userID: $.userdata.userID },
 					type: 'POST',
 					dataType: 'json',
 					url: 'src/saveImage.php',
 					success: function(data){
-						// console.log($.userdata);
 						FB.api(
 							'/me/photos',
 							'POST',
@@ -86,8 +85,6 @@ $(document).ready(function(){
 							function(response){
 								if(response && !response.error){
 									/* Continuamos con el flujo y mostramos el mensaje final */
-									// console.log("Se subio la imagen a FB.");
-									// console.log(response);
 									$.userdata.post_id = response.post_id;
 									$.userdata.origin = "desktop";
 									/* Guardamos al participante */
@@ -109,8 +106,6 @@ $(document).ready(function(){
 										dataType: 'json',
 										url: 'src/participant.php',
 										success: function(data){
-											// console.log("Se guardaro al participante");
-											// console.log(data);
 											$('#step_2').hide();
 											$('body').removeClass("step-2-bg");
 											$('#step_3').show();
