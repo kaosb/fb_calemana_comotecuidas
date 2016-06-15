@@ -7272,6 +7272,7 @@ body.step-2-bg .logos-footer {
   top: 105px;
   letter-spacing: 0;
   text-shadow: -5px 5px 0 #5f0077, -10px 10px 0 #9664b5;
+  display: inline-block;
   font-size: 75px;
   top: 95px;
 }
