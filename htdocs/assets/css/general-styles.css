@@ -71,6 +71,10 @@ body.step-2-bg .logos-footer {
   font-size: 21px;
   font-weight: normal;
 }
+.advice-msg .smal-text {
+  font-size: 18px;
+  padding-top: 20px;
+}
 .title-advice-msg {
   font-family: 'Lobster', cursive;
   font-size: 30px;
