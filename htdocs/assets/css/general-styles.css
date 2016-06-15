@@ -542,14 +542,18 @@ body.step-2-bg .logos-footer {
   z-index: 10;
   color: #8bd46b;
   zoom: 1;
+  font-family: arial, sans-serif;
+  top: -17px;
 }
 .boxes-style-color .box-msg-2 .line-span2:after {
+  top: -17px;
   content: '.';
   display: inline-block;
   position: relative;
   z-index: 10;
   color: #8bd46b;
   zoom: 1;
+  font-family: arial, sans-serif;
 }
 .boxes-style-color .box-msg-2 .line-span3 {
   font-family: 'Great Vibes', cursive;
