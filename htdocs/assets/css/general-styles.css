@@ -524,7 +524,7 @@ body.step-2-bg .logos-footer {
   text-transform: uppercase;
   color: #8bd46b;
   top: 105px;
-  letter-spacing: -5px;
+  letter-spacing: 0;
   text-shadow: -5px 5px 0 #5f0077, -10px 10px 0 #9664b5;
   font-size: 75px;
   top: 95px;
@@ -743,7 +743,7 @@ body.step-2-bg .logos-footer {
   font-size: 105px;
   text-transform: uppercase;
   top: 105px;
-  letter-spacing: -8px;
+  letter-spacing: 0;
   text-shadow: -5px 5px 0 #3f9166;
   font-size: 70px;
   top: 85px;
