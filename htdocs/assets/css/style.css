@@ -7282,32 +7282,20 @@ body.step-2-bg .logos-footer {
   }
 }
 .boxes-style-color .box-msg-2 .line-span2:before {
-  content: '';
+  content: '.';
   display: inline-block;
-  height: 15px;
-  width: 15px;
-  border-radius: 15px;
   position: relative;
-  left: -15px;
   z-index: 10;
-  background-color: #8bd46b;
+  color: #8bd46b;
   zoom: 1;
-  top: -17px;
-  box-shadow: -3px 3px 0 #5f0077;
 }
 .boxes-style-color .box-msg-2 .line-span2:after {
-  content: '';
+  content: '.';
   display: inline-block;
-  height: 15px;
-  width: 15px;
-  border-radius: 15px;
   position: relative;
-  right: -15px;
   z-index: 10;
-  background-color: #8bd46b;
+  color: #8bd46b;
   zoom: 1;
-  top: -17px;
-  box-shadow: -3px 3px 0 #5f0077;
 }
 .boxes-style-color .box-msg-2 .line-span3 {
   font-family: 'Great Vibes', cursive;
