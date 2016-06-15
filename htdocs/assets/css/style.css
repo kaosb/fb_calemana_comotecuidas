@@ -7266,7 +7266,7 @@ body.step-2-bg .logos-footer {
   text-transform: uppercase;
   color: #8bd46b;
   top: 105px;
-  letter-spacing: -8px;
+  letter-spacing: -5px;
   text-shadow: -5px 5px 0 #5f0077, -10px 10px 0 #9664b5;
   font-size: 75px;
   top: 95px;
@@ -7280,29 +7280,29 @@ body.step-2-bg .logos-footer {
 .boxes-style-color .box-msg-2 .line-span2:before {
   content: '';
   display: inline-block;
-  height: 18px;
-  width: 18px;
-  border-radius: 18px;
+  height: 15px;
+  width: 15px;
+  border-radius: 15px;
   position: relative;
   left: -15px;
   z-index: 10;
   background-color: #8bd46b;
   zoom: 1;
-  top: -25px;
+  top: -17px;
   box-shadow: -3px 3px 0 #5f0077;
 }
 .boxes-style-color .box-msg-2 .line-span2:after {
   content: '';
   display: inline-block;
-  height: 18px;
-  width: 18px;
-  border-radius: 18px;
+  height: 15px;
+  width: 15px;
+  border-radius: 15px;
   position: relative;
   right: -15px;
   z-index: 10;
   background-color: #8bd46b;
   zoom: 1;
-  top: -25px;
+  top: -17px;
   box-shadow: -3px 3px 0 #5f0077;
 }
 .boxes-style-color .box-msg-2 .line-span3 {
