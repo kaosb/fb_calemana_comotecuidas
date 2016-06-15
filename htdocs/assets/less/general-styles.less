@@ -549,6 +549,7 @@ body {
 				display: block;
 				content: '';
 				position: absolute;
+				z-index: 1;
 			}
 		}
 		.c-top-left {
@@ -556,28 +557,74 @@ body {
 			background-repeat: no-repeat;
 			background-position: 0 0;
 			&:before {
-				top: 0;
+				top: 2px;
 				left: 20px;
 				height: 20px;
 				right: 20px;
 				background-image: url('../img/post-image-bg/square-bg-post-2-top-bottom.png');
 				background-repeat: repeat-x;
+				display: block;
+				width: 325px;
+				@media (max-width: 480px) {
+					width: 270px;
+				}
 			}
 		}
 		.c-top-right {
 			background-image: url('../img/post-image-bg/square-bg-post-2.png');
 			background-repeat: no-repeat;
 			background-position: -60px 0;
+			&:before {
+				left: 3px;
+				top: 20px;
+				width: 20px;
+				bottom: 20px;
+				background-image: url('../img/post-image-bg/square-bg-post-2-left-right.png');
+				background-repeat: repeat-y;
+				display: block;
+				height: 350px;
+				@media (max-width: 480px) {
+					height: 360px;
+				}
+			}
 		}
 		.c-bottom-left {
 			background-image: url('../img/post-image-bg/square-bg-post-2.png');
 			background-repeat: no-repeat;
 			background-position: 0 -60px;
+			&:before {
+				bottom: -4px; //2px;
+				left: 20px;
+				height: 20px;
+				right: 20px;
+				background-image: url('../img/post-image-bg/square-bg-post-2-top-bottom.png');
+				background-repeat: repeat-x;
+				display: block;
+				width: 325px;
+				@media (max-width: 480px) {
+					width: 270px;
+				}
+			}
 		}
 		.c-bottom-right {
 			background-image: url('../img/post-image-bg/square-bg-post-2.png');
 			background-repeat: no-repeat;
 			background-position: -60px -60px;
+			&:before {
+				left: -343px; //3px;
+				top: -350px; //20px;
+				width: 20px;
+				bottom: 20px;
+				background-image: url('../img/post-image-bg/square-bg-post-2-left-right.png');
+				background-repeat: repeat-y;
+				display: block;
+				height: 350px;
+				@media (max-width: 480px) {
+					height: 360px;
+					left: -288px;
+					top: -360px;
+				}
+			}
 		}
 		.c-top-left-line {
 			position: absolute;
