@@ -545,11 +545,24 @@ body {
 		.c-top-left, .c-top-right, .c-bottom-left, .c-bottom-right {
 			height: 20px;
 			width: 20px;
+			&:before {
+				display: block;
+				content: '';
+				position: absolute;
+			}
 		}
 		.c-top-left {
 			background-image: url('../img/post-image-bg/square-bg-post-2.png');
 			background-repeat: no-repeat;
 			background-position: 0 0;
+			&:before {
+				top: 0;
+				left: 20px;
+				height: 20px;
+				right: 20px;
+				background-image: url('../img/post-image-bg/square-bg-post-2-top-bottom.png');
+				background-repeat: repeat-x;
+			}
 		}
 		.c-top-right {
 			background-image: url('../img/post-image-bg/square-bg-post-2.png');
