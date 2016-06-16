@@ -66,7 +66,7 @@ $(document).ready(function(){
 		$('#loader').show();
 		html2canvas($('#big_box_msg_'+$.userdata.template), {
 			onrendered: function(canvas){
-				document.body.appendChild(canvas);
+				// document.body.appendChild(canvas);
 				// var dataURL = canvas.toDataURL("image/jpeg", 1.0)
 				var dataURL = canvas.toDataURL('image/png');
 				$.ajax({
