@@ -7350,106 +7350,34 @@ body.step-2-bg .logos-footer {
   height: 20px;
   width: 20px;
 }
-.boxes-style-color .box-msg-2 .c-top-left:before,
-.boxes-style-color .box-msg-2 .c-top-right:before,
-.boxes-style-color .box-msg-2 .c-bottom-left:before,
-.boxes-style-color .box-msg-2 .c-bottom-right:before {
-  display: block;
-  content: '';
-  position: absolute;
-  z-index: 1;
-}
 .boxes-style-color .box-msg-2 .c-top-left {
   background-image: url('../img/post-image-bg/square-bg-post-2.png');
   background-repeat: no-repeat;
   background-position: 0 0;
-}
-.boxes-style-color .box-msg-2 .c-top-left:before {
-  top: 2px;
-  left: 20px;
-  height: 16px;
-  right: 20px;
-  background-image: url('../img/post-image-bg/square-bg-post-2-top-bottom.png');
-  background-repeat: repeat-x;
-  display: block;
-  width: 325px;
-}
-@media (max-width: 480px) {
-  .boxes-style-color .box-msg-2 .c-top-left:before {
-    width: 270px;
-  }
 }
 .boxes-style-color .box-msg-2 .c-top-right {
   background-image: url('../img/post-image-bg/square-bg-post-2.png');
   background-repeat: no-repeat;
   background-position: -60px 0;
 }
-.boxes-style-color .box-msg-2 .c-top-right:before {
-  left: 3px;
-  top: 20px;
-  width: 16px;
-  bottom: 20px;
-  background-image: url('../img/post-image-bg/square-bg-post-2-left-right.png');
-  background-repeat: repeat-y;
-  display: block;
-  height: 350px;
-}
-@media (max-width: 480px) {
-  .boxes-style-color .box-msg-2 .c-top-right:before {
-    height: 360px;
-  }
-}
 .boxes-style-color .box-msg-2 .c-bottom-left {
   background-image: url('../img/post-image-bg/square-bg-post-2.png');
   background-repeat: no-repeat;
   background-position: 0 -60px;
-}
-.boxes-style-color .box-msg-2 .c-bottom-left:before {
-  bottom: -4px;
-  left: 20px;
-  height: 16px;
-  right: 20px;
-  top: auto;
-  background-image: url('../img/post-image-bg/square-bg-post-2-top-bottom.png');
-  background-repeat: repeat-x;
-  display: block;
-  width: 325px;
-}
-@media (max-width: 480px) {
-  .boxes-style-color .box-msg-2 .c-bottom-left:before {
-    width: 270px;
-  }
 }
 .boxes-style-color .box-msg-2 .c-bottom-right {
   background-image: url('../img/post-image-bg/square-bg-post-2.png');
   background-repeat: no-repeat;
   background-position: -60px -60px;
 }
-.boxes-style-color .box-msg-2 .c-bottom-right:before {
-  left: -343px;
-  top: -350px;
-  width: 16px;
-  bottom: 20px;
-  background-image: url('../img/post-image-bg/square-bg-post-2-left-right.png');
-  background-repeat: repeat-y;
-  display: block;
-  height: 350px;
-}
-@media (max-width: 480px) {
-  .boxes-style-color .box-msg-2 .c-bottom-right:before {
-    height: 360px;
-    left: -288px;
-    top: -360px;
-  }
-}
 .boxes-style-color .box-msg-2 .c-top-left-line {
   position: absolute;
-  top: 2px;
+  top: 5px;
   background-image: url('../img/post-image-bg/square-bg-post-2-line.png');
   background-repeat: repeat;
-  height: 19px;
-  left: 20px;
-  right: 20px;
+  height: 14px;
+  left: 22px;
+  right: 22px;
   opacity: 0.5;
 }
 .boxes-style-color .box-msg-2 .c-bottom-left-line {
@@ -7457,25 +7385,30 @@ body.step-2-bg .logos-footer {
   bottom: 4px;
   background-image: url('../img/post-image-bg/square-bg-post-2-line.png');
   background-repeat: repeat;
-  height: 19px;
-  left: 20px;
-  right: 20px;
+  height: 14px;
+  left: 22px;
+  right: 22px;
   opacity: 0.5;
 }
 .boxes-style-color .box-msg-2 .c-bottom-right-line {
   position: absolute;
   left: 4px;
-  background-image: url('../img/post-image-bg/square-bg-post-2-line.png');
+  background-image: url('../img/post-image-bg/square-bg-post-2-line-2.png');
   background-repeat: repeat;
-  height: 19px;
-  top: 20px;
-  bottom: 20px;
+  width: 14px;
+  top: 22px;
+  bottom: 22px;
   opacity: 0.5;
-  -ms-transform: rotate(7deg);
-  /* IE 9 */
-  -webkit-transform: rotate(7deg);
-  /* Chrome, Safari, Opera */
-  transform: rotate(7deg);
+}
+.boxes-style-color .box-msg-2 .c-top-right-line {
+  position: absolute;
+  right: 4px;
+  background-image: url('../img/post-image-bg/square-bg-post-2-line-2.png');
+  background-repeat: repeat;
+  width: 14px;
+  top: 22px;
+  bottom: 22px;
+  opacity: 0.5;
 }
 .boxes-style-color .box-msg-3 {
   background-color: #ed6600;

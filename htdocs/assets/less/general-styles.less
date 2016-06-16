@@ -537,96 +537,37 @@ body {
 		.c-top-left, .c-top-right, .c-bottom-left, .c-bottom-right {
 			height: 20px;
 			width: 20px;
-			&:before {
-				display: block;
-				content: '';
-				position: absolute;
-				z-index: 1;
-			}
 		}
 		.c-top-left {
 			background-image: url('../img/post-image-bg/square-bg-post-2.png');
 			background-repeat: no-repeat;
 			background-position: 0 0;
-			&:before {
-				top: 2px;
-				left: 20px;
-				height: 16px;
-				right: 20px;
-				background-image: url('../img/post-image-bg/square-bg-post-2-top-bottom.png');
-				background-repeat: repeat-x;
-				display: block;
-				width: 325px;
-				@media (max-width: 480px) {
-					width: 270px;
-				}
-			}
+
 		}
 		.c-top-right {
 			background-image: url('../img/post-image-bg/square-bg-post-2.png');
 			background-repeat: no-repeat;
 			background-position: -60px 0;
-			&:before {
-				left: 3px;
-				top: 20px;
-				width: 16px;
-				bottom: 20px;
-				background-image: url('../img/post-image-bg/square-bg-post-2-left-right.png');
-				background-repeat: repeat-y;
-				display: block;
-				height: 350px;
-				@media (max-width: 480px) {
-					height: 360px;
-				}
-			}
+
 		}
 		.c-bottom-left {
 			background-image: url('../img/post-image-bg/square-bg-post-2.png');
 			background-repeat: no-repeat;
 			background-position: 0 -60px;
-			&:before {
-				bottom: -4px; //2px;
-				left: 20px;
-				height: 16px;
-				right: 20px;
-				top: auto;
-				background-image: url('../img/post-image-bg/square-bg-post-2-top-bottom.png');
-				background-repeat: repeat-x;
-				display: block;
-				width: 325px;
-				@media (max-width: 480px) {
-					width: 270px;
-				}
-			}
 		}
 		.c-bottom-right {
 			background-image: url('../img/post-image-bg/square-bg-post-2.png');
 			background-repeat: no-repeat;
 			background-position: -60px -60px;
-			&:before {
-				left: -343px; //3px;
-				top: -350px; //20px;
-				width: 16px; 
-				bottom: 20px;
-				background-image: url('../img/post-image-bg/square-bg-post-2-left-right.png');
-				background-repeat: repeat-y;
-				display: block;
-				height: 350px;
-				@media (max-width: 480px) {
-					height: 360px;
-					left: -288px;
-					top: -360px;
-				}
-			}
 		}
 		.c-top-left-line {
 			position: absolute;
-			top: 2px;
+			top: 5px;
 			background-image: url('../img/post-image-bg/square-bg-post-2-line.png');
 			background-repeat: repeat;
-			height: 19px;
-    		left: 20px;
-    		right: 20px;
+			height: 14px;
+    		left: 22px;
+    		right: 22px;
     		opacity: 0.5;
 		}
 		.c-bottom-left-line {
@@ -634,23 +575,30 @@ body {
 			bottom: 4px;
 			background-image: url('../img/post-image-bg/square-bg-post-2-line.png');
 			background-repeat: repeat;
-			height: 19px;
-    		left: 20px;
-    		right: 20px;
+			height: 14px;
+    		left: 22px;
+    		right: 22px;
     		opacity: 0.5;
 		}
 		.c-bottom-right-line {
 			position: absolute;
 			left: 4px;
-			background-image: url('../img/post-image-bg/square-bg-post-2-line.png');
+			background-image: url('../img/post-image-bg/square-bg-post-2-line-2.png');
 			background-repeat: repeat;
-			height: 19px;
-    		top: 20px;
-    		bottom: 20px;
+			width: 14px;
+    		top: 22px;
+    		bottom: 22px;
     		opacity: 0.5;
-    		-ms-transform: rotate(7deg); /* IE 9 */
-		    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
-		    transform: rotate(7deg);
+		}
+		.c-top-right-line {
+			position: absolute;
+			right: 4px;
+			background-image: url('../img/post-image-bg/square-bg-post-2-line-2.png');
+			background-repeat: repeat;
+			width: 14px;
+    		top: 22px;
+    		bottom: 22px;
+    		opacity: 0.5;
 		}
 		&.box-mini {
 
