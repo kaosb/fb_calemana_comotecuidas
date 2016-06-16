@@ -63,63 +63,64 @@ $(document).ready(function(){
 	/******************* PASO 3 */
 	$('#btnstep2_share').click(function(event){
 		event.preventDefault();
-		$('#loader').show();
+		// $('#loader').show();
 		html2canvas($('#big_box_msg_'+$.userdata.template), {
 			onrendered: function(canvas){
-				var dataURL = canvas.toDataURL('image/png');
-				// window.open(dataURL, '_blank');
+				document.body.appendChild(canvas);
+				// var dataURL = canvas.toDataURL('image/png');
+				// window.open(canvas.toDataURL("image/jpeg", 1.0), '_blank');
 				// return;
-				$.ajax({
-					data: { img: dataURL, userID: $.userdata.userID },
-					type: 'POST',
-					dataType: 'json',
-					url: 'src/saveImage.php',
-					success: function(data){
-						FB.api(
-							'/me/photos',
-							'POST',
-							{
-								caption: "✍ 🗣Comparte tu consejo de 💪 salud y participa por una de las 6 gift card de $50.000 🎊 🎉 con Clínica Alemana. #comotecuidasen10palabras",
-								url: data.file_url
-							},
-							function(response){
-								if(response && !response.error){
-									/* Continuamos con el flujo y mostramos el mensaje final */
-									$.userdata.post_id = response.post_id;
-									$.userdata.origin = "desktop";
-									/* Guardamos al participante */
-									$.ajax({
-										data: {
-											action: "save",
-											userID: $.userdata.userID,
-											accessToken: $.userdata.accessToken,
-											first_name: $.userdata.first_name,
-											last_name: $.userdata.last_name,
-											name: $.userdata.name,
-											email: $.userdata.email,
-											words: $.userdata.txt,
-											template: $.userdata.template,
-											origin: $.userdata.origin,
-											post_id: $.userdata.post_id
-										},
-										type: "POST",
-										dataType: 'json',
-										url: 'src/participant.php',
-										success: function(data){
-											$('#step_2').hide();
-											$('body').removeClass("step-2-bg");
-											$('#step_3').show();
-										}
-									});
-								}else{
-									console.log('Ocurrio un error.');
-									console.log(response.error);
-								}
-								$('#loader').hide();
-							}
-						);
-					}
-				});
+				// $.ajax({
+				// 	data: { img: dataURL, userID: $.userdata.userID },
+				// 	type: 'POST',
+				// 	dataType: 'json',
+				// 	url: 'src/saveImage.php',
+				// 	success: function(data){
+				// 		FB.api(
+				// 			'/me/photos',
+				// 			'POST',
+				// 			{
+				// 				caption: "✍ 🗣Comparte tu consejo de 💪 salud y participa por una de las 6 gift card de $50.000 🎊 🎉 con Clínica Alemana. #comotecuidasen10palabras",
+				// 				url: data.file_url
+				// 			},
+				// 			function(response){
+				// 				if(response && !response.error){
+				// 					/* Continuamos con el flujo y mostramos el mensaje final */
+				// 					$.userdata.post_id = response.post_id;
+				// 					$.userdata.origin = "desktop";
+				// 					/* Guardamos al participante */
+				// 					$.ajax({
+				// 						data: {
+				// 							action: "save",
+				// 							userID: $.userdata.userID,
+				// 							accessToken: $.userdata.accessToken,
+				// 							first_name: $.userdata.first_name,
+				// 							last_name: $.userdata.last_name,
+				// 							name: $.userdata.name,
+				// 							email: $.userdata.email,
+				// 							words: $.userdata.txt,
+				// 							template: $.userdata.template,
+				// 							origin: $.userdata.origin,
+				// 							post_id: $.userdata.post_id
+				// 						},
+				// 						type: "POST",
+				// 						dataType: 'json',
+				// 						url: 'src/participant.php',
+				// 						success: function(data){
+				// 							$('#step_2').hide();
+				// 							$('body').removeClass("step-2-bg");
+				// 							$('#step_3').show();
+				// 						}
+				// 					});
+				// 				}else{
+				// 					console.log('Ocurrio un error.');
+				// 					console.log(response.error);
+				// 				}
+				// 				$('#loader').hide();
+				// 			}
+				// 		);
+				// 	}
+				// });
 			}
 		});
 	});
