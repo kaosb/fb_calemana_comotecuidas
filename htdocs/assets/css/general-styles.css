@@ -1135,21 +1135,21 @@ body.step-2-bg .logos-footer {
   background-image: url('../img/post-image-bg/square-bg-post-6.png');
   background-repeat: repeat;
   height: 11px;
-  width: 100%;
+  width: 97%;
 }
 .boxes-style-color .box-msg-6 .c-top-right {
   background-image: url('../img/post-image-bg/square-bg-post-6.png');
   background-repeat: repeat;
-  top: 11px;
-  bottom: 11px;
+  top: 16px;
+  bottom: 15px;
   width: 12px;
   height: auto;
 }
 .boxes-style-color .box-msg-6 .c-bottom-left {
   background-image: url('../img/post-image-bg/square-bg-post-6.png');
   background-repeat: repeat;
-  top: 11px;
-  bottom: 11px;
+  top: 14px;
+  bottom: 16px;
   width: 12px;
   height: auto;
 }
@@ -1157,5 +1157,5 @@ body.step-2-bg .logos-footer {
   background-image: url('../img/post-image-bg/square-bg-post-6.png');
   background-repeat: repeat;
   height: 11px;
-  width: 100%;
+  width: 97.5%;
 }
