@@ -148,7 +148,7 @@
 									<span id="big_line_03_01" class="line-span3">y regaloneando con mi <span id="big_last_word_03_01" class="last-word-line">familia</span></span>
 									<span class="logos-box-min">
 										<img class="hashtag-10-p-min" src="assets/img/post-image-bg/como-te-cuidas-min.svg">
-										<img class="logo-clinica-min" src="assets/img/post-image-bg/logo-alemana-min.svg">
+										<img class="logo-clinica-min" src="assets/img/post-image-bg/logo-alemana-min-2.svg">
 									</span>
 									<span class="corners">
 										<span class="c-top-left"></span>
@@ -171,7 +171,7 @@
 									<span id="big_line_03_02" class="line-span3">y regaloneando con mi <span id="big_last_word_03_02" class="last-word-line">familia</span></span>
 									<span class="logos-box-min">
 										<img class="hashtag-10-p-min" src="assets/img/post-image-bg/como-te-cuidas-min.svg">
-										<img class="logo-clinica-min" src="assets/img/post-image-bg/logo-alemana-min.svg">
+										<img class="logo-clinica-min" src="assets/img/post-image-bg/logo-alemana-min-2.svg">
 									</span>
 									<span class="corners">
 										<span class="c-top-left"></span>
@@ -198,7 +198,7 @@
 									<span id="big_line_03_03" class="line-span3"><span class="span-title-1"></span><span class="span-title-text">y regaloneando con mi</span><span class="span-title-2"></span>  <span id="big_last_word_03_03" class="last-word-line">familia</span></span>
 									<span class="logos-box-min">
 										<img class="hashtag-10-p-min" src="assets/img/post-image-bg/como-te-cuidas-min.svg">
-										<img class="logo-clinica-min" src="assets/img/post-image-bg/logo-alemana-min.svg">
+										<img class="logo-clinica-min" src="assets/img/post-image-bg/logo-alemana-min-2.svg">
 									</span>
 									<span class="corners">
 										<span class="c-top-left"></span>
@@ -214,7 +214,7 @@
 									<span id="big_line_03_03" class="line-span3"><span class="span-title-1"></span><span class="span-title-text">y regaloneando con mi</span><span class="span-title-2"></span>  <span id="big_last_word_03_04" class="last-word-line">familia</span></span>
 									<span class="logos-box-min">
 										<img class="hashtag-10-p-min" src="assets/img/post-image-bg/como-te-cuidas-min.svg">
-										<img class="logo-clinica-min" src="assets/img/post-image-bg/logo-alemana-min.svg">
+										<img class="logo-clinica-min" src="assets/img/post-image-bg/logo-alemana-min-2.svg">
 									</span>
 									<span class="corners">
 										<span class="c-top-left"></span>
@@ -240,7 +240,7 @@
 									</span>
 									<span class="logos-box-min">
 										<img class="hashtag-10-p-min" src="assets/img/post-image-bg/como-te-cuidas-min.svg">
-										<img class="logo-clinica-min" src="assets/img/post-image-bg/logo-alemana-min.svg">
+										<img class="logo-clinica-min" src="assets/img/post-image-bg/logo-alemana-min-2.svg">
 									</span>
 									<span class="corners">
 										<span class="c-top-left"></span>
@@ -263,7 +263,7 @@
 									<span id="big_line_03_06" class="line-span3">y regaloneando con mi<span id="big_last_word_03_06" class="last-word-line"><span class="span-title-1"></span>familia<span class="span-title-2"></span></span></span>
 									<span class="logos-box-min">
 										<img class="hashtag-10-p-min" src="assets/img/post-image-bg/como-te-cuidas-min.svg">
-										<img class="logo-clinica-min" src="assets/img/post-image-bg/logo-alemana-min.svg">
+										<img class="logo-clinica-min" src="assets/img/post-image-bg/logo-alemana-min-2.svg">
 									</span>
 									<span class="corners">
 										<span class="c-top-left"></span>

@@ -367,8 +367,10 @@ body.step-2-bg .logos-footer {
 .boxes-style-color a .box-msg-5 .logos-box-min .logo-clinica-min,
 .boxes-style-color a .box-msg-6 .logos-box-min .logo-clinica-min {
   right: 35px;
-  top: -42px;
+  top: -38px;
   position: absolute;
+  width: 70px;
+  height: 47px;
 }
 .boxes-style-color .box-msg-1.box-mini img,
 .boxes-style-color .box-msg-2.box-mini img,
