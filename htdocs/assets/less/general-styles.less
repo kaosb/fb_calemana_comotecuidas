@@ -216,8 +216,13 @@ body {
 		background-color: #fff;
 		margin: -20px auto;
 		margin-bottom: 5px; //20px;
-		@media (max-width: 480px) {
+
+		@media screen and (max-width: 480px) and (min-width: 350px) {
 			width: 320px;
+			height: 410px;
+		}
+		@media (max-width: 349px) {
+			width: 285px;
 			height: 410px;
 		}
 	}
@@ -303,6 +308,12 @@ body {
 				@media (max-width: 480px) {
 					//left: -24px;
 				}
+				@media screen and (max-width: 480px) and (min-width: 350px) {
+
+				}
+				@media (max-width: 349px) {
+					left: 25px;
+				}
 			}
 			.logo-clinica-min {
 				right: 35px; //40px;
@@ -312,6 +323,12 @@ body {
 				height: 47px;
 				@media (max-width: 480px) {
 					//right: -25px;
+				}
+				@media screen and (max-width: 480px) and (min-width: 350px) {
+
+				}
+				@media (max-width: 349px) {
+					right: 25px;
 				}
 			}
 		}
@@ -354,7 +371,7 @@ body {
 				width: 97px;
 				height: 72px;
 				background-image: url('../img/post-image-bg/cinta-titulo-post-1-izq.png');
-				left: -50px;
+				left: -42px; //-50px;
 				display: block;
 				top: 0;
 			}
@@ -363,7 +380,7 @@ body {
 				width: 97px;
 				height: 71px;
 				background-image: url('../img/post-image-bg/cinta-titulo-post-1-der.png');
-				right: -50px;
+				right: -42px; //-50px;
 				display: block;
 				top: 0;
 			}
@@ -509,6 +526,14 @@ body {
 				//font-size: 35px;
 				top: 200px;
 			}
+			@media screen and (max-width: 480px) and (min-width: 350px) {
+
+			}
+			@media (max-width: 349px) {
+				left: 20px;
+				right: 20px;
+				line-height: 100%;
+			}
 			.last-word-line {
 				display: block;
 				font-family: 'Cookie', cursive;
@@ -533,6 +558,13 @@ body {
 					font-size: 50px;
 					//top: 35px;
 					height: 65px;
+				}
+				@media (max-width: 349px) {
+					height: 45px;
+					left: 50px;
+					right: 50px;
+					font-size: 40px;
+					margin-top: 5px;
 				}
 			}
 		}
