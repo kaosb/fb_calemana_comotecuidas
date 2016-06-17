@@ -151,6 +151,10 @@ function buildCartel(palabras){
 	for(i = 2;(i < length-1) && (palabras[i] !== undefined);i++){
 		bigtext += palabras[i]+" ";
 	}
+	var bigtext_alt = "";
+	for(i = 3;(i < length) && (palabras[i] !== undefined);i++){
+		bigtext_alt += palabras[i]+" ";
+	}
 	// Acorde a lo seleccionado desplegamos.
 	switch(cartel.attr('template')){
 		case "1":
@@ -242,22 +246,22 @@ function buildCartel(palabras){
 			var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
 			cartel.find(".line-span2").css("font-size", fontfinalsieze);
 		}
-		cartel.find(".span-title-text").html(bigtext);
+		cartel.find(".span-title-text").html(palabras[2]);
 		// 22
 		// % respecto al tamaño original -> (tope*100)/cantidad -> %
 		// tamaño fuente equivalente al % calculado -> (tamaño_inicial*porcentaje_al_cual_corresponde_el_tamaño)/100 -> pixeles
-		if(bigtext.length > 22){
-			var porcentaje_tamaño_fit = (22*100)/bigtext.length;
+		if(palabras[2].length > 22){
+			var porcentaje_tamaño_fit = (22*100)/palabras[2].length;
 			var fontdefaultsize = cartel.find(".span-title-text").css("font-size").replace("px", "");
 			var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
 			cartel.find(".span-title-text").css("font-size", fontfinalsieze);
 		}
-		cartel.find(".last-word-line").html(palabras[length-1]);
+		cartel.find(".last-word-line").html(bigtext_alt);
 		// 12
 		// % respecto al tamaño original -> (tope*100)/cantidad -> %
 		// tamaño fuente equivalente al % calculado -> (tamaño_inicial*porcentaje_al_cual_corresponde_el_tamaño)/100 -> pixeles
-		if(palabras[length-1].length > 12){
-			var porcentaje_tamaño_fit = (12*100)/palabras[length-1].length;
+		if(bigtext_alt.length > 12){
+			var porcentaje_tamaño_fit = (12*100)/bigtext_alt.length;
 			var fontdefaultsize = cartel.find(".last-word-line").css("font-size").replace("px", "");
 			var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
 			cartel.find(".last-word-line").css("font-size", fontfinalsieze);
