@@ -1090,6 +1090,7 @@ body.step-2-bg .logos-footer {
   top: 170px;
   right: 20px;
   left: 20px;
+  line-height: 125%;
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-6 .line-span3 {
@@ -1106,7 +1107,7 @@ body.step-2-bg .logos-footer {
   position: absolute;
   left: 12%;
   right: 12%;
-  margin-top: 25px;
+  margin-top: 15px;
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-6 .line-span3 .last-word-line {
