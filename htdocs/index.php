@@ -112,7 +112,7 @@
 						<img class="feat-image" src="assets/img/llamado-copia.png">
 						<!-- contenedor mensaje -->
 						<!-- PASO 0 -->
-						<div id="step_0" class="content-message text-center" style="display: none;">
+						<div id="step_0" class="content-message text-center" style="">
 							<p class="advice-msg">Hazte fan de la Clínica Alemana en Facebook,
 							<br>
 							comparte tu mejor consejo de salud
@@ -122,7 +122,7 @@
 						</div>
 						<!-- FIN PASO 0 -->
 						<!-- PASO 1 -->
-						<div id="step_1" class="content-message text-center" style="">
+						<div id="step_1" class="content-message text-center" style="display: none;">
 							<p class="advice-msg">Escribe tu mejor consejo de salud usando entre 7 y 10 palabras</p>
 							<form>
 								<div class="form-group">
