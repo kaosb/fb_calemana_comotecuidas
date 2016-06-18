@@ -118,7 +118,13 @@
 							comparte tu mejor consejo de salud
 							<br>
 							y participa por una de las 6 gift card de $50.000</p>
-
+							<!-- boton participar -->
+							<div class="form-group">
+								<div class="text-center">
+									<button id="btnstep0" type="submit" class="btn btn-lg btn-default">Participar</button>
+								</div>
+							</div>
+							<!-- fin boton participar -->
 						</div>
 						<!-- FIN PASO 0 -->
 						<!-- PASO 1 -->
