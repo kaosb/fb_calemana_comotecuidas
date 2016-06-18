@@ -1216,3 +1216,13 @@ body.step-2-bg .logos-footer {
   height: 11px;
   width: 97.5%;
 }
+.publish-facebook {
+  margin-top: 15px;
+}
+.publish-facebook .publish-face {
+  height: 65px;
+  text-align: left;
+}
+.publish-facebook .btn.btn-default {
+  font-size: 21px;
+}

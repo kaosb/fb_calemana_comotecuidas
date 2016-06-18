@@ -279,48 +279,68 @@
 									</span>
 								</div>
 								<!-- fin caja principal elegida -->
-								<p class="select-design">Selecciona un diseño</p>
-								<div class="row row-little-boxes">
-									<!-- TEMA 1 rojo -->
-									<div class="col-md-2 col-sm-2 col-xs-2">
-										<a href="#" id="box_msg_1" class="box-msg-1 box-mini">
-											<img src="assets/img/post-image-bg/button-1.png">
-										</a>
+								<!-- se agrego un div con id para esconder -->
+
+								<!-- selector diseños -->
+								<div id="select-design-boxes" style="display: none">
+									<p class="select-design">Selecciona un diseño</p>
+									<div class="row row-little-boxes">
+										<!-- TEMA 1 rojo -->
+										<div class="col-md-2 col-sm-2 col-xs-2">
+											<a href="#" id="box_msg_1" class="box-msg-1 box-mini">
+												<img src="assets/img/post-image-bg/button-1.png">
+											</a>
+										</div>
+										<!-- TEMA 2 morado -->
+										<div class="col-md-2 col-sm-2 col-xs-2">
+											<a href="#" id="box_msg_2" class="box-msg-2 box-mini">
+												<img src="assets/img/post-image-bg/button-3.png">
+											</a>
+										</div>
+										<!-- TEMA 3 naranjo -->
+										<div class="col-md-2 col-sm-2 col-xs-2">
+											<a href="#" id="box_msg_3" class="box-msg-3 box-mini">
+												<img src="assets/img/post-image-bg/button-2.png">
+											</a>
+										</div>
+										<!-- TEMA 4 verde agua -->
+										<div class="col-md-2 col-sm-2 col-xs-2">
+											<a href="#" id="box_msg_4" class="box-msg-4 box-mini">
+												<img src="assets/img/post-image-bg/button-4.png">
+											</a>
+										</div>
+										<!-- TEMA 5 verde limon -->
+										<div class="col-md-2 col-sm-2 col-xs-2">
+											<a href="#" id="box_msg_5" class="box-msg-5 box-mini">
+												<img src="assets/img/post-image-bg/button-5.png">
+											</a>
+										</div>
+										<!-- TEMA 6 -->
+										<div class="col-md-2 col-sm-2 col-xs-2">
+											<a href="#" id="box_msg_6" class="box-msg-6 box-mini">
+												<img src="assets/img/post-image-bg/button-6.png">
+											</a>
+										</div>
 									</div>
-									<!-- TEMA 2 morado -->
-									<div class="col-md-2 col-sm-2 col-xs-2">
-										<a href="#" id="box_msg_2" class="box-msg-2 box-mini">
-											<img src="assets/img/post-image-bg/button-3.png">
-										</a>
-									</div>
-									<!-- TEMA 3 naranjo -->
-									<div class="col-md-2 col-sm-2 col-xs-2">
-										<a href="#" id="box_msg_3" class="box-msg-3 box-mini">
-											<img src="assets/img/post-image-bg/button-2.png">
-										</a>
-									</div>
-									<!-- TEMA 4 verde agua -->
-									<div class="col-md-2 col-sm-2 col-xs-2">
-										<a href="#" id="box_msg_4" class="box-msg-4 box-mini">
-											<img src="assets/img/post-image-bg/button-4.png">
-										</a>
-									</div>
-									<!-- TEMA 5 verde limon -->
-									<div class="col-md-2 col-sm-2 col-xs-2">
-										<a href="#" id="box_msg_5" class="box-msg-5 box-mini">
-											<img src="assets/img/post-image-bg/button-5.png">
-										</a>
-									</div>
-									<!-- TEMA 6 -->
-									<div class="col-md-2 col-sm-2 col-xs-2">
-										<a href="#" id="box_msg_6" class="box-msg-6 box-mini">
-											<img src="assets/img/post-image-bg/button-6.png">
-										</a>
+									<div class="button-select">
+										<a id="btnstep2_back" class="btn btn-lg btn-default">Volver</a> <a id="btnstep2_share" class="btn btn-lg btn-default">Compartir</a>
 									</div>
 								</div>
-								<div class="button-select">
-									<a id="btnstep2_back" class="btn btn-lg btn-default">Volver</a> <a id="btnstep2_share" class="btn btn-lg btn-default">Compartir</a>
+								<!-- publicar en facebook -->
+								<div id="publish-facebook-box" class="publish-facebook" style="">
+									<form>
+										<div class="form-group">
+											<label for="text_post_content" style="display: none">Publicar en Facebook</label>
+											<textarea rows="5" class="form-control publish-face" id="text_post_facebook_content"></textarea>
+										</div>
+										<div class="form-group">
+											<div class="text-center">
+												<button id="btnstep2_facebook" type="submit" class="btn btn-lg btn-default">Publicar en Facebook</button>
+											</div>
+										</div>
+									</form>
 								</div>
+								<!-- // -->
 							</div>
 						</div>
 						<!-- fin PASO 2 -->
