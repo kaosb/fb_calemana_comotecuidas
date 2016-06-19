@@ -156,6 +156,7 @@ $(document).ready(function(){
 /******************* HELPERS */
 // After login
 function onLogin(response){
+	$('#loader').show();
 	$.userdata.userID = response.authResponse.userID;
 	$.userdata.accessToken = response.authResponse.accessToken;
 	// Obtengo informacion del perfil.
@@ -166,6 +167,7 @@ function onLogin(response){
 		$.userdata.email = data.email;
 		console.log($.userdata);
 	});
+	$('#loader').hide();
 	return true;
 }
 // despiela las bases.
