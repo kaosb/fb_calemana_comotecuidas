@@ -23,8 +23,9 @@ $(document).ready(function(){
 	});
 	/******************* PASO 1 */
 	$('#btnstep0').click(function(event){
-		$('#step_0').hide(function(){
-			$('#step_1').show();
+		$('#step_0').fadeOut('fast', function() {
+			$('#step_1').fadeIn('fast', function() {
+			});
 		});
 	});
 	/******************* PASO 1 */
