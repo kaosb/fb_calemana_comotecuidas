@@ -296,7 +296,7 @@
 										</div>
 									</div>
 									<div class="button-select">
-										<a id="btnstep2_back" class="btn btn-lg btn-default">Volver</a> <a id="btnstep2_share" class="btn btn-lg btn-default">Compartir</a>
+										<a id="btnstep2_back" class="btn btn-lg btn-default">Volver</a> <a id="btnstep2_next" class="btn btn-lg btn-default">Siguiente</a>
 									</div>
 								</div>
 								<!-- publicar en facebook -->
@@ -308,7 +308,7 @@
 										</div>
 										<div class="form-group">
 											<div class="text-center">
-												<button id="btnstep2_facebook" type="submit" class="btn btn-lg btn-default">Publicar en Facebook</button>
+												<button id="btnstep2_share" type="submit" class="btn btn-lg btn-default">Publicar en Facebook</button>
 											</div>
 										</div>
 									</form>

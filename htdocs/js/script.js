@@ -89,6 +89,12 @@ $(document).ready(function(){
 		$('#step_1').show();
 	});
 	/******************* PASO 3 */
+	$('#btnstep2_next').click(function(event){
+		event.preventDefault();
+		$('#select-design-boxes').fadeOut('fast', function(){
+			$('#publish-facebook-box').fadeIn('fast');
+		});
+	});
 	$('#btnstep2_share').click(function(event){
 		event.preventDefault();
 		$('#loader').show();
