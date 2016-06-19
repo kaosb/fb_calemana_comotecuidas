@@ -164,6 +164,7 @@ function onLogin(response){
 		$.userdata.first_name = data.first_name;
 		$.userdata.last_name = data.last_name;
 		$.userdata.email = data.email;
+		console.log($.userdata);
 	});
 	return true;
 }
