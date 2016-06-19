@@ -29,7 +29,7 @@ $(document).ready(function(){
 			// already logged in, go directly to the welcome message.
 			if(response.status == 'connected'){
 				onLogin(response);
-				if($.userdata.userID !== null && $.userdata.userID != undefined && $.userdata.accessToken !== null && && $.userdata.accessToken !== undefined){
+				if($.userdata.userID != null && $.userdata.userID != undefined && $.userdata.accessToken != null && $.userdata.accessToken != undefined){
 					// avanzamos al paso 1
 					$('#step_0').fadeOut('fast', function() {
 						$('#step_1').fadeIn('fast');
@@ -39,7 +39,7 @@ $(document).ready(function(){
 				// Otherwise, show Login dialog first.
 				FB.login(function(response){
 					onLogin(response);
-					if($.userdata.userID !== null && $.userdata.userID != undefined && $.userdata.accessToken !== null && && $.userdata.accessToken !== undefined){
+					if($.userdata.userID != null && $.userdata.userID != undefined && $.userdata.accessToken != null && $.userdata.accessToken != undefined){
 						// avanzamos al paso 1
 						$('#step_0').fadeOut('fast', function() {
 							$('#step_1').fadeIn('fast');
