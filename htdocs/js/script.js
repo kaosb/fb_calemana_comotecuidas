@@ -22,6 +22,12 @@ $(document).ready(function(){
 		});
 	});
 	/******************* PASO 1 */
+	$('#btnstep0').click(function(event){
+		$('#step_0').hide(function(){
+			$('#step_1').show();
+		});
+	});
+	/******************* PASO 1 */
 	$('#btnstep1').click(function(event){
 		event.preventDefault();
 		// Bindeo el selector de themas
