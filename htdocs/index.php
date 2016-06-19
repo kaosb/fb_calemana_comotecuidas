@@ -46,33 +46,6 @@
 					xfbml      : true,
 					version    : 'v2.6'
 				});
-				// Funcion
-				function onLogin(response){
-					$.userdata.userID = response.authResponse.userID;
-					$.userdata.accessToken = response.authResponse.accessToken;
-					// Obtengo informacion del perfil.
-					FB.api('/me', {fields: 'name,first_name,last_name,email'}, function(data){
-						$.userdata.name = data.name;
-						$.userdata.first_name = data.first_name;
-						$.userdata.last_name = data.last_name;
-						$.userdata.email = data.email;
-					});
-					return true;
-				}
-				// Verificamos el estado del login.
-				FB.getLoginStatus(function(response) {
-					// Check login status on load, and if the user is
-					// already logged in, go directly to the welcome message.
-					if(response.status == 'connected'){
-						onLogin(response);
-					}else{
-						// Otherwise, show Login dialog first.
-						FB.login(function(response){
-							onLogin(response);
-						}, {scope: 'publish_actions, email, public_profile'});
-					}
-				});
-				// ADDITIONAL FACEBOOK CODE END
 			};
 			(function(d, s, id){
 				var js, fjs = d.getElementsByTagName(s)[0];

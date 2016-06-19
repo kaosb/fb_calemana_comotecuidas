@@ -21,11 +21,32 @@ $(document).ready(function(){
 			$.userdata.words_counter = counter;
 		});
 	});
-	/******************* PASO 1 */
+	/******************* PASO 0 */
 	$('#btnstep0').click(function(event){
-		$('#step_0').fadeOut('fast', function() {
-			$('#step_1').fadeIn('fast', function() {
-			});
+		// Verificamos el estado del login.
+		FB.getLoginStatus(function(response) {
+			// Check login status on load, and if the user is
+			// already logged in, go directly to the welcome message.
+			if(response.status == 'connected'){
+				onLogin(response);
+				if($.userdata.userID !== null && $.userdata.userID != undefined && $.userdata.accessToken !== null && && $.userdata.accessToken !== undefined){
+					// avanzamos al paso 1
+					$('#step_0').fadeOut('fast', function() {
+						$('#step_1').fadeIn('fast');
+					});
+				}
+			}else{
+				// Otherwise, show Login dialog first.
+				FB.login(function(response){
+					onLogin(response);
+					if($.userdata.userID !== null && $.userdata.userID != undefined && $.userdata.accessToken !== null && && $.userdata.accessToken !== undefined){
+						// avanzamos al paso 1
+						$('#step_0').fadeOut('fast', function() {
+							$('#step_1').fadeIn('fast');
+						});
+					}
+				}, {scope: 'publish_actions, email, public_profile'});
+			}
 		});
 	});
 	/******************* PASO 1 */
@@ -133,6 +154,19 @@ $(document).ready(function(){
 });
 
 /******************* HELPERS */
+// After login
+function onLogin(response){
+	$.userdata.userID = response.authResponse.userID;
+	$.userdata.accessToken = response.authResponse.accessToken;
+	// Obtengo informacion del perfil.
+	FB.api('/me', {fields: 'name,first_name,last_name,email'}, function(data){
+		$.userdata.name = data.name;
+		$.userdata.first_name = data.first_name;
+		$.userdata.last_name = data.last_name;
+		$.userdata.email = data.email;
+	});
+	return true;
+}
 // despiela las bases.
 function verBases(){
 	var WindowObjectReference = window.open("bases.pdf", "bases_concurso", "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes");
