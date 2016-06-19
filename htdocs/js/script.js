@@ -30,6 +30,9 @@ $(document).ready(function(){
 			if(response.status == 'connected'){
 				onLogin(response);
 				if($.userdata.userID != null && $.userdata.userID != undefined && $.userdata.accessToken != null && $.userdata.accessToken != undefined){
+					if(!checkParticipantion($.userdata.userID)){
+						alert("Ya habias participado, ahora puedes volver a publicar tu consejo de salud.");
+					}
 					// avanzamos al paso 1
 					$('#step_0').fadeOut('fast', function() {
 						$('#step_1').fadeIn('fast');
@@ -40,6 +43,9 @@ $(document).ready(function(){
 				FB.login(function(response){
 					onLogin(response);
 					if($.userdata.userID != null && $.userdata.userID != undefined && $.userdata.accessToken != null && $.userdata.accessToken != undefined){
+						if(!checkParticipantion($.userdata.userID)){
+							alert("Ya habias participado, ahora puedes volver a publicar tu consejo de salud.");
+						}
 						// avanzamos al paso 1
 						$('#step_0').fadeOut('fast', function() {
 							$('#step_1').fadeIn('fast');
@@ -175,6 +181,22 @@ function onLogin(response){
 	});
 	$('#loader').hide();
 	return true;
+}
+// Check participacion.
+function checkParticipantion(userId){
+	var respuesta = ""
+	$.ajax({
+		data: {
+			userID: userId
+		},
+		type: "POST",
+		dataType: 'json',
+		url: 'src/checkparticipant.php',
+		success: function(data){
+			respuesta = data.status
+		}
+	});
+	return respuesta
 }
 // despiela las bases.
 function verBases(){
