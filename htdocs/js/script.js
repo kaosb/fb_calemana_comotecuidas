@@ -119,7 +119,8 @@ $(document).ready(function(){
 							'/me/photos',
 							'POST',
 							{
-								caption: $('#text_post_facebook_content').val()+" #comotecuidasen10palabras",
+								// caption: $('#text_post_facebook_content').val()+" #comotecuidasen10palabras",
+								caption: $('#text_post_facebook_content').val(),
 								url: data.file_url
 							},
 							function(response){
