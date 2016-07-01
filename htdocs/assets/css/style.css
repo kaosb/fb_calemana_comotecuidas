@@ -7966,3 +7966,26 @@ body.step-2-bg .logos-footer {
 .publish-facebook .btn.btn-default {
   font-size: 21px;
 }
+.btn-facebook {
+  background-color: #3b5998;
+  color: #fff;
+  border: 1px solid #8b9dc3;
+  font-size: 16px;
+  position: relative;
+  background-image: url('../img/FB-f-Logo__white_29.png');
+  background-repeat: no-repeat;
+  padding: 12px 15px 12px 55px;
+  background-position: 15px 9px;
+  margin: 7px 0 0;
+}
+.btn-facebook:hover {
+  color: #fff;
+  background-color: #2d4373;
+}
+@media (max-width: 360px) {
+  .btn-facebook {
+    font-size: 14px;
+    padding: 12px 12px 12px 50px;
+    background-position: 12px 9px;
+  }
+}

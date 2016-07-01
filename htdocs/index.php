@@ -94,7 +94,11 @@
 							<!-- boton participar -->
 							<div class="form-group">
 								<div class="text-center">
+									<!-- boton facebook -->
+									<button id="btnstep0" type="submit" class="btn btn-facebook">Iniciar sesión con Facebook</button>
+									<!--
 									<button id="btnstep0" type="submit" class="btn btn-lg btn-default">Participar</button>
+									-->
 								</div>
 							</div>
 							<!-- fin boton participar -->
