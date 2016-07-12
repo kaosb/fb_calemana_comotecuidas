@@ -309,7 +309,10 @@
 										<div class="form-group">
 											<label for="text_post_content" style="display: none">Publicar en Facebook</label>
 											<!-- 🗣Comparte tu consejo de salud y participa por una de las 🎉🎊 6 gift card de $50.000 🎊🎉 con Clínica Alemana. -->
+											<!-- sacar -->
+											<!--
 											<textarea rows="5" class="form-control publish-face" id="text_post_facebook_content"></textarea>
+											-->
 										</div>
 										<div class="form-group">
 											<div class="text-center">
