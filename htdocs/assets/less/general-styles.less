@@ -27,7 +27,7 @@ body {
 	position: relative;
 	padding: 35px 0 20px;
 	@media (max-width: 480px) {
-		padding-bottom: 80px;
+		//padding-bottom: 80px;
 	}
 }
 .square-bg {
@@ -60,23 +60,29 @@ body {
 	margin: 0 auto;
 	border-bottom: 3px solid #ffe9b7;
 	@media (max-width: 480px) {
-		//width: 100%;
-		//height: auto;
+		max-width: 180px;
 	}
 }
 .content-message {
 	margin: 30px; //50px 30px;
+	@media (max-width: 480px) {
+		margin: 10px 0 30px;
+	}
 	.btn.btn-lg {
 		font-size: 24px;
 	}
 }
 .advice-msg {
 	font-family: 'Lobster', cursive;
-	font-size: 21px; //28px;
+	font-size: 19px; //21px; //28px;
 	font-weight: normal;
+	line-height: 130%;
 	.smal-text {
 		font-size: 18px;
 		padding-top: 20px;
+	}
+	@media (max-width: 480px) {
+		font-size: 16px;
 	}
 }
 .title-advice-msg {
@@ -113,10 +119,10 @@ body {
 	}
 	@media (max-width: 480px) {
 		img {
-			position: relative;
-			bottom: auto;
-			margin: 20px auto;
-			display: block;
+			//position: relative;
+			//bottom: auto;
+			//margin: 20px auto;
+			//display: block;
 		}
 	}
 }
@@ -134,7 +140,16 @@ body {
 	//padding: 50px 0;
 	height: 50px;
 	position: relative;
-	margin: 0 40px 30px;
+	margin: 0 auto 25px; //0 40px 30px;
+	max-width: 330px;
+	@media (max-width: 480px) and (min-width: 421px) {
+		max-width: 300px;
+	}
+	@media (max-width: 420px) {
+		height: 36px;
+		max-width: 250px;
+		margin: 0 auto 20px;
+	}
 }
 .bg-lightbox {
 	background-color: rgba(61, 74, 75, .5);

@@ -88,9 +88,11 @@
 						<div id="step_0" class="content-message text-center" style="">
 							<p class="advice-msg">Hazte fan de la Clínica Alemana en Facebook,
 							<br>
-							comparte tu mejor consejo de salud
+							comparte tu mejor consejo de salud y
 							<br>
-							y participa por una de las 6 gift card de $50.000</p>
+							participa por una de las 
+							<br>
+							6 gift card de $50.000</p>
 							<!-- boton participar -->
 							<div class="form-group">
 								<div class="text-center">

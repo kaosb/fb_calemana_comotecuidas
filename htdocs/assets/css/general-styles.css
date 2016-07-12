@@ -25,11 +25,6 @@ body.step-2-bg .logos-footer {
   position: relative;
   padding: 35px 0 20px;
 }
-@media (max-width: 480px) {
-  .app-bg {
-    padding-bottom: 80px;
-  }
-}
 .square-bg {
   background-image: url('../img/square-bg.png');
   position: absolute;
@@ -60,20 +55,36 @@ body.step-2-bg .logos-footer {
   margin: 0 auto;
   border-bottom: 3px solid #ffe9b7;
 }
+@media (max-width: 480px) {
+  .feat-image {
+    max-width: 180px;
+  }
+}
 .content-message {
   margin: 30px;
+}
+@media (max-width: 480px) {
+  .content-message {
+    margin: 10px 0 30px;
+  }
 }
 .content-message .btn.btn-lg {
   font-size: 24px;
 }
 .advice-msg {
   font-family: 'Lobster', cursive;
-  font-size: 21px;
+  font-size: 19px;
   font-weight: normal;
+  line-height: 130%;
 }
 .advice-msg .smal-text {
   font-size: 18px;
   padding-top: 20px;
+}
+@media (max-width: 480px) {
+  .advice-msg {
+    font-size: 16px;
+  }
 }
 .title-advice-msg {
   font-family: 'Lobster', cursive;
@@ -92,15 +103,6 @@ body.step-2-bg .logos-footer {
   position: absolute;
   bottom: 0;
 }
-@media (max-width: 480px) {
-  .logo-clinica img,
-  .hashtag-10-p img {
-    position: relative;
-    bottom: auto;
-    margin: 20px auto;
-    display: block;
-  }
-}
 .logo-clinica img {
   right: 0;
 }
@@ -110,7 +112,20 @@ body.step-2-bg .logos-footer {
 .logos-footer {
   height: 50px;
   position: relative;
-  margin: 0 40px 30px;
+  margin: 0 auto 25px;
+  max-width: 330px;
+}
+@media (max-width: 480px) and (min-width: 421px) {
+  .logos-footer {
+    max-width: 300px;
+  }
+}
+@media (max-width: 420px) {
+  .logos-footer {
+    height: 36px;
+    max-width: 250px;
+    margin: 0 auto 20px;
+  }
 }
 .bg-lightbox {
   background-color: rgba(61, 74, 75, 0.5);
