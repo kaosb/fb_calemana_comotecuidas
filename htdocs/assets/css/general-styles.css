@@ -71,6 +71,11 @@ body.step-2-bg .logos-footer {
 .content-message .btn.btn-lg {
   font-size: 24px;
 }
+@media (max-width: 779px) {
+  .content-message .btn.btn-lg {
+    font-size: 18px;
+  }
+}
 .advice-msg {
   font-family: 'Lobster', cursive;
   font-size: 19px;
@@ -199,6 +204,12 @@ body.step-2-bg .logos-footer {
   padding: 5px 30px;
   width: 180px;
   margin: 10px 10px 0;
+}
+@media (max-width: 779px) {
+  .boxes-style-color .button-select .btn {
+    width: auto;
+    margin: 10px 5px 5px;
+  }
 }
 .boxes-style-color .box-featured {
   height: 400px;
@@ -843,7 +854,7 @@ body.step-2-bg .logos-footer {
   text-shadow: -2px 2px 0 #ed2d00;
   background-color: transparent;
   margin-top: 15px;
-  font-size: 27px;
+  font-size: 24px !important;
   left: -30px;
   right: -30px;
   line-height: 110%;

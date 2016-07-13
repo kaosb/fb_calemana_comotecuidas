@@ -70,6 +70,9 @@ body {
 	}
 	.btn.btn-lg {
 		font-size: 24px;
+		@media (max-width: 779px) {
+			font-size: 18px;
+		}
 	}
 }
 .advice-msg {
@@ -220,6 +223,10 @@ body {
 			padding: 5px 30px;
 			width: 180px;
 			margin: 10px 10px 0;
+			@media (max-width: 779px) {
+				width: auto;
+				margin: 10px 5px 5px;
+			}
 		}
 	}
 	.box-featured {
@@ -763,7 +770,7 @@ body {
 				background-color: transparent;
 				margin-top: 15px;
 				//
-				font-size: 27px;
+				font-size: 24px !important;
 				left: -30px;
 				right: -30px;
 				line-height: 110%;
