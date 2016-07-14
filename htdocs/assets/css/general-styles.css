@@ -767,6 +767,23 @@ body.step-2-bg .logos-footer {
     top: 25px;
   }
 }
+.boxes-style-color .box-msg-3 .line-span1 .last-word-line {
+  font-family: 'Lobster', cursive;
+  position: absolute;
+  display: block;
+  top: auto;
+  left: 0;
+  right: 0;
+  color: #ffda30;
+  text-shadow: -2px 2px 0 #ed2d00;
+  background-color: transparent;
+  margin-top: 15px;
+  font-size: 24px !important;
+  left: -30px;
+  right: -30px;
+  line-height: 110%;
+  display: block !important;
+}
 .boxes-style-color .box-msg-3 .pre-line-span2 {
   font-family: 'Pathway Gothic One', sans-serif;
   font-size: 105px;
