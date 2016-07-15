@@ -172,7 +172,7 @@
 								</div>
 								<!-- TEMA 3 NARANJO -->
 								<div id="big_box_msg_3" class="box-msg-3 box-featured" template="3" style="display: none;">
-									<span id="big_line_01_03" class="line-span1">Riéndome</span>
+									<span id="big_line_01_03" class="line-span1">Riéndome<span id="big_last_word_01_03" class="last-word-line">con mi familia lorem ipsum</span></span>
 									<!-- -->
 									<span class="pre-line-span2">
 										<span class="point point-left">.</span>
@@ -180,7 +180,7 @@
 										<span class="point point-right">.</span>
 									</span>
 									<!-- -->
-									<span id="big_line_03_03" class="line-span3"><span class="span-title-1"></span><span class="span-title-text">y regaloneando con mi</span><span class="span-title-2"></span>  <span id="big_last_word_03_03" class="last-word-line">familia</span></span>
+									<span id="big_line_03_03" class="line-span3"><span class="span-title-1"></span><span class="span-title-text">y regaloneando con mi</span><span class="span-title-2"></span>  <!--<span id="big_last_word_03_03" class="last-word-line">familia</span>--></span>
 									<span class="logos-box-min">
 										<img class="hashtag-10-p-min" src="assets/img/post-image-bg/como-te-cuidas-min.svg">
 										<img class="logo-clinica-min" src="assets/img/post-image-bg/logo-alemana-min-2.svg">
