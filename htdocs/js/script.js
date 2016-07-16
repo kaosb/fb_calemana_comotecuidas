@@ -225,7 +225,7 @@ function buildCartel(palabras){
 		bigtext += palabras[i]+" ";
 	}
 	var bigtext_alt = "";
-	for(i = 2;(i < length-2) && (palabras[i] !== undefined);i++){
+	for(i = 1;(i < length-2) && (palabras[i] !== undefined);i++){
 		bigtext_alt += palabras[i]+" ";
 	}
 	// Acorde a lo seleccionado desplegamos.
