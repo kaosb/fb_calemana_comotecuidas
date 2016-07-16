@@ -225,7 +225,7 @@ function buildCartel(palabras){
 		bigtext += palabras[i]+" ";
 	}
 	var bigtext_alt = "";
-	for(i = 1;(i < length-2) && (palabras[i] !== undefined);i++){
+	for(i = 1;(i < length-3) && (palabras[i] !== undefined);i++){
 		bigtext_alt += palabras[i]+" ";
 	}
 	// Acorde a lo seleccionado desplegamos.
@@ -309,7 +309,7 @@ function buildCartel(palabras){
 		// 	var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
 		// 	cartel.find(".line-span1").css("font-size", fontfinalsieze);
 		// }
-		cartel.find(".line-span2").html(palabras[length - 2]);
+		cartel.find(".line-span2").html(palabras[length - 3]);
 		// 13
 		// % respecto al tamaño original -> (tope*100)/cantidad -> %
 		// tamaño fuente equivalente al % calculado -> (tamaño_inicial*porcentaje_al_cual_corresponde_el_tamaño)/100 -> pixeles
@@ -319,7 +319,7 @@ function buildCartel(palabras){
 		// 	var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
 		// 	cartel.find(".line-span2").css("font-size", fontfinalsieze);
 		// }
-		cartel.find(".span-title-text").html(palabras[length - 1]);
+		cartel.find(".span-title-text").html(palabras[length - 1] + palabras[length - 2]);
 		// 22
 		// % respecto al tamaño original -> (tope*100)/cantidad -> %
 		// tamaño fuente equivalente al % calculado -> (tamaño_inicial*porcentaje_al_cual_corresponde_el_tamaño)/100 -> pixeles
