@@ -323,7 +323,7 @@ function buildCartel(palabras){
 		// 22
 		// % respecto al tamaño original -> (tope*100)/cantidad -> %
 		// tamaño fuente equivalente al % calculado -> (tamaño_inicial*porcentaje_al_cual_corresponde_el_tamaño)/100 -> pixeles
-		if((palabras[length - 2].length + length - 1].length + 1) > 15){
+		if((palabras[length - 2].length + palabras[length - 1].length + 1) > 15){
 			var porcentaje_tamaño_fit = (22*100)/palabras[length - 2].length;
 			var fontdefaultsize = cartel.find(".span-title-text").css("font-size").replace("px", "");
 			var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
