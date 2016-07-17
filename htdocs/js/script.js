@@ -313,22 +313,22 @@ function buildCartel(palabras){
 		// 13
 		// % respecto al tamaño original -> (tope*100)/cantidad -> %
 		// tamaño fuente equivalente al % calculado -> (tamaño_inicial*porcentaje_al_cual_corresponde_el_tamaño)/100 -> pixeles
-		// if(palabras[1].length > 13){
-		// 	var porcentaje_tamaño_fit = (13*100)/palabras[1].length;
-		// 	var fontdefaultsize = cartel.find(".line-span2").css("font-size").replace("px", "");
-		// 	var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
-		// 	cartel.find(".line-span2").css("font-size", fontfinalsieze);
-		// }
+		if(palabras[length - 3].length > 9){
+			var porcentaje_tamaño_fit = (9*100)/palabras[length - 3].length;
+			var fontdefaultsize = cartel.find(".line-span2").css("font-size").replace("px", "");
+			var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
+			cartel.find(".line-span2").css("font-size", fontfinalsieze);
+		}
 		cartel.find(".span-title-text").html(palabras[length - 2] + " " + palabras[length - 1]);
 		// 22
 		// % respecto al tamaño original -> (tope*100)/cantidad -> %
 		// tamaño fuente equivalente al % calculado -> (tamaño_inicial*porcentaje_al_cual_corresponde_el_tamaño)/100 -> pixeles
-		// if(palabras[2].length > 22){
-		// 	var porcentaje_tamaño_fit = (22*100)/palabras[2].length;
-		// 	var fontdefaultsize = cartel.find(".span-title-text").css("font-size").replace("px", "");
-		// 	var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
-		// 	cartel.find(".span-title-text").css("font-size", fontfinalsieze);
-		// }
+		if((palabras[length - 2].length + length - 1].length + 1) > 15){
+			var porcentaje_tamaño_fit = (22*100)/palabras[length - 2].length;
+			var fontdefaultsize = cartel.find(".span-title-text").css("font-size").replace("px", "");
+			var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
+			cartel.find(".span-title-text").css("font-size", fontfinalsieze);
+		}
 		// cartel.find(".last-word-line").html(bigtext_alt);
 		// 12
 		// % respecto al tamaño original -> (tope*100)/cantidad -> %
