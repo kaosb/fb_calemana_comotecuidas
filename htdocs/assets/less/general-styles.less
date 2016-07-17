@@ -282,7 +282,7 @@ body {
 		margin: 0 auto;
 		&.row-little-boxes {
 			width: 55%;
-			margin: -5px auto;
+			margin: -5px auto 5px;
 			// position: absolute;
 			// .col-md-2, .col-sm-4, .col-xs-6 {
 			// 	clear: both;
@@ -668,17 +668,20 @@ body {
 			font-size: 57px;
 			top: 30px;
 			color: #ffda30;
-			left: 60px;
-			right: 60px;
+			left: 30px; //60px;
+			right: 30px; //60px;
 			//padding-bottom: 10px;
-			border-bottom: 4px solid #ffda30;
+			border-bottom: 2px solid #ffda30;
 			text-shadow: -2px 2px 0 #ed2d00;
 			//
-			font-size: 35px;
+			font-size: 41px;
 			top: 25px;
+			font-style: italic;
 			@media (max-width: 480px) {
-				font-size: 35px;
+				font-size: 41px;
 				top: 25px;
+				left: 15px;
+				right: 15px;
 			}
 			.last-word-line {
 				display: block;
@@ -694,10 +697,12 @@ body {
 				margin-top: 10px;
 				//
 				font-size: 21px !important;
-				left: -30px;
-				right: -30px;
 				line-height: 110%;
 				display: block !important;
+				font-style: normal;
+				@media (max-width: 480px) {
+					font-size: 16px !important;
+				}
 			}
 		}
 		.pre-line-span2 {
@@ -705,14 +710,14 @@ body {
 			font-size: 105px; //187px;
 			text-transform: uppercase;
 			letter-spacing: 0; //-8px;
-			text-shadow: -5px 5px 0 #3f9166;
+			text-shadow: -3px 3px 0 #3f9166;
 			//
-			font-size: 70px;
-			top: 45px; //85px;
+			font-size: 80px;
+			top: 60px; //85px;
 			letter-spacing: 0; //-7px;
 			@media (max-width: 480px) {
-				font-size: 60px;
-				top: 35px; //85px;
+				font-size: 67px;
+				top: 52px; //85px;
 				letter-spacing: 0; //-7px;
 			}
 			.line-span2, .point {
@@ -735,18 +740,18 @@ body {
 			font-family: 'Cinzel', serif;
 			font-size: 18px;
 			background-color: #4cbe82;
-			width: 50%; //70%;
+			width: 35%; //70%;
 			margin: 0 auto;
 			z-index: 2;
 			padding: 5px 0;
 			//
-			font-size: 16px; //35px;
-			top: 230px;
-			padding: 7px 0 6px;
+			font-size: 21px; //35px;
+			top: 245px;
+			padding: 4px 0 1px; //7px 0 6px;
 			@media (max-width: 480px) {
-				// font-size: 16px; //35px;
+				font-size: 18px; //35px;
 				// top: 195px;
-				// padding: 7px 0 6px;
+				padding: 5px 0 5px;
 			}
 			.span-title-1 {
 				position: absolute;

@@ -7015,7 +7015,7 @@ body.step-2-bg .logos-footer {
 }
 .boxes-style-color .row.row-little-boxes {
   width: 55%;
-  margin: -5px auto;
+  margin: -5px auto 5px;
 }
 .boxes-style-color .col-md-2,
 .boxes-style-color .col-sm-4,
@@ -7500,17 +7500,20 @@ body.step-2-bg .logos-footer {
   font-size: 57px;
   top: 30px;
   color: #ffda30;
-  left: 60px;
-  right: 60px;
-  border-bottom: 4px solid #ffda30;
+  left: 30px;
+  right: 30px;
+  border-bottom: 2px solid #ffda30;
   text-shadow: -2px 2px 0 #ed2d00;
-  font-size: 35px;
+  font-size: 41px;
   top: 25px;
+  font-style: italic;
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-3 .line-span1 {
-    font-size: 35px;
+    font-size: 41px;
     top: 25px;
+    left: 15px;
+    right: 15px;
   }
 }
 .boxes-style-color .box-msg-3 .line-span1 .last-word-line {
@@ -7525,24 +7528,28 @@ body.step-2-bg .logos-footer {
   background-color: transparent;
   margin-top: 10px;
   font-size: 21px !important;
-  left: -30px;
-  right: -30px;
   line-height: 110%;
   display: block !important;
+  font-style: normal;
+}
+@media (max-width: 480px) {
+  .boxes-style-color .box-msg-3 .line-span1 .last-word-line {
+    font-size: 16px !important;
+  }
 }
 .boxes-style-color .box-msg-3 .pre-line-span2 {
   font-family: 'Pathway Gothic One', sans-serif;
   font-size: 105px;
   text-transform: uppercase;
-  text-shadow: -5px 5px 0 #3f9166;
-  font-size: 70px;
-  top: 45px;
+  text-shadow: -3px 3px 0 #3f9166;
+  font-size: 80px;
+  top: 60px;
   letter-spacing: 0;
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-3 .pre-line-span2 {
-    font-size: 60px;
-    top: 35px;
+    font-size: 67px;
+    top: 52px;
     letter-spacing: 0;
   }
 }
@@ -7566,13 +7573,19 @@ body.step-2-bg .logos-footer {
   font-family: 'Cinzel', serif;
   font-size: 18px;
   background-color: #4cbe82;
-  width: 50%;
+  width: 35%;
   margin: 0 auto;
   z-index: 2;
   padding: 5px 0;
-  font-size: 16px;
-  top: 230px;
-  padding: 7px 0 6px;
+  font-size: 21px;
+  top: 245px;
+  padding: 4px 0 1px;
+}
+@media (max-width: 480px) {
+  .boxes-style-color .box-msg-3 .line-span3 {
+    font-size: 18px;
+    padding: 5px 0 5px;
+  }
 }
 .boxes-style-color .box-msg-3 .line-span3 .span-title-1 {
   position: absolute;
