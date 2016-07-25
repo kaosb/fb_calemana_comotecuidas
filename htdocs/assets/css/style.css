@@ -7270,6 +7270,8 @@ body.step-2-bg .logos-footer {
   font-size: 24px;
   top: 210px;
   line-height: 30px;
+  height: 98px;
+  overflow: hidden;
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-1 .line-span3 {
