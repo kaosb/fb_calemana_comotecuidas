@@ -802,11 +802,10 @@ body.step-2-bg .logos-footer {
 }
 .boxes-style-color .box-msg-3 .pre-line-span2 {
   font-family: 'Pathway Gothic One', sans-serif;
-  font-size: 105px;
   text-transform: uppercase;
   text-shadow: -3px 3px 0 #3f9166;
   font-size: 60px;
-  top: 102px;
+  top: 106px;
   letter-spacing: 0;
 }
 @media (max-width: 480px) {
@@ -840,15 +839,14 @@ body.step-2-bg .logos-footer {
 }
 .boxes-style-color .box-msg-3 .line-span3 {
   font-family: 'Cinzel', serif;
-  font-size: 18px;
   background-color: #4cbe82;
-  width: 35%;
+  width: 165px;
   margin: 0 auto;
   z-index: 2;
   padding: 5px 0;
-  font-size: 21px;
-  top: 245px;
-  padding: 4px 0 1px;
+  font-size: 17px;
+  top: 263px;
+  height: 35px;
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-3 .line-span3 {
