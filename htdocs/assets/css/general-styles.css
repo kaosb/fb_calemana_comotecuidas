@@ -503,6 +503,12 @@ body.step-2-bg .logos-footer {
   top: 125px;
   font-size: 70px;
   top: 110px;
+  width: 330px;
+  margin: 0 auto;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  overflow: hidden;
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-1 .line-span2 {
@@ -515,14 +521,13 @@ body.step-2-bg .logos-footer {
   font-size: 35px;
   line-height: 40px;
   text-transform: uppercase;
-  top: 275px;
   width: 280px;
   margin: 0 auto;
   padding: 3px 20px 0;
   border-top: 2px solid #fff;
   border-bottom: 2px solid #fff;
   font-size: 24px;
-  top: 210px;
+  top: 208px;
   line-height: 30px;
   max-height: 98px;
   overflow: hidden;
