@@ -526,7 +526,9 @@ body {
 			//
 			display: inline-block;
 			font-size: 75px;
-			top: 40px; //95px;
+			top: 98px; //95px;
+			height: 105px;
+			line-height: 105px;
 			@media (max-width: 480px) {
 				font-size: 75px;
 				top: 40px; //95px;
@@ -536,10 +538,18 @@ body {
 			display: inline-block;
 			position: relative;
 		}
+		.line-span2 {
+			max-width: 240px;
+			overflow: hidden;
+		    height: 105px;
+    		line-height: 105px;
+		}
 		.point {
-			top: -17px;
+			top: -43px;
 			font-family: 'Great Vibes', cursive;
 			font-size: 150px;
+			height: 105px;
+    		line-height: 105px;
 			&.point-right {
 				right: 15px;
 			}
@@ -551,6 +561,12 @@ body {
 			font-family: 'Great Vibes', cursive;
 			font-size: 35px;
 			top: 200px; //235px;
+			width: 300px;
+			margin: 0 auto;
+			max-height: 70px;
+			line-height: 100%;
+    		overflow: hidden;
+    		
 			@media (max-width: 480px) {
 				//font-size: 35px;
 				top: 200px;
@@ -563,40 +579,47 @@ body {
 				right: 20px;
 				line-height: 100%;
 			}
-			.last-word-line {
-				display: block;
-				font-family: 'Cookie', cursive;
-				font-size: 60px;
-				position: absolute;
-				display: block;
-				//top: 30px;
-				left: 90px;
-				right: 90px;
-				color: #4cbeb4;
-				text-shadow: -2px 2px 0 #5f0077;
+			
+			// .last-word-line {
+			// 	display: block;
+			// 	font-family: 'Cookie', cursive;
+			// 	font-size: 60px;
+			// 	position: absolute;
+			// 	display: block;
+			// 	//top: 30px;
+			// 	left: 90px;
+			// 	right: 90px;
+			// 	color: #4cbeb4;
+			// 	text-shadow: -2px 2px 0 #5f0077;
+			// 	background-image: url('../img/post-image-bg/borde-last-word-post-2.png');
+			// 	background-repeat: no-repeat;
+			// 	background-position: bottom;
+			// 	height: 75px;
+			// 	margin-top: -15px;
+			// 	//
+			// 	font-size: 50px;
+			// 	//top: 35px;
+			// 	height: 65px;
+			// 	@media (max-width: 480px) {
+			// 		font-size: 50px;
+			// 		//top: 35px;
+			// 		height: 65px;
+			// 	}
+			// 	@media (max-width: 349px) {
+			// 		height: 45px;
+			// 		left: 50px;
+			// 		right: 50px;
+			// 		font-size: 40px;
+			// 		margin-top: 5px;
+			// 	}
+			// }
+		}
+		.last-line {
 				background-image: url('../img/post-image-bg/borde-last-word-post-2.png');
 				background-repeat: no-repeat;
 				background-position: bottom;
-				height: 75px;
-				margin-top: -15px;
-				//
-				font-size: 50px;
-				//top: 35px;
-				height: 65px;
-				@media (max-width: 480px) {
-					font-size: 50px;
-					//top: 35px;
-					height: 65px;
-				}
-				@media (max-width: 349px) {
-					height: 45px;
-					left: 50px;
-					right: 50px;
-					font-size: 40px;
-					margin-top: 5px;
-				}
+				
 			}
-		}
 		.c-top-left, .c-top-right, .c-bottom-left, .c-bottom-right {
 			height: 20px;
 			width: 20px;
