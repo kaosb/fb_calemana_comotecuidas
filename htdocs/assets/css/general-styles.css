@@ -516,7 +516,7 @@ body.step-2-bg .logos-footer {
   line-height: 40px;
   text-transform: uppercase;
   top: 275px;
-  width: 75%;
+  width: 280px;
   margin: 0 auto;
   padding: 3px 20px 0;
   border-top: 2px solid #fff;
@@ -524,7 +524,7 @@ body.step-2-bg .logos-footer {
   font-size: 24px;
   top: 210px;
   line-height: 30px;
-  height: 98px;
+  max-height: 98px;
   overflow: hidden;
 }
 @media (max-width: 480px) {
