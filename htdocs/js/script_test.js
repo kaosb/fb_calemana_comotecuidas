@@ -209,7 +209,7 @@ function buildCartel(palabras){
 		// 	var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
 		// 	cartel.find(".line-span2").css("font-size", fontfinalsieze);
 		// }
-		var bigword = '<span id="big_last_word_03_02" class="last-word-line">'+ palabras[length-1] +'</span>';
+		var bigword = '<span id="big_last_word_03_02" class="last-word-line">'+ palabras[length-1] +'<span class="last-line"></span></span>';
 		cartel.find(".line-span3").html(bigtext+" "+bigword);
 		// % respecto al tamaño original -> (tope*100)/cantidad -> %
 		// tamaño fuente equivalente al % calculado -> (tamaño_inicial*porcentaje_al_cual_corresponde_el_tamaño)/100 -> pixeles
