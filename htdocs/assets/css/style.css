@@ -7816,6 +7816,8 @@ body.step-2-bg .logos-footer {
   text-shadow: -5px 5px 0 #1f4766;
   font-size: 70px;
   top: 120px;
+  max-width: 300px;
+  margin: 0 auto;
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-5 .line-span2 {
