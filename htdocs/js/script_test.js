@@ -400,10 +400,32 @@ function buildCartel(palabras){
 		// 	var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
 		// 	var bigword = '<span id="big_last_word_03_06" class="last-word-line" style="font-size:'+fontfinalsieze+';"><span class="span-title-1"></span>'+palabras[length-1]+'<span class="span-title-2"></span></span>';
 		// }else{
-			var bigword = '<span id="big_last_word_03_06" class="last-word-line"><span class="span-title-1"></span>'+palabras[length-1]+'<span class="span-title-2"></span></span>';
+		// 
+		// 
+		// 
+		// 
+		// 
+			//var bigword = '<span id="big_last_word_03_06" class="last-word-line"><span class="span-title-1"></span>'+palabras[length-1]+'<span class="span-title-2"></span></span>';
+		
+
+
+
 		// }
-		var largetext = bigtext+" "+bigword;
-		cartel.find(".line-span3").html(largetext);
+		// 
+		// 
+		// 
+		// 
+		// 
+		// 
+		// var largetext = bigtext+" "+bigword;
+		// cartel.find(".line-span3").html(largetext);
+		// 
+		// 
+		// 
+		// 
+		// 
+		// 
+		// 
 		// 22
 		// % respecto al tamaño original -> (tope*100)/cantidad -> %
 		// tamaño fuente equivalente al % calculado -> (tamaño_inicial*porcentaje_al_cual_corresponde_el_tamaño)/100 -> pixeles
