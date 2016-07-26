@@ -1042,16 +1042,20 @@ body.step-2-bg .logos-footer {
   background-color: #65bd5c;
 }
 .boxes-style-color .box-msg-5 .line-span1 {
-  font-family: 'Cinzel', serif;
-  font-size: 24px;
-  width: 80%;
+  font-size: 16px;
+  top: 40px;
+  font-family: 'BenchNine', sans-serif;
+  text-transform: uppercase;
+  width: 280px;
+  margin: 0 auto;
+  padding: 3px 20px 0;
   color: #f6f0d0;
   border-top: 2px solid #f6f0d0;
   border-bottom: 2px solid #f6f0d0;
-  margin: 0 auto;
-  top: 70px;
-  font-size: 16px;
-  top: 40px;
+  font-size: 24px;
+  line-height: 30px;
+  max-height: 98px;
+  overflow: hidden;
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-5 .line-span1 {
@@ -1063,7 +1067,6 @@ body.step-2-bg .logos-footer {
   font-family: 'Cookie', cursive;
   font-size: 110px;
   color: #ffdc48;
-  top: 110px;
   text-shadow: -5px 5px 0 #1f4766;
   font-size: 70px;
   top: 70px;
