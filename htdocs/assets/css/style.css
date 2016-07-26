@@ -7550,8 +7550,8 @@ body.step-2-bg .logos-footer {
   font-family: 'Pathway Gothic One', sans-serif;
   text-transform: uppercase;
   text-shadow: -3px 3px 0 #3f9166;
-  font-size: 60px;
-  top: 106px;
+  font-size: 54px;
+  top: 108px;
   letter-spacing: 0;
 }
 @media (max-width: 480px) {
@@ -7589,8 +7589,8 @@ body.step-2-bg .logos-footer {
   width: 165px;
   margin: 0 auto;
   z-index: 2;
-  padding: 5px 0;
-  font-size: 17px;
+  padding: 8px 0;
+  font-size: 15px;
   top: 263px;
   height: 35px;
 }
@@ -7673,9 +7673,11 @@ body.step-2-bg .logos-footer {
   font-family: 'Dancing Script', cursive;
   font-size: 54px;
   color: #c9c8c4;
-  top: 60px;
   font-size: 40px;
-  top: 35px;
+  top: 17px;
+  width: 300px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-4 .line-span1 {
@@ -7688,10 +7690,12 @@ body.step-2-bg .logos-footer {
   font-size: 102px;
   text-transform: uppercase;
   color: #ffdc48;
-  top: 105px;
   text-shadow: -3px 3px 0 #1f4766;
   font-size: 95px;
-  top: 70px;
+  top: 65px;
+  max-width: 300px;
+  overflow: hidden;
+  margin: 0 auto;
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-4 .line-span2 {
@@ -7705,11 +7709,14 @@ body.step-2-bg .logos-footer {
   background-color: #ffac4d;
   color: #00837c;
   display: block;
-  top: 245px;
   width: 80%;
   margin: 0 auto;
-  font-size: 30px;
-  top: 205px;
+  font-size: 24px;
+  top: 200px;
+  line-height: 100%;
+  padding: 6px 5px;
+  width: 300px;
+  max-height: 57px;
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-4 .line-span3 {
@@ -7746,8 +7753,10 @@ body.step-2-bg .logos-footer {
   background-color: transparent;
   left: 0;
   right: 0;
-  font-size: 40px;
-  top: 45px;
+  font-size: 34px;
+  max-width: 295px;
+  text-align: center;
+  margin-top: 23px;
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-4 .line-span3 .last-word-line {
