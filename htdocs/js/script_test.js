@@ -353,7 +353,7 @@ function buildCartel(palabras){
 		// 	var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
 		// 	cartel.find(".span-title-text").css("font-size", fontfinalsieze);
 		// }
-		cartel.find(".last-word-line").html(palabras[length-1]);
+		// se saco -- cartel.find(".last-word-line").html(palabras[length-1]);
 		// 12
 		// % respecto al tamaño original -> (tope*100)/cantidad -> %
 		// tamaño fuente equivalente al % calculado -> (tamaño_inicial*porcentaje_al_cual_corresponde_el_tamaño)/100 -> pixeles
