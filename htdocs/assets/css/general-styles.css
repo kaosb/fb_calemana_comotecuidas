@@ -1169,7 +1169,7 @@ body.step-2-bg .logos-footer {
 }
 .boxes-style-color .box-msg-6 .line-span1 {
   font-family: 'Pacifico', cursive;
-  font-size: 25px;
+  font-size: 28px;
   color: #e6ca50;
   top: 50px;
 }
@@ -1216,7 +1216,7 @@ body.step-2-bg .logos-footer {
   color: #e6ca50;
   top: 235px;
   font-size: 30px;
-  top: 170px;
+  top: 158px;
   right: 20px;
   left: 20px;
   line-height: 125%;
@@ -1227,7 +1227,17 @@ body.step-2-bg .logos-footer {
     top: 170px;
   }
 }
-.boxes-style-color .box-msg-6 .line-span3 .last-word-line {
+.boxes-style-color .box-msg-6 .line-span3 .line-text {
+  max-height: 90px;
+  position: absolute;
+  overflow: hidden;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  max-width: 300px;
+  padding: 8px;
+}
+.boxes-style-color .box-msg-6 .last-word-line {
   display: block;
   font-family: 'Pathway Gothic One', sans-serif;
   font-size: 24px;
@@ -1236,14 +1246,14 @@ body.step-2-bg .logos-footer {
   position: absolute;
   left: 12%;
   right: 12%;
-  margin-top: 25px;
+  top: 260px;
 }
 @media (max-width: 480px) {
-  .boxes-style-color .box-msg-6 .line-span3 .last-word-line {
+  .boxes-style-color .box-msg-6 .last-word-line {
     font-size: 24px;
   }
 }
-.boxes-style-color .box-msg-6 .line-span3 .last-word-line .span-title-1 {
+.boxes-style-color .box-msg-6 .last-word-line .span-title-1 {
   position: absolute;
   width: 48px;
   height: 63px;
@@ -1253,7 +1263,7 @@ body.step-2-bg .logos-footer {
   top: -20px;
   z-index: 1;
 }
-.boxes-style-color .box-msg-6 .line-span3 .last-word-line .span-title-2 {
+.boxes-style-color .box-msg-6 .last-word-line .span-title-2 {
   position: absolute;
   width: 48px;
   height: 63px;
