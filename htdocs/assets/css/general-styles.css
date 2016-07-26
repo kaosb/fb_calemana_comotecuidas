@@ -650,7 +650,7 @@ body.step-2-bg .logos-footer {
 .boxes-style-color .box-msg-2 .line-span3 {
   font-family: 'Great Vibes', cursive;
   font-size: 35px;
-  top: 200px;
+  top: 215px;
   width: 300px;
   margin: 0 auto;
   max-height: 72px;
@@ -1069,7 +1069,7 @@ body.step-2-bg .logos-footer {
   color: #ffdc48;
   text-shadow: -5px 5px 0 #1f4766;
   font-size: 70px;
-  top: 70px;
+  top: 120px;
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-5 .line-span2 {
@@ -1081,7 +1081,7 @@ body.step-2-bg .logos-footer {
   font-family: 'Cinzel', serif;
   font-size: 18px;
   background-color: #1f4766;
-  top: 180px;
+  top: 235px;
   width: 65%;
   margin: 0 auto;
   padding: 5px 0;
