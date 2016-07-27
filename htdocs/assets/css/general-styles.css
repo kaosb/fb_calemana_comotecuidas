@@ -920,6 +920,7 @@ body.step-2-bg .logos-footer {
     top: 195px;
     padding: 4px 0 5px;
     height: 26px;
+    max-width: 40%;
   }
 }
 .boxes-style-color .box-msg-3 .line-span3 .span-title-1 {
@@ -1011,8 +1012,9 @@ body.step-2-bg .logos-footer {
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-4 .line-span1 {
-    font-size: 40px;
-    top: 35px;
+    font-size: 24px;
+    top: 12px;
+    max-width: 80%;
   }
 }
 .boxes-style-color .box-msg-4 .line-span2 {
@@ -1029,8 +1031,8 @@ body.step-2-bg .logos-footer {
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-4 .line-span2 {
-    font-size: 95px;
-    top: 70px;
+    font-size: 75px;
+    top: 40px;
   }
 }
 .boxes-style-color .box-msg-4 .line-span3 {
@@ -1050,8 +1052,10 @@ body.step-2-bg .logos-footer {
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-4 .line-span3 {
-    font-size: 30px;
-    top: 205px;
+    font-size: 21px;
+    top: 150px;
+    max-width: 80%;
+    max-height: 50px;
   }
 }
 .boxes-style-color .box-msg-4 .line-span3 .span-title-1 {
@@ -1090,8 +1094,8 @@ body.step-2-bg .logos-footer {
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-4 .line-span3 .last-word-line {
-    font-size: 40px;
-    top: 45px;
+    font-size: 21px;
+    top: 30px;
   }
 }
 .boxes-style-color .box-msg-4 .c-top-left {
