@@ -7317,6 +7317,7 @@ body.step-2-bg .logos-footer {
     font-size: 18px;
     top: 165px;
     line-height: 120%;
+    max-height: 50px;
   }
 }
 .boxes-style-color .box-msg-1 .c-top-left {
