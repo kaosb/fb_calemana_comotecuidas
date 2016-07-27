@@ -1140,8 +1140,12 @@ body.step-2-bg .logos-footer {
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-5 .line-span1 {
-    font-size: 16px;
-    top: 40px;
+    font-size: 18px;
+    top: 30px;
+    width: 80%;
+    line-height: 110%;
+    max-height: 45px;
+    overflow: hidden;
   }
 }
 .boxes-style-color .box-msg-5 .line-span2 {
@@ -1156,7 +1160,7 @@ body.step-2-bg .logos-footer {
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-5 .line-span2 {
-    font-size: 70px;
+    font-size: 60px;
     top: 70px;
   }
 }
@@ -1168,10 +1172,13 @@ body.step-2-bg .logos-footer {
   width: 65%;
   margin: 0 auto;
   padding: 5px 0;
+  max-height: 65px;
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-5 .line-span3 {
+    font-size: 13px;
     top: 180px;
+    max-height: 42px;
   }
 }
 .boxes-style-color .box-msg-5 .line-span3 .span-title-1 {
@@ -1256,7 +1263,8 @@ body.step-2-bg .logos-footer {
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-6 .line-span1 {
-    font-size: 25px;
+    font-size: 21px;
+    top: 25px;
   }
 }
 .boxes-style-color .box-msg-6 .pre-line-span2 {
@@ -1271,8 +1279,10 @@ body.step-2-bg .logos-footer {
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-6 .pre-line-span2 {
-    font-size: 65px;
-    top: 10px;
+    font-size: 44px;
+    top: 20px;
+    max-width: 85%;
+    margin: 0 auto;
   }
 }
 .boxes-style-color .box-msg-6 .pre-line-span2 .line-span2,
@@ -1291,6 +1301,12 @@ body.step-2-bg .logos-footer {
 .boxes-style-color .box-msg-6 .pre-line-span2 .point.point-left {
   left: 5px;
 }
+@media (max-width: 480px) {
+  .boxes-style-color .box-msg-6 .pre-line-span2 .point {
+    font-size: 90px;
+    top: -10px;
+  }
+}
 .boxes-style-color .box-msg-6 .line-span3 {
   font-family: 'Pacifico', cursive;
   font-size: 40px;
@@ -1304,8 +1320,8 @@ body.step-2-bg .logos-footer {
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-6 .line-span3 {
-    font-size: 30px;
-    top: 170px;
+    font-size: 23px;
+    top: 112px;
   }
 }
 .boxes-style-color .box-msg-6 .line-span3 .line-text {
@@ -1331,7 +1347,10 @@ body.step-2-bg .logos-footer {
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-6 .last-word-line {
-    font-size: 24px;
+    font-size: 21px;
+    top: 190px;
+    max-width: 63%;
+    margin: 0 auto;
   }
 }
 .boxes-style-color .box-msg-6 .last-word-line .span-title-1 {
