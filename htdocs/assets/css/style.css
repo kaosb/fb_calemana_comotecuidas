@@ -6965,16 +6965,10 @@ body.step-2-bg .logos-footer {
   margin: -20px auto;
   margin-bottom: 5px;
 }
-@media screen and (max-width: 480px) and (min-width: 350px) {
-  .boxes-style-color .box-featured {
-    width: 320px;
-    height: 410px;
-  }
-}
-@media (max-width: 349px) {
+@media (max-width: 480px) {
   .boxes-style-color .box-featured {
     width: 285px;
-    height: 410px;
+    height: 304px;
   }
 }
 .boxes-style-color .corners {
@@ -7116,6 +7110,27 @@ body.step-2-bg .logos-footer {
   right: 0;
   z-index: 1;
 }
+@media (max-width: 480px) {
+  .boxes-style-color .box-msg-1 .logos-box-min,
+  .boxes-style-color .box-msg-2 .logos-box-min,
+  .boxes-style-color .box-msg-3 .logos-box-min,
+  .boxes-style-color .box-msg-4 .logos-box-min,
+  .boxes-style-color .box-msg-5 .logos-box-min,
+  .boxes-style-color .box-msg-6 .logos-box-min,
+  .boxes-style-color a .box-msg-1 .logos-box-min,
+  .boxes-style-color a .box-msg-2 .logos-box-min,
+  .boxes-style-color a .box-msg-3 .logos-box-min,
+  .boxes-style-color a .box-msg-4 .logos-box-min,
+  .boxes-style-color a .box-msg-5 .logos-box-min,
+  .boxes-style-color a .box-msg-6 .logos-box-min {
+    -ms-transform: scale(0.85);
+    /* IE 9 */
+    -webkit-transform: scale(0.85);
+    /* Safari */
+    transform: scale(0.85);
+    bottom: 35px;
+  }
+}
 .boxes-style-color .box-msg-1 .logos-box-min .hashtag-10-p-min,
 .boxes-style-color .box-msg-2 .logos-box-min .hashtag-10-p-min,
 .boxes-style-color .box-msg-3 .logos-box-min .hashtag-10-p-min,
@@ -7132,7 +7147,7 @@ body.step-2-bg .logos-footer {
   top: -25px;
   position: absolute;
 }
-@media (max-width: 349px) {
+@media (max-width: 480px) {
   .boxes-style-color .box-msg-1 .logos-box-min .hashtag-10-p-min,
   .boxes-style-color .box-msg-2 .logos-box-min .hashtag-10-p-min,
   .boxes-style-color .box-msg-3 .logos-box-min .hashtag-10-p-min,
@@ -7145,7 +7160,7 @@ body.step-2-bg .logos-footer {
   .boxes-style-color a .box-msg-4 .logos-box-min .hashtag-10-p-min,
   .boxes-style-color a .box-msg-5 .logos-box-min .hashtag-10-p-min,
   .boxes-style-color a .box-msg-6 .logos-box-min .hashtag-10-p-min {
-    left: 25px;
+    left: 10px;
   }
 }
 .boxes-style-color .box-msg-1 .logos-box-min .logo-clinica-min,
@@ -7166,7 +7181,7 @@ body.step-2-bg .logos-footer {
   width: 70px;
   height: 47px;
 }
-@media (max-width: 349px) {
+@media (max-width: 480px) {
   .boxes-style-color .box-msg-1 .logos-box-min .logo-clinica-min,
   .boxes-style-color .box-msg-2 .logos-box-min .logo-clinica-min,
   .boxes-style-color .box-msg-3 .logos-box-min .logo-clinica-min,
@@ -7179,7 +7194,7 @@ body.step-2-bg .logos-footer {
   .boxes-style-color a .box-msg-4 .logos-box-min .logo-clinica-min,
   .boxes-style-color a .box-msg-5 .logos-box-min .logo-clinica-min,
   .boxes-style-color a .box-msg-6 .logos-box-min .logo-clinica-min {
-    right: 25px;
+    right: 15px;
   }
 }
 .boxes-style-color .box-msg-1.box-mini img,
@@ -7218,10 +7233,11 @@ body.step-2-bg .logos-footer {
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-1 .line-span1 {
-    font-size: 20px;
-    width: 70%;
+    font-size: 16px;
+    width: 65%;
     top: 40px;
-    padding: 5px 0;
+    padding: 3px 0;
+    background-image: url('../img/post-image-bg/cinta-bg-min.png');
   }
 }
 .boxes-style-color .box-msg-1 .line-span1 .span-title-1 {
@@ -7233,6 +7249,13 @@ body.step-2-bg .logos-footer {
   display: block;
   top: 0;
 }
+@media (max-width: 480px) {
+  .boxes-style-color .box-msg-1 .line-span1 .span-title-1 {
+    background-image: url('../img/post-image-bg/cinta-titulo-post-1-izq-mini.png');
+    width: 70px;
+    height: 50px;
+  }
+}
 .boxes-style-color .box-msg-1 .line-span1 .span-title-2 {
   position: absolute;
   width: 97px;
@@ -7241,6 +7264,13 @@ body.step-2-bg .logos-footer {
   right: -42px;
   display: block;
   top: 0;
+}
+@media (max-width: 480px) {
+  .boxes-style-color .box-msg-1 .line-span1 .span-title-2 {
+    background-image: url('../img/post-image-bg/cinta-titulo-post-1-der-min.png');
+    width: 70px;
+    height: 50px;
+  }
 }
 .boxes-style-color .box-msg-1 .line-span2 {
   font-family: 'Great Vibes', cursive;
@@ -7258,8 +7288,9 @@ body.step-2-bg .logos-footer {
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-1 .line-span2 {
-    font-size: 70px;
-    top: 110px;
+    font-size: 55px;
+    top: 85px;
+    width: 80%;
   }
 }
 .boxes-style-color .box-msg-1 .line-span3 {
@@ -7280,9 +7311,10 @@ body.step-2-bg .logos-footer {
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-1 .line-span3 {
-    font-size: 24px;
-    top: 210px;
-    line-height: 30px;
+    width: 80%;
+    font-size: 18px;
+    top: 170px;
+    line-height: 100%;
   }
 }
 .boxes-style-color .box-msg-1 .c-top-left {

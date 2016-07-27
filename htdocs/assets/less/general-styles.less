@@ -239,13 +239,17 @@ body {
 		margin: -20px auto;
 		margin-bottom: 5px; //20px;
 
-		@media screen and (max-width: 480px) and (min-width: 350px) {
-			width: 320px;
-			height: 410px;
-		}
-		@media (max-width: 349px) {
+		// @media screen and (max-width: 480px) and (min-width: 350px) {
+		// 	width: 320px;
+		// 	height: 410px;
+		// }
+		// @media (max-width: 349px) {
+		// 	width: 285px;
+		// 	height: 410px;
+		// }
+		@media (max-width: 480px) {
 			width: 285px;
-			height: 410px;
+			height: 304px;
 		}
 	}
 	.corners {
@@ -319,22 +323,26 @@ body {
 			//-webkit-transform: scale(0.7); /* Safari */
 			//transform: scale(0.7);
 			@media (max-width: 480px) {
-				//-ms-transform: scale(0.7); /* IE 9 */
-				//-webkit-transform: scale(0.7); /* Safari */
-				//transform: scale(0.7);
+				-ms-transform: scale(0.85); /* IE 9 */
+				-webkit-transform: scale(0.85); /* Safari */
+				transform: scale(0.85);
+				bottom: 35px;
 			}
 			.hashtag-10-p-min {
 				left: 35px; //40px;
 				top: -25px;
 				position: absolute;
-				@media (max-width: 480px) {
-					//left: -24px;
-				}
-				@media screen and (max-width: 480px) and (min-width: 350px) {
+				// @media (max-width: 480px) {
+				// 	//left: -24px;
+				// }
+				// @media screen and (max-width: 480px) and (min-width: 350px) {
 
-				}
-				@media (max-width: 349px) {
-					left: 25px;
+				// }
+				// @media (max-width: 349px) {
+				// 	left: 25px;
+				// }
+				@media (max-width: 480px) {
+					left: 10px;
 				}
 			}
 			.logo-clinica-min {
@@ -343,14 +351,17 @@ body {
 				position: absolute;
 				width: 70px;
 				height: 47px;
-				@media (max-width: 480px) {
-					//right: -25px;
-				}
-				@media screen and (max-width: 480px) and (min-width: 350px) {
+				// @media (max-width: 480px) {
+				// 	//right: -25px;
+				// }
+				// @media screen and (max-width: 480px) and (min-width: 350px) {
 
-				}
-				@media (max-width: 349px) {
-					right: 25px;
+				// }
+				// @media (max-width: 349px) {
+				// 	right: 25px;
+				// }
+				@media (max-width: 480px) {
+					right: 15px;
 				}
 			}
 		}
@@ -383,10 +394,11 @@ body {
 			top: 40px;
 			padding: 5px 0;
 			@media (max-width: 480px) {
-				font-size: 20px;
-				width: 70%;
+				font-size: 16px;
+				width: 65%;
 				top: 40px;
-				padding: 5px 0;
+				padding: 3px 0;
+				background-image: url('../img/post-image-bg/cinta-bg-min.png');
 			}
 			.span-title-1 {
 				position: absolute;
@@ -396,6 +408,11 @@ body {
 				left: -42px; //-50px;
 				display: block;
 				top: 0;
+				@media (max-width: 480px) {
+					background-image: url('../img/post-image-bg/cinta-titulo-post-1-izq-mini.png');
+					width: 70px;
+    				height: 50px;
+				}
 			}
 			.span-title-2 {
 				position: absolute;
@@ -405,6 +422,11 @@ body {
 				right: -42px; //-50px;
 				display: block;
 				top: 0;
+				@media (max-width: 480px) {
+					background-image: url('../img/post-image-bg/cinta-titulo-post-1-der-min.png');
+					width: 70px;
+    				height: 50px;
+				}
 			}
 		}
 		.line-span2 {
@@ -422,8 +444,9 @@ body {
 			text-align: center;
     		overflow: hidden;
 			@media (max-width: 480px) {
-				font-size: 70px;
-				top: 110px;
+				font-size: 55px;
+    			top: 85px;
+				width: 80%;
 			}
 		}
 		.line-span3 {
@@ -443,9 +466,10 @@ body {
 			max-height: 98px;
 			overflow: hidden;
 			@media (max-width: 480px) {
-				font-size: 24px;
-				top: 210px;
-				line-height: 30px;
+				width: 80%;
+				font-size: 18px;
+    			top: 170px;
+    			line-height: 100%;
 			}
 		}
 		&.box-mini {
