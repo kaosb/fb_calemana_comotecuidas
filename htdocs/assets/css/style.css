@@ -7361,9 +7361,10 @@ body.step-2-bg .logos-footer {
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-2 .line-span1 {
-    font-size: 21px;
-    padding: 4px 0;
+    font-size: 15px;
+    padding: 3px 0 2px;
     top: 50px;
+    width: 52%;
   }
 }
 .boxes-style-color .box-msg-2 .line-span1 .span-title-1 {
@@ -7376,6 +7377,14 @@ body.step-2-bg .logos-footer {
   top: 0;
   z-index: 1;
 }
+@media (max-width: 480px) {
+  .boxes-style-color .box-msg-2 .line-span1 .span-title-1 {
+    background-image: url('../img/post-image-bg/cinta-titulo-post-2-izq-min.png');
+    width: 42px;
+    height: 40px;
+    left: -40px;
+  }
+}
 .boxes-style-color .box-msg-2 .line-span1 .span-title-2 {
   position: absolute;
   width: 61px;
@@ -7385,6 +7394,15 @@ body.step-2-bg .logos-footer {
   display: block;
   top: -20px;
   z-index: 1;
+}
+@media (max-width: 480px) {
+  .boxes-style-color .box-msg-2 .line-span1 .span-title-2 {
+    background-image: url('../img/post-image-bg/cinta-titulo-post-2-der-min.png');
+    width: 42px;
+    height: 40px;
+    right: -40px;
+    top: -14px;
+  }
 }
 .boxes-style-color .box-msg-2 .pre-line-span2 {
   font-family: 'Pathway Gothic One', sans-serif;
@@ -7402,8 +7420,8 @@ body.step-2-bg .logos-footer {
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-2 .pre-line-span2 {
-    font-size: 75px;
-    top: 40px;
+    font-size: 45px;
+    top: 70px;
   }
 }
 .boxes-style-color .box-msg-2 .line-span2,
@@ -7430,6 +7448,11 @@ body.step-2-bg .logos-footer {
 .boxes-style-color .box-msg-2 .point.point-left {
   left: 5px;
 }
+@media (max-width: 480px) {
+  .boxes-style-color .box-msg-2 .point {
+    font-size: 70px;
+  }
+}
 .boxes-style-color .box-msg-2 .line-span3 {
   font-family: 'Great Vibes', cursive;
   font-size: 35px;
@@ -7443,14 +7466,10 @@ body.step-2-bg .logos-footer {
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-2 .line-span3 {
-    top: 200px;
-  }
-}
-@media (max-width: 349px) {
-  .boxes-style-color .box-msg-2 .line-span3 {
-    left: 20px;
-    right: 20px;
-    line-height: 100%;
+    top: 160px;
+    width: 75%;
+    font-size: 28px;
+    max-height: 58px;
   }
 }
 .boxes-style-color .box-msg-2 .last-word-line {
