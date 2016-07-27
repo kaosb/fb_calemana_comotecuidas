@@ -7575,10 +7575,10 @@ body.step-2-bg .logos-footer {
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-3 .line-span1 {
-    font-size: 41px;
-    top: 25px;
-    left: 15px;
-    right: 15px;
+    font-size: 30px;
+    top: 20px;
+    left: 20px;
+    right: 20px;
   }
 }
 .boxes-style-color .box-msg-3 .line-span1 .last-word-line {
@@ -7596,10 +7596,13 @@ body.step-2-bg .logos-footer {
   line-height: 110%;
   display: block !important;
   font-style: normal;
+  max-height: 62px;
+  overflow: hidden;
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-3 .line-span1 .last-word-line {
-    font-size: 16px !important;
+    font-size: 18px;
+    max-height: 40px;
   }
 }
 .boxes-style-color .box-msg-3 .pre-line-span2 {
@@ -7612,9 +7615,11 @@ body.step-2-bg .logos-footer {
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-3 .pre-line-span2 {
-    font-size: 67px;
-    top: 52px;
+    font-size: 45px;
+    top: 90px;
     letter-spacing: 0;
+    max-width: 80%;
+    margin: 0 auto;
   }
 }
 .boxes-style-color .box-msg-3 .pre-line-span2 .line-span2,
@@ -7639,6 +7644,11 @@ body.step-2-bg .logos-footer {
 .boxes-style-color .box-msg-3 .pre-line-span2 .point.point-left {
   left: 5px;
 }
+@media (max-width: 480px) {
+  .boxes-style-color .box-msg-3 .pre-line-span2 .point {
+    font-size: 90px;
+  }
+}
 .boxes-style-color .box-msg-3 .line-span3 {
   font-family: 'Cinzel', serif;
   background-color: #4cbe82;
@@ -7652,8 +7662,10 @@ body.step-2-bg .logos-footer {
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-3 .line-span3 {
-    font-size: 18px;
-    padding: 5px 0 5px;
+    font-size: 14px;
+    top: 195px;
+    padding: 4px 0 5px;
+    height: 26px;
   }
 }
 .boxes-style-color .box-msg-3 .line-span3 .span-title-1 {
@@ -7668,7 +7680,11 @@ body.step-2-bg .logos-footer {
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-3 .line-span3 .span-title-1 {
-    left: -85px;
+    left: -66px;
+    background-image: url('../img/post-image-bg/cinta-titulo-post-3-izq-min.png');
+    width: 66px;
+    height: 40px;
+    top: -14px;
   }
 }
 .boxes-style-color .box-msg-3 .line-span3 .span-title-2 {
@@ -7683,7 +7699,11 @@ body.step-2-bg .logos-footer {
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-3 .line-span3 .span-title-2 {
-    right: -85px;
+    right: -66px;
+    background-image: url('../img/post-image-bg/cinta-titulo-post-3-der-min.png');
+    width: 66px;
+    height: 40px;
+    top: -14px;
   }
 }
 .boxes-style-color .box-msg-3 .line-span3 .last-word-line {

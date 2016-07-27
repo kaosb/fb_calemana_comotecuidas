@@ -762,10 +762,10 @@ body {
 			top: 25px;
 			font-style: italic;
 			@media (max-width: 480px) {
-				font-size: 41px;
-				top: 25px;
-				left: 15px;
-				right: 15px;
+				font-size: 30px;
+				top: 20px;
+				left: 20px;
+				right: 20px;
 			}
 			.last-word-line {
 				display: block;
@@ -784,8 +784,11 @@ body {
 				line-height: 110%;
 				display: block !important;
 				font-style: normal;
+				max-height: 62px;
+    			overflow: hidden;
 				@media (max-width: 480px) {
-					font-size: 16px !important;
+					font-size: 18px;
+					max-height: 40px;
 				}
 			}
 		}
@@ -799,9 +802,11 @@ body {
 			top: 108px; //85px;
 			letter-spacing: 0; //-7px;
 			@media (max-width: 480px) {
-				font-size: 67px;
-				top: 52px; //85px;
+				font-size: 45px;
+    			top: 90px;
 				letter-spacing: 0; //-7px;
+			    max-width: 80%;
+    			margin: 0 auto;
 			}
 			.line-span2, .point {
 				display: inline-block;
@@ -823,6 +828,9 @@ body {
 				&.point-left {
 					left: 5px;
 				}
+				@media (max-width: 480px) {
+					font-size: 90px;
+				}
 			}
 		}
 		.line-span3 {
@@ -838,9 +846,10 @@ body {
 			height: 35px;
 			//padding: 4px 0 1px; //7px 0 6px;
 			@media (max-width: 480px) {
-				font-size: 18px; //35px;
-				// top: 195px;
-				padding: 5px 0 5px;
+				font-size: 14px; //35px;
+				top: 195px;
+				padding: 4px 0 5px;
+				height: 26px;
 			}
 			.span-title-1 {
 				position: absolute;
@@ -852,7 +861,11 @@ body {
 				top: -19px;
 				z-index: 1;
 				@media (max-width: 480px) {
-					left: -85px;
+					left: -66px;
+					background-image: url('../img/post-image-bg/cinta-titulo-post-3-izq-min.png');
+					width: 66px;
+					height: 40px;
+					top: -14px;
 				}
 			}
 			.span-title-2 {
@@ -865,7 +878,11 @@ body {
 				top: -19px;
 				z-index: 1;
 				@media (max-width: 480px) {
-					right: -85px;
+					right: -66px;
+					background-image: url('../img/post-image-bg/cinta-titulo-post-3-der-min.png');
+					width: 66px;
+					height: 40px;
+					top: -14px;
 				}
 			}
 			.last-word-line {
