@@ -198,8 +198,8 @@ function buildCartel(palabras){
 			cartel.find(".line-span3").html(bigtext+' '+'<span id="big_last_word_03_01" class="last-word-line">'+ palabras[length-1] +'</span>');
 			// % respecto al tamaño original -> (tope*100)/cantidad -> %
 			// tamaño fuente equivalente al % calculado -> (tamaño_inicial*porcentaje_al_cual_corresponde_el_tamaño)/100 -> pixeles
-			if((bigtext.length + palabras[length-1].length) > 70){
-				var porcentaje_tamaño_fit = (70*100)/(bigtext.length + palabras[length-1].length);
+			if((bigtext.length + palabras[length-1].length) > 45){
+				var porcentaje_tamaño_fit = (45*100)/(bigtext.length + palabras[length-1].length);
 				var fontdefaultsize = cartel.find(".line-span3").css("font-size").replace("px", "");
 				var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
 				cartel.find(".line-span3").css("font-size", fontfinalsieze);
@@ -365,7 +365,7 @@ function buildCartel(palabras){
 			cartel.find(".line-span1").html(bigtext_five);
 			// % respecto al tamaño original -> (tope*100)/cantidad -> %
 			// tamaño fuente equivalente al % calculado -> (tamaño_inicial*porcentaje_al_cual_corresponde_el_tamaño)/100 -> pixeles
-			if(palabras[0].length > 45){
+			if(bigtext_five.length > 45){
 				var porcentaje_tamaño_fit = (45*100)/bigtext_five.length;
 				var fontdefaultsize = cartel.find(".line-span1").css("font-size").replace("px", "");
 				var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
@@ -377,7 +377,7 @@ function buildCartel(palabras){
 			cartel.find(".line-span2").html(palabras[length-2]);
 			// % respecto al tamaño original -> (tope*100)/cantidad -> %
 			// tamaño fuente equivalente al % calculado -> (tamaño_inicial*porcentaje_al_cual_corresponde_el_tamaño)/100 -> pixeles
-			if(palabras[1].length > 14){
+			if(palabras[length-2].length > 14){
 				var porcentaje_tamaño_fit = (14*100)/palabras[length-2].length;
 				var fontdefaultsize = cartel.find(".line-span2").css("font-size").replace("px", "");
 				var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
@@ -389,8 +389,8 @@ function buildCartel(palabras){
 			cartel.find(".span-title-text").html(palabras[length-1]);
 			// % respecto al tamaño original -> (tope*100)/cantidad -> %
 			// tamaño fuente equivalente al % calculado -> (tamaño_inicial*porcentaje_al_cual_corresponde_el_tamaño)/100 -> pixeles
-			if(bigtext.length > 43){
-				var porcentaje_tamaño_fit = (43*100)/palabras[length-1].length;
+			if(palabras[length-1].length > 20){
+				var porcentaje_tamaño_fit = (20*100)/palabras[length-1].length;
 				var fontdefaultsize = cartel.find(".span-title-text").css("font-size").replace("px", "");
 				var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
 				cartel.find(".span-title-text").css("font-size", fontfinalsieze);
