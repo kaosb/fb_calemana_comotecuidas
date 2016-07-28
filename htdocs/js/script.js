@@ -219,6 +219,9 @@ function buildCartel(palabras){
 	// detectamos que de que plantilla se trata
 	// Cargamos el template seleccionado.
 	$.userdata.template = cartel.attr('template');
+
+
+
 	// Concateno acorde al largo maximo de palabras y las palabras aportadas para evitar los textos undefined.
 	var bigtext = "";
 	for(i = 2;(i < length-1) && (palabras[i] !== undefined);i++){
@@ -228,23 +231,29 @@ function buildCartel(palabras){
 	for(i = 1;(i < length-3) && (palabras[i] !== undefined);i++){
 		bigtext_alt += palabras[i]+" ";
 	}
+
+
+
 	// Acorde a lo seleccionado desplegamos.
 	switch(cartel.attr('template')){
 		case "1":
-			// Reseteamos los estilos.
-			cartel.find(".span-title-text").removeAttr('style');
-			cartel.find(".line-span2").removeAttr('style');
+			/////////////////////////////////////////////
+			/// Espacio 1 ///////////////////////////////
+			/////////////////////////////////////////////
 			// comenzamos a asignar las palabras a los elementos del DOM.
 			cartel.find(".span-title-text").html(palabras[0]);
 			// % respecto al tamaño original -> (tope*100)/cantidad -> %
 			// tamaño fuente equivalente al % calculado -> (tamaño_inicial*porcentaje_al_cual_corresponde_el_tamaño)/100 -> pixeles
-			if(palabras[0].length > 10){
+			if(palabras[0].length > 11){
 				var porcentaje_tamaño_fit = (10*100)/palabras[0].length;
 				var fontdefaultsize = cartel.find(".span-title-text").css("font-size").replace("px", "");
 				var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
 				cartel.find(".span-title-text").css("font-size", fontfinalsieze);
-				cartel.find(".span-title-text").css("text-transform", "uppercase");
+				cartel.find(".span-title-text").css("text-transform", "uppercase !important");
 			}
+			/////////////////////////////////////////////
+			/// Espacio 2 ///////////////////////////////
+			/////////////////////////////////////////////
 			cartel.find(".line-span2").html(palabras[1]);
 			// % respecto al tamaño original -> (tope*100)/cantidad -> %
 			// tamaño fuente equivalente al % calculado -> (tamaño_inicial*porcentaje_al_cual_corresponde_el_tamaño)/100 -> pixeles
@@ -253,9 +262,13 @@ function buildCartel(palabras){
 				var fontdefaultsize = cartel.find(".line-span2").css("font-size").replace("px", "");
 				var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
 				cartel.find(".line-span2").css("font-size", fontfinalsieze);
+				cartel.find(".line-span2").css("text-transform", "capitalize !important");
 			}
-			var bigword = '<span id="big_last_word_03_01" class="last-word-line">'+ palabras[length-1] +'</span>';
-			cartel.find(".line-span3").html(bigtext+" "+bigword);
+			/////////////////////////////////////////////
+			/// Espacio 3 ///////////////////////////////
+			/////////////////////////////////////////////
+			var htmlword = '<span id="big_last_word_03_01" class="last-word-line">'+ palabras[length-1] +'</span>';
+			cartel.find(".line-span3").html(bigtext+" "+htmlword);
 			break;
 		case "2":
 		// Reseteamos los estilos.
