@@ -145,18 +145,12 @@
 								<!-- TEMA 2 MORADO -->
 								<div id="big_box_msg_2" class="box-msg-2 box-featured" template="2" style="display: none;">
 									<span id="big_line_01_02" class="line-span1"><span class="span-title-1"></span><span class="span-title-text">Riéndome</span><span class="span-title-2"></span></span>
-									<!-- -->
 									<span class="pre-line-span2">
 										<span class="point point-left">.</span>
 										<span id="big_line_02_02" class="line-span2">Disfrutando</span>
 										<span class="point point-right">.</span>
 									</span>
-
-									<!-- -->
-
 									<span id="big_line_03_02" class="line-span3">y regaloneando con mi <span class="last-line"></span></span>
-
-
 									<span class="logos-box-min">
 										<img class="hashtag-10-p-min" src="assets/img/post-image-bg/como-te-cuidas-min.svg">
 										<img class="logo-clinica-min" src="assets/img/post-image-bg/logo-alemana-min-2.svg">
@@ -166,7 +160,6 @@
 										<span class="c-top-right"></span>
 										<span class="c-bottom-left"></span>
 										<span class="c-bottom-right"></span>
-
 										<span class="c-top-left-line"></span>
 										<span class="c-top-right-line"></span>
 										<span class="c-bottom-left-line"></span>
