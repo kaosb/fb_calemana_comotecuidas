@@ -25,7 +25,7 @@
 		<link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 		<!-- Bootstrap -->
-		<link href="assets/css/style.css" rel="stylesheet">
+		<link href="assets/css/style.css?v=2" rel="stylesheet">
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -337,6 +337,6 @@
 		<script src="js/html2canvas.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/countable.js"></script>
-		<script src="js/script.js"></script>
+		<script src="js/script.js?v=1"></script>
 	</body>
 </html>
