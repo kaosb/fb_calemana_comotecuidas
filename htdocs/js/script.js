@@ -229,7 +229,7 @@ function buildCartel(palabras){
 		bigtext_alt += palabras[i]+" ";
 	}
 	var bigtext_five = "";
-	for(i = 0;(i < length-3) && (palabras[i] !== undefined);i++){
+	for(i = 0;(i < length-2) && (palabras[i] !== undefined);i++){
 		bigtext_five += palabras[i]+" ";
 	}
 	// Acorde a lo seleccionado desplegamos.
