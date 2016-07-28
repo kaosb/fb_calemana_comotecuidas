@@ -204,12 +204,9 @@
 								</div>
 								<!-- TEMA 5 VERDE LIMON -->
 								<div id="big_box_msg_5" class="box-msg-5 box-featured" template="5" style="display: none;">
-									<!-- esto debe estar en 2 lineas -->
 									<span id="big_line_01_05" class="line-span1">Riéndome</span>
-									<!-- -->
 									<span id="big_line_02_05" class="line-span2">Disfrutando</span>
 									<span id="big_line_03_05" class="line-span3"><span class="span-title-1"></span><span class="span-title-text">y regaloneando con mi</span><span class="span-title-2"></span>
-									<!-- -->
 									</span>
 									<span class="logos-box-min">
 										<img class="hashtag-10-p-min" src="assets/img/post-image-bg/como-te-cuidas-min.svg">
@@ -225,18 +222,13 @@
 								<!-- TEMA 6 CELESTE -->
 								<div id="big_box_msg_6" class="box-msg-6 box-featured" template="6" style="display: none;">
 									<span id="big_line_01_06" class="line-span1">Riéndome</span>
-									<!-- -->
-
 									<span class="pre-line-span2">
 										<span class="point point-left">.</span>
 										<span id="big_line_02_06" class="line-span2">Disfrutando</span>
 										<span class="point point-right">.</span>
 									</span>
-									<!-- -->
 									<span id="big_line_03_06" class="line-span3"><span class="line-text">y regaloneando con mi</span></span>
-
 									<span id="big_last_word_03_06" class="last-word-line"><span class="span-title-1"></span>familia<span class="span-title-2"></span></span>
-									
 									<span class="logos-box-min">
 										<img class="hashtag-10-p-min" src="assets/img/post-image-bg/como-te-cuidas-min.svg">
 										<img class="logo-clinica-min" src="assets/img/post-image-bg/logo-alemana-min-2.svg">
@@ -250,7 +242,6 @@
 								</div>
 								<!-- fin caja principal elegida -->
 								<!-- se agrego un div con id para esconder -->
-
 								<!-- selector diseños -->
 								<div id="select-design-boxes" style="">
 									<p class="select-design">Selecciona un diseño</p>
