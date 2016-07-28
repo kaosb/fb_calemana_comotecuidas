@@ -478,47 +478,50 @@ function buildCartel(palabras){
 			/// Espacio 1 ///////////////////////////////
 			/////////////////////////////////////////////
 			cartel.find(".line-span1").html(palabras[0]);
-			// 14
 			// % respecto al tamaño original -> (tope*100)/cantidad -> %
 			// tamaño fuente equivalente al % calculado -> (tamaño_inicial*porcentaje_al_cual_corresponde_el_tamaño)/100 -> pixeles
-			if(palabras[0].length > 14){
-				var porcentaje_tamaño_fit = (14*100)/palabras[0].length;
+			if(palabras[0].length > 25){
+				var porcentaje_tamaño_fit = (25*100)/palabras[0].length;
 				var fontdefaultsize = cartel.find(".line-span1").css("font-size").replace("px", "");
 				var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
 				cartel.find(".line-span1").css("font-size", fontfinalsieze);
 			}
+			/////////////////////////////////////////////
+			/// Espacio 2 ///////////////////////////////
+			/////////////////////////////////////////////
 			cartel.find(".line-span2").html(palabras[1]);
-			// 13
 			// % respecto al tamaño original -> (tope*100)/cantidad -> %
 			// tamaño fuente equivalente al % calculado -> (tamaño_inicial*porcentaje_al_cual_corresponde_el_tamaño)/100 -> pixeles
-			if(palabras[1].length > 13){
-				var porcentaje_tamaño_fit = (13*100)/palabras[1].length;
+			if(palabras[1].length > 11){
+				var porcentaje_tamaño_fit = (11*100)/palabras[1].length;
 				var fontdefaultsize = cartel.find(".line-span2").css("font-size").replace("px", "");
 				var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
 				cartel.find(".line-span2").css("font-size", fontfinalsieze);
 			}
+			/////////////////////////////////////////////
+			/// Espacio 3 ///////////////////////////////
+			/////////////////////////////////////////////
+			cartel.find(".line-text").html(bigtext);
 			// % respecto al tamaño original -> (tope*100)/cantidad -> %
 			// tamaño fuente equivalente al % calculado -> (tamaño_inicial*porcentaje_al_cual_corresponde_el_tamaño)/100 -> pixeles
-			// 12
-			if(palabras[length-1].length > 12){
-				var porcentaje_tamaño_fit = (12*100)/palabras[length-1].length;
+			if(bigtext.length > 43){
+				var porcentaje_tamaño_fit = (43*100)/bigtext.length;
+				var fontdefaultsize = cartel.find(".line-text").css("font-size").replace("px", "");
+				var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
+				cartel.find(".line-text").css("font-size", fontfinalsieze);
+			}
+			/////////////////////////////////////////////
+			/// Espacio 4 ///////////////////////////////
+			/////////////////////////////////////////////
+			cartel.find(".last-word-line").html(palabras[length-1]);
+			// % respecto al tamaño original -> (tope*100)/cantidad -> %
+			// tamaño fuente equivalente al % calculado -> (tamaño_inicial*porcentaje_al_cual_corresponde_el_tamaño)/100 -> pixeles
+			if(palabras[length-1].length > 27){
+				var porcentaje_tamaño_fit = (27*100)/palabras[length-1].length;
 				var fontdefaultsize = cartel.find(".last-word-line").css("font-size").replace("px", "");
 				var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
-				var bigword = '<span id="big_last_word_03_06" class="last-word-line" style="font-size:'+fontfinalsieze+';"><span class="span-title-1"></span>'+palabras[length-1]+'<span class="span-title-2"></span></span>';
-			}else{
-				var bigword = '<span id="big_last_word_03_06" class="last-word-line"><span class="span-title-1"></span>'+palabras[length-1]+'<span class="span-title-2"></span></span>';
+				cartel.find(".last-word-line").css("font-size", fontfinalsieze);
 			}
-			var largetext = bigtext+" "+bigword;
-			cartel.find(".line-span3").html(largetext);
-			// 22
-			// % respecto al tamaño original -> (tope*100)/cantidad -> %
-			// tamaño fuente equivalente al % calculado -> (tamaño_inicial*porcentaje_al_cual_corresponde_el_tamaño)/100 -> pixeles
-			// if(largetext.length > 22){
-			// 	var porcentaje_tamaño_fit = (22*100)/largetext.length;
-			// 	var fontdefaultsize = cartel.find(".line-span3").css("font-size").replace("px", "");
-			// 	var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
-			// 	//cartel.find(".line-span3").css("font-size", fontfinalsieze);
-			// }
 			break;
 	}
 }
