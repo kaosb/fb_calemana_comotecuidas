@@ -219,21 +219,17 @@ function buildCartel(palabras){
 	// detectamos que de que plantilla se trata
 	// Cargamos el template seleccionado.
 	$.userdata.template = cartel.attr('template');
-
-
-
 	// Concateno acorde al largo maximo de palabras y las palabras aportadas para evitar los textos undefined.
 	var bigtext = "";
 	for(i = 2;(i < length-1) && (palabras[i] !== undefined);i++){
 		bigtext += palabras[i]+" ";
 	}
+
+	
 	var bigtext_alt = "";
 	for(i = 1;(i < length-3) && (palabras[i] !== undefined);i++){
 		bigtext_alt += palabras[i]+" ";
 	}
-
-
-
 	// Acorde a lo seleccionado desplegamos.
 	switch(cartel.attr('template')){
 		case "1":
@@ -242,6 +238,7 @@ function buildCartel(palabras){
 			/////////////////////////////////////////////
 			// comenzamos a asignar las palabras a los elementos del DOM.
 			cartel.find(".span-title-text").html(palabras[0]);
+			cartel.find(".span-title-text").css("text-transform", "uppercase !important");
 			// % respecto al tamaño original -> (tope*100)/cantidad -> %
 			// tamaño fuente equivalente al % calculado -> (tamaño_inicial*porcentaje_al_cual_corresponde_el_tamaño)/100 -> pixeles
 			if(palabras[0].length > 11){
@@ -249,12 +246,12 @@ function buildCartel(palabras){
 				var fontdefaultsize = cartel.find(".span-title-text").css("font-size").replace("px", "");
 				var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
 				cartel.find(".span-title-text").css("font-size", fontfinalsieze);
-				cartel.find(".span-title-text").css("text-transform", "uppercase !important");
 			}
 			/////////////////////////////////////////////
 			/// Espacio 2 ///////////////////////////////
 			/////////////////////////////////////////////
 			cartel.find(".line-span2").html(palabras[1]);
+			cartel.find(".line-span2").css("text-transform", "capitalize !important");
 			// % respecto al tamaño original -> (tope*100)/cantidad -> %
 			// tamaño fuente equivalente al % calculado -> (tamaño_inicial*porcentaje_al_cual_corresponde_el_tamaño)/100 -> pixeles
 			if(palabras[1].length > 14){
@@ -262,7 +259,6 @@ function buildCartel(palabras){
 				var fontdefaultsize = cartel.find(".line-span2").css("font-size").replace("px", "");
 				var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
 				cartel.find(".line-span2").css("font-size", fontfinalsieze);
-				cartel.find(".line-span2").css("text-transform", "capitalize !important");
 			}
 			/////////////////////////////////////////////
 			/// Espacio 3 ///////////////////////////////
