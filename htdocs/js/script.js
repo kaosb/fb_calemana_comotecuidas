@@ -224,10 +224,8 @@ function buildCartel(palabras){
 	for(i = 2;(i < length-1) && (palabras[i] !== undefined);i++){
 		bigtext += palabras[i]+" ";
 	}
-
-
 	var bigtext_alt = "";
-	for(i = 1;(i < length-3) && (palabras[i] !== undefined);i++){
+	for(i = 1;(i < length-2) && (palabras[i] !== undefined);i++){
 		bigtext_alt += palabras[i]+" ";
 	}
 	// Acorde a lo seleccionado desplegamos.
@@ -269,8 +267,8 @@ function buildCartel(palabras){
 			cartel.find(".line-span3").html(bigtext+' '+'<span id="big_last_word_03_01" class="last-word-line">'+ palabras[length-1] +'</span>');
 			// % respecto al tamaño original -> (tope*100)/cantidad -> %
 			// tamaño fuente equivalente al % calculado -> (tamaño_inicial*porcentaje_al_cual_corresponde_el_tamaño)/100 -> pixeles
-			if((bigtext.length+palabras[length-1].length) > 70){
-				var porcentaje_tamaño_fit = (70*100)/palabras[1].length;
+			if((bigtext.length + palabras[length-1].length) > 70){
+				var porcentaje_tamaño_fit = (70*100)/(bigtext.length + palabras[length-1].length);
 				var fontdefaultsize = cartel.find(".line-span3").css("font-size").replace("px", "");
 				var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
 				cartel.find(".line-span3").css("font-size", fontfinalsieze);
@@ -312,61 +310,66 @@ function buildCartel(palabras){
 			cartel.find(".line-span3").html(bigtext+' '+'<span id="big_last_word_03_02" class="last-word-line">'+ palabras[length-1] +'</span>');
 			// % respecto al tamaño original -> (tope*100)/cantidad -> %
 			// tamaño fuente equivalente al % calculado -> (tamaño_inicial*porcentaje_al_cual_corresponde_el_tamaño)/100 -> pixeles
-			if((bigtext.length+palabras[length-1]) > 48){
-				var porcentaje_tamaño_fit = (48*100)/bigtext.length;
+			if((bigtext.length + palabras[length-1].length) > 48){
+				var porcentaje_tamaño_fit = (48*100)/(bigtext.length + palabras[length-1].length);
 				var fontdefaultsize = cartel.find(".line-span3").css("font-size").replace("px", "");
 				var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
 				cartel.find(".line-span3").css("font-size", fontfinalsieze);
 			}
 			break;
 		case "3":
-		// Reseteamos los estilos.
-		cartel.find(".line-span1").removeAttr('style');
-		cartel.find(".line-span2").removeAttr('style');
-		cartel.find(".span-title-text").removeAttr('style');
-		cartel.find(".last-word-line").removeAttr('style');
-		// comenzamos a asignar las palabras a los elementos del DOM.
-		cartel.find(".line-span1").html(palabras[0]+"<span id='big_last_word_01_03' class='last-word-line'>"+bigtext_alt+"</span>");
-		// 14
-		// % respecto al tamaño original -> (tope*100)/cantidad -> %
-		// tamaño fuente equivalente al % calculado -> (tamaño_inicial*porcentaje_al_cual_corresponde_el_tamaño)/100 -> pixeles
-		// if(palabras[0].length > 14){
-		// 	var porcentaje_tamaño_fit = (14*100)/palabras[0].length;
-		// 	var fontdefaultsize = cartel.find(".line-span1").css("font-size").replace("px", "");
-		// 	var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
-		// 	cartel.find(".line-span1").css("font-size", fontfinalsieze);
-		// }
-		cartel.find(".line-span2").html(palabras[length - 3]);
-		// 13
-		// % respecto al tamaño original -> (tope*100)/cantidad -> %
-		// tamaño fuente equivalente al % calculado -> (tamaño_inicial*porcentaje_al_cual_corresponde_el_tamaño)/100 -> pixeles
-		if(palabras[length - 3].length > 9){
-			var porcentaje_tamaño_fit = (9*100)/palabras[length - 3].length;
-			var fontdefaultsize = cartel.find(".line-span2").css("font-size").replace("px", "");
-			var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
-			cartel.find(".line-span2").css("font-size", fontfinalsieze);
-		}
-		cartel.find(".span-title-text").html(palabras[length - 2] + " " + palabras[length - 1]);
-		// 22
-		// % respecto al tamaño original -> (tope*100)/cantidad -> %
-		// tamaño fuente equivalente al % calculado -> (tamaño_inicial*porcentaje_al_cual_corresponde_el_tamaño)/100 -> pixeles
-		if((palabras[length - 2].length + palabras[length - 1].length + 1) > 15){
-			var porcentaje_tamaño_fit = (22*100)/palabras[length - 2].length;
-			var fontdefaultsize = cartel.find(".span-title-text").css("font-size").replace("px", "");
-			var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
-			cartel.find(".span-title-text").css("font-size", fontfinalsieze);
-		}
-		// cartel.find(".last-word-line").html(bigtext_alt);
-		// 12
-		// % respecto al tamaño original -> (tope*100)/cantidad -> %
-		// tamaño fuente equivalente al % calculado -> (tamaño_inicial*porcentaje_al_cual_corresponde_el_tamaño)/100 -> pixeles
-		// if(bigtext_alt.length > 12){
-		// 	var porcentaje_tamaño_fit = (12*100)/bigtext_alt.length;
-		// 	var fontdefaultsize = cartel.find(".last-word-line").css("font-size").replace("px", "");
-		// 	var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
-		// 	cartel.find(".last-word-line").css("font-size", fontfinalsieze);
-		// }
-		break;
+			// Reseteamos los estilos.
+			cartel.find(".line-span1").removeAttr('style');
+			cartel.find(".last-word-line").removeAttr('style');
+			cartel.find(".line-span2").removeAttr('style');
+			cartel.find(".span-title-text").removeAttr('style');
+			/////////////////////////////////////////////
+			/// Espacio 1 ///////////////////////////////
+			/////////////////////////////////////////////
+			// comenzamos a asignar las palabras a los elementos del DOM.
+			cartel.find(".line-span1").html(palabras[0]+"<span id='big_last_word_01_03' class='last-word-line'>"+bigtext_alt+"</span>");
+			// % respecto al tamaño original -> (tope*100)/cantidad -> %
+			// tamaño fuente equivalente al % calculado -> (tamaño_inicial*porcentaje_al_cual_corresponde_el_tamaño)/100 -> pixeles
+			if(palabras[0].length > 19){
+				var porcentaje_tamaño_fit = (19*100)/palabras[0].length;
+				var fontdefaultsize = cartel.find(".line-span1").css("font-size").replace("px", "");
+				var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
+				cartel.find(".line-span1").css("font-size", fontfinalsieze);
+			}
+			/////////////////////////////////////////////
+			/// Espacio 2 ///////////////////////////////
+			/////////////////////////////////////////////
+			if(bigtext_alt.length > 44){
+				var porcentaje_tamaño_fit = (44*100)/bigtext_alt.length;
+				var fontdefaultsize = cartel.find(".last-word-line").css("font-size").replace("px", "");
+				var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
+				cartel.find(".last-word-line").css("font-size", fontfinalsieze);
+			}
+			/////////////////////////////////////////////
+			/// Espacio 3 ///////////////////////////////
+			/////////////////////////////////////////////
+			cartel.find(".line-span2").html(palabras[length - 2]);
+			// % respecto al tamaño original -> (tope*100)/cantidad -> %
+			// tamaño fuente equivalente al % calculado -> (tamaño_inicial*porcentaje_al_cual_corresponde_el_tamaño)/100 -> pixeles
+			if(palabras[length - 2].length > 11){
+				var porcentaje_tamaño_fit = (11*100)/palabras[length - 2].length;
+				var fontdefaultsize = cartel.find(".line-span2").css("font-size").replace("px", "");
+				var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
+				cartel.find(".line-span2").css("font-size", fontfinalsieze);
+			}
+			/////////////////////////////////////////////
+			/// Espacio 4 ///////////////////////////////
+			/////////////////////////////////////////////
+			cartel.find(".span-title-text").html(palabras[length - 1]);
+			// % respecto al tamaño original -> (tope*100)/cantidad -> %
+			// tamaño fuente equivalente al % calculado -> (tamaño_inicial*porcentaje_al_cual_corresponde_el_tamaño)/100 -> pixeles
+			if((palabras[length - 1].length) > 16){
+				var porcentaje_tamaño_fit = (16*100)/palabras[length - 1].length;
+				var fontdefaultsize = cartel.find(".span-title-text").css("font-size").replace("px", "");
+				var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
+				cartel.find(".span-title-text").css("font-size", fontfinalsieze);
+			}
+			break;
 		case "4":
 		// Reseteamos los estilos.
 		cartel.find(".line-span1").removeAttr('style');
