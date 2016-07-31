@@ -15,12 +15,21 @@ $(document).ready(function(){
 		verCAlemana();
 	});
 	// Bind textarea activity.
-	$('#text_post_content').focus(function(){
-		// bind counter
-		Countable.live(document.getElementById('text_post_content'), function(counter){
-			$.userdata.words_counter = counter;
+	if($('#text_post_content').is(':visible')){
+		$('#text_post_content').focus(function(){
+			// bind counter
+			Countable.live(document.getElementById('text_post_content'), function(counter){
+				$.userdata.words_counter = counter;
+			});
 		});
-	});
+	}else{
+		$('#text_post_content_xl').focus(function(){
+			// bind counter
+			Countable.live(document.getElementById('text_post_content'), function(counter){
+				$.userdata.words_counter = counter;
+			});
+		});
+	}
 	/******************* PASO 0 */
 	$('#btnstep0').click(function(event){
 		// Verificamos el estado del login.
@@ -73,8 +82,13 @@ $(document).ready(function(){
 			$('body').addClass("step-2-bg");
 			$('#step_2').show();
 			// Guardo el array de palabras en el objeto global.
-			$.userdata.words = $('#text_post_content').val().split(' ');
-			$.userdata.txt = $('#text_post_content').val();
+			if($('#text_post_content').is(':visible')){
+				$.userdata.words = $('#text_post_content').val().split(' ');
+				$.userdata.txt = $('#text_post_content').val();
+			}else{
+				$.userdata.words = $('#text_post_content_xl').val().split(' ');
+				$.userdata.txt = $('#text_post_content_xl').val();
+			}
 			// Guardo el identificador del tema por defecto.
 			$.userdata.template = 1
 			// Construyo el cartel.
