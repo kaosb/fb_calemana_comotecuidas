@@ -582,7 +582,10 @@ body {
 			line-height: 105px;
 			@media (max-width: 480px) {
 				font-size: 45px;
-				top: 70px; //95px;
+				top: 95px;
+			    height: 50px;
+			    overflow: hidden;
+			    line-height: 50px;
 			}
 		}
 		.line-span2, .point {
@@ -594,6 +597,13 @@ body {
 			overflow: hidden;
 		    height: 105px;
     		line-height: 105px;
+    		@media (max-width: 480px) {
+			    height: 50px;
+			    line-height: 50px;
+			    top: -29px;
+			    overflow: visible;
+			    z-index: 1;
+			}
 		}
 		.point {
 			top: -43px;
@@ -603,12 +613,20 @@ body {
     		line-height: 105px;
 			&.point-right {
 				right: 15px;
+				@media (max-width: 480px) {
+					right: 10px;
+				}
 			}
 			&.point-left {
 				left: 5px;
+				@media (max-width: 480px) {
+					left: 5px;
+					z-index: 2;
+				}
 			}
 			@media (max-width: 480px) {
 				font-size: 70px;
+				top: -37px;
 			}
 		}
 		.line-span3 {

@@ -7431,7 +7431,10 @@ body.step-2-bg .logos-footer {
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-2 .pre-line-span2 {
     font-size: 45px;
-    top: 70px;
+    top: 95px;
+    height: 50px;
+    overflow: hidden;
+    line-height: 50px;
   }
 }
 .boxes-style-color .box-msg-2 .line-span2,
@@ -7445,6 +7448,15 @@ body.step-2-bg .logos-footer {
   height: 105px;
   line-height: 105px;
 }
+@media (max-width: 480px) {
+  .boxes-style-color .box-msg-2 .line-span2 {
+    height: 50px;
+    line-height: 50px;
+    top: -29px;
+    overflow: visible;
+    z-index: 1;
+  }
+}
 .boxes-style-color .box-msg-2 .point {
   top: -43px;
   font-family: 'Great Vibes', cursive;
@@ -7455,12 +7467,24 @@ body.step-2-bg .logos-footer {
 .boxes-style-color .box-msg-2 .point.point-right {
   right: 15px;
 }
+@media (max-width: 480px) {
+  .boxes-style-color .box-msg-2 .point.point-right {
+    right: 10px;
+  }
+}
 .boxes-style-color .box-msg-2 .point.point-left {
   left: 5px;
 }
 @media (max-width: 480px) {
+  .boxes-style-color .box-msg-2 .point.point-left {
+    left: 5px;
+    z-index: 2;
+  }
+}
+@media (max-width: 480px) {
   .boxes-style-color .box-msg-2 .point {
     font-size: 70px;
+    top: -37px;
   }
 }
 .boxes-style-color .box-msg-2 .line-span3 {
