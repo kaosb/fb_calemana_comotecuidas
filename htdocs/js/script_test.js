@@ -25,7 +25,7 @@ $(document).ready(function(){
 	}else{
 		$('#text_post_content_xl').focus(function(){
 			// bind counter
-			Countable.live(document.getElementById('text_post_content'), function(counter){
+			Countable.live(document.getElementById('text_post_content_xl'), function(counter){
 				$.userdata.words_counter = counter;
 			});
 		});
