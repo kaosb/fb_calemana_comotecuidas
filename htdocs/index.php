@@ -112,11 +112,9 @@
 							<form>
 								<div class="form-group">
 									<label for="text_post_content" style="display: none">Llena con tu frase</label>
-									<input type="text" class="form-control" id="text_post_content" placeholder="">
+									<input type="text" class="form-control hidden-xs" id="text_post_content" placeholder="">
 									<!-- textarea movil -->
-									<!--
 									<textarea class="form-control visible-xs" id="text_post_content" rows="3"></textarea>
-									-->
 								</div>
 								<div class="form-group">
 									<div class="text-center">

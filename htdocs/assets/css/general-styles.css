@@ -871,10 +871,12 @@ body.step-2-bg .logos-footer {
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-3 .pre-line-span2 {
     font-size: 45px;
-    top: 90px;
+    top: 115px;
     letter-spacing: 0;
     max-width: 80%;
     margin: 0 auto;
+    height: 50px;
+    overflow: hidden;
   }
 }
 .boxes-style-color .box-msg-3 .pre-line-span2 .line-span2,
@@ -887,6 +889,12 @@ body.step-2-bg .logos-footer {
   overflow: hidden;
   height: 105px;
   line-height: 105px;
+}
+@media (max-width: 480px) {
+  .boxes-style-color .box-msg-3 .pre-line-span2 .line-span2 {
+    height: 50px;
+    line-height: 50px;
+  }
 }
 .boxes-style-color .box-msg-3 .pre-line-span2 .point {
   top: -45px;

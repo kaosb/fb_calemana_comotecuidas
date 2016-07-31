@@ -804,10 +804,12 @@ body {
 			letter-spacing: 0; //-7px;
 			@media (max-width: 480px) {
 				font-size: 45px;
-    			top: 90px;
+    			top: 115px;
 				letter-spacing: 0; //-7px;
 			    max-width: 80%;
     			margin: 0 auto;
+    			height: 50px;
+    			overflow: hidden;
 			}
 			.line-span2, .point {
 				display: inline-block;
@@ -818,6 +820,10 @@ body {
 				overflow: hidden;
 			    height: 105px;
 	    		line-height: 105px;
+	    		@media (max-width: 480px) {
+	    			height: 50px;
+	    			line-height: 50px;
+	    		}
 			}
 			.point {
 				top: -45px;
