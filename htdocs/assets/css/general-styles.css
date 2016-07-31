@@ -103,6 +103,15 @@ body.step-2-bg .logos-footer {
   text-align: center;
   margin: 0 auto;
 }
+#step_1 textarea.form-control {
+  height: 32px;
+  resize: none;
+}
+@media (max-width: 480px) {
+  #step_1 textarea.form-control {
+    height: 72px;
+  }
+}
 .logo-clinica img,
 .hashtag-10-p img {
   position: absolute;
@@ -718,6 +727,7 @@ body.step-2-bg .logos-footer {
   line-height: 100%;
   overflow: hidden;
   z-index: 1;
+  padding-bottom: 5px;
 }
 @media (max-width: 480px) {
   .boxes-style-color .box-msg-2 .line-span3 {
