@@ -810,6 +810,7 @@ body {
     			margin: 0 auto;
     			height: 50px;
     			overflow: hidden;
+    			line-height: 50px;
 			}
 			.line-span2, .point {
 				display: inline-block;
@@ -831,12 +832,19 @@ body {
 				font-size: 150px;
 				&.point-right {
 					right: 15px;
+					@media (max-width: 480px) {
+						right: 10px;
+					}
 				}
 				&.point-left {
 					left: 5px;
+					@media (max-width: 480px) {
+						left: 2px;
+					}
 				}
 				@media (max-width: 480px) {
 					font-size: 90px;
+					top: -20px;
 				}
 			}
 		}

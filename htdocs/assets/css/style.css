@@ -7623,6 +7623,7 @@ body.step-2-bg .logos-footer {
     margin: 0 auto;
     height: 50px;
     overflow: hidden;
+    line-height: 50px;
   }
 }
 .boxes-style-color .box-msg-3 .pre-line-span2 .line-span2,
@@ -7650,12 +7651,23 @@ body.step-2-bg .logos-footer {
 .boxes-style-color .box-msg-3 .pre-line-span2 .point.point-right {
   right: 15px;
 }
+@media (max-width: 480px) {
+  .boxes-style-color .box-msg-3 .pre-line-span2 .point.point-right {
+    right: 10px;
+  }
+}
 .boxes-style-color .box-msg-3 .pre-line-span2 .point.point-left {
   left: 5px;
 }
 @media (max-width: 480px) {
+  .boxes-style-color .box-msg-3 .pre-line-span2 .point.point-left {
+    left: 2px;
+  }
+}
+@media (max-width: 480px) {
   .boxes-style-color .box-msg-3 .pre-line-span2 .point {
     font-size: 90px;
+    top: -20px;
   }
 }
 .boxes-style-color .box-msg-3 .line-span3 {
