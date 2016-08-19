@@ -111,6 +111,7 @@
 						<!-- LOGO CONCURSO -->
 						<img class="feat-image" src="assets/img/llamado-copia.png">
 						<!-- contenedor mensaje -->
+
 						<!-- PASO 0 -->
 						<div id="step_0" class="content-message text-center" style="display: none;">
 							<p class="advice-msg">Hazte fan de la Clínica Alemana en Facebook,
@@ -132,15 +133,58 @@
 							<!-- fin boton participar -->
 						</div>
 						<!-- FIN PASO 0 -->
+
+
+						<!-- PASO 1 NUEVO -->
+						<div id="step_1_new" class="content-message text-center" style="display: block">
+							<p class="advice-msg">Escribe tu mejor consejo de salud usando las 4 líneas,
+							<br> puedes usar entre 7 y 10 palabras</p>
+							<form class="form-horizontal">
+								<div class="content-form-input">
+									<div class="form-group">
+										<label for="linea_1" class="col-sm-2 col-xs-3 text-right control-label">Línea 1</label>
+										<div class="col-sm-10 col-xs-9">
+											<input type="text" class="form-control input-sm" id="linea_1">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="linea_2" class="col-sm-2 col-xs-3 text-right control-label">Línea 2</label>
+										<div class="col-sm-10 col-xs-9">
+											<input type="text" class="form-control input-sm" id="linea_2">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="linea_3" class="col-sm-2 col-xs-3 text-right control-label">Línea 3</label>
+										<div class="col-sm-10 col-xs-9">
+											<input type="text" class="form-control input-sm" id="linea_3">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="linea_4" class="col-sm-2 col-xs-3 text-right control-label">Línea 4</label>
+										<div class="col-sm-10 col-xs-9">
+											<input type="text" class="form-control input-sm" id="linea_4">
+										</div>
+									</div>
+								</div>
+								
+								<div class="form-group">
+									<div class="text-center">
+										<button id="btnstep1" type="submit" class="btn btn-lg btn-default">Siguiente</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<!-- FIN PASO 1 NUEVO -->
+
 						<!-- PASO 1 -->
-						<div id="step_1" class="content-message text-center" style="display: block">
+
+						<!-- ESTE DIV LO ESCONDI -->
+
+						<div id="step_1" class="content-message text-center" style="display: none;">
 							<p class="advice-msg">Escribe tu mejor consejo de salud usando entre 7 y 10 palabras</p>
 							<form>
 								<div class="form-group">
 									<label for="text_post_content" style="display: none">Llena con tu frase</label>
-									<!--
-									<input type="text" class="form-control" id="text_post_content" placeholder="">
-									-->
 									<!-- textarea movil -->
 									<textarea class="form-control" id="text_post_content"></textarea>
 								</div>
