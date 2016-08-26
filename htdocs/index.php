@@ -147,12 +147,12 @@
 						</div>
 						<!-- FIN PASO 1 NUEVO -->
 						<!-- PASO 1 -->
-						<div id="step_1" class="content-message text-center" style="display: none;">
+<!-- 						<div id="step_1" class="content-message text-center" style="display: none;">
 							<p class="advice-msg">Escribe tu mejor consejo de salud usando entre 7 y 10 palabras</p>
 							<form>
 								<div class="form-group">
 									<label for="text_post_content" style="display: none">Llena con tu frase</label>
-									<!-- textarea movil -->
+									textarea movil
 									<textarea class="form-control" id="text_post_content"></textarea>
 								</div>
 								<div class="form-group">
@@ -161,7 +161,7 @@
 									</div>
 								</div>
 							</form>
-						</div>
+						</div> -->
 						<!-- FIN PASO 1 -->
 						<!-- PASO 2 -->
 						<div id="step_2"  style="display: none;">
