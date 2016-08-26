@@ -63,7 +63,7 @@
 					<a class="close-alert" href="#">
 						<span class="glyphicon glyphicon-remove"></span>
 					</a>
-					<p class="message">Debes usar entre 7 y 10 palabras</p>
+					<p id="alert_message" class="message">Debes usar entre 7 y 10 palabras</p>
 				</div>
 			</div>
 			<!-- fin alerta -->

@@ -103,6 +103,7 @@ $(document).ready(function(){
 				buildCartel($.userdata.words);
 			}else{
 				// Error conteo palabras texto.
+				$('#alert_message').html("Debes usar entre 7 y 10 palabras.");
 				$('#alert').fadeIn();
 				$('a.close-alert').click(function(event){
 					event.preventDefault();
@@ -111,6 +112,7 @@ $(document).ready(function(){
 			}
 		}else{
 			// Error conteo lineas texto.
+			$('#alert_message').html("Debes completar las 4 lineas con texto.");
 			$('#alert').fadeIn();
 			$('a.close-alert').click(function(event){
 				event.preventDefault();
