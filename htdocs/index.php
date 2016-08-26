@@ -106,6 +106,7 @@
 							<!-- fin boton participar -->
 						</div>
 						<!-- FIN PASO 0 -->
+						
 						<!-- PASO 1 -->
 						<div id="step_1" class="content-message text-center" style="display: none;">
 							<p class="advice-msg">Escribe tu mejor consejo de salud usando las 4 líneas,
