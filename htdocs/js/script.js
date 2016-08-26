@@ -81,6 +81,17 @@ $(document).ready(function(){
 			// Construyo el cartel.
 			buildCartel($.userdata.words_linea_1, $.userdata.words_linea_2, $.userdata.words_linea_3, $.userdata.words_linea_4);
 		});
+
+		// Guardo el array de palabras en su respectiva variable y en el objeto global.
+		$.userdata.words_linea_1 = $('#linea_1').val().split(' ');
+		$.userdata.txt_linea_1 = $('#linea_1').val();
+		$.userdata.words_linea_2 = $('#linea_2').val().split(' ');
+		$.userdata.txt_linea_2 = $('#linea_2').val();
+		$.userdata.words_linea_3 = $('#linea_3').val().split(' ');
+		$.userdata.txt_linea_3 = $('#linea_3').val();
+		$.userdata.words_linea_4 = $('#linea_4').val().split(' ');
+		$.userdata.txt_linea_4 = $('#linea_4').val();
+
 		// Verifico que la cantidad de palabras sea entre 7 y 10 palabras.
 		if(($.userdata.hasOwnProperty("words_counter_linea_1") && $.userdata.words_counter_linea_1.words > 0) && ($.userdata.hasOwnProperty("words_counter_linea_2") && $.userdata.words_counter_linea_2.words > 0) && ($.userdata.hasOwnProperty("words_counter_linea_3") && $.userdata.words_counter_linea_3.words > 0) && ($.userdata.hasOwnProperty("words_counter_linea_4") && $.userdata.words_counter_linea_4.words > 0)){
 			$contador = $.userdata.words_counter_linea_1.words + $.userdata.words_counter_linea_2.words + $.userdata.words_counter_linea_3.words + $.userdata.words_counter_linea_4.words;
@@ -88,15 +99,6 @@ $(document).ready(function(){
 				$('#step_1').hide();
 				$('body').addClass("step-2-bg");
 				$('#step_2').show();
-				// Guardo el array de palabras en su respectiva variable y en el objeto global.
-				$.userdata.words_linea_1 = $('#linea_1').val().split(' ');
-				$.userdata.txt_linea_1 = $('#linea_1').val();
-				$.userdata.words_linea_2 = $('#linea_2').val().split(' ');
-				$.userdata.txt_linea_2 = $('#linea_2').val();
-				$.userdata.words_linea_3 = $('#linea_3').val().split(' ');
-				$.userdata.txt_linea_3 = $('#linea_3').val();
-				$.userdata.words_linea_4 = $('#linea_4').val().split(' ');
-				$.userdata.txt_linea_4 = $('#linea_4').val();
 				// Guardo el identificador del tema por defecto.
 				$.userdata.template = 1
 				// Construyo el cartel.
