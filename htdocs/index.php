@@ -137,7 +137,6 @@
 										</div>
 									</div>
 								</div>
-
 								<div class="form-group">
 									<div class="text-center">
 										<button id="btnstep1" type="submit" class="btn btn-lg btn-default">Siguiente</button>
