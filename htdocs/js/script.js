@@ -101,6 +101,13 @@ $(document).ready(function(){
 		console.log($.userdata.words_linea_3);
 		console.log($.userdata.words_linea_4);
 
+		console.log("---------------------");
+
+		console.log($.userdata.words_counter_linea_1.words);
+		console.log($.userdata.words_counter_linea_2.words);
+		console.log($.userdata.words_counter_linea_3.words);
+		console.log($.userdata.words_counter_linea_4.words);
+
 
 		// Verifico que la cantidad de palabras sea entre 7 y 10 palabras.
 		if(($.userdata.hasOwnProperty("words_counter_linea_1") && $.userdata.words_counter_linea_1.words > 0) && ($.userdata.hasOwnProperty("words_counter_linea_2") && $.userdata.words_counter_linea_2.words > 0) && ($.userdata.hasOwnProperty("words_counter_linea_3") && $.userdata.words_counter_linea_3.words > 0) && ($.userdata.hasOwnProperty("words_counter_linea_4") && $.userdata.words_counter_linea_4.words > 0)){
