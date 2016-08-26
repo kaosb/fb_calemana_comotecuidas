@@ -14,12 +14,26 @@ $(document).ready(function(){
 		event.preventDefault();
 		verCAlemana();
 	});
-	// Bind textarea activity.
-	$('#text_post_content').focus(function(){
- 		// bind counter
- 		Countable.live(document.getElementById('text_post_content'), function(counter){
- 			$.userdata.words_counter = counter;
- 		});
+	// Bind campos de captura.
+	$('#linea_1').focus(function(){
+		Countable.live(document.getElementById('linea_1'), function(counter){
+			$.userdata.words_counter_linea_1 = counter;
+		});
+	});
+	$('#linea_2').focus(function(){
+		Countable.live(document.getElementById('linea_2'), function(counter){
+			$.userdata.words_counter_linea_2 = counter;
+		});
+	});
+	$('#linea_3').focus(function(){
+		Countable.live(document.getElementById('linea_3'), function(counter){
+			$.userdata.words_counter_linea_3 = counter;
+		});
+	});
+	$('#linea_4').focus(function(){
+		Countable.live(document.getElementById('linea_4'), function(counter){
+			$.userdata.words_counter_linea_3 = counter;
+		});
 	});
 	/******************* PASO 0 */
 	$('#btnstep0').click(function(event){
