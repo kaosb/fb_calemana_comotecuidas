@@ -32,7 +32,7 @@ $(document).ready(function(){
 	});
 	$('#linea_4').focus(function(){
 		Countable.live(document.getElementById('linea_4'), function(counter){
-			$.userdata.words_counter_linea_3 = counter;
+			$.userdata.words_counter_linea_4 = counter;
 		});
 	});
 	/******************* PASO 0 */
