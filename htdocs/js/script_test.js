@@ -14,16 +14,61 @@ $(document).ready(function(){
 		event.preventDefault();
 		verCAlemana();
 	});
-	// Bind textarea activity.
-	$('#text_post_content').focus(function(){
-	 	// bind counter
-	 	Countable.live(document.getElementById('text_post_content'), function(counter){
-	 		$.userdata.words_counter = counter;
- 		});
+
+
+
+	// // Bind textarea activity.
+	// $('#text_post_content').focus(function(){
+	//  	// bind counter
+	//  	Countable.live(document.getElementById('text_post_content'), function(counter){
+	//  		$.userdata.words_counter = counter;
+ // 		});
+	// });
+
+
+
+
+
+
+
+
+
+
+	// Bind campos de captura.
+	$('#linea_1').focus(function(){
+		Countable.live(document.getElementById('linea_1'), function(counter){
+			$.userdata.words_counter_linea_1 = counter;
+		});
 	});
+	$('#linea_2').focus(function(){
+		Countable.live(document.getElementById('linea_2'), function(counter){
+			$.userdata.words_counter_linea_2 = counter;
+		});
+	});
+	$('#linea_3').focus(function(){
+		Countable.live(document.getElementById('linea_3'), function(counter){
+			$.userdata.words_counter_linea_3 = counter;
+		});
+	});
+	$('#linea_4').focus(function(){
+		Countable.live(document.getElementById('linea_4'), function(counter){
+			$.userdata.words_counter_linea_3 = counter;
+		});
+	});
+
+
+
+
+
+
 	/******************* PASO 1 */
 	$('#btnstep1').click(function(event){
 		event.preventDefault();
+
+
+
+
+
 		// Bindeo el selector de themas
 		$('.box-mini').click(function(event){
 			event.preventDefault();
@@ -31,20 +76,58 @@ $(document).ready(function(){
 			$('.box-featured').hide();
 			$('#big_'+$(this).attr('id')).show();
 			// Construyo el cartel.
-			buildCartel($.userdata.words);
+			// buildCartel($.userdata.words);
+			buildCartel($.userdata.words_linea_1, $.userdata.words_linea_2, $.userdata.words_linea_3, $.userdata.words_linea_4);
 		});
+
+
+		// Debo construir esta condicion.
+		// No puede estar vacia ninguna linea.
+		// EL global se compone de la misma cantidad de palabras.
+
+
+
+
 		// Verifico que la cantidad de palabras sea entre 7 y 10 palabras.
-		if($.userdata.hasOwnProperty("words_counter") && $.userdata.words_counter.words >= 7 && $.userdata.words_counter.words <= 10){
-			$('#step_1').hide();
-			$('body').addClass("step-2-bg");
-			$('#step_2').show();
-			// Guardo el array de palabras en el objeto global.
-			$.userdata.words = $('#text_post_content').val().split(' ');
- 			$.userdata.txt = $('#text_post_content').val();
-			// Guardo el identificador del tema por defecto.
-			$.userdata.template = 1
-			// Construyo el cartel.
-			buildCartel($.userdata.words);
+		// if($.userdata.hasOwnProperty("words_counter") && $.userdata.words_counter.words >= 7 && $.userdata.words_counter.words <= 10){
+		if(($.userdata.hasOwnProperty("words_counter_linea_1") && $.userdata.words_counter_linea_1.words > 0) && ($.userdata.hasOwnProperty("words_counter_linea_2") && $.userdata.words_counter_linea_2.words > 0) && ($.userdata.hasOwnProperty("words_counter_linea_3") && $.userdata.words_counter_linea_3.words > 0) && ($.userdata.hasOwnProperty("words_counter_linea_4") && $.userdata.words_counter_linea_4.words > 0)){
+			$contador = $.userdata.words_counter_linea_1.words + $.userdata.words_counter_linea_2.words + $.userdata.words_counter_linea_3.words + $.userdata.words_counter_linea_4.words;
+			if($contador >= 7 && $contador <= 10){
+				// $('#step_1').hide();
+				
+				$('#step_1_new').hide();
+
+				$('body').addClass("step-2-bg");
+				$('#step_2').show();
+				// Guardo el array de palabras en el objeto global.
+				
+				// $.userdata.words = $('#text_post_content').val().split(' ');
+				// $.userdata.txt = $('#text_post_content').val();
+				
+				$.userdata.words_linea_1 = $('#linea_1').val().split(' ');
+				$.userdata.txt_linea_1 = $('#linea_1').val();
+				$.userdata.words_linea_2 = $('#linea_2').val().split(' ');
+				$.userdata.txt_linea_2 = $('#linea_2').val();
+				$.userdata.words_linea_3 = $('#linea_3').val().split(' ');
+				$.userdata.txt_linea_3 = $('#linea_3').val();
+				$.userdata.words_linea_4 = $('#linea_4').val().split(' ');
+				$.userdata.txt_linea_4 = $('#linea_4').val();
+
+
+				// Guardo el identificador del tema por defecto.
+				$.userdata.template = 1
+				// Construyo el cartel.
+				// buildCartel($.userdata.words);
+				buildCartel($.userdata.words_linea_1, $.userdata.words_linea_2, $.userdata.words_linea_3, $.userdata.words_linea_4);
+
+
+			}else{
+				$('#alert').fadeIn();
+				$('a.close-alert').click(function(event){
+					event.preventDefault();
+					$('#alert').fadeOut();
+				});
+			}
 		}else{
 			$('#alert').fadeIn();
 			$('a.close-alert').click(function(event){
@@ -53,6 +136,10 @@ $(document).ready(function(){
 			});
 		}
 	});
+
+
+
+
 	/******************* PASO 2 */
 	$('#btnstep2_back').click(function(event){
 		event.preventDefault();
@@ -140,26 +227,51 @@ function verHashtag(){
 	var WindowObjectReference = window.open("https://www.facebook.com/hashtag/comotecuidasen10palabras", "ver_hashtag", "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes");
 }
 // construye el cartel.
-function buildCartel(palabras){
+function buildCartel(palabras_linea_1, palabras_linea_2, palabras_linea_3, palabras_linea_4){
+
+
+
+
 	var cartel = $('.box-featured:visible');
 	// obtengo el array y la cantidad de palabras entre de 7 a 10.
-	var length = palabras.length
+	// var length = palabras.length
+
+
+
+
+
+	var length_linea_1 = palabras_linea_1.length;
+	var length_linea_2 = palabras_linea_2.length;
+	var length_linea_3 = palabras_linea_3.length;
+	var length_linea_4 = palabras_linea_4.length;
+
+
+
+
+
 	// detectamos que de que plantilla se trata
 	// Cargamos el template seleccionado.
 	$.userdata.template = cartel.attr('template');
 	// Concateno acorde al largo maximo de palabras y las palabras aportadas para evitar los textos undefined.
+	
 	var bigtext = "";
 	for(i = 2;(i < length-1) && (palabras[i] !== undefined);i++){
 		bigtext += palabras[i]+" ";
 	}
+
+
 	var bigtext_alt = "";
 	for(i = 1;(i < length-2) && (palabras[i] !== undefined);i++){
 		bigtext_alt += palabras[i]+" ";
 	}
+
+
 	var bigtext_five = "";
 	for(i = 0;(i < length-2) && (palabras[i] !== undefined);i++){
 		bigtext_five += palabras[i]+" ";
 	}
+
+
 	// Acorde a lo seleccionado desplegamos.
 	switch(cartel.attr('template')){
 		case "1":
