@@ -131,7 +131,7 @@ $(document).ready(function(){
 					}else{
 						// Cuarta linea.
 						// Error conteo lineas texto.
-						$('#alert_message').html("Debes completar la primera linea con texto.");
+						$('#alert_message').html("Debes completar la cuarta linea con texto.");
 						$('#alert').fadeIn();
 						$('a.close-alert').click(function(event){
 							event.preventDefault();
