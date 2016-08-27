@@ -81,19 +81,25 @@ $(document).ready(function(){
 			// Construyo el cartel.
 			buildCartel($.userdata.words_linea_1, $.userdata.words_linea_2, $.userdata.words_linea_3, $.userdata.words_linea_4);
 		});
-
-
-
-
-		// Guardo el array de palabras en su respectiva variable y en el objeto global.
-		$.userdata.words_linea_1 = $('#linea_1').val().split(' ');
-		$.userdata.txt_linea_1 = $('#linea_1').val();
-		$.userdata.words_linea_2 = $('#linea_2').val().split(' ');
-		$.userdata.txt_linea_2 = $('#linea_2').val();
-		$.userdata.words_linea_3 = $('#linea_3').val().split(' ');
-		$.userdata.txt_linea_3 = $('#linea_3').val();
-		$.userdata.words_linea_4 = $('#linea_4').val().split(' ');
-		$.userdata.txt_linea_4 = $('#linea_4').val();
+		// Verifico que la cantidad de palabras sea entre 7 y 10 palabras.
+		if($.userdata.hasOwnProperty("words_counter_linea_1") && $.userdata.words_counter_linea_1.words > 0){
+			if($.userdata.hasOwnProperty("words_counter_linea_2") && $.userdata.words_counter_linea_2.words > 0){
+				if($.userdata.hasOwnProperty("words_counter_linea_3") && $.userdata.words_counter_linea_3.words > 0){
+					if($.userdata.hasOwnProperty("words_counter_linea_4") && $.userdata.words_counter_linea_4.words > 0){
+						$contador = $.userdata.words_counter_linea_1.words + $.userdata.words_counter_linea_2.words + $.userdata.words_counter_linea_3.words + $.userdata.words_counter_linea_4.words;
+						if($contador >= 7 && $contador <= 10){
+							$('#step_1').hide();
+							$('body').addClass("step-2-bg");
+							$('#step_2').show();
+							// Guardo el array de palabras en su respectiva variable y en el objeto global.
+							$.userdata.words_linea_1 = $('#linea_1').val().split(' ');
+							$.userdata.txt_linea_1 = $('#linea_1').val();
+							$.userdata.words_linea_2 = $('#linea_2').val().split(' ');
+							$.userdata.txt_linea_2 = $('#linea_2').val();
+							$.userdata.words_linea_3 = $('#linea_3').val().split(' ');
+							$.userdata.txt_linea_3 = $('#linea_3').val();
+							$.userdata.words_linea_4 = $('#linea_4').val().split(' ');
+							$.userdata.txt_linea_4 = $('#linea_4').val();
 
 
 		console.log($.userdata.words_linea_1);
@@ -109,20 +115,43 @@ $(document).ready(function(){
 		console.log($.userdata.words_counter_linea_4.words);
 
 
-		// Verifico que la cantidad de palabras sea entre 7 y 10 palabras.
-		if(($.userdata.hasOwnProperty("words_counter_linea_1") && $.userdata.words_counter_linea_1.words > 0) && ($.userdata.hasOwnProperty("words_counter_linea_2") && $.userdata.words_counter_linea_2.words > 0) && ($.userdata.hasOwnProperty("words_counter_linea_3") && $.userdata.words_counter_linea_3.words > 0) && ($.userdata.hasOwnProperty("words_counter_linea_4") && $.userdata.words_counter_linea_4.words > 0)){
-			$contador = $.userdata.words_counter_linea_1.words + $.userdata.words_counter_linea_2.words + $.userdata.words_counter_linea_3.words + $.userdata.words_counter_linea_4.words;
-			if($contador >= 7 && $contador <= 10){
-				$('#step_1').hide();
-				$('body').addClass("step-2-bg");
-				$('#step_2').show();
-				// Guardo el identificador del tema por defecto.
-				$.userdata.template = 1
-				// Construyo el cartel.
-				buildCartel($.userdata.words);
+							// Guardo el identificador del tema por defecto.
+							$.userdata.template = 1
+							// Construyo el cartel.
+							buildCartel($.userdata.words);
+						}else{
+							// Error conteo palabras texto.
+							$('#alert_message').html("Debes usar entre 7 y 10 palabras.");
+							$('#alert').fadeIn();
+							$('a.close-alert').click(function(event){
+								event.preventDefault();
+								$('#alert').fadeOut();
+							});
+						}
+					}else{
+						// Cuarta linea.
+						// Error conteo lineas texto.
+						$('#alert_message').html("Debes completar la primera linea con texto.");
+						$('#alert').fadeIn();
+						$('a.close-alert').click(function(event){
+							event.preventDefault();
+							$('#alert').fadeOut();
+						});
+					}
+				}else{
+					// Tercera linea.
+					// Error conteo lineas texto.
+					$('#alert_message').html("Debes completar la tercera linea con texto.");
+					$('#alert').fadeIn();
+					$('a.close-alert').click(function(event){
+						event.preventDefault();
+						$('#alert').fadeOut();
+					});
+				}
 			}else{
-				// Error conteo palabras texto.
-				$('#alert_message').html("Debes usar entre 7 y 10 palabras.");
+				// Segunda linea.
+				// Error conteo lineas texto.
+				$('#alert_message').html("Debes completar la segunda linea con texto.");
 				$('#alert').fadeIn();
 				$('a.close-alert').click(function(event){
 					event.preventDefault();
@@ -130,8 +159,9 @@ $(document).ready(function(){
 				});
 			}
 		}else{
+			// Primera linea.
 			// Error conteo lineas texto.
-			$('#alert_message').html("Debes completar las 4 lineas con texto.");
+			$('#alert_message').html("Debes completar la primera linea con texto.");
 			$('#alert').fadeIn();
 			$('a.close-alert').click(function(event){
 				event.preventDefault();
