@@ -370,7 +370,7 @@ function buildCartel(linea_1, linea_2, linea_3, linea_4){
 			cartel.find(".line-span2").removeAttr('style');
 			cartel.find(".span-title-text").removeAttr('style');
 			// Espacio 1
-			cartel.find(".line-span1").html(length_1_txt);
+			cartel.find(".line-span1").html(length_1_txt+"<span id='big_last_word_01_03' class='last-word-line'>"+length_2_txt+"</span>");
 			if(length_1_txt.length > 19){
 				var porcentaje_tamaño_fit = (19*100)/length_1_txt.length;
 				var fontdefaultsize = cartel.find(".line-span1").css("font-size").replace("px", "");
