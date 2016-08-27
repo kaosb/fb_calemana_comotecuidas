@@ -100,25 +100,10 @@ $(document).ready(function(){
 							$.userdata.txt_linea_3 = $('#linea_3').val();
 							$.userdata.words_linea_4 = $('#linea_4').val().split(' ');
 							$.userdata.txt_linea_4 = $('#linea_4').val();
-
-
-		console.log($.userdata.words_linea_1);
-		console.log($.userdata.words_linea_2);
-		console.log($.userdata.words_linea_3);
-		console.log($.userdata.words_linea_4);
-
-		console.log("---------------------");
-
-		console.log($.userdata.words_counter_linea_1.words);
-		console.log($.userdata.words_counter_linea_2.words);
-		console.log($.userdata.words_counter_linea_3.words);
-		console.log($.userdata.words_counter_linea_4.words);
-
-
 							// Guardo el identificador del tema por defecto.
 							$.userdata.template = 1
 							// Construyo el cartel.
-							buildCartel($.userdata.words);
+							buildCartel($.userdata.words_linea_1, $.userdata.words_linea_2, $.userdata.words_linea_3, $.userdata.words_linea_4);
 						}else{
 							// Error conteo palabras texto.
 							$('#alert_message').html("Debes usar entre 7 y 10 palabras.");
@@ -294,13 +279,27 @@ function verHashtag(){
 	var WindowObjectReference = window.open("https://www.facebook.com/hashtag/comotecuidasen10palabras", "ver_hashtag", "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes");
 }
 // construye el cartel.
-function buildCartel(palabras){
+function buildCartel(linea_1, linea_2, linea_3, linea_4){
 	var cartel = $('.box-featured:visible');
-	// obtengo el array y la cantidad de palabras entre de 7 a 10.
-	var length = palabras.length
-	// detectamos que de que plantilla se trata
 	// Cargamos el template seleccionado.
 	$.userdata.template = cartel.attr('template');
+
+
+	// obtengo el array y la cantidad de palabras entre de 7 a 10.
+	var length_1 = linea_1.length
+	var length_2 = linea_2.length
+	var length_3 = linea_3.length
+	var length_4 = linea_4.length
+
+	var length_1_txt = linea_1.join(" ");
+	var length_2_txt = linea_2.join(" ");
+	var length_3_txt = linea_3.join(" ");
+	var length_4_txt = linea_4.join(" ");
+
+
+
+
+
 	// Concateno acorde al largo maximo de palabras y las palabras aportadas para evitar los textos undefined.
 	var bigtext = "";
 	for(i = 2;(i < length-1) && (palabras[i] !== undefined);i++){
@@ -314,44 +313,42 @@ function buildCartel(palabras){
 	for(i = 0;(i < length-2) && (palabras[i] !== undefined);i++){
 		bigtext_five += palabras[i]+" ";
 	}
+
+
+
+
+
 	// Acorde a lo seleccionado desplegamos.
+	// Importante
+	// % respecto al tamaño original -> (tope*100)/cantidad -> %
+	// tamaño fuente equivalente al % calculado -> (tamaño_inicial*porcentaje_al_cual_corresponde_el_tamaño)/100 -> pixeles
 	switch(cartel.attr('template')){
 		case "1":
+			// Construyo bigtext
+			var bigtext = length_3_txt + " " + length_4_txt;
 			// Reseteamos los estilos.
 			cartel.find(".span-title-text").removeAttr('style');
 			cartel.find(".line-span2").removeAttr('style');
-			/////////////////////////////////////////////
-			/// Espacio 1 ///////////////////////////////
-			/////////////////////////////////////////////
-			cartel.find(".span-title-text").html(palabras[0]);
+			// Espacio 1
+			cartel.find(".span-title-text").html(length_1_txt);
 			cartel.find(".span-title-text").css("text-transform", "uppercase !important");
-			// % respecto al tamaño original -> (tope*100)/cantidad -> %
-			// tamaño fuente equivalente al % calculado -> (tamaño_inicial*porcentaje_al_cual_corresponde_el_tamaño)/100 -> pixeles
-			if(palabras[0].length > 11){
-				var porcentaje_tamaño_fit = (11*100)/palabras[0].length;
+			if(length_1_txt.length > 11){
+				var porcentaje_tamaño_fit = (11*100)/length_1_txt.length;
 				var fontdefaultsize = cartel.find(".span-title-text").css("font-size").replace("px", "");
 				var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
 				cartel.find(".span-title-text").css("font-size", fontfinalsieze);
 			}
-			/////////////////////////////////////////////
-			/// Espacio 2 ///////////////////////////////
-			/////////////////////////////////////////////
-			cartel.find(".line-span2").html(palabras[1]);
+			// Espacio 2
+			cartel.find(".line-span2").html(length_2_txt);
 			cartel.find(".line-span2").css("text-transform", "capitalize !important");
-			// % respecto al tamaño original -> (tope*100)/cantidad -> %
-			// tamaño fuente equivalente al % calculado -> (tamaño_inicial*porcentaje_al_cual_corresponde_el_tamaño)/100 -> pixeles
-			if(palabras[1].length > 14){
-				var porcentaje_tamaño_fit = (14*100)/palabras[1].length;
+			if(length_2_txt.length > 14){
+				var porcentaje_tamaño_fit = (14*100)/length_2_txt.length;
 				var fontdefaultsize = cartel.find(".line-span2").css("font-size").replace("px", "");
 				var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
 				cartel.find(".line-span2").css("font-size", fontfinalsieze);
 			}
-			/////////////////////////////////////////////
-			/// Espacio 3 ///////////////////////////////
-			/////////////////////////////////////////////
+			// Espacio 3
 			cartel.find(".line-span3").html(bigtext+' '+'<span id="big_last_word_03_01" class="last-word-line">'+ palabras[length-1] +'</span>');
-			// % respecto al tamaño original -> (tope*100)/cantidad -> %
-			// tamaño fuente equivalente al % calculado -> (tamaño_inicial*porcentaje_al_cual_corresponde_el_tamaño)/100 -> pixeles
 			if((bigtext.length + palabras[length-1].length) > 45){
 				var porcentaje_tamaño_fit = (45*100)/(bigtext.length + palabras[length-1].length);
 				var fontdefaultsize = cartel.find(".line-span3").css("font-size").replace("px", "");
