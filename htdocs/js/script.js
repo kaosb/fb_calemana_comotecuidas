@@ -393,9 +393,9 @@ function buildCartel(linea_1, linea_2, linea_3, linea_4){
 				cartel.find(".line-span2").css("font-size", fontfinalsieze);
 			}
 			// Espacio 4
-			cartel.find(".span-title-text").html(length_3_txt);
-			if((length_3_txt.length) > 16){
-				var porcentaje_tamaño_fit = (16*100)/length_3_txt.length;
+			cartel.find(".span-title-text").html(length_4_txt);
+			if((length_4_txt.length) > 16){
+				var porcentaje_tamaño_fit = (16*100)/length_4_txt.length;
 				var fontdefaultsize = cartel.find(".span-title-text").css("font-size").replace("px", "");
 				var fontfinalsieze = (fontdefaultsize*porcentaje_tamaño_fit)/100;
 				cartel.find(".span-title-text").css("font-size", fontfinalsieze);
