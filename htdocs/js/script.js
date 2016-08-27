@@ -301,18 +301,18 @@ function buildCartel(linea_1, linea_2, linea_3, linea_4){
 
 
 	// Concateno acorde al largo maximo de palabras y las palabras aportadas para evitar los textos undefined.
-	var bigtext = "";
-	for(i = 2;(i < length-1) && (palabras[i] !== undefined);i++){
-		bigtext += palabras[i]+" ";
-	}
-	var bigtext_alt = "";
-	for(i = 1;(i < length-2) && (palabras[i] !== undefined);i++){
-		bigtext_alt += palabras[i]+" ";
-	}
-	var bigtext_five = "";
-	for(i = 0;(i < length-2) && (palabras[i] !== undefined);i++){
-		bigtext_five += palabras[i]+" ";
-	}
+	// var bigtext = "";
+	// for(i = 2;(i < length-1) && (palabras[i] !== undefined);i++){
+	// 	bigtext += palabras[i]+" ";
+	// }
+	// var bigtext_alt = "";
+	// for(i = 1;(i < length-2) && (palabras[i] !== undefined);i++){
+	// 	bigtext_alt += palabras[i]+" ";
+	// }
+	// var bigtext_five = "";
+	// for(i = 0;(i < length-2) && (palabras[i] !== undefined);i++){
+	// 	bigtext_five += palabras[i]+" ";
+	// }
 
 
 
@@ -326,6 +326,7 @@ function buildCartel(linea_1, linea_2, linea_3, linea_4){
 		case "1":
 			// Construyo bigtext
 			var bigtext = length_3_txt + " " + length_4_txt;
+			console.log(bigtext);
 			// Reseteamos los estilos.
 			cartel.find(".span-title-text").removeAttr('style');
 			cartel.find(".line-span2").removeAttr('style');
