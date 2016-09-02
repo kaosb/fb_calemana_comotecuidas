@@ -6835,6 +6835,10 @@ body.step-2-bg .logos-footer {
     margin-bottom: 0;
   }
 }
+#btnstep1sample {
+  font-size: 21px;
+  padding: 8px 20px;
+}
 #btnstep1 {
   font-size: 21px;
   padding: 8px 20px;

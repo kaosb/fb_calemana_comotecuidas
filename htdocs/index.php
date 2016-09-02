@@ -110,7 +110,8 @@
 						<div id="step_1" class="content-message text-center" style="display: none;">
 							<p class="advice-msg">Escribe tu mejor consejo de salud usando las 4 líneas,
 							<br> puedes usar entre 7 y 10 palabras</p>
-							<form class="form-horizontal">
+							<form class="form-horizontal" style="
+    margin-left: -55px;>
 								<div class="content-form-input">
 									<div class="form-group">
 										<label for="linea_1" class="col-sm-2 col-xs-3 text-right control-label">Línea 1</label>
@@ -138,8 +139,9 @@
 									</div>
 								</div>
 								<div class="form-group">
-									<div class="button-select">
-										<a id="btnstep1" class="btn btn-lg btn-default">Ejemplo</a>
+									<div class="button-select" style="
+    padding-left: 55px;>
+										<a id="btnstep1sample" class="btn btn-lg btn-default">Ejemplo</a>
 										<a id="btnstep1" class="btn btn-lg btn-default">Siguiente</a>
 									</div>
 <!-- 									<div class="text-center">
