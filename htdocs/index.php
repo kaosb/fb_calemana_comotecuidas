@@ -68,6 +68,13 @@
 			</div>
 			<!-- fin alerta -->
 		</div>
+		<!-- HELP -->
+		<div id="help" class="bg-lightbox" style="max-width:350px;display: none;">
+			<a class="close-help" href="#">
+				<span class="glyphicon glyphicon-remove"></span>
+			</a>
+			<img id='sample1' style='width:100%;height:auto;' src='assets/img/sample.jpg' />
+		</div>
 		<!-- fin BG LIGHTBOX -->
 		<div id="loader" style="position:absolute;top:0px;left:0px;width:100%;height:100%;background:rgba(0, 0, 0, 0.7);z-index:9;display: none;">
 			<img src="assets/img/hourglass.svg" alt="loader" style="max-width:90px;position:absolute;top:50%;margin-top:-45px;left:50%;margin-left:-45px;z-index:10;" />

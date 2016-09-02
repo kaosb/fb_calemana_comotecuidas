@@ -238,15 +238,10 @@ $(document).ready(function(){
 
 	/*** SAMPLE */
 	$('#btnstep1_sample').click(function(event){
-		$('#alert_message').hide();
-		$('#alert > div > div').append("<img id='sample1' style='width:100%;height:auto;max-width:350px;' src='assets/img/sample.jpg' />").css('padding', 0).css('max-width:', 350);
-		$('#alert').fadeIn();
+		$('#help').fadeIn();
 		$('a.close-alert').click(function(event){
 			event.preventDefault();
-			$('#alert_message').show();
-			$('#alert > div > div').css('padding', 20).css('max-width', '');
-			$('#sample1').remove();
-			$('#alert').fadeOut();
+			$('#help').fadeOut();
 		});
 	});
 
