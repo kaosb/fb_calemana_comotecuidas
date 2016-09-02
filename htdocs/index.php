@@ -138,9 +138,13 @@
 									</div>
 								</div>
 								<div class="form-group">
-									<div class="text-center">
-										<button id="btnstep1" type="submit" class="btn btn-lg btn-default">Siguiente</button>
+									<div class="button-select">
+										<a id="btnstep1sample" class="btn btn-lg btn-default">Ejemplo</a>
+										<a id="btnstep1" class="btn btn-lg btn-default">Siguiente</a>
 									</div>
+<!-- 									<div class="text-center">
+										<button id="btnstep1" type="submit" class="btn btn-lg btn-default">Siguiente</button>
+									</div> -->
 								</div>
 							</form>
 						</div>
