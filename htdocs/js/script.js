@@ -117,7 +117,7 @@ $(document).ready(function(){
 						// Cuarta linea.
 						// Error conteo lineas texto.
 						// $('#alert_message').html("Debes completar la cuarta linea con texto.");
-						$('#alert_message').html("Debes escribir en todas las lineas.");
+						$('#alert_message').html("Debes escribir en todas las líneas.");
 						$('#alert').fadeIn();
 						$('a.close-alert').click(function(event){
 							event.preventDefault();
@@ -128,7 +128,7 @@ $(document).ready(function(){
 					// Tercera linea.
 					// Error conteo lineas texto.
 					// $('#alert_message').html("Debes completar la tercera linea con texto.");
-					$('#alert_message').html("Debes escribir en todas las lineas.");
+					$('#alert_message').html("Debes escribir en todas las líneas.");
 					$('#alert').fadeIn();
 					$('a.close-alert').click(function(event){
 						event.preventDefault();
@@ -139,7 +139,7 @@ $(document).ready(function(){
 				// Segunda linea.
 				// Error conteo lineas texto.
 				// $('#alert_message').html("Debes completar la segunda linea con texto.");
-				$('#alert_message').html("Debes escribir en todas las lineas.");
+				$('#alert_message').html("Debes escribir en todas las líneas.");
 				$('#alert').fadeIn();
 				$('a.close-alert').click(function(event){
 					event.preventDefault();
@@ -150,7 +150,7 @@ $(document).ready(function(){
 			// Primera linea.
 			// Error conteo lineas texto.
 			// $('#alert_message').html("Debes completar la primera linea con texto.");
-			$('#alert_message').html("Debes escribir en todas las lineas.");
+			$('#alert_message').html("Debes escribir en todas las líneas.");
 			$('#alert').fadeIn();
 			$('a.close-alert').click(function(event){
 				event.preventDefault();
