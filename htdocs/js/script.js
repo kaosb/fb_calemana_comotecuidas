@@ -239,7 +239,7 @@ $(document).ready(function(){
 	/*** SAMPLE */
 	$('#btnstep1_sample').click(function(event){
 		$('#alert_message').hide();
-		$('#alert > div > div').append("<img id='sample1' style='width:100%;' src='assets/img/sample.jpg' />").css('padding', 0);
+		$('#alert > div > div').append("<img id='sample1' style='width:100%;height:auto;max-width:350px;' src='assets/img/sample.jpg' />").css('padding', 0);
 		$('#alert').fadeIn();
 		$('a.close-alert').click(function(event){
 			event.preventDefault();
