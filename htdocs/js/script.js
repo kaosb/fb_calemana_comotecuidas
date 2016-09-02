@@ -235,6 +235,16 @@ $(document).ready(function(){
 			}
 		});
 	});
+
+	$('#btnstep1_sample').click(function(event){
+		$('#alert_message').html("<img src='assets/img/sample.jpg' />");
+		$('#alert').fadeIn();
+		$('a.close-alert').click(function(event){
+			event.preventDefault();
+			$('#alert').fadeOut();
+		});
+	});
+
 });
 
 /******************* HELPERS */
