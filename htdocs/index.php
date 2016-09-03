@@ -69,7 +69,7 @@
 			<!-- fin alerta -->
 		</div>
 		<!-- HELP -->
-		<div id="help" class="bg-lightbox" style="display: block;">			
+		<div id="help" class="bg-lightbox" style="display: none;">			
 			<!-- alerta ejemplo -->
 			<div id="alert_message_help" class="box-alert">
 				<div class="text-center">
