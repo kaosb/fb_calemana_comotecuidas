@@ -225,6 +225,30 @@ body.step-2-bg .logos-footer {
   vertical-align: middle;
   padding: 20px;
 }
+#step_1_new .button-select {
+  padding-left: 55px;
+}
+#step_1_new .button-select .btn {
+  font-size: 21px;
+  padding: 8px 20px;
+}
+#help .box-alert {
+  width: 378px;
+  height: 404px;
+  margin-top: -202px;
+  margin-left: -189px;
+  background-color: #1d6465;
+}
+@media (max-width: 450px) {
+  #help .box-alert {
+    width: 80%;
+    height: auto;
+    margin-left: -40%;
+  }
+  #help .box-alert img {
+    width: 100%;
+  }
+}
 .boxes-style-color {
   position: relative;
   margin-top: 10px;

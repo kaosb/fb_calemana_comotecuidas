@@ -69,11 +69,16 @@
 			<!-- fin alerta -->
 		</div>
 		<!-- HELP -->
-		<div id="help" class="bg-lightbox" style="max-width:350px;display: none;">
-			<a class="close-help" href="#">
-				<span class="glyphicon glyphicon-remove"></span>
-			</a>
-			<img id='sample1' style='width:100%;height:auto;' src='assets/img/sample.jpg' />
+		<div id="help" class="bg-lightbox" style="display: block;">			
+			<!-- alerta ejemplo -->
+			<div id="alert_message_help" class="box-alert">
+				<div class="text-center">
+					<a class="close-alert" href="#">
+						<span class="glyphicon glyphicon-remove"></span>
+					</a>
+					<img id='sample1' style='' src='assets/img/sample.jpg' />
+				</div>
+			</div>
 		</div>
 		<!-- fin BG LIGHTBOX -->
 		<div id="loader" style="position:absolute;top:0px;left:0px;width:100%;height:100%;background:rgba(0, 0, 0, 0.7);z-index:9;display: none;">
