@@ -81,11 +81,11 @@ body.step-2-bg .logos-footer {
   padding: 0 30px 0;
   margin-top: 5px;
 }
-.form-horizontal {
+#step_1 .form-horizontal {
   margin-bottom: -30px;
 }
-@media (max-width: 779px) {
-  .form-horizontal {
+@media (max-width: 480px) {
+  #step_1 .form-horizontal {
     margin-bottom: 0;
   }
 }
