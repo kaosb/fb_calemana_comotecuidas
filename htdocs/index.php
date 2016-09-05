@@ -151,7 +151,7 @@
 								</div>
 								<div class="form-group">
 									<div class="button-select" style="padding-left: 55px;" >
-										<a id="btnstep1_sample" style="font-size:21px;padding: 8px 20px;" class="btn btn-lg btn-default">Ejemplo</a>
+<!-- 										<a id="btnstep1_sample" style="font-size:21px;padding: 8px 20px;" class="btn btn-lg btn-default">Ejemplo</a> -->
 										<a id="btnstep1" class="btn btn-lg btn-default">Siguiente</a>
 									</div>
 <!-- 									<div class="text-center">
