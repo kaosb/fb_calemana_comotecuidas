@@ -69,7 +69,7 @@
 			<!-- fin alerta -->
 		</div>
 		<!-- HELP -->
-		<div id="help" class="bg-lightbox" style="display: none;">			
+		<div id="help" class="bg-lightbox" style="display: none;">
 			<!-- alerta ejemplo -->
 			<div id="alert_message_help" class="box-alert">
 				<div class="text-center">
@@ -102,7 +102,7 @@
 							<br>
 							comparte tu mejor consejo de salud y
 							<br>
-							participa por una de las 
+							participa por una de las
 							<br>
 							6 gift card de $50.000</p>
 							<!-- boton participar -->
@@ -127,25 +127,25 @@
 									<div class="form-group">
 										<label for="linea_1" class="col-sm-2 col-xs-3 text-right control-label">Línea 1</label>
 										<div class="col-sm-10 col-xs-9">
-											<input type="text" class="form-control input-sm" id="linea_1">
+											<input type="text" class="form-control input-sm" placeholder="Dieta, ejercicios y chequeos" id="linea_1">
 										</div>
 									</div>
 									<div class="form-group">
 										<label for="linea_2" class="col-sm-2 col-xs-3 text-right control-label">Línea 2</label>
 										<div class="col-sm-10 col-xs-9">
-											<input type="text" class="form-control input-sm" id="linea_2">
+											<input type="text" class="form-control input-sm" placeholder="para mantenerse" id="linea_2">
 										</div>
 									</div>
 									<div class="form-group">
 										<label for="linea_3" class="col-sm-2 col-xs-3 text-right control-label">Línea 3</label>
 										<div class="col-sm-10 col-xs-9">
-											<input type="text" class="form-control input-sm" id="linea_3">
+											<input type="text" class="form-control input-sm" placeholder="saludable" id="linea_3">
 										</div>
 									</div>
 									<div class="form-group">
 										<label for="linea_4" class="col-sm-2 col-xs-3 text-right control-label">Línea 4</label>
 										<div class="col-sm-10 col-xs-9">
-											<input type="text" class="form-control input-sm" id="linea_4">
+											<input type="text" class="form-control input-sm" placeholder="y en forma" id="linea_4">
 										</div>
 									</div>
 								</div>

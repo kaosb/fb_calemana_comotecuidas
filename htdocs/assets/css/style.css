@@ -6845,14 +6845,14 @@ body.step-2-bg .logos-footer {
 }
 .content-form-input .control-label {
   padding: 0;
-  padding-top: 5px;
+  padding-top: 2px;
   font-size: 12px;
 }
 .content-form-input .form-group {
   margin-bottom: 1px;
 }
 .content-form-input .input-sm {
-  height: 25px;
+  height: 21px;
 }
 @media (max-width: 480px) {
   .content-form-input {
