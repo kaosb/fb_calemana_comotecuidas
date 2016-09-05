@@ -127,31 +127,31 @@
 									<div class="form-group">
 										<label for="linea_1" class="col-sm-2 col-xs-3 text-right control-label">Línea 1</label>
 										<div class="col-sm-10 col-xs-9">
-											<input type="text" class="form-control input-sm" placeholder="Dieta, ejercicios y chequeos" id="linea_1">
+											<input type="text" class="form-control input-sm" placeholder="Ejemplo: Caminando" id="linea_1">
 										</div>
 									</div>
 									<div class="form-group">
 										<label for="linea_2" class="col-sm-2 col-xs-3 text-right control-label">Línea 2</label>
 										<div class="col-sm-10 col-xs-9">
-											<input type="text" class="form-control input-sm" placeholder="para mantenerse" id="linea_2">
+											<input type="text" class="form-control input-sm" placeholder="al trabajo," id="linea_2">
 										</div>
 									</div>
 									<div class="form-group">
 										<label for="linea_3" class="col-sm-2 col-xs-3 text-right control-label">Línea 3</label>
 										<div class="col-sm-10 col-xs-9">
-											<input type="text" class="form-control input-sm" placeholder="saludable" id="linea_3">
+											<input type="text" class="form-control input-sm" placeholder="comiendo saludablemente" id="linea_3">
 										</div>
 									</div>
 									<div class="form-group">
 										<label for="linea_4" class="col-sm-2 col-xs-3 text-right control-label">Línea 4</label>
 										<div class="col-sm-10 col-xs-9">
-											<input type="text" class="form-control input-sm" placeholder="y en forma" id="linea_4">
+											<input type="text" class="form-control input-sm" placeholder="y riendo lo más posible" id="linea_4">
 										</div>
 									</div>
 								</div>
 								<div class="form-group">
 									<div class="button-select" style="padding-left: 55px;" >
-										<a id="btnstep1_sample" style="font-size:21px;padding: 8px 20px;" class="btn btn-lg btn-default">Ejemplo</a>
+<!-- 										<a id="btnstep1_sample" style="font-size:21px;padding: 8px 20px;" class="btn btn-lg btn-default">Ejemplo</a> -->
 										<a id="btnstep1" class="btn btn-lg btn-default">Siguiente</a>
 									</div>
 <!-- 									<div class="text-center">
