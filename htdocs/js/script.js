@@ -282,7 +282,7 @@ function checkParticipantion(userId){
 }
 // despiela las bases.
 function verBases(){
-	var WindowObjectReference = window.open("bases.pdf", "bases_concurso", "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes");
+	var WindowObjectReference = window.open("http://www.alemana.cl/concursos/BasesProtocolizadasFBComoTeCuidasNov2016.pdf", "bases_concurso", "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes");
 }
 // despiela pagina clinica alemana.
 function verCAlemana(){
