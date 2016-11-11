@@ -44,7 +44,8 @@ $(document).ready(function(){
 			if(response.status == 'connected'){
 				onLogin(response);
 				if($.userdata.userID != null && $.userdata.userID != undefined && $.userdata.accessToken != null && $.userdata.accessToken != undefined){
-					if(!checkParticipantion($.userdata.userID)){
+					var checkResponse = checkParticipantion($.userdata.userID);
+					if(!checkResponse){
 						alert("Ya recibimos tu primer consejo y estás participando. Ahora puedes dejar más consejos de salud.");
 					}
 					$('#step_0').fadeOut('fast', function() {
@@ -56,11 +57,11 @@ $(document).ready(function(){
 				FB.login(function(response){
 					onLogin(response);
 					if($.userdata.userID != null && $.userdata.userID != undefined && $.userdata.accessToken != null && $.userdata.accessToken != undefined){
-						// var checkResponse = checkParticipantion($.userdata.userID);
-						// if(!checkResponse){
-						// 	alert("Ya habias participado, ahora puedes volver a publicar tu consejo de salud.");
-						// }
-						// // avanzamos al paso 1
+						var checkResponse = checkParticipantion($.userdata.userID);
+						if(!checkResponse){
+							alert("Ya recibimos tu primer consejo y estás participando. Ahora puedes dejar más consejos de salud.");
+						}
+						// avanzamos al paso 1
 						$('#step_0').fadeOut('fast', function() {
 							$('#step_1').fadeIn('fast');
 						});
