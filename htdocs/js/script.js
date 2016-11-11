@@ -56,7 +56,8 @@ $(document).ready(function(){
 				FB.login(function(response){
 					onLogin(response);
 					if($.userdata.userID != null && $.userdata.userID != undefined && $.userdata.accessToken != null && $.userdata.accessToken != undefined){
-						if(!checkParticipantion($.userdata.userID)){
+						var checkResponse = checkParticipantion($.userdata.userID);
+						if(!checkResponse){
 							alert("Ya habias participado, ahora puedes volver a publicar tu consejo de salud.");
 						}
 						// avanzamos al paso 1
