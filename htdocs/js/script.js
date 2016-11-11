@@ -44,7 +44,7 @@ $(document).ready(function(){
 			if(response.status == 'connected'){
 				onLogin(response);
 				if($.userdata.userID != null && $.userdata.userID != undefined && $.userdata.accessToken != null && $.userdata.accessToken != undefined){
-					if(checkParticipantion($.userdata.userID)){
+					if(!checkParticipantion($.userdata.userID)){
 						alert("Ya recibimos tu primer consejo y estás participando. Ahora puedes dejar más consejos de salud.");
 					}
 					$('#step_0').fadeOut('fast', function() {
