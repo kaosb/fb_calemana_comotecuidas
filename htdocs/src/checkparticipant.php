@@ -1,5 +1,5 @@
 <?php
-if(isset($_POST['uid'])){
+if(isset($_POST['userID'])){
 	include("connection.php");
 	$userID = $_POST['userID'];
 	$query = "select * from participant where userID = '$userID'";
