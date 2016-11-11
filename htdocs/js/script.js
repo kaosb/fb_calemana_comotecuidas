@@ -45,9 +45,9 @@ $(document).ready(function(){
 				onLogin(response);
 				if($.userdata.userID != null && $.userdata.userID != undefined && $.userdata.accessToken != null && $.userdata.accessToken != undefined){
 					var checkResponse = checkParticipantion($.userdata.userID);
-					if(!checkResponse){
-						alert("Ya recibimos tu primer consejo y estás participando. Ahora puedes dejar más consejos de salud.");
-					}
+					// if(!checkResponse){
+					// 	alert("Ya recibimos tu primer consejo y estás participando. Ahora puedes dejar más consejos de salud.");
+					// }
 					$('#step_0').fadeOut('fast', function() {
 						$('#step_1').fadeIn('fast');
 					});
@@ -58,9 +58,9 @@ $(document).ready(function(){
 					onLogin(response);
 					if($.userdata.userID != null && $.userdata.userID != undefined && $.userdata.accessToken != null && $.userdata.accessToken != undefined){
 						var checkResponse = checkParticipantion($.userdata.userID);
-						if(!checkResponse){
-							alert("Ya recibimos tu primer consejo y estás participando. Ahora puedes dejar más consejos de salud.");
-						}
+						// if(!checkResponse){
+						// 	alert("Ya recibimos tu primer consejo y estás participando. Ahora puedes dejar más consejos de salud.");
+						// }
 						// avanzamos al paso 1
 						$('#step_0').fadeOut('fast', function() {
 							$('#step_1').fadeIn('fast');
