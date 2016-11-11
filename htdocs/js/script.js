@@ -274,6 +274,7 @@ function checkParticipantion(userId){
 		dataType: 'json',
 		url: 'src/checkparticipant.php',
 		success: function(data){
+			console.log(data.status);
 			respuesta = data.status
 		}
 	});
